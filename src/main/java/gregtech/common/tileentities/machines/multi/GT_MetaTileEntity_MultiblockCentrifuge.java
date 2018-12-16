@@ -137,7 +137,7 @@ public class GT_MetaTileEntity_MultiblockCentrifuge extends GT_MetaTileEntity_Mu
 				this.mMaxProgresstime = maxProgresstime;
 				mOutputItems = new ItemStack[recipe.mOutputs.length];
 		        for (int i = 0; i < recipe.mOutputs.length; i++) {
-		            if (getBaseMetaTileEntity().getRandomNumber(10000) < tRecipe.getOutputChance(i)) {
+		            if (getBaseMetaTileEntity().getRandomNumber(10000) < recipe.getOutputChance(i)) {
 		                this.mOutputItems[i] = recipe.getOutput(i);
 		            }
 		        }
