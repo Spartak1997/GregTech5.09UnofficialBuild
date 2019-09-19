@@ -13,16 +13,26 @@ import net.minecraft.item.ItemStack;
 
 public class ProcessingCrushedOre implements gregtech.api.interfaces.IOreRecipeRegistrator {
     public ProcessingCrushedOre() {
-		OrePrefixes.crushedCentrifuged.add(this);
+	OrePrefixes.crushedCentrifuged.add(this);
         OrePrefixes.crushedPurified.add(this);
+	OrePrefixes.crushed.add(this);
+	OrePrefixes.dustImpure.add(this);    
     }
 
     public void registerOre(OrePrefixes aPrefix, Materials aMaterial, String aOreDictName, String aModName, ItemStack aStack) {
 		switch (aPrefix) {
+			case crushed:
+				GT_Values.RA.addAutoclaveRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), Materials.Water.getFluid(10L), GT_OreDictUnificator.get(OrePrefixes.crushedPurified, aMaterial, 1L), 10000, 20, 8);
+				GT_Values.RA.addAutoclaveRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_ModHandler.getDistilledWater(10L), GT_OreDictUnificator.get(OrePrefixes.crushedPurified, aMaterial, 1L), 10000, 20, 8);
+			break;
+			case dustImpure:
+				GT_Values.RA.addAutoclaveRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), Materials.Water.getFluid(10L), GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial, 1L), 10000, 20, 8);
+				GT_Values.RA.addAutoclaveRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_ModHandler.getDistilledWater(10L), GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial, 1L), 10000, 20, 8);
+			break;				
 			case crushedCentrifuged:
 				GT_Values.RA.addForgeHammerRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial.mMacerateInto, 1L), 10, 16);
 				GT_ModHandler.addPulverisationRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial.mMacerateInto, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, GT_Utility.selectItemInList(2, aMaterial.mMacerateInto, aMaterial.mOreByProducts), 1L), 10, false);
-				break;
+				break;				
 			case crushedPurified:
 				GT_ModHandler.addThermalCentrifugeRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), (int) Math.min(5000L, Math.abs(aMaterial.getMass() * 20L)), new Object[]{GT_OreDictUnificator.get(OrePrefixes.crushedCentrifuged, aMaterial.mMacerateInto, GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial.mMacerateInto, 1L), 1L), GT_OreDictUnificator.get(OrePrefixes.dustTiny, GT_Utility.selectItemInList(1, aMaterial.mMacerateInto, aMaterial.mOreByProducts), 1L)});
 
