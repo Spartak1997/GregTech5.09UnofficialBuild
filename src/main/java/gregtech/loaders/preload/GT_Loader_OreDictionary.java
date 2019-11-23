@@ -208,5 +208,8 @@ public class GT_Loader_OreDictionary
         GT_OreDictUnificator.registerOre(OrePrefixes.itemCasing, Materials.Iron, GT_ModHandler.getModItem("IC2", "itemCasing", 1L, 4));
         GT_OreDictUnificator.registerOre(OrePrefixes.itemCasing, Materials.Steel, GT_ModHandler.getModItem("IC2", "itemCasing", 1L, 5));
         GT_OreDictUnificator.registerOre(OrePrefixes.itemCasing, Materials.Lead, GT_ModHandler.getModItem("IC2", "itemCasing", 1L, 6));
+        //Register fertilizer Forestry and IC2
+        GT_OreDictUnificator.registerOre("dustFertilizer", GT_ModHandler.getModItem("IC2", "itemFertilizer", 1L,0));
+        GT_OreDictUnificator.registerOre("dustFertilizer", GT_ModHandler.getModItem("Forestry", "fertilizerCompound", 1L,0));            
     }
 }
