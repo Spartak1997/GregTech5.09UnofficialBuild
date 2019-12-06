@@ -52,7 +52,7 @@ repositories {
     }
     maven {
         name = "chickenbones"
-        url = "https://maven.covers1624.net"
+        url = "http://chickenbones.net/maven/"
     }
     maven {
         name = "ic2, forestry"
