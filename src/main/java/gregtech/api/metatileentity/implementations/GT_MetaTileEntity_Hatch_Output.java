@@ -122,7 +122,7 @@ public class GT_MetaTileEntity_Hatch_Output extends GT_MetaTileEntity_Hatch {
 
     @Override
     public boolean doesEmptyContainers() {
-        return false;
+        return true;
     }
 
     @Override

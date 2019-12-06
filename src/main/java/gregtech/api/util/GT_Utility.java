@@ -16,6 +16,7 @@ import gregtech.api.items.GT_EnergyArmor_Item;
 import gregtech.api.items.GT_Generic_Item;
 import gregtech.api.net.GT_Packet_Sound;
 import gregtech.api.objects.GT_ItemStack;
+import gregtech.api.metatileentity.implementations.GT_MetaPipeEntity_Cable;
 import gregtech.api.objects.ItemData;
 import gregtech.api.threads.GT_Runnable_Sound;
 import gregtech.common.GT_Proxy;
@@ -556,7 +557,7 @@ public class GT_Utility {
             }
 
             for (int i = 0; i < tGrabSlots.length; i++) {
-            	byte tMovedItemCount = 0;
+                byte tMovedItemCount = 0;
                 for (int j = 0; j < tPutSlots.length; j++) {
                     if (listContainsItem(aFilter, aTileEntity1.getStackInSlot(tGrabSlots[i]), true, aInvertFilter)) {
                         if (isAllowedToTakeFromSlot(aTileEntity1, tGrabSlots[i], aGrabFrom, aTileEntity1.getStackInSlot(tGrabSlots[i]))) {
@@ -840,7 +841,7 @@ public class GT_Utility {
             return copyMetaData(Items.feather.getDamage(aStack) + 1, aStack);
         return null;
     }
-    
+
     public static synchronized boolean removeIC2BottleRecipe(ItemStack aContainer, ItemStack aInput, Map<ic2.api.recipe.ICannerBottleRecipeManager.Input, RecipeOutput> aRecipeList, ItemStack aOutput){
         if ((isStackInvalid(aInput) && isStackInvalid(aOutput) && isStackInvalid(aContainer)) || aRecipeList == null) return false;
         boolean rReturn = false;
@@ -893,7 +894,7 @@ public class GT_Utility {
         ItemStack[] tStack = GT_OreDictUnificator.getStackArray(true, aOutput);
         if(tStack==null||(tStack.length>0&&GT_Utility.areStacksEqual(aInput, tStack[0])))return false;
         if (tOreName != null) {
-        	if(tOreName.toString().equals("dustAsh")&&tStack[0].getUnlocalizedName().equals("tile.volcanicAsh"))return false;
+            if(tOreName.toString().equals("dustAsh")&&tStack[0].getUnlocalizedName().equals("tile.volcanicAsh"))return false;
             aRecipeList.put(new RecipeInputOreDict(tOreName.toString(), aInput.stackSize), new RecipeOutput(aNBT, tStack));
         } else {
             aRecipeList.put(new RecipeInputItemStack(copy(aInput), aInput.stackSize), new RecipeOutput(aNBT, tStack));
@@ -1489,7 +1490,7 @@ public class GT_Utility {
         if(aDimensionID<=1 && aDimensionID>=-1 && !GregTech_API.sDimensionalList.contains(aDimensionID)) return true;
         return !GregTech_API.sDimensionalList.contains(aDimensionID) && DimensionManager.isDimensionRegistered(aDimensionID);
     }
-	 
+
     //public static boolean isRealDimension(int aDimensionID) {
     //    try {
     //        if (DimensionManager.getProvider(aDimensionID).getClass().getName().contains("com.xcompwiz.mystcraft"))
@@ -1503,7 +1504,7 @@ public class GT_Utility {
     //    } catch (Throwable e) {/*Do nothing*/}
     //    return GregTech_API.sDimensionalList.contains(aDimensionID);
     //}
-	
+
     public static boolean moveEntityToDimensionAtCoords(Entity entity, int aDimension, double aX, double aY, double aZ) {
         //Credit goes to BrandonCore Author :!:
 
@@ -1596,7 +1597,7 @@ public class GT_Utility {
     }
 
     public static int getScaleCoordinates(double aValue, int aScale) {
-    	return (int)Math.floor(aValue / aScale);
+        return (int)Math.floor(aValue / aScale);
     }
 
     public static int getCoordinateScan(ArrayList<String> aList, EntityPlayer aPlayer, World aWorld, int aScanLevel, int aX, int aY, int aZ, int aSide, float aClickX, float aClickY, float aClickZ) {
@@ -1730,6 +1731,15 @@ public class GT_Utility {
                 if (D1) e.printStackTrace(GT_Log.err);
             }
             try {
+                if (tTileEntity instanceof IGregTechTileEntity && ((IGregTechTileEntity) tTileEntity).getMetaTileEntity() instanceof GT_MetaPipeEntity_Cable) {
+                    GT_MetaPipeEntity_Cable c = (GT_MetaPipeEntity_Cable) ((IGregTechTileEntity) tTileEntity).getMetaTileEntity();
+                    tList.add("Last second " +EnumChatFormatting.RED+ c.mTransferredVoltageLast20 +EnumChatFormatting.RESET+ " EU/t");
+                    tList.add("Last second " +EnumChatFormatting.RED+ c.mTransferredAmperageLast20 +EnumChatFormatting.RESET+ " A");
+                }
+            } catch (Throwable e) {
+                if (D1) e.printStackTrace(GT_Log.err);
+            }
+            try {
                 if (tTileEntity instanceof IBasicEnergyContainer && ((IBasicEnergyContainer) tTileEntity).getEUCapacity() > 0) {
                     tList.add(trans("179","Max IN: ")  +EnumChatFormatting.RED+ ((IBasicEnergyContainer) tTileEntity).getInputVoltage()  + " (" + GT_Values.VN[GT_Utility.getTier(((IBasicEnergyContainer) tTileEntity).getInputVoltage())] + ") " +EnumChatFormatting.RESET+ trans("182"," EU at ") +EnumChatFormatting.RED+((IBasicEnergyContainer)tTileEntity).getInputAmperage()+EnumChatFormatting.RESET+trans("183"," A"));
                     tList.add(trans("181","Max OUT: ") +EnumChatFormatting.RED+ ((IBasicEnergyContainer) tTileEntity).getOutputVoltage() + " (" + GT_Values.VN[GT_Utility.getTier(((IBasicEnergyContainer) tTileEntity).getOutputVoltage())] + ") " +EnumChatFormatting.RESET+ trans("182"," EU at ") +EnumChatFormatting.RED+ ((IBasicEnergyContainer) tTileEntity).getOutputAmperage() +EnumChatFormatting.RESET+ trans("183"," A"));
@@ -1787,11 +1797,11 @@ public class GT_Utility {
                 if (D1) e.printStackTrace(GT_Log.err);
             }
         }
-        
+
         if (aPlayer.capabilities.isCreativeMode) {
             FluidStack tFluid = undergroundOilReadInformation(aWorld.getChunkFromBlockCoords(aX,aZ));//-# to only read
             if (tFluid!=null)
-            	tList.add(EnumChatFormatting.GOLD+tFluid.getLocalizedName()+EnumChatFormatting.RESET+": " +EnumChatFormatting.YELLOW+ tFluid.amount +EnumChatFormatting.RESET+" L");
+                tList.add(EnumChatFormatting.GOLD+tFluid.getLocalizedName()+EnumChatFormatting.RESET+": " +EnumChatFormatting.YELLOW+ tFluid.amount +EnumChatFormatting.RESET+" L");
             else
                 tList.add(EnumChatFormatting.GOLD+trans("201","Nothing")+EnumChatFormatting.RESET+": " +EnumChatFormatting.YELLOW+ '0' +EnumChatFormatting.RESET+" L");
         }
@@ -1825,7 +1835,7 @@ public class GT_Utility {
     }
 
     public static String trans(String aKey, String aEnglish){
-    	return GT_LanguageManager.addStringLocalization("Interaction_DESCRIPTION_Index_"+aKey, aEnglish, false);
+        return GT_LanguageManager.addStringLocalization("Interaction_DESCRIPTION_Index_"+aKey, aEnglish, false);
     }
 
     /**
@@ -1965,7 +1975,7 @@ public class GT_Utility {
     }
 
     public static ItemStack getIntegratedCircuit(int config){
-    	return ItemList.Circuit_Integrated.getWithDamage(0, config, new Object[0]);
+        return ItemList.Circuit_Integrated.getWithDamage(0, config, new Object[0]);
     }
 
     public static float getBlockHardnessAt(World aWorld, int aX, int aY, int aZ) {
@@ -2083,7 +2093,7 @@ public class GT_Utility {
             NBTTagCompound tNBT = getNBT(aStack);
             String tData = aX + "," + aY + "," + aZ + "," + aDim + ",";
             if (aFluid!=null)
-            	tData += (aFluid.amount) + "," + aFluid.getLocalizedName() + ",";//TODO CHECK IF THAT /5000 is needed (Not needed)
+                tData += (aFluid.amount) + "," + aFluid.getLocalizedName() + ",";//TODO CHECK IF THAT /5000 is needed (Not needed)
             for (String tString : aOres) {
                 tData += tString + ",";
             }
@@ -2104,7 +2114,7 @@ public class GT_Utility {
             setBookTitle(aStack, "Raw Prospection Data");
 
             NBTTagCompound tNBT = GT_Utility.ItemNBT.getNBT(aStack);
-            
+
             tNBT.setByte("prospection_tier", aTier);
             tNBT.setString("prospection_pos", "Dim: " + aDim + "\nX: " + aX + " Y: " + aY + " Z: " + aZ);
 
@@ -2116,10 +2126,10 @@ public class GT_Utility {
             // oils
             ArrayList<String> tOilsTransformed = new ArrayList<String>(aOils.size());
             for (String aStr : aOils) {
-            	String[] aStats = aStr.split(",");
-            	tOilsTransformed.add(aStats[0] + ": " + aStats[1] + "L " + aStats[2]);
+                String[] aStats = aStr.split(",");
+                tOilsTransformed.add(aStats[0] + ": " + aStats[1] + "L " + aStats[2]);
             }
-            
+
             tNBT.setString("prospection_oils", joinListToString(tOilsTransformed));
 
             tNBT.setString("prospection_bounds", aNear + "|" + aMiddle + "|" + aRadius);
@@ -2171,14 +2181,14 @@ public class GT_Utility {
                     + "Lists sorted by volume\n"
                     + "Location is center of chunk with ore";
                 tNBTList.appendTag(new NBTTagString(tPageText));
-  
+
                 if (tNearOres != null)
                     fillBookWithList(tNBTList, "Close Range Ores%s\n\n", "\n", 7, tNearOres);
                 if (tMiddleOres != null)
                     fillBookWithList(tNBTList, "Mid Range Ores%s\n\n", "\n", 7, tMiddleOres);
                 if (tFarOres != null)
                     fillBookWithList(tNBTList, "Far Range Ores%s\n\n", "\n", 7, tFarOres);
-                
+
                if (tOils != null)
                     fillBookWithList(tNBTList, "Oils%s\n\n", "\n", 9, tOils);
 
