@@ -1617,8 +1617,10 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         makeWires(Materials.Cupronickel, 1340, bEC ? 3L : 4L, bEC ? 6L : 8L, 2L, gregtech.api.enums.GT_Values.V[2], true, aBoolConst_0);
         makeWires(Materials.Copper, 1360, bEC ? 2L : 3L, bEC ? 4L : 6L, 1L, gregtech.api.enums.GT_Values.V[2], true, aBoolConst_0);
         makeWires(Materials.AnnealedCopper, 1380, bEC ? 1L : 2L, bEC ? 2L : 4L, 1L, gregtech.api.enums.GT_Values.V[2], true, aBoolConst_0);
-        makeWires(Materials.RedstoneAlloy, 11430, 1L, 1L, 2L, gregtech.api.enums.GT_Values.V[2], true, aBoolConst_0);
-
+        if (Loader.isModLoaded("miscutils")){
+	}else{
+	makeWires(Materials.RedstoneAlloy, 11430, 1L, 1L, 2L, gregtech.api.enums.GT_Values.V[2], true, aBoolConst_0);
+	}
         makeWires(Materials.Kanthal, 1400, bEC ? 3L : 8L, bEC ? 6L : 16L, 4L, gregtech.api.enums.GT_Values.V[3], true, aBoolConst_0);
         makeWires(Materials.Gold, 1420, bEC ? 2L : 6L, bEC ? 4L : 12L, 3L, gregtech.api.enums.GT_Values.V[3], true, aBoolConst_0);
         makeWires(Materials.Electrum, 1440, bEC ? 2L : 5L, bEC ? 4L : 10L, 2L, gregtech.api.enums.GT_Values.V[3], true, aBoolConst_0);
