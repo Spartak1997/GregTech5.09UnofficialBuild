@@ -321,19 +321,12 @@ public class GT_MetaTileEntity_BasicBatteryBuffer extends GT_MetaTileEntity_Tier
         return new String[]{
                 getLocalName(),
                 "Stored Items:",
-                (getBaseMetaTileEntity().getAverageElectricInput() > getBaseMetaTileEntity().getAverageElectricOutput()
-                        ? EnumChatFormatting.GREEN+GT_Utility.formatNumbers(mStored) +EnumChatFormatting.RESET+ " EU"
-                        : EnumChatFormatting.RED+GT_Utility.formatNumbers(mStored) +EnumChatFormatting.RESET+ " EU"),
-                //EnumChatFormatting.GREEN+GT_Utility.formatNumbers(mStored) +EnumChatFormatting.RESET+ " EU",
+                (getBaseMetaTileEntity().getAverageElectricInput() > getBaseMetaTileEntity().getAverageElectricOutput() ? EnumChatFormatting.GREEN+GT_Utility.formatNumbers(mStored) +EnumChatFormatting.RESET+ " EU" : EnumChatFormatting.RED+GT_Utility.formatNumbers(mStored) +EnumChatFormatting.RESET+ " EU"),
                 EnumChatFormatting.YELLOW+GT_Utility.formatNumbers(mMax) +EnumChatFormatting.RESET+ " EU",
                 "Average Input:",
                 EnumChatFormatting.GREEN+GT_Utility.formatNumbers(getBaseMetaTileEntity().getAverageElectricInput())+EnumChatFormatting.RESET+" EU/t",
                 "Average Output:",
                 EnumChatFormatting.RED+GT_Utility.formatNumbers(getBaseMetaTileEntity().getAverageElectricOutput())+EnumChatFormatting.RESET+" EU/t"};
-
-
-
-
     }
 
     @Override
