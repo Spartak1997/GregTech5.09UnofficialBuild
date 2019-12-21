@@ -14,22 +14,22 @@ public class GT_MetaTileEntity_Boiler_Solar_Steel extends GT_MetaTileEntity_Boil
     public GT_MetaTileEntity_Boiler_Solar_Steel(int aID, String aName, String aNameRegional) {
         super(aID, aName, aNameRegional);
         basicOutput = 450;
-        basicMaxOuput = 120;
-        basicTemperatureMod = 3;
+        basicMaxOuput = 150;
+        basicLossTimerLimit = 75; // Cools down slower than normal boiler
     }
 
     public GT_MetaTileEntity_Boiler_Solar_Steel(String aName, int aTier, String aDescription, ITexture[][][] aTextures) {
         super(aName, aTier, aDescription, aTextures);
         basicOutput = 450;
-        basicMaxOuput = 120;
-        basicTemperatureMod = 3;
+        basicMaxOuput = 150;
+        basicLossTimerLimit = 75;
     }
 
     public GT_MetaTileEntity_Boiler_Solar_Steel(String aName, int aTier, String[] aDescription, ITexture[][][] aTextures) {
         super(aName, aTier, aDescription, aTextures);
         basicOutput = 450;
-        basicMaxOuput = 120;
-        basicTemperatureMod = 3;
+        basicMaxOuput = 150;
+        basicLossTimerLimit = 75;
     }
 
     public ITexture[][][] getTextureSet(ITexture[] aTextures) {
@@ -59,17 +59,13 @@ public class GT_MetaTileEntity_Boiler_Solar_Steel extends GT_MetaTileEntity_Boil
     public String[] getDescription() {
         return new String[]{
                 "Steam Power by the Sun",
-                "Produces 360L of Steam per second",
-                "Calcifies over time, reducing Steam output to 120L/s",
+                "Produces 450L of Steam per second",
+                "Calcifies over time, reducing Steam output to 150L/s",
                 "Break and replace to decalcify"};
     }
 
     public int getCapacity() {
         return 32000;
-    }
-
-    public int maxProgresstime() {
-        return 1500;
     }
 
     public MetaTileEntity newMetaEntity(IGregTechTileEntity aTileEntity) {
