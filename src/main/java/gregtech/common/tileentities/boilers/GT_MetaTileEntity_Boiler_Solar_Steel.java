@@ -59,7 +59,7 @@ public class GT_MetaTileEntity_Boiler_Solar_Steel extends GT_MetaTileEntity_Boil
     public String[] getDescription() {
         return new String[]{
                 "Steam Power by the Sun",
-                "Produces 450L of Steam per second",
+                "Produces 360L of Steam per second",
                 "Calcifies over time, reducing Steam output to 150L/s",
                 "Break and replace to decalcify"};
     }
