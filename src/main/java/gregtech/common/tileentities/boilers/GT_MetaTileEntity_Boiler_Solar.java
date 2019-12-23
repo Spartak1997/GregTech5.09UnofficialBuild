@@ -114,7 +114,7 @@ public class GT_MetaTileEntity_Boiler_Solar
     // Calcification start time is 43200*25/20=54,000s or 15 hours of game time.
     static final int CALCIFICATION_TIME = 43200;
 
-    int getCalcificationOutput() { // Returns how much output the boiler can do.
+    public getCalcificationOutput() { // Returns how much output the boiler can do.
         if (this.mTemperature < 100 ) {
             return 0;
         }
@@ -125,7 +125,11 @@ public class GT_MetaTileEntity_Boiler_Solar
             return this.basicOutput;
         }
     }
-
+    
+    public int getBasicOutput() {
+        return this.basicOutput;
+    }
+        
     public void onPostTick(IGregTechTileEntity aBaseMetaTileEntity, long aTick) {
         if ((aBaseMetaTileEntity.isServerSide()) && (aTick > 20L)) {
             if (this.mTemperature <= 20) {
