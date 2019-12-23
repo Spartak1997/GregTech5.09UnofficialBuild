@@ -1899,6 +1899,7 @@ if(Loader.isModLoaded("Railcraft")){
 		addProcess(tCrop,Materials.Scheelite,100, true);
 		addProcess(tCrop,Materials.Tungstate,100, false);
 		addProcess(tCrop,Materials.Lithium,100, false);
+	    	addProcess(tCrop,Materials.Tungsten,75, false);
 		tCrop = ItemList.Crop_Drop_Platinum.get(1, new Object[0]);
 		addProcess(tCrop,Materials.Platinum,40, true);
 		addProcess(tCrop,Materials.Cooperite,40, false);
