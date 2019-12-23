@@ -188,7 +188,7 @@ public class ItemComb extends Item {
 		addProcessLV(tComb, Materials.BandedIron, 100);
 		addProcessLV(tComb, Materials.Pyrite, 100);
 		if (ProcessingModSupport.aEnableGCMarsMats)
-			addProcessLV(tComb, Materials.MeteoricIron, 100);
+		addProcessLV(tComb, Materials.MeteoricIron, 100);
 		tComb = getStackForType(CombType.STEEL);
 		addProcessLV(tComb, Materials.Iron, Materials.Iron, 100);
 		addProcessLV(tComb, Materials.Magnetite, Materials.Magnetite, 100);
@@ -198,7 +198,7 @@ public class ItemComb extends Item {
 		addProcessLV(tComb, Materials.BandedIron, Materials.BandedIron, 100);
 		addProcessLV(tComb, Materials.Pyrite, Materials.Pyrite, 100);
 		if (ProcessingModSupport.aEnableGCMarsMats)
-			addProcessLV(tComb, Materials.MeteoricIron, Materials.MeteoricIron, 100);
+		addProcessLV(tComb, Materials.MeteoricIron, Materials.MeteoricIron, 100);
 		addProcessLV(tComb, Materials.Molybdenite, 100);
 		addProcessLV(tComb, Materials.Molybdenum, 100);
 		tComb = getStackForType(CombType.NICKEL);
@@ -232,26 +232,27 @@ public class ItemComb extends Item {
 		addProcessLV(tComb,Materials.Tantalite,100);
 		tComb = getStackForType(CombType.TITANIUM);
 		addProcessEV(tComb,Materials.Ilmenite,80);
-        addProcessEV(tComb,Materials.Bauxite,75);
-        addProcessEV(tComb,Materials.Rutile,75);
+        	addProcessEV(tComb,Materials.Bauxite,75);
+        	addProcessEV(tComb,Materials.Rutile,75);
 		tComb = getStackForType(CombType.CHROME);
 		addProcessHV(tComb,Materials.Chrome,50);
-        addProcessHV(tComb,Materials.Ruby,100);
-        addProcessHV(tComb,Materials.Chromite,50);
-        addProcessHV(tComb,Materials.Redstone,100);
-        addProcessHV(tComb, Materials.Neodymium, 80);
-        addProcessHV(tComb, Materials.Bastnasite, 80);
+        	addProcessHV(tComb,Materials.Ruby,100);
+        	addProcessHV(tComb,Materials.Chromite,50);
+        	addProcessHV(tComb,Materials.Redstone,100);
+        	addProcessHV(tComb, Materials.Neodymium, 80);
+        	addProcessHV(tComb, Materials.Bastnasite, 80);
 		tComb = getStackForType(CombType.TUNGSTEN);
 		addProcessIV(tComb,Materials.Tungstate,80);
-        addProcessIV(tComb,Materials.Scheelite,75);
-        addProcessIV(tComb,Materials.Lithium,75);
+        	addProcessIV(tComb,Materials.Scheelite,75);
+        	addProcessIV(tComb,Materials.Lithium,75);
+		addProcessIV(tComb,Materials.Tungsten,50);
 		tComb = getStackForType(CombType.PLATINUM);
 		addProcessHV(tComb,Materials.Platinum,40);
-        addProcessHV(tComb,Materials.Cooperite,40);
-        addProcessHV(tComb,Materials.Palladium,40);
+        	addProcessHV(tComb,Materials.Cooperite,40);
+        	addProcessHV(tComb,Materials.Palladium,40);
 		tComb = getStackForType(CombType.IRIDIUM);
 		addProcessIV(tComb,Materials.Iridium,20);
-        addProcessIV(tComb,Materials.Osmium,15);
+        	addProcessIV(tComb,Materials.Osmium,15);
 
 	    // Radioactive Line
 		tComb = getStackForType(CombType.URANIUM);
@@ -317,7 +318,7 @@ public class ItemComb extends Item {
 		GT_Values.RA.addCentrifugeRecipe(tComb, GT_Values.NI, GT_Values.NF, GT_Values.NF, ItemList.FR_RefractoryWax.get(1, new Object[0]),GT_OreDictUnificator.get(OrePrefixes.dustTiny, Materials.StainlessSteel, 1), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Values.NI, new int[] {5000, 5000}, 384, 480);
 		addProcessHV(tComb, Materials.Iron, 75);
 		addProcessHV(tComb, Materials.Chrome, 55);
-        addProcessHV(tComb, Materials.Manganese, 75);
+        	addProcessHV(tComb, Materials.Manganese, 75);
 		addProcessHV(tComb, Materials.Nickel, 75);
 		tComb = getStackForType(CombType.ENDERIUM);
 		GT_Values.RA.addCentrifugeRecipe(tComb, GT_Values.NI, GT_Values.NF, Materials.EnderiumBase.getMolten(50), ItemList.FR_RefractoryWax.get(1, new Object[0]), GT_OreDictUnificator.get(OrePrefixes.dustSmall, Materials.Platinum, 1), GT_OreDictUnificator.get(OrePrefixes.dustTiny, Materials.Enderium, 1), GT_Values.NI, GT_Values.NI, GT_Values.NI, new int[] {5000, 3000, 5000}, 384, 480);
@@ -350,44 +351,44 @@ public class ItemComb extends Item {
 		//metalline 2
 		tComb = getStackForType(CombType.SULFUR);
 		addProcessLV(tComb, Materials.Sulfur, 100);
-        addProcessLV(tComb, Materials.Pyrite, 90);
-        addProcessLV(tComb, Materials.Sphalerite, 80);
+        	addProcessLV(tComb, Materials.Pyrite, 90);
+        	addProcessLV(tComb, Materials.Sphalerite, 80);
 		tComb = getStackForType(CombType.GALLIUM);
 		addProcessLV(tComb, Materials.Gallium, 80);
-        addProcessLV(tComb, Materials.Niobium, 75);
-        GT_Values.RA.addCentrifugeRecipe(tComb, GT_Values.NI, GT_Values.NF, GT_Values.NF,ItemList.FR_Wax.get(1, new Object[0]), GT_OreDictUnificator.get(OrePrefixes.dustTiny,Materials.Gallium,1), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Values.NI, new int[] {3000, 10000}, 128, 5);
+        	addProcessLV(tComb, Materials.Niobium, 75);
+        	GT_Values.RA.addCentrifugeRecipe(tComb, GT_Values.NI, GT_Values.NF, GT_Values.NF,ItemList.FR_Wax.get(1, new Object[0]), GT_OreDictUnificator.get(OrePrefixes.dustTiny,Materials.Gallium,1), GT_Values.NI, GT_Values.NI, GT_Values.NI, GT_Values.NI, new int[] {3000, 10000}, 128, 5);
 		tComb = getStackForType(CombType.ARSENIC);
 		addProcessLV(tComb, Materials.Arsenic, 80);
-        addProcessLV(tComb, Materials.Bismuth, 70);
-        addProcessLV(tComb, Materials.Antimony, 70);
+        	addProcessLV(tComb, Materials.Bismuth, 70);
+        	addProcessLV(tComb, Materials.Antimony, 70);
         
-        //rarematerialline 2
-        tComb = getStackForType(CombType.MOLYBDENUM);
-        addProcessLV(tComb,Materials.Molybdenum,100);
-        addProcessLV(tComb,Materials.Molybdenite,90);
-        addProcessLV(tComb,Materials.Powellite,80);
-        addProcessLV(tComb,Materials.Wulfenite,75);
-        addProcessIV(tComb,Materials.Osmium,15);
-        tComb = getStackForType(CombType.OSMIUM);
-        addProcessIV(tComb,Materials.Osmium,25);
-        addProcessIV(tComb,Materials.Iridium,15);
-        tComb = getStackForType(CombType.LITHIUM);
-        addProcessMV(tComb,Materials.Lithium,85);
-        addProcessMV(tComb,Materials.Aluminium,75);
-        tComb = getStackForType(CombType.SALT);
-        addProcessMV(tComb,Materials.Salt,100);
-        addProcessMV(tComb,Materials.Sodium,75);
-        addProcessMV(tComb,Materials.RockSalt,75);
-        addProcessMV(tComb,Materials.Saltpeter,65);
-        addSpecialCentMV(tComb, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Salt, 1), 100);
-        tComb = getStackForType(CombType.ALMANDINE);
-        addProcessLV(tComb,Materials.Almandine,90);
-        addProcessLV(tComb,Materials.Pyrope,80);
-        addProcessLV(tComb,Materials.Sapphire,75);
-        addProcessLV(tComb,Materials.GreenSapphire,75);
+        	//rarematerialline 2
+        	tComb = getStackForType(CombType.MOLYBDENUM);
+        	addProcessLV(tComb,Materials.Molybdenum,100);
+        	addProcessLV(tComb,Materials.Molybdenite,90);
+        	addProcessLV(tComb,Materials.Powellite,80);
+        	addProcessLV(tComb,Materials.Wulfenite,75);
+        	addProcessIV(tComb,Materials.Osmium,15);
+        	tComb = getStackForType(CombType.OSMIUM);
+        	addProcessIV(tComb,Materials.Osmium,25);
+        	addProcessIV(tComb,Materials.Iridium,15);
+        	tComb = getStackForType(CombType.LITHIUM);
+        	addProcessMV(tComb,Materials.Lithium,85);
+        	addProcessMV(tComb,Materials.Aluminium,75);
+        	tComb = getStackForType(CombType.SALT);
+        	addProcessMV(tComb,Materials.Salt,100);
+       	 	addProcessMV(tComb,Materials.Sodium,75);
+        	addProcessMV(tComb,Materials.RockSalt,75);
+        	addProcessMV(tComb,Materials.Saltpeter,65);
+        	addSpecialCentMV(tComb, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Salt, 1), 100);
+        	tComb = getStackForType(CombType.ALMANDINE);
+        	addProcessLV(tComb,Materials.Almandine,90);
+        	addProcessLV(tComb,Materials.Pyrope,80);
+        	addProcessLV(tComb,Materials.Sapphire,75);
+        	addProcessLV(tComb,Materials.GreenSapphire,75);
         
-        //radioactiveline 2
-        tComb = getStackForType(CombType.NAQUADRIA);
+        	//radioactiveline 2
+        	tComb = getStackForType(CombType.NAQUADRIA);
 		addProcessIV(tComb,Materials.Naquadah,15);
 		addProcessLUV(tComb,Materials.NaquadahEnriched,10);
 		addProcessLUV(tComb,Materials.Naquadria,10);
