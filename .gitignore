@@ -5,13 +5,11 @@ thumbs.db
 
 ### Java ###
 
-*.class
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 *.txt
@@ -73,9 +71,6 @@ local.properties
 classes/
 
 /out/
-gradle/wrapper/gradle-wrapper.properties
-gradlew
-gradlew.bat
 
 # Linux
 *~
