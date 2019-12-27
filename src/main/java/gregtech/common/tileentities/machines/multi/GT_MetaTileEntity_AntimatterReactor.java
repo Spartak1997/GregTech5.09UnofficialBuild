@@ -437,7 +437,7 @@ public class GT_MetaTileEntity_AntimatterReactor extends GT_MetaTileEntity_Multi
     
   //Check needed Magnetic Coil
     private boolean isMagneticCoil(int aX, int aY, int aZ) {
-        return (getBaseMetaTileEntity().getBlock(aX, aY, aZ) == GregTech_API.sBlockCasings5) && (getBaseMetaTileEntity().getMetaID(aX, aY, aZ) == 7);
+        return (getBaseMetaTileEntity().getBlock(aX, aY, aZ) == GregTech_API.sBlockCasings5) && (getBaseMetaTileEntity().getMetaID(aX, aY, aZ) == 12);
     }
     
     //Check needed Core Casing
@@ -452,7 +452,7 @@ public class GT_MetaTileEntity_AntimatterReactor extends GT_MetaTileEntity_Multi
     
     //Check Intermix Chamber Casing
     private boolean isIntermixChamberCasing(int aX, int aY, int aZ) {
-        return (getBaseMetaTileEntity().getBlock(aX, aY, aZ) == GregTech_API.sBlockCasings5) && (getBaseMetaTileEntity().getMetaID(aX, aY, aZ) == 8);
+        return (getBaseMetaTileEntity().getBlock(aX, aY, aZ) == GregTech_API.sBlockCasings5) && (getBaseMetaTileEntity().getMetaID(aX, aY, aZ) == 13);
     }
     
     @Override
