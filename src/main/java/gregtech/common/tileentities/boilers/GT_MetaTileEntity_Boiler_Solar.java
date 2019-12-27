@@ -18,6 +18,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.IFluidHandler;
 
+
 public class GT_MetaTileEntity_Boiler_Solar
         extends GT_MetaTileEntity_Boiler {
     public GT_MetaTileEntity_Boiler_Solar(int aID, String aName, String aNameRegional) {
@@ -76,9 +77,9 @@ public class GT_MetaTileEntity_Boiler_Solar
     public MetaTileEntity newMetaEntity(IGregTechTileEntity aTileEntity) {
         return new GT_MetaTileEntity_Boiler_Solar(this.mName, this.mTier, this.mDescriptionArray, this.mTextures);
     }
-    
+
     private int mRunTime = 0;
-    
+
     @Override
     public void saveNBTData(NBTTagCompound aNBT) {
         super.saveNBTData(aNBT);
@@ -114,7 +115,7 @@ public class GT_MetaTileEntity_Boiler_Solar
     // Calcification start time is 43200*25/20=54,000s or 15 hours of game time.
     static final int CALCIFICATION_TIME = 43200;
 
-    public getCalcificationOutput() { // Returns how much output the boiler can do.
+    public int getCalcificationOutput() { // Returns how much output the boiler can do.
         if (this.mTemperature < 100 ) {
             return 0;
         }
@@ -125,11 +126,11 @@ public class GT_MetaTileEntity_Boiler_Solar
             return this.basicOutput;
         }
     }
-    
+
     public int getBasicOutput() {
         return this.basicOutput;
     }
-        
+
     public void onPostTick(IGregTechTileEntity aBaseMetaTileEntity, long aTick) {
         if ((aBaseMetaTileEntity.isServerSide()) && (aTick > 20L)) {
             if (this.mTemperature <= 20) {
@@ -165,6 +166,7 @@ public class GT_MetaTileEntity_Boiler_Solar
                         }
                         this.mFluid.amount -= (basicOutput/150);
                         mRunTime += 1;
+
                         int tOutput = getCalcificationOutput();
 
                         if (this.mSteam == null) {
