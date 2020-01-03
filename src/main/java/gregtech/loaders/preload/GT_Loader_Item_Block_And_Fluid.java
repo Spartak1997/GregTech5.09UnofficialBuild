@@ -110,16 +110,13 @@ public class GT_Loader_Item_Block_And_Fluid
         
         ItemList.neutroniumHeatCapacitor.set(GregTech_API.constructCoolantCellItem("neutroniumHeatCapacitor", "1G Neutronium Heat Capacitor", 1000000000));
         
-        ItemList.Reactor_Coolant_Le_1.set(GregTech_API.constructCoolantCellItem("180k_Ledox_Coolantcell", "180k Le Coolant Cell", 180000));
-        GT_ModHandler.addCraftingRecipe(ItemList.Reactor_Coolant_Le_1.get(1L, new Object[0]), GT_ModHandler.RecipeBits.BUFFERED | GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{" P ", "PCP", " P ", 'C', OrePrefixes.cell.get(Materials.Ledox), 'P', OrePrefixes.plate.get(Materials.TungstenSteel)});
+        ItemList.Reactor_Coolant_Le_1.set(GregTech_API.constructCoolantCellItem("180k_Ledox_Coolantcell", "180k Super Coolant Cell", 180000));
         
-        ItemList.Reactor_Coolant_Le_2.set(GregTech_API.constructCoolantCellItem("360k_Ledox_Coolantcell", "360k Le Coolant Cell", 360000));
-        GT_ModHandler.addCraftingRecipe(ItemList.Reactor_Coolant_Le_2.get(1L, new Object[0]), GT_ModHandler.RecipeBits.BUFFERED | GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"CPC", 'C', ItemList.Reactor_Coolant_Le_1, 'P', OrePrefixes.plateTriple.get(Materials.TungstenSteel)});
-
-        ItemList.Reactor_Coolant_Le_3.set(GregTech_API.constructCoolantCellItem("540k_Ledox_Coolantcell", "540k Le Coolant Cell", 540000));
-        GT_ModHandler.addCraftingRecipe(ItemList.Reactor_Coolant_Le_3.get(1L, new Object[0]), GT_ModHandler.RecipeBits.BUFFERED | GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"PPP", "CCC", "PPP", 'C', ItemList.Reactor_Coolant_Le_1, 'P', OrePrefixes.plate.get(Materials.TungstenSteel)});
-        GT_ModHandler.addCraftingRecipe(ItemList.Reactor_Coolant_Le_3.get(1L, new Object[0]), GT_ModHandler.RecipeBits.BUFFERED | GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"PPP", "BPC", "PPP", 'C', ItemList.Reactor_Coolant_Le_1, 'B', ItemList.Reactor_Coolant_Le_2, 'P', OrePrefixes.plate.get(Materials.TungstenSteel)});
-        GT_ModHandler.addCraftingRecipe(ItemList.Reactor_Coolant_Le_3.get(1L, new Object[0]), GT_ModHandler.RecipeBits.BUFFERED | GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"PPP", "CPB", "PPP", 'C', ItemList.Reactor_Coolant_Le_1, 'B', ItemList.Reactor_Coolant_Le_2, 'P', OrePrefixes.plate.get(Materials.TungstenSteel)});
+        ItemList.Reactor_Coolant_Le_2.set(GregTech_API.constructCoolantCellItem("360k_Ledox_Coolantcell", "360k Super Coolant Cell", 360000));
+        
+		ItemList.Reactor_Coolant_Le_3.set(GregTech_API.constructCoolantCellItem("540k_Ledox_Coolantcell", "540k Super Coolant Cell", 540000));
+        
+		ItemList.Reactor_Coolant_Le_6.set(GregTech_API.constructCoolantCellItem("1080k_Ledox_Coolantcell", "1080k Super Coolant Cell", 1080000));
         
         if(!GregTech_API.mIC2Classic){
         ItemList.Depleted_Thorium_1.set(new GT_DepletetCell_Item("ThoriumcellDep", "Fuel Rod (Depleted Thorium)", 1));
