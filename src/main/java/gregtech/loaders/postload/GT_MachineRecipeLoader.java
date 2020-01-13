@@ -4055,9 +4055,9 @@ if(Loader.isModLoaded("Railcraft")){
         	    GT_Values.RA.addChemicalRecipe(Materials.Potassium.getDust(1), GT_Utility.getIntegratedCircuit(1), Materials.NitricAcid.getFluid(1000), GT_Values.NF, Materials.PotassiumNitrade.getDust(1), 100, 30);
 
             	// Chrome Trioxide
-            	GT_Values.RA.addChemicalRecipeForBasicMachineOnly(Materials.Chrome.getDust(1), GT_Utility.getIntegratedCircuit(1), Materials.Oxygen.getGas(3000), GT_Values.NF, Materials.ChromiumTrioxide.getDust(1), GT_Values.NI, 300, 60);
+                 GT_Values.RA.addChemicalRecipe(Materials.Chrome.getDust(1), GT_Utility.getIntegratedCircuit(1), Materials.Oxygen.getGas(3000), GT_Values.NF, Materials.ChromiumTrioxide.getDust(1), 300, 60);
 
-            	//Potassium Dichromate
+                  //Potassium Dichromate
             	GT_Values.RA.addChemicalRecipe(Materials.PotassiumNitrade.getDust(2), Materials.ChromiumTrioxide.getDust(2), GT_Values.NF, GT_Values.NF, Materials.Potassiumdichromate.getDust(1), 100, 480);
 
             	//Nitrochlorobenzene
