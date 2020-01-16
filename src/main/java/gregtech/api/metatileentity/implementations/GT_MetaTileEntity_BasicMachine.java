@@ -812,6 +812,48 @@ public abstract class GT_MetaTileEntity_BasicMachine extends GT_MetaTileEntity_B
                 DimensionManager.getProvider(dimId).getClass().getName().contains("SpaceStation") ||
                 DimensionManager.getProvider(dimId).getClass().getName().contains("Moon");
     }
+    public static boolean isValidForPlanetTier1(GT_Recipe tRecipe, int dimId){
+        return
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Moon");
+    }
+    public static boolean isValidForPlanetTier2(GT_Recipe tRecipe, int dimId){
+        return
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Mars") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Deimos") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Phobos");
+    }
+    public static boolean isValidForPlanetTier3(GT_Recipe tRecipe, int dimId){
+        return
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Ceres") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Europa") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Ganymed") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Callisto");
+    }
+    public static boolean isValidForPlanetTier4(GT_Recipe tRecipe, int dimId){
+        return
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Io") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Venus") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Mercury");
+    }
+    public static boolean isValidForPlanetTier5(GT_Recipe tRecipe, int dimId){
+        return
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Enceladus") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Titan") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Oberon") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Miranda");
+    }
+    public static boolean isValidForPlanetTier6(GT_Recipe tRecipe, int dimId){
+        return
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Triton") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Proteus");
+    }
+    public static boolean isValidForPlanetTier7(GT_Recipe tRecipe, int dimId){
+        return
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Pluto") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("MakeMake") ||
+                DimensionManager.getProvider(dimId).getClass().getName().contains("Haumea");
+    }
+
 
 
     /**
@@ -833,6 +875,16 @@ public abstract class GT_MetaTileEntity_BasicMachine extends GT_MetaTileEntity_B
             mOutputBlocked++;
             return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
         }
+        if (GT_Mod.gregtechproxy.mPlanetTier1 && (tRecipe.mSpecialValue == -400 || tRecipe.mSpecialValue == -300) &&
+                !isValidForPlanetTier1(tRecipe,getBaseMetaTileEntity().getWorld().provider.dimensionId))
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        if (tRecipe.mCanBeBuffered) mLastRecipe = tRecipe;
+        if (!canOutput(tRecipe)) {
+            mOutputBlocked++;
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        }
+
+
         if (tRecipe.mSpecialValue == -200 && (mCleanroom == null || mCleanroom.mEfficiency == 0))
             return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
         if (!tRecipe.isRecipeInputEqual(true, new FluidStack[]{getFillableStack()}, getAllInputs()))

@@ -1076,11 +1076,39 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
         GT_Recipe.GT_Recipe_Map.sPrinterRecipes.addRecipe(true, new ItemStack[]{aInput}, new ItemStack[]{aOutput}, aSpecialSlot, null, new FluidStack[]{aFluid}, null, aDuration, aEUt, 0);
         return true;
     }
-    
+    //TODO ===========================================================================================================================================================
+    public boolean addSpaceResearchRecipe(ItemStack[] aInputs, FluidStack aFluidInput, ItemStack aOutput1, int aDuration, int aEUt) {
+
+        return addSpaceResearchRecipe(aInputs, aFluidInput, aOutput1, aDuration, aEUt);
+    }
+
+    public boolean addSpaceResearchTier1Recipe(ItemStack[] aInputs, FluidStack aFluidInput, ItemStack aOutput1, int aDuration, int aEUt, boolean aPlanetTier1) {
+        if (areItemsAndFluidsBothNull(aInputs, new FluidStack[]{aFluidInput})) {
+            return false;
+        }
+
+        if ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aOutput1, aDuration)) <= 0) {
+            return false;
+        }
+
+        if (!GT_Mod.gregtechproxy.mPlanetTier1){
+            aPlanetTier1 = true;
+        }
+
+        if (!GT_Utility.isStackValid(aOutput1)) {
+            return false;
+        }
+
+        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, aInputs, new ItemStack[]{aOutput1}, null, new FluidStack[]{aFluidInput}, null, aDuration, aEUt, aPlanetTier1 ? -200 : 0);
+        return true;
+    }
+
+
+
+    //TODO ========================================================================================================================================================= aPlanetTier1
     public boolean addAutoclaveRecipe(ItemStack aInput, FluidStack aFluid, ItemStack aOutput, int aChance, int aDuration, int aEUt) {
         return addAutoclaveRecipe(aInput, aFluid, aOutput, aChance, aDuration, aEUt, false);
     }
-
     public boolean addAutoclaveSpaceRecipe(ItemStack aInput, FluidStack aFluid, ItemStack aOutput, int aChance, int aDuration, int aEUt, boolean aCleanroom) {
         if ((aInput == null) || (aFluid == null) || (aOutput == null)) {
             return false;
