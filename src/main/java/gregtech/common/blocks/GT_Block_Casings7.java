@@ -39,7 +39,7 @@ public class GT_Block_Casings7
     	GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".3.name", "Highspeed Intermix Chamber Casing");
     	GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".4.name", "Superconductor Dyson Ring Casing");
     	GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".5.name", "Superconductor Fusion Coil Block MK II");
-    	
+
     	GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".10.name", "UEV Machine Casing");//adding
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".11.name", "UIV Machine Casing");//adding
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".12.name", "UMV Machine Casing");//adding
@@ -53,6 +53,7 @@ public class GT_Block_Casings7
         ItemList.Casing_Internix_Chamber_Highspeed.set(new ItemStack(this, 1, 3));
         ItemList.Casing_Dyson_Superconductor_Ring.set(new ItemStack(this, 1, 4));
         ItemList.Casing_Fusion_Coil3.set(new ItemStack(this, 1, 5));
+
         
         ItemList.Casing_UEV.set(new ItemStack(this,1,10));
         ItemList.Casing_UIV.set(new ItemStack(this,1,11));
