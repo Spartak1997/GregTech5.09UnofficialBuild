@@ -184,7 +184,7 @@ public class GT_Values {
     public static boolean allow_broken_recipemap = false;
 
     /**
-     * This will set the percentage how much ReinforcedGlass is Allowed in Cleanroom Walls.
+     * This will set the percentage how much Glass Casing is Allowed in Cleanroom Walls.
      */
-    public static float cleanroomGlass = 5.0f;
+    public static float cleanroomGlass = 35.0f;
 }

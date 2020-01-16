@@ -263,7 +263,7 @@ public class GT_Mod implements IGT_Mod {
         GT_Values.oreveinPlacerOres = tMainConfig.get(aTextGeneral, "oreveinPlacerOres", true).getBoolean(true);
         GT_Values.oreveinPlacerOresMultiplier = tMainConfig.get(aTextGeneral, "oreveinPlacerOresMultiplier",2).getInt(2);
         GT_Values.ticksBetweenSounds = tMainConfig.get("machines", "TicksBetweenSounds", 30).getInt(30);
-        GT_Values.cleanroomGlass= (float) tMainConfig.get("machines","ReinforcedGlassPercentageForCleanroom",5D).getDouble(5D);
+        GT_Values.cleanroomGlass= (float) tMainConfig.get("machines","ReinforcedGlassPercentageForCleanroom",35D).getDouble(35D);
         GregTech_API.TICKS_FOR_LAG_AVERAGING = tMainConfig.get(aTextGeneral, "TicksForLagAveragingWithScanner", 25).getInt(25);
         GregTech_API.MILLISECOND_THRESHOLD_UNTIL_LAG_WARNING = tMainConfig.get(aTextGeneral, "MillisecondsPassedInGTTileEntityUntilLagWarning", 100).getInt(100);
         if (tMainConfig.get(aTextGeneral, "disable_STDOUT", false).getBoolean(false)) {
