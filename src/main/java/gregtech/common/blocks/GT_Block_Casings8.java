@@ -24,11 +24,13 @@ public class GT_Block_Casings8
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".1.name", "PTFE Pipe Casing");
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".2.name", "Pyrolyse Oven Casing");
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".3.name", "Glass Casing");
+        //GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".4.name", "Plastic Casing");
 
         ItemList.Casing_Chemically_Inert.set(new ItemStack(this, 1, 0));
         ItemList.Casing_Pipe_Polytetrafluoroethylene.set(new ItemStack(this, 1, 1));
         ItemList.Casing_Pyrolyse.set(new ItemStack(this, 1, 2));
         ItemList.GlassCasing1.set(new ItemStack(this, 1, 3));
+        //ItemList.PlasticCasing.set(new ItemStack(this, 1, 4));
 
         setLightOpacity(0);
     }
@@ -50,6 +52,9 @@ public class GT_Block_Casings8
             return Textures.BlockIcons.MACHINE_8V_SIDE.getIcon();
         case 3:
             return Textures.BlockIcons.BLOCK_PLASCRETE_GLASS.getIcon();
+        case 4:
+            //Do not overwrite!
+            return Textures.BlockIcons.BLOCK_PLASCRETE.getIcon();
         }
         return Textures.BlockIcons.MACHINE_CASING_ROBUST_TUNGSTENSTEEL.getIcon();
     }
