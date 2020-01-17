@@ -1099,7 +1099,7 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
             return false;
         }
 
-        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, aInputs, new ItemStack[]{aOutput1}, null, new FluidStack[]{aFluidInput}, null, aDuration, aEUt, aPlanetTier1 ? -200 : 0);
+        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, aInputs, new ItemStack[]{aOutput1}, null, new FluidStack[]{aFluidInput}, null, aDuration, aEUt, aPlanetTier1 ? -400 : 0);
         return true;
     }
 
