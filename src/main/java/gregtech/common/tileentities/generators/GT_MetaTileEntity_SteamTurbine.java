@@ -56,7 +56,7 @@ public class GT_MetaTileEntity_SteamTurbine extends GT_MetaTileEntity_BasicGener
     }
 
     public int getCapacity() {
-        return 24000 * this.mTier;
+        return 12000 * (this.mTier+1);
     }
 
     public void onConfigLoad() {
