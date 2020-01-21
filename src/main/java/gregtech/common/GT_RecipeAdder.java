@@ -960,6 +960,15 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
         GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes.addRecipe(true, new ItemStack[]{aMold}, new ItemStack[]{aOutput}, null, new FluidStack[]{aInput}, null, aDuration, aEUt, 0);
         return true;
     }
+    public boolean addFreezerSolidifierRecipe(ItemStack aMold, FluidStack aInput1,FluidStack aInput2, ItemStack aOutput, int aDuration, int aEUt) {
+        if ((aMold == null) || (aInput1 == null) || (aInput1 == null)|| (aOutput == null)) {
+        }
+        if ((aDuration = GregTech_API.sRecipeFile.get("freezersolidifier", aOutput, aDuration)) <= 0) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sFreezerSolidficationRecipes.addRecipe(true, new ItemStack[]{aMold}, new ItemStack[]{aOutput}, null, new FluidStack[]{aInput1,aInput2}, null, aDuration, aEUt, 0);
+        return true;
+    }
     
 	@Override
 	public boolean addFluidSmelterRecipe(ItemStack aInput, ItemStack aRemains, FluidStack aOutput, int aChance, int aDuration, int aEUt) {

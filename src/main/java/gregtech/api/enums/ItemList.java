@@ -780,7 +780,7 @@ public enum ItemList implements IItemContainer {
 	Machine_DigitalTransformer_EV, Machine_DigitalTransformer_IV, Machine_DigitalTransformer_LuV, Machine_DigitalTransformer_ZPM, Machine_DigitalTransformer_UV, Machine_DigitalTransformer_UHV, Machine_DigitalTransformer_UEV,
 	Machine_LV_WireAssembler, Machine_MV_WireAssembler, Machine_HV_WireAssembler, Machine_EV_WireAssembler, Machine_IV_WireAssembler, Machine_LuV_WireAssembler, Machine_ZPM_WireAssembler, Machine_UV_WireAssembler, Machine_UHV_WireAssembler, Machine_UEV_WireAssembler, Machine_UIV_WireAssembler, Machine_UMV_WireAssembler, Machine_UXV_WireAssembler, Machine_OPV_WireAssembler, 
     
-	AdsorptionFilter, AdsorptionFilterCasing, AdsorptionFilterDirty, Machine_Multi_AirFilter, Casing_AirFilter, Casing_AirFilter_Vent,Casing_HSLA,
+	AdsorptionFilter, AdsorptionFilterCasing, AdsorptionFilterDirty, Machine_Multi_AirFilter, Casing_AirFilter, Casing_AirFilter_Vent, Casing_HSLA, Casing_Frost_Pipe,
 	VOLUMETRIC_FLASK;
     
 

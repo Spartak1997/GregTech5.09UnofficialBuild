@@ -561,6 +561,7 @@ public class GT_Recipe implements Comparable<GT_Recipe> {
         public static final GT_Recipe_Map sFluidHeaterRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(10), "gt.recipe.fluidheater", "Fluid Heater", null, RES_PATH_GUI + "basicmachines/FluidHeater", 1, 0, 1, 1, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sDistilleryRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(400), "gt.recipe.distillery", "Distillery", null, RES_PATH_GUI + "basicmachines/Distillery", 1, 1, 1, 1, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sFermentingRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(50), "gt.recipe.fermenter", "Fermenter", null, RES_PATH_GUI + "basicmachines/Fermenter", 0, 0, 0, 1, 1, E, 1, E, true, true);
+        public static final GT_Recipe_Map sFreezerSolidficationRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(35000), "gt.recipe.freezersolidifier", "Freezer Solidifier", null, RES_PATH_GUI + "basicmachines/FluidSolidifier", 1, 1, 1, 2, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sFluidSolidficationRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(35000), "gt.recipe.fluidsolidifier", "Fluid Solidifier", null, RES_PATH_GUI + "basicmachines/FluidSolidifier", 1, 1, 1, 1, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sFluidExtractionRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(15000), "gt.recipe.fluidextractor", "Fluid Extractor", null, RES_PATH_GUI + "basicmachines/FluidExtractor", 1, 1, 1, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sBoxinatorRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(2500), "gt.recipe.packager", "Packager", null, RES_PATH_GUI + "basicmachines/Packager", 2, 1, 2, 0, 1, E, 1, E, true, true);
@@ -569,11 +570,8 @@ public class GT_Recipe implements Comparable<GT_Recipe> {
         public static final GT_Recipe_Map sCentrifugeRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1200), "gt.recipe.centrifuge", "Centrifuge", null, RES_PATH_GUI + "basicmachines/Centrifuge", 2, 6, 0, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sElectrolyzerRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(300), "gt.recipe.electrolyzer", "Electrolyzer", null, RES_PATH_GUI + "basicmachines/Electrolyzer", 2, 6, 0, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sBlastRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(800), "gt.recipe.blastfurnace", "Blast Furnace", null, RES_PATH_GUI + "basicmachines/Default", 2, 2, 1, 0, 1, "Heat Capacity: ", 1, " K", false, true);
-
         public static final GT_Recipe_Map sBlastSmelterRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(800), "gt.recipe.blastsmelter", "Blast Smelter", null, RES_PATH_GUI + "basicmachines/Default", 9, 1, 1, 0, 1, "Heat Capacity: ", 1, " K", false, true);
-
-
-        public static final GT_Recipe_Map sPrimitiveBlastRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(200), "gt.recipe.primitiveblastfurnace", "Primitive Blast Furnace", null, RES_PATH_GUI + "basicmachines/Default", 3, 3, 1, 0, 1, E, 1, E, false, true);
+         public static final GT_Recipe_Map sPrimitiveBlastRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(200), "gt.recipe.primitiveblastfurnace", "Primitive Blast Furnace", null, RES_PATH_GUI + "basicmachines/Default", 3, 3, 1, 0, 1, E, 1, E, false, true);
         public static final GT_Recipe_Map sImplosionRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(900), "gt.recipe.implosioncompressor", "Implosion Compressor", null, RES_PATH_GUI + "basicmachines/Default", 2, 2, 2, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sVacuumRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(305), "gt.recipe.vacuumfreezer", "Vacuum Freezer", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 1, 0, 1, E, 1, E, false, true);
         public static final GT_Recipe_Map sSuperCoolantRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(100), "gt.recipe.supercoolantfreezer", "Super Cooling Freezer", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 1, 0, 1, E, 1, E, true, true);
