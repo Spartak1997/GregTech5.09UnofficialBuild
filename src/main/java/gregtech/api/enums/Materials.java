@@ -600,7 +600,7 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
     public static Materials Uvarovite = new Materials(842, TextureSet.SET_DIAMOND, 		1.0F, 0, 2, 1, 180, 255, 180, 0, "Uvarovite", "Uvarovite", 0, 0, -1, 0, false, false, 3, 1, 1, Dyes.dyeGreen, 1, Arrays.asList(new MaterialStack(Calcium, 3), new MaterialStack(Chrome, 2), new MaterialStack(Silicon, 3), new MaterialStack(Oxygen, 12)));
     public static Materials VanadiumGallium = new Materials(357, TextureSet.SET_SHINY, 	1.0F, 0, 2, 1|2, 128, 128, 140, 0, "VanadiumGallium", "Vanadium-Gallium", 0, 0, 4500, 4500, true, false, 1, 1, 1, Dyes.dyeGray, 2, Arrays.asList(new MaterialStack(Vanadium, 3), new MaterialStack(Gallium, 1)));
     public static Materials Wood = new Materials(809, TextureSet.SET_WOOD, 				2.0F, 16, 0, 1|2|64|128, 100, 50, 0, 0, "Wood", "Wood", 0, 0, -1, 0, false, false, 1, 1, 1, Dyes.dyeBrown, 0, Arrays.asList(new MaterialStack(Carbon, 1), new MaterialStack(Oxygen, 1), new MaterialStack(Hydrogen, 1)), Arrays.asList(new TC_AspectStack(TC_Aspects.ARBOR, 2)));
-    public static Materials WroughtIron = new Materials(304, TextureSet.SET_METALLIC, 	6.0F, 384, 2, 1|2|64|128, 200, 180, 180, 0, "WroughtIron", "Wrought Iron", 0, 0, 1811, 0, false, false, 3, 1, 1, Dyes.dyeLightGray, 2, Arrays.asList(new MaterialStack(Iron, 1)));
+    public static Materials WroughtIron = new Materials(304, TextureSet.SET_METALLIC, 	6.0F, 384, 2, 1|2|64|128|512, 200, 180, 180, 0, "WroughtIron", "Wrought Iron", 0, 0, 1811, 0, false, false, 3, 1, 1, Dyes.dyeLightGray, 2, Arrays.asList(new MaterialStack(Iron, 1)));
     public static Materials Wulfenite = new Materials(882, TextureSet.SET_DULL, 		1.0F, 0, 3, 1 |8 , 255, 128, 0, 0, "Wulfenite", "Wulfenite", 0, 0, -1, 0, false, false, 1, 1, 1, Dyes.dyeOrange, 2, Arrays.asList(new MaterialStack(Lead, 1), new MaterialStack(Molybdenum, 1), new MaterialStack(Oxygen, 4)));
     public static Materials YellowLimonite = new Materials(931, TextureSet.SET_METALLIC,1.0F, 0, 2, 1 |8 , 200, 200, 0, 0, "YellowLimonite", "Yellow Limonite", 0, 0, -1, 0, false, false, 1, 1, 1, Dyes.dyeYellow, 2, Arrays.asList(new MaterialStack(Iron, 1), new MaterialStack(Hydrogen, 1), new MaterialStack(Oxygen, 2))); // FeO(OH) + a bit Ni and Co
     public static Materials YttriumBariumCuprate  = new Materials(358, TextureSet.SET_METALLIC, 1.0F, 0, 2, 1|2, 80, 64, 70, 0, "YttriumBariumCuprate", "Yttrium Barium Cuprate", 0, 0, 4500, 4500, true, false, 1, 1, 1, Dyes.dyeGray, 0, Arrays.asList(new MaterialStack(Yttrium, 1), new MaterialStack(Barium, 2), new MaterialStack(Copper, 3), new MaterialStack(Oxygen, 7)));
@@ -912,10 +912,10 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
     public Element mElement = null;
     public Materials mDirectSmelting = this, mOreReplacement = this, mMacerateInto = this, mSmeltInto = this, mArcSmeltInto = this, mHandleMaterial = this;
     public byte mToolQuality = 0;
-    public boolean mHasParentMod = true, mHasPlasma = false, mHasGas = false, mCustomOre = false;
-    public Fluid mSolid = null, mFluid = null, mGas = null, mPlasma = null;
+    public boolean mHasParentMod = true, mHasPlasma = false, mHasGas = false, mCustomOre = false, mHasMoltenHot = false;
+    public Fluid mSolid = null, mFluid = null, mGas = null, mPlasma = null, mMoltenHot = null;
 
-    private boolean hasCorrespondingFluid = false, hasCorrespondingGas = false, canBeCracked = false;
+    private boolean hasCorrespondingFluid = false, hasCorrespondingGas = false, canBeCracked = false, hasCorrespondingMoltenHot = false;
     private Fluid[] hydroCrackedFluids = new Fluid[3], steamCrackedFluids = new Fluid[3];
 
     /**
@@ -1493,8 +1493,8 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
         initMaterialProperties(); //No more material addition or manipulation should be done past this point!
         MATERIALS_ARRAY = MATERIALS_MAP.values().toArray(new Materials[MATERIALS_MAP.size()]); //Generate standard object array. This is a lot faster to loop over.
         VALUES = Arrays.asList(MATERIALS_ARRAY);
-        if(!Loader.isModLoaded("spartakcore"))
-            if (!GT_Mod.gregtechproxy.mEnableAllComponents) OrePrefixes.initMaterialComponents();
+        /*if(!Loader.isModLoaded("spartakcore"))
+            if (!GT_Mod.gregtechproxy.mEnableAllComponents) OrePrefixes.initMaterialComponents();*/
         for (Materials aMaterial : MATERIALS_ARRAY) {
             if (aMaterial.mMetaItemSubID >= 0) {
                 if (aMaterial.mMetaItemSubID < 1000) {
@@ -1579,6 +1579,7 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
                 }
                 aMaterial.mHasParentMod = GregTech_API.sMaterialProperties.get(aConfigPath, "HasParentMod", aMaterial.mHasParentMod);
                 if (aMaterial.mHasPlasma = GregTech_API.sMaterialProperties.get(aConfigPath, "AddPlasma", aMaterial.mHasPlasma)) GT_Mod.gregtechproxy.addAutogeneratedPlasmaFluid(aMaterial);
+                if (aMaterial.mHasMoltenHot = GregTech_API.sMaterialProperties.get(aConfigPath, "AddMoltenHot", aMaterial.mHasMoltenHot)) GT_Mod.gregtechproxy.addAutogeneratedMoltenHot(aMaterial);
                 if (aMaterial.mHasGas = GregTech_API.sMaterialProperties.get(aConfigPath, "AddGas", aMaterial.mHasGas)) GT_Mod.gregtechproxy.addFluid(aMaterial.mName.toLowerCase(), aMaterial.mDefaultLocalName, aMaterial, 2, aMaterial.mGasTemp);
                 aMaterial.mEnchantmentToolsLevel = (byte) GregTech_API.sMaterialProperties.get(aConfigPath, "EnchantmentLevel", aMaterial.mEnchantmentToolsLevel);
                 String aEnchantmentName = GregTech_API.sMaterialProperties.get(aConfigPath, "Enchantment", aMaterial.mEnchantmentTools != null ? aMaterial.mEnchantmentTools.getName() : "");
@@ -2111,6 +2112,12 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
         return new GT_FluidStack(mStandardMoltenFluid, (int) aAmount);
     }
 
+    public FluidStack getMoltenHot(long aAmount) {
+        if (mMoltenHot == null) return null;
+        return new GT_FluidStack(mMoltenHot, (int) aAmount);
+    }
+
+
     @Override
     public short[] getRGBA() {
         return mRGBa;
@@ -2148,12 +2155,18 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
 	public boolean hasCorrespondingFluid() {
 		return hasCorrespondingFluid;
 	}
-
-
 	public Materials setHasCorrespondingFluid(boolean hasCorrespondingFluid) {
 		this.hasCorrespondingFluid = hasCorrespondingFluid;
 		return this;
 	}
+
+    public boolean hasCorrespondingMoltenHot() {
+        return hasCorrespondingMoltenHot;
+    }
+    public Materials setHasCorrespondingMoltenHot(boolean hasCorrespondingMoltenHot) {
+        this.hasCorrespondingMoltenHot = hasCorrespondingMoltenHot;
+        return this;
+    }
 
 	public boolean hasCorrespondingGas() {
 		return hasCorrespondingGas;

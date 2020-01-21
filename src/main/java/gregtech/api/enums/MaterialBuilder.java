@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MaterialBuilder {
-	public static final int DIESEL = 0, GAS = 1, THERMAL = 2, SEMIFLUID = 3, PLASMA = 4, MAGIC = 5;
+	public static final int DIESEL = 0, GAS = 1, THERMAL = 2, SEMIFLUID = 3, PLASMA = 4, MAGIC = 5, MOLTENHOT = 6;
 
 	private int metaItemSubID;
 	private TextureSet iconSet;
@@ -33,6 +33,7 @@ public class MaterialBuilder {
 	private List<TC_Aspects.TC_AspectStack> aspects = new ArrayList<TC_Aspects.TC_AspectStack>();
 	private boolean hasCorrespondingFluid = false;
 	private boolean hasCorrespondingGas = false;
+    private boolean hasCorrespondingMoltenHot = false;
 	private boolean canBeCracked = false;
 	private boolean canBeSteamCracked = false;
 	private int liquidTemperature = 300;
@@ -50,7 +51,8 @@ public class MaterialBuilder {
 				blastFurnaceRequired, transparent, oreValue, densityMultiplier, densityDivider, color, extraData, materialList, aspects)
 				.setHasCorrespondingFluid(hasCorrespondingFluid)
 				.setHasCorrespondingGas(hasCorrespondingGas)
-				.setCanBeCracked(canBeCracked);
+				.setCanBeCracked(canBeCracked)
+				.setHasCorrespondingMoltenHot(hasCorrespondingMoltenHot);
 	}
 
 	public MaterialBuilder setName(String name){
@@ -100,6 +102,11 @@ public class MaterialBuilder {
 
 	public MaterialBuilder addGearItems(){
 		types = types | 128;
+		return this;
+	}
+
+	public MaterialBuilder addMoltenHot(){
+        this.hasCorrespondingMoltenHot = true;
 		return this;
 	}
 
