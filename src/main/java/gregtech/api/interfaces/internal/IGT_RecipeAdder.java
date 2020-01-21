@@ -702,7 +702,7 @@ public interface IGT_RecipeAdder {
     
     public boolean addTinyWormHoleRecipe(ItemStack aInput, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput1, ItemStack aOutput2, ItemStack aOutput3, ItemStack aOutput4, ItemStack aOutput5, ItemStack aOutput6, int[] aChances, int aDuration, int aEUt);
     
-    public boolean addFarmRecipe(ItemStack[] aInputs, FluidStack[] aFluidInputs, FluidStack aFluidOutput, ItemStack aOutput1, ItemStack aOutput2, ItemStack aOutput3, ItemStack aOutput4, ItemStack aOutput5, ItemStack aOutput6, int[] aChances, int aDuration, int aEUt);
+    public boolean addFarmRecipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack[] aOutputs, int[] aChances, int aDuration, int aEUt);
 
     //TODO SPACE RESEARCH STATION
 
