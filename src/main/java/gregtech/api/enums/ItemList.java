@@ -661,7 +661,7 @@ public enum ItemList implements IItemContainer {
     MNqCell_1, MNqCell_2, MNqCell_4,
     FusionComputer_LuV, FusionComputer_ZPMV, FusionComputer_UV, FusionComputer_UHV, FusionComputer_UEV,
     Casing_Fusion_Coil, Casing_Fusion, Casing_Fusion2, Casing_Fusion3, Casing_Fusion4, Casing_Fusion_Coil2,
-    Casing_RobustNeutronium, Casing_Internix_Chamber_Highspeed, Casing_Dyson_Superconductor_Ring, Casing_Fusion_Coil3, Casing_Pyrolyse, GlassCasing1,
+    Casing_RobustNeutronium, Casing_Internix_Chamber_Highspeed, Casing_Dyson_Superconductor_Ring, Casing_Fusion_Coil3, Casing_Pyrolyse, Cleanroom_Glass, Solid_Frame_Box,
     Generator_Plasma_IV, Generator_Plasma_LuV, Generator_Plasma_ZPMV,
     MagicEnergyConverter_LV, MagicEnergyConverter_MV, MagicEnergyConverter_HV,
     MagicEnergyAbsorber_LV, MagicEnergyAbsorber_MV, MagicEnergyAbsorber_HV, MagicEnergyAbsorber_EV,
@@ -780,7 +780,7 @@ public enum ItemList implements IItemContainer {
 	Machine_DigitalTransformer_EV, Machine_DigitalTransformer_IV, Machine_DigitalTransformer_LuV, Machine_DigitalTransformer_ZPM, Machine_DigitalTransformer_UV, Machine_DigitalTransformer_UHV, Machine_DigitalTransformer_UEV,
 	Machine_LV_WireAssembler, Machine_MV_WireAssembler, Machine_HV_WireAssembler, Machine_EV_WireAssembler, Machine_IV_WireAssembler, Machine_LuV_WireAssembler, Machine_ZPM_WireAssembler, Machine_UV_WireAssembler, Machine_UHV_WireAssembler, Machine_UEV_WireAssembler, Machine_UIV_WireAssembler, Machine_UMV_WireAssembler, Machine_UXV_WireAssembler, Machine_OPV_WireAssembler, 
     
-	AdsorptionFilter, AdsorptionFilterCasing, AdsorptionFilterDirty, Machine_Multi_AirFilter, Casing_AirFilter, Casing_AirFilter_Vent,
+	AdsorptionFilter, AdsorptionFilterCasing, AdsorptionFilterDirty, Machine_Multi_AirFilter, Casing_AirFilter, Casing_AirFilter_Vent,Casing_HSLA,
 	VOLUMETRIC_FLASK;
     
 

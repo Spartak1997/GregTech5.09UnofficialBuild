@@ -23,21 +23,15 @@ public class GT_Block_Casings8
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".0.name", "Chemically Inert Machine Casing");
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".1.name", "PTFE Pipe Casing");
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".2.name", "Pyrolyse Oven Casing");
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".3.name", "Glass Casing");
+        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".3.name", "HSLA Machine Casing");
         //GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".4.name", "Plastic Casing");
 
         ItemList.Casing_Chemically_Inert.set(new ItemStack(this, 1, 0));
         ItemList.Casing_Pipe_Polytetrafluoroethylene.set(new ItemStack(this, 1, 1));
         ItemList.Casing_Pyrolyse.set(new ItemStack(this, 1, 2));
-        ItemList.GlassCasing1.set(new ItemStack(this, 1, 3));
+        ItemList.Casing_HSLA.set(new ItemStack(this, 1, 3));
         //ItemList.PlasticCasing.set(new ItemStack(this, 1, 4));
 
-        setLightOpacity(0);
-    }
-
-    @Override
-    public boolean renderAsNormalBlock() {
-        return false;
     }
 
     @Override
@@ -51,45 +45,11 @@ public class GT_Block_Casings8
         case 2:
             return Textures.BlockIcons.MACHINE_8V_SIDE.getIcon();
         case 3:
-            return Textures.BlockIcons.BLOCK_PLASCRETE_GLASS.getIcon();
+                return Textures.BlockIcons.MACHINE_CASING_HSLA.getIcon();
         case 4:
             //Do not overwrite!
             return Textures.BlockIcons.BLOCK_PLASCRETE.getIcon();
         }
         return Textures.BlockIcons.MACHINE_CASING_ROBUST_TUNGSTENSTEEL.getIcon();
     }
-
-    @Override
-    public boolean isOpaqueCube() {
-        return false;
-    }
-
-    @SideOnly(Side.CLIENT)
-    public boolean shouldSideBeRendered(IBlockAccess aWorld, int aX, int aY, int aZ, int aSide)
-    {
-        Block block = aWorld.getBlock(aX, aY, aZ);
-
-        if (this == Blocks.glass || this instanceof GT_Block_Casings8)
-        {
-            if (aWorld.getBlockMetadata(aX, aY, aZ) != aWorld.getBlockMetadata(aX - Facing.offsetsXForSide[aSide], aY - Facing.offsetsYForSide[aSide], aZ - Facing.offsetsZForSide[aSide]))
-            {
-                return true;
-            }
-            if(aWorld.getBlockMetadata(aX, aY, aZ)==0)
-                return true;
-
-            if (block == this)
-            {
-                return false;
-            }
-        }
-
-        return false;
-    }
-
-    @Override
-    public int getRenderBlockPass() {
-        return 0;
-    }
-
 }

@@ -140,7 +140,7 @@ public class GT_MetaTileEntity_Cleanroom extends GT_MetaTileEntity_MultiBlockBas
 							}
 						} else if (tBlock == GregTech_API.sBlockReinforced && tMeta == 2) {
 							mPlascreteCount++;
-						} else if (tBlock != null && (tBlock == GregTech_API.sBlockCasings8 && tMeta == 3)){
+						} else if (tBlock != null && (tBlock == GregTech_API.sBlockCasings9 && tMeta == 0)){
 							++mGlassCount;
 						} else {
 							IGregTechTileEntity tTileEntity = aBaseMetaTileEntity.getIGregTechTileEntityOffset(dX, dY, dZ);
