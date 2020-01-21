@@ -223,16 +223,33 @@ public class GT_NEI_DefaultHandler
 			if (tSpecial == -100 && GT_Mod.gregtechproxy.mLowGravProcessing) {
 				drawText(10, 123, trans("159","Needs Low Gravity"), -16777216);
 			} else if (tSpecial == -200 && GT_Mod.gregtechproxy.mEnableCleanroom) {
-				drawText(10, 123, trans("160","Needs Cleanroom"), -16777216);
+				drawText(10, 123, trans("160","Needs Cleanroom"), 0x602487);
             } else if (tSpecial == -201) {
-                drawText(10, 123, trans("206","Scan for Assembly Line"), -16777216);
+                drawText(10, 123, trans("206","Scan for Assembly Line"), 0x602487);
             } else if (tSpecial == -300 && GT_Mod.gregtechproxy.mEnableCleanroom) {
-                drawText(10, 123, trans("160","Needs Cleanroom & LowGrav"), -16777216);
+                drawText(10, 123, trans("160","Needs Cleanroom & LowGrav"), 0x602487);
             } else if (tSpecial == -400) {
-                drawText(10, 123, trans("216","Deprecated Recipe"), -16777216);
+                drawText(10, 123, trans("216","Deprecated Recipe"), 0x602487);
+            } else if (tSpecial == -500 && GT_Mod.gregtechproxy.mPlanetTier1){
+                drawText(10, 123, trans("219","Needs planets and SRS: Tier 1"), 0x602487);
+            }   else if (tSpecial == -600 && GT_Mod.gregtechproxy.mPlanetTier2){
+                drawText(10, 123, trans("220","Needs planets and SRS: Tier 2"), 0x602487);
+            }   else if (tSpecial == -700 && GT_Mod.gregtechproxy.mPlanetTier3){
+                drawText(10, 123, trans("221","Needs planets and SRS: Tier 3"), 0x602487);
+            }   else if (tSpecial == -800 && GT_Mod.gregtechproxy.mPlanetTier4){
+                drawText(10, 123, trans("222","Needs planets and SRS: Tier 4"), 0x602487);
+            }   else if (tSpecial == -900 && GT_Mod.gregtechproxy.mPlanetTier5){
+                drawText(10, 123, trans("223","Needs planets and SRS: Tier 5"), 0x602487);
+            }   else if (tSpecial == -1000 && GT_Mod.gregtechproxy.mPlanetTier6){
+                drawText(10, 123, trans("224","Needs planets and SRS: Tier 6"), 0x602487);
+            }   else if (tSpecial == -1100 && GT_Mod.gregtechproxy.mPlanetTier7){
+                drawText(10, 123, trans("225","Needs planets and SRS: Tier 7"), 0x602487);
             } else if ((GT_Utility.isStringValid(this.mRecipeMap.mNEISpecialValuePre)) || (GT_Utility.isStringValid(this.mRecipeMap.mNEISpecialValuePost))) {
 				drawText(10, 123, this.mRecipeMap.mNEISpecialValuePre + tSpecial * this.mRecipeMap.mNEISpecialValueMultiplier + this.mRecipeMap.mNEISpecialValuePost, -16777216);
 			}
+
+
+
 		} else {
 			int i = 0;
 			for (String descLine : recipeDesc) {

@@ -244,6 +244,12 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
         return true;
     }
 
+
+    public boolean addBlastSmelterRecipe(ItemStack[] aInputs, ItemStack aOutput, FluidStack aFluidInput, FluidStack aFluidOutput, int aDuration, int aEUt, int aLevel) {
+        GT_Recipe.GT_Recipe_Map.sBlastSmelterRecipes.addRecipe(false, aInputs, new ItemStack[] {aOutput}, null , new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, aLevel);
+        return true;
+    }
+
     public boolean addPrimitiveBlastRecipe(ItemStack aInput1, ItemStack aInput2, int aCoalAmount, ItemStack aOutput1, ItemStack aOutput2, int aDuration) {
         if ((aInput1 == null && aInput2 == null) || (aOutput1 == null && aOutput2 == null)) {
             return false;
@@ -1076,36 +1082,135 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
         GT_Recipe.GT_Recipe_Map.sPrinterRecipes.addRecipe(true, new ItemStack[]{aInput}, new ItemStack[]{aOutput}, aSpecialSlot, null, new FluidStack[]{aFluid}, null, aDuration, aEUt, 0);
         return true;
     }
-    //TODO ===========================================================================================================================================================
-    public boolean addSpaceResearchRecipe(ItemStack[] aInputs, FluidStack aFluidInput, ItemStack aOutput1, int aDuration, int aEUt) {
-
-        return addSpaceResearchRecipe(aInputs, aFluidInput, aOutput1, aDuration, aEUt);
+    //TODO SPACE RESEARCH STATION
+    public boolean addSpaceResearch0Recipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, ItemStack aInput4, ItemStack aInput5, ItemStack aInput6, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput, int aDuration, int aEUt) {
+        if (((aInput1 == null) && (aFluidInput == null)) || ((aOutput == null) && (aFluidOutput == null))) {
+            return false;
+        }
+        if ((aOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aOutput, aDuration)) <= 0)) {
+            return false;
+        }
+        if ((aFluidOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aFluidOutput.getFluid().getName(), aDuration)) <= 0)) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, new ItemStack[]{aInput1, aInput2, aInput3, aInput4, aInput5, aInput6}, new ItemStack[]{aOutput}, null, null, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, 0);
+        return true;
     }
-
-    public boolean addSpaceResearchTier1Recipe(ItemStack[] aInputs, FluidStack aFluidInput, ItemStack aOutput1, int aDuration, int aEUt, boolean aPlanetTier1) {
-        if (areItemsAndFluidsBothNull(aInputs, new FluidStack[]{aFluidInput})) {
+    public boolean addSpaceResearch1Recipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, ItemStack aInput4, ItemStack aInput5, ItemStack aInput6, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput, int aDuration, int aEUt, boolean aPlanetTier1) {
+        if (((aInput1 == null) && (aFluidInput == null)) || ((aOutput == null) && (aFluidOutput == null))) {
             return false;
         }
-
-        if ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aOutput1, aDuration)) <= 0) {
-            return false;
-        }
-
         if (!GT_Mod.gregtechproxy.mPlanetTier1){
-            aPlanetTier1 = true;
+            aPlanetTier1 = false;
         }
-
-        if (!GT_Utility.isStackValid(aOutput1)) {
+        if ((aOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aOutput, aDuration)) <= 0)) {
             return false;
         }
-
-        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, aInputs, new ItemStack[]{aOutput1}, null, new FluidStack[]{aFluidInput}, null, aDuration, aEUt, aPlanetTier1 ? -400 : 0);
+        if ((aFluidOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aFluidOutput.getFluid().getName(), aDuration)) <= 0)) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, new ItemStack[]{aInput1, aInput2, aInput3, aInput4, aInput5, aInput6}, new ItemStack[]{aOutput}, null, null, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, aPlanetTier1 ? -500 : 0);
+        return true;
+    }
+    public boolean addSpaceResearch2Recipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, ItemStack aInput4, ItemStack aInput5, ItemStack aInput6, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput, int aDuration, int aEUt, boolean aPlanetTier2) {
+        if (((aInput1 == null) && (aFluidInput == null)) || ((aOutput == null) && (aFluidOutput == null))) {
+            return false;
+        }
+        if (!GT_Mod.gregtechproxy.mPlanetTier2){
+            aPlanetTier2 = false;
+        }
+        if ((aOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aOutput, aDuration)) <= 0)) {
+            return false;
+        }
+        if ((aFluidOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aFluidOutput.getFluid().getName(), aDuration)) <= 0)) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, new ItemStack[]{aInput1, aInput2, aInput3, aInput4, aInput5, aInput6}, new ItemStack[]{aOutput}, null, null, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, aPlanetTier2 ? -600 : 0);
+        return true;
+    }
+    public boolean addSpaceResearch3Recipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, ItemStack aInput4, ItemStack aInput5, ItemStack aInput6, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput, int aDuration, int aEUt, boolean aPlanetTier3) {
+        if (((aInput1 == null) && (aFluidInput == null)) || ((aOutput == null) && (aFluidOutput == null))) {
+            return false;
+        }
+        if (!GT_Mod.gregtechproxy.mPlanetTier3){
+            aPlanetTier3 = false;
+        }
+        if ((aOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aOutput, aDuration)) <= 0)) {
+            return false;
+        }
+        if ((aFluidOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aFluidOutput.getFluid().getName(), aDuration)) <= 0)) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, new ItemStack[]{aInput1, aInput2, aInput3, aInput4, aInput5, aInput6}, new ItemStack[]{aOutput}, null, null, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, aPlanetTier3 ? -700 : 0);
+        return true;
+    }
+    public boolean addSpaceResearch4Recipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, ItemStack aInput4, ItemStack aInput5, ItemStack aInput6, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput, int aDuration, int aEUt, boolean aPlanetTier4) {
+        if (((aInput1 == null) && (aFluidInput == null)) || ((aOutput == null) && (aFluidOutput == null))) {
+            return false;
+        }
+        if (!GT_Mod.gregtechproxy.mPlanetTier4){
+            aPlanetTier4 = false;
+        }
+        if ((aOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aOutput, aDuration)) <= 0)) {
+            return false;
+        }
+        if ((aFluidOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aFluidOutput.getFluid().getName(), aDuration)) <= 0)) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, new ItemStack[]{aInput1, aInput2, aInput3, aInput4, aInput5, aInput6}, new ItemStack[]{aOutput}, null, null, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, aPlanetTier4 ? -800 : 0);
+        return true;
+    }
+    public boolean addSpaceResearch5Recipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, ItemStack aInput4, ItemStack aInput5, ItemStack aInput6, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput, int aDuration, int aEUt, boolean aPlanetTier5) {
+        if (((aInput1 == null) && (aFluidInput == null)) || ((aOutput == null) && (aFluidOutput == null))) {
+            return false;
+        }
+        if (!GT_Mod.gregtechproxy.mPlanetTier5){
+            aPlanetTier5 = false;
+        }
+        if ((aOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aOutput, aDuration)) <= 0)) {
+            return false;
+        }
+        if ((aFluidOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aFluidOutput.getFluid().getName(), aDuration)) <= 0)) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, new ItemStack[]{aInput1, aInput2, aInput3, aInput4, aInput5, aInput6}, new ItemStack[]{aOutput}, null, null, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, aPlanetTier5 ? -900 : 0);
+        return true;
+    }
+    public boolean addSpaceResearch6Recipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, ItemStack aInput4, ItemStack aInput5, ItemStack aInput6, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput, int aDuration, int aEUt, boolean aPlanetTier6) {
+        if (((aInput1 == null) && (aFluidInput == null)) || ((aOutput == null) && (aFluidOutput == null))) {
+            return false;
+        }
+        if (!GT_Mod.gregtechproxy.mPlanetTier6){
+            aPlanetTier6 = false;
+        }
+        if ((aOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aOutput, aDuration)) <= 0)) {
+            return false;
+        }
+        if ((aFluidOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aFluidOutput.getFluid().getName(), aDuration)) <= 0)) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, new ItemStack[]{aInput1, aInput2, aInput3, aInput4, aInput5, aInput6}, new ItemStack[]{aOutput}, null, null, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, aPlanetTier6 ? -1000 : 0);
+        return true;
+    }
+    public boolean addSpaceResearch7Recipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, ItemStack aInput4, ItemStack aInput5, ItemStack aInput6, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput, int aDuration, int aEUt, boolean aPlanetTier7) {
+        if (((aInput1 == null) && (aFluidInput == null)) || ((aOutput == null) && (aFluidOutput == null))) {
+            return false;
+        }
+        if (!GT_Mod.gregtechproxy.mPlanetTier7){
+            aPlanetTier7 = false;
+        }
+        if ((aOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aOutput, aDuration)) <= 0)) {
+            return false;
+        }
+        if ((aFluidOutput != null) && ((aDuration = GregTech_API.sRecipeFile.get("spaceresearch", aFluidOutput.getFluid().getName(), aDuration)) <= 0)) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sSpaceResearchRecipes.addRecipe(true, new ItemStack[]{aInput1, aInput2, aInput3, aInput4, aInput5, aInput6}, new ItemStack[]{aOutput}, null, null, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, aPlanetTier7 ? -1100 : 0);
         return true;
     }
 
 
 
-    //TODO ========================================================================================================================================================= aPlanetTier1
     public boolean addAutoclaveRecipe(ItemStack aInput, FluidStack aFluid, ItemStack aOutput, int aChance, int aDuration, int aEUt) {
         return addAutoclaveRecipe(aInput, aFluid, aOutput, aChance, aDuration, aEUt, false);
     }

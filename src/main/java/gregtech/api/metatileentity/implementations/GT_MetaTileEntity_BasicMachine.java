@@ -875,8 +875,56 @@ public abstract class GT_MetaTileEntity_BasicMachine extends GT_MetaTileEntity_B
             mOutputBlocked++;
             return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
         }
-        if (GT_Mod.gregtechproxy.mPlanetTier1 && (tRecipe.mSpecialValue == -400 || tRecipe.mSpecialValue == -300) &&
+        if (GT_Mod.gregtechproxy.mPlanetTier1 && (tRecipe.mSpecialValue == -500 || tRecipe.mSpecialValue == -300) &&
                 !isValidForPlanetTier1(tRecipe,getBaseMetaTileEntity().getWorld().provider.dimensionId))
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        if (tRecipe.mCanBeBuffered) mLastRecipe = tRecipe;
+        if (!canOutput(tRecipe)) {
+            mOutputBlocked++;
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        }
+        if (GT_Mod.gregtechproxy.mPlanetTier2 && (tRecipe.mSpecialValue == -600 || tRecipe.mSpecialValue == -300) &&
+                !isValidForPlanetTier2(tRecipe,getBaseMetaTileEntity().getWorld().provider.dimensionId))
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        if (tRecipe.mCanBeBuffered) mLastRecipe = tRecipe;
+        if (!canOutput(tRecipe)) {
+            mOutputBlocked++;
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        }
+        if (GT_Mod.gregtechproxy.mPlanetTier3 && (tRecipe.mSpecialValue == -700 || tRecipe.mSpecialValue == -300) &&
+                !isValidForPlanetTier3(tRecipe,getBaseMetaTileEntity().getWorld().provider.dimensionId))
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        if (tRecipe.mCanBeBuffered) mLastRecipe = tRecipe;
+        if (!canOutput(tRecipe)) {
+            mOutputBlocked++;
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        }
+        if (GT_Mod.gregtechproxy.mPlanetTier4 && (tRecipe.mSpecialValue == -800 || tRecipe.mSpecialValue == -300) &&
+                !isValidForPlanetTier4(tRecipe,getBaseMetaTileEntity().getWorld().provider.dimensionId))
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        if (tRecipe.mCanBeBuffered) mLastRecipe = tRecipe;
+        if (!canOutput(tRecipe)) {
+            mOutputBlocked++;
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        }
+        if (GT_Mod.gregtechproxy.mPlanetTier5 && (tRecipe.mSpecialValue == -900 || tRecipe.mSpecialValue == -300) &&
+                !isValidForPlanetTier5(tRecipe,getBaseMetaTileEntity().getWorld().provider.dimensionId))
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        if (tRecipe.mCanBeBuffered) mLastRecipe = tRecipe;
+        if (!canOutput(tRecipe)) {
+            mOutputBlocked++;
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        }
+        if (GT_Mod.gregtechproxy.mPlanetTier6 && (tRecipe.mSpecialValue == -1000 || tRecipe.mSpecialValue == -300) &&
+                !isValidForPlanetTier6(tRecipe,getBaseMetaTileEntity().getWorld().provider.dimensionId))
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        if (tRecipe.mCanBeBuffered) mLastRecipe = tRecipe;
+        if (!canOutput(tRecipe)) {
+            mOutputBlocked++;
+            return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
+        }
+        if (GT_Mod.gregtechproxy.mPlanetTier7 && (tRecipe.mSpecialValue == -1100 || tRecipe.mSpecialValue == -300) &&
+                !isValidForPlanetTier7(tRecipe,getBaseMetaTileEntity().getWorld().provider.dimensionId))
             return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
         if (tRecipe.mCanBeBuffered) mLastRecipe = tRecipe;
         if (!canOutput(tRecipe)) {

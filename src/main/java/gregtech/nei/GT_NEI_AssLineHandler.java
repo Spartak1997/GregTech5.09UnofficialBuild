@@ -238,6 +238,20 @@ public class GT_NEI_AssLineHandler
                 drawText(10, 123, trans("160","Needs Cleanroom"), -16777216);
             } else if (tSpecial == -201) {
                 drawText(10, 123, trans("206","Scan for Assembly Line"), -16777216);
+            }   else if (tSpecial == -500 && GT_Mod.gregtechproxy.mPlanetTier1){
+                drawText(10, 123, trans("219","Needs Moon"), 0x602487);
+            }   else if (tSpecial == -600 && GT_Mod.gregtechproxy.mPlanetTier2){
+                drawText(10, 123, trans("220","Needs Mars, Deimos or Phobos"), 0x602487);
+            }   else if (tSpecial == -700 && GT_Mod.gregtechproxy.mPlanetTier3){
+                drawText(10, 123, trans("221","Needs Ceres, Europa, Ganymed or Callisto"), 0x602487);
+            }   else if (tSpecial == -800 && GT_Mod.gregtechproxy.mPlanetTier4){
+                drawText(10, 123, trans("222","Needs Io, Venus or Mercury"), 0x602487);
+            }   else if (tSpecial == -900 && GT_Mod.gregtechproxy.mPlanetTier5){
+                drawText(10, 123, trans("223","Needs Enceladus, Titan, Oberon or Miranda"), 0x602487);
+            }   else if (tSpecial == -1000 && GT_Mod.gregtechproxy.mPlanetTier6){
+                drawText(10, 123, trans("224","Needs Triton or Proteus"), 0x602487);
+            }   else if (tSpecial == -1100 && GT_Mod.gregtechproxy.mPlanetTier7){
+                drawText(10, 123, trans("225","Needs Pluto, MakeMake or Haumea"), 0x602487);
             } else if ((GT_Utility.isStringValid(this.mRecipeMap.mNEISpecialValuePre)) || (GT_Utility.isStringValid(this.mRecipeMap.mNEISpecialValuePost))) {
                 drawText(10, 123, this.mRecipeMap.mNEISpecialValuePre + tSpecial * this.mRecipeMap.mNEISpecialValueMultiplier + this.mRecipeMap.mNEISpecialValuePost, -16777216);
             }

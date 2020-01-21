@@ -569,6 +569,10 @@ public class GT_Recipe implements Comparable<GT_Recipe> {
         public static final GT_Recipe_Map sCentrifugeRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1200), "gt.recipe.centrifuge", "Centrifuge", null, RES_PATH_GUI + "basicmachines/Centrifuge", 2, 6, 0, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sElectrolyzerRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(300), "gt.recipe.electrolyzer", "Electrolyzer", null, RES_PATH_GUI + "basicmachines/Electrolyzer", 2, 6, 0, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sBlastRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(800), "gt.recipe.blastfurnace", "Blast Furnace", null, RES_PATH_GUI + "basicmachines/Default", 2, 2, 1, 0, 1, "Heat Capacity: ", 1, " K", false, true);
+
+        public static final GT_Recipe_Map sBlastSmelterRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(800), "gt.recipe.blastsmelter", "Blast Smelter", null, RES_PATH_GUI + "basicmachines/Default", 9, 1, 1, 0, 1, "Heat Capacity: ", 1, " K", false, true);
+
+
         public static final GT_Recipe_Map sPrimitiveBlastRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(200), "gt.recipe.primitiveblastfurnace", "Primitive Blast Furnace", null, RES_PATH_GUI + "basicmachines/Default", 3, 3, 1, 0, 1, E, 1, E, false, true);
         public static final GT_Recipe_Map sImplosionRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(900), "gt.recipe.implosioncompressor", "Implosion Compressor", null, RES_PATH_GUI + "basicmachines/Default", 2, 2, 2, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sVacuumRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(305), "gt.recipe.vacuumfreezer", "Vacuum Freezer", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 1, 0, 1, E, 1, E, false, true);
@@ -580,7 +584,8 @@ public class GT_Recipe implements Comparable<GT_Recipe> {
         public static final GT_Recipe_Map sTinyWormHoleRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.tinywormhole", "Tiny Wormhole", null, RES_PATH_GUI + "basicmachines/Tesseract", 1, 6, 0, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sFarmRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.farm", "Tree Farm Factory", null, RES_PATH_GUI + "basicmachines/Default", 6, 6, 0, 0, 1, E, 1, E, true, true);
 
-        public static final GT_Recipe_Map sSpaceResearchRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.spaceresearch", "Space Research Station", null, RES_PATH_GUI + "basicmachines/SpaceResearchStation", 6, 1, 0, 0, 1, E, 1, E, true, true);
+        public static final GT_Recipe_Map sSpaceResearchRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(900), "gt.recipe.spaceresearch", "Space Research Station", null, RES_PATH_GUI + "basicmachines/SpaceResearch", 6, 1, 1, 0, 1, E, 1, E, true, true);
+        //public static final GT_Recipe_Map sSpaceResearchRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.spaceresearch", "Space Research Station", null, RES_PATH_GUI + "basicmachines/SpaceResearchStation", 6, 1, 0, 0, 1, E, 1, E, true, true);
 
         public static final GT_Recipe_Map sMultiblockChemicalRecipes = new GT_Recipe_Map_LargeChemicalReactor();
         public static final GT_Recipe_Map sDistillationRecipes = new GT_Recipe_Map_DistillationTower();
