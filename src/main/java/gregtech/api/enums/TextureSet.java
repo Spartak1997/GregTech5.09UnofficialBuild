@@ -12,7 +12,7 @@ public class TextureSet {
     public static final short
             INDEX_wire = 69, INDEX_foil = 70, INDEX_block1 = 71, INDEX_block2 = 72, INDEX_block3 = 73, INDEX_block4 = 74, INDEX_block5 = 75, INDEX_block6 = 76;
 
-    public final IIconContainer[] mTextures = new IIconContainer[129];
+    public final IIconContainer[] mTextures = new IIconContainer[128];
     public final String mSetName;
     private final static String aTextMatIconDir = "materialicons/";
     private final static String aTextVoidDir = "/void";
@@ -147,7 +147,6 @@ public class TextureSet {
         mTextures[125] = new Textures.ItemIcons.CustomIcon(aTextMatIconDir + mSetName + aTextVoidDir);
         mTextures[126] = new Textures.ItemIcons.CustomIcon(aTextMatIconDir + mSetName + "/handleMallet");
         mTextures[127] = new Textures.ItemIcons.CustomIcon(aTextMatIconDir + mSetName + "/toolHeadMallet");
-        mTextures[128] = new Textures.ItemIcons.CustomIcon(aTextMatIconDir + mSetName + "/cellMoltenHot");
 
     }
 }

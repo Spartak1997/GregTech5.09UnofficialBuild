@@ -13,7 +13,7 @@ public class GT_MetaGenerated_Item_04
     public static GT_MetaGenerated_Item_04 INSTANCE;
 
     public GT_MetaGenerated_Item_04() {
-        super("metaitem.04", new OrePrefixes[]{OrePrefixes.cellMoltenHot});
+        super("metaitem.04", new OrePrefixes[]{});
         INSTANCE = this;
         int tLastID = 0;
         Object[] o = new Object[0];
