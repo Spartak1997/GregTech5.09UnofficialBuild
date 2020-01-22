@@ -24,7 +24,7 @@ public class GT_Block_Casings8
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".1.name", "PTFE Pipe Casing");
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".2.name", "Pyrolyse Oven Casing");
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".3.name", "HSLA Machine Casing");
-        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".4.name", "Frost Pipe Machine Casing");
+        GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".5.name", "Frost Pipe Machine Casing");
         //GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".4.name", "Plastic Casing");
 
         ItemList.Casing_Chemically_Inert.set(new ItemStack(this, 1, 0));
