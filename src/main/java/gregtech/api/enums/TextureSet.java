@@ -147,5 +147,6 @@ public class TextureSet {
         mTextures[125] = new Textures.ItemIcons.CustomIcon(aTextMatIconDir + mSetName + aTextVoidDir);
         mTextures[126] = new Textures.ItemIcons.CustomIcon(aTextMatIconDir + mSetName + "/handleMallet");
         mTextures[127] = new Textures.ItemIcons.CustomIcon(aTextMatIconDir + mSetName + "/toolHeadMallet");
+
     }
 }

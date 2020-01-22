@@ -1451,7 +1451,7 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
 
     public boolean addFarmRecipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack[] aOutputs, int[] aChances, int aDuration, int aEUt) {
         GT_Recipe.GT_Recipe_Map.sFarmRecipes.addRecipe(true, new ItemStack[] {aInput1, aInput2, aInput3},  aOutputs, null, aChances, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, 0);
-        return true;
+	    return true;
     }
 
     @Override
