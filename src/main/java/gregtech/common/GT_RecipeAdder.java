@@ -1439,10 +1439,9 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
     	GT_Recipe.GT_Recipe_Map.sTinyWormHoleRecipes.addRecipe(true, new ItemStack[]{aInput}, new ItemStack[]{aOutput1, aOutput2, aOutput3, aOutput4, aOutput5, aOutput6}, null, aChances, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, 0);
         return true;
     }
-    
-    public boolean addFarmRecipe(ItemStack[] aInputs, FluidStack[] aFluidInputs, FluidStack aFluidOutput, ItemStack aOutput1, ItemStack aOutput2, ItemStack aOutput3, ItemStack aOutput4, ItemStack aOutput5, ItemStack aOutput6, int[] aChances, int aDuration, int aEUt) {
-    	GT_Recipe.GT_Recipe_Map.sFarmRecipes.addRecipe(true, aInputs, new ItemStack[]{aOutput1, aOutput2, aOutput3, aOutput4, aOutput5, aOutput6}, null, aChances, aFluidInputs, new FluidStack[]{aFluidOutput}, aDuration, aEUt, 0);
-        return true;
+    public boolean addFarmRecipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack[] aOutputs, int[] aChances, int aDuration, int aEUt) {
+        GT_Recipe.GT_Recipe_Map.sFarmRecipes.addRecipe(true, new ItemStack[] {aInput1, aInput2, aInput3},  aOutputs, null, aChances, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, 0);
+	    return true;
     }
     
     @Override
