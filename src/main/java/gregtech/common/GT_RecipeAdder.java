@@ -960,6 +960,15 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
         GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes.addRecipe(true, new ItemStack[]{aMold}, new ItemStack[]{aOutput}, null, new FluidStack[]{aInput}, null, aDuration, aEUt, 0);
         return true;
     }
+    public boolean addFreezerSolidifierRecipe(ItemStack aMold, FluidStack aInput1,FluidStack aInput2, ItemStack aOutput, int aDuration, int aEUt) {
+        if ((aMold == null) || (aInput1 == null) || (aInput1 == null)|| (aOutput == null)) {
+        }
+        if ((aDuration = GregTech_API.sRecipeFile.get("freezersolidifier", aOutput, aDuration)) <= 0) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sFreezerSolidficationRecipes.addRecipe(true, new ItemStack[]{aMold}, new ItemStack[]{aOutput}, null, new FluidStack[]{aInput1,aInput2}, null, aDuration, aEUt, 0);
+        return true;
+    }
     
 	@Override
 	public boolean addFluidSmelterRecipe(ItemStack aInput, ItemStack aRemains, FluidStack aOutput, int aChance, int aDuration, int aEUt) {
@@ -1439,11 +1448,12 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
     	GT_Recipe.GT_Recipe_Map.sTinyWormHoleRecipes.addRecipe(true, new ItemStack[]{aInput}, new ItemStack[]{aOutput1, aOutput2, aOutput3, aOutput4, aOutput5, aOutput6}, null, aChances, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, 0);
         return true;
     }
+
     public boolean addFarmRecipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack[] aOutputs, int[] aChances, int aDuration, int aEUt) {
         GT_Recipe.GT_Recipe_Map.sFarmRecipes.addRecipe(true, new ItemStack[] {aInput1, aInput2, aInput3},  aOutputs, null, aChances, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, aEUt, 0);
 	    return true;
     }
-    
+
     @Override
     public boolean addPyrolyseRecipe(ItemStack aInput, FluidStack aFluidInput, int intCircuit, ItemStack aOutput, FluidStack aFluidOutput, int aDuration, int aEUt) {
         if (aInput == null) {

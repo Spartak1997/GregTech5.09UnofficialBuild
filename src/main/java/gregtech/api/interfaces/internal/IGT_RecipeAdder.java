@@ -585,6 +585,7 @@ public interface IGT_RecipeAdder {
      */
     public boolean addFluidSolidifierRecipe(ItemStack aMold, FluidStack aInput, ItemStack aOutput, int aDuration, int aEUt);
 
+    public boolean addFreezerSolidifierRecipe(ItemStack aMold, FluidStack aInput1, FluidStack aInput2, ItemStack aOutput, int aDuration, int aEUt);
     /**
      * Adds a Recipe for Fluid Smelting
      */
