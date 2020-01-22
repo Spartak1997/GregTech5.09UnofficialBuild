@@ -413,7 +413,6 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
 
         OrePrefixes.bottle.mContainerItem = ItemList.Bottle_Empty.get(1L, new Object[0]);
         OrePrefixes.bucket.mContainerItem = new ItemStack(Items.bucket, 1);
-        OrePrefixes.cellMoltenHot.mContainerItem = ItemList.Cell_Empty.get(1L, new Object[0]);
         OrePrefixes.cellPlasma.mContainerItem = ItemList.Cell_Empty.get(1L, new Object[0]);
         OrePrefixes.cell.mContainerItem = ItemList.Cell_Empty.get(1L, new Object[0]);
 

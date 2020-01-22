@@ -19,7 +19,6 @@ public class ProcessingCell
     public ProcessingCell() {
         OrePrefixes.cell.add(this);
         OrePrefixes.cellPlasma.add(this);
-        OrePrefixes.cellMoltenHot.add(this);
     }
 
     public void registerOre(OrePrefixes aPrefix, Materials aMaterial, String aOreDictName, String aModName, ItemStack aStack) {
@@ -94,13 +93,6 @@ public class ProcessingCell
                     GT_ModHandler.removeRecipeByOutput(aStack);
                 } else {
                     GT_Values.RA.addFuel(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_Utility.getFluidForFilledItem(aStack, true) == null ? GT_Utility.getContainerItem(aStack, true) : null, (int) Math.max(1024L, 1024L * aMaterial.getMass()), 4);
-                    GT_Values.RA.addVacuumFreezerRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), gregtech.api.util.GT_OreDictUnificator.get(OrePrefixes.cell, aMaterial, 1L), (int) Math.max(aMaterial.getMass() * 2L, 1L));
-                }
-                break;
-            case cellMoltenHot:
-                if (aMaterial == Materials.Empty) {
-                    GT_ModHandler.removeRecipeByOutput(aStack);
-                } else {
                     GT_Values.RA.addVacuumFreezerRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), gregtech.api.util.GT_OreDictUnificator.get(OrePrefixes.cell, aMaterial, 1L), (int) Math.max(aMaterial.getMass() * 2L, 1L));
                 }
                 break;

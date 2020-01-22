@@ -338,7 +338,6 @@ public enum OrePrefixes {
 
         ingotHot.mHeatDamage = 3.0F;
         cellPlasma.mHeatDamage = 6.0F;
-        cellMoltenHot.mHeatDamage = 4.0F;
 
         block.ignoreMaterials(Materials.Ice, Materials.Snow, Materials.Concrete, Materials.Glass, Materials.Glowstone, Materials.DarkIron, Materials.Marble, Materials.Quartz, Materials.CertusQuartz, Materials.Limestone);
         ingot.ignoreMaterials(Materials.Brick, Materials.NetherBrick);
@@ -513,7 +512,6 @@ public enum OrePrefixes {
         bucket.mSecondaryMaterial = new MaterialStack(Materials.Iron, ingot.mMaterialAmount * 3);
         cell.mSecondaryMaterial = new MaterialStack(Materials.Tin, plate.mMaterialAmount * 2);
         cellPlasma.mSecondaryMaterial = new MaterialStack(Materials.Tin, plate.mMaterialAmount * 2);
-        cellMoltenHot.mSecondaryMaterial = new MaterialStack(Materials.Tin, plate.mMaterialAmount * 2);
         oreRedgranite.mSecondaryMaterial = new MaterialStack(Materials.GraniteRed, dust.mMaterialAmount);
         oreBlackgranite.mSecondaryMaterial = new MaterialStack(Materials.GraniteBlack, dust.mMaterialAmount);
         oreNetherrack.mSecondaryMaterial = new MaterialStack(Materials.Netherrack, dust.mMaterialAmount);
