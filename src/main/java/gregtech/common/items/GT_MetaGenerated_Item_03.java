@@ -296,7 +296,11 @@ public class GT_MetaGenerated_Item_03
         ItemList.UHV_Coil.set(addItem(tLastID = 219, "Highly Ultimate Voltage Coil", "Infinite Coil", o));
         ItemList.UEV_Coil.set(addItem(tLastID = 220, "Extremely Ultimate Voltage Coil", "Ultra Coil", o));
         ItemList.UIV_Coil.set(addItem(tLastID = 221, "Insanely Ultimate Voltage Coil", "Insane Coil", o));
-        
+
+        ItemList.Shape_MoldTungSteel_Ingot.set(addItem(tLastID = 222, "Mold (Ingot)", "Mold for making Ingot", new Object[0]));
+        ItemList.Shape_MoldTungSteel_Plate.set(addItem(tLastID = 223, "Mold (Plate)", "Mold for making Plates", new Object[0]));
+        ItemList.Shape_MoldTungSteel_SuperWire.set(addItem(tLastID = 224, "Mold (Superconductive wire)", "Mold for making Superconductive wire", new Object[0]));
+
         ItemList.FluidRegulator_LuV.set(addItem(tLastID = 180, "Fluid Regulator (LuV)", "Configuable up to 655360 L/sec (as Cover)/n Rightclick/Screwdriver-rightclick/Shift-screwdriver-rightclick/n to adjust the pump speed by 1/16/256 L/sec per click", new Object[]{}));
         ItemList.FluidRegulator_ZPM.set(addItem(tLastID = 181, "Fluid Regulator (ZPM)", "Configuable up to 2621440 L/sec (as Cover)/n Rightclick/Screwdriver-rightclick/Shift-screwdriver-rightclick/n to adjust the pump speed by 1/16/256 L/sec per click", new Object[]{}));
         ItemList.FluidRegulator_UV.set(addItem(tLastID = 182, "Fluid Regulator (UV)", "Configuable up to 10485760 L/sec (as Cover)/n Rightclick/Screwdriver-rightclick/Shift-screwdriver-rightclick/n to adjust the pump speed by 1/16/256 L/sec per click", new Object[]{}));
