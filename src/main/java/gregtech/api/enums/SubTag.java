@@ -108,6 +108,10 @@ public final class SubTag implements ICondition<ISubTagContainer> {
      */
     public static final SubTag FOOD = getNewSubTag("FOOD");
     /**
+     * If this Material is some kind of Molten Hot Fluid
+     */
+    public static final SubTag HOT_MOLTEN = getNewSubTag("HOT_MOLTEN");
+    /**
      * If this Material is some kind of Stone
      */
     public static final SubTag STONE = getNewSubTag("STONE");

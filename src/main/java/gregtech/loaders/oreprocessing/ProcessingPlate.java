@@ -11,6 +11,10 @@ import gregtech.api.util.GT_Utility;
 import gregtech.common.GT_Proxy;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.FluidRegistry;
+import net.minecraftforge.fluids.FluidStack;
+
+
 
 public class ProcessingPlate implements gregtech.api.interfaces.IOreRecipeRegistrator {//TODO COMPARE WITH OLD PLATE## generator
     public ProcessingPlate() {
@@ -23,6 +27,8 @@ public class ProcessingPlate implements gregtech.api.interfaces.IOreRecipeRegist
         OrePrefixes.plateAlloy.add(this);
         OrePrefixes.itemCasing.add(this);
     }
+
+
 
     public void registerOre(OrePrefixes aPrefix, Materials aMaterial, String aOreDictName, String aModName, ItemStack aStack) {
         boolean aNoSmashing = aMaterial.contains(SubTag.NO_SMASHING);
@@ -39,6 +45,35 @@ public class ProcessingPlate implements gregtech.api.interfaces.IOreRecipeRegist
                         GT_Values.RA.addFluidSolidifierRecipe(ItemList.Shape_Mold_Plate.get(0L, new Object[0]), aMaterial.getMolten(144L), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), 32, 8);
                     }
                 }
+
+                int EU;
+
+                    if (aMaterial.mMeltingPoint <=  1800) {
+                        EU = 120 * (4 ^ 1);
+                    } else if (aMaterial.mMeltingPoint <= 2700) {
+                        EU = 120 * (4 ^ 2);
+                    } else if (aMaterial.mMeltingPoint <= 3600) {
+                        EU = 120 * (4 ^ 3);
+                    } else if (aMaterial.mMeltingPoint <= 4500) {
+                        EU = 120 * (4 ^ 4);
+                    } else if (aMaterial.mMeltingPoint <= 5400) {
+                        EU = 120 * (4 ^ 5);
+                    } else if (aMaterial.mMeltingPoint <= 7200) {
+                        EU = 120 * (4 ^ 6);
+                    } else if (aMaterial.mMeltingPoint <= 9001) {
+                        EU = 120 * (4 ^ 7);
+                    } else if (aMaterial.mMeltingPoint <= 10800) {
+                        EU = 120 * (4 ^ 8);
+                    } else { EU = 120 * (4 ^ 9); }
+
+                int usageEU = EU;
+                int usageTime = (int) Math.max(aMaterialMass / 50L, 1L);
+
+                if (aMaterial.mStandardMoltenHotFluid != null) {
+                        GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_Mold_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), usageTime, usageEU);
+                }
+
+
                 switch (aMaterial.mName) {
                     case "Iron":
                         GregTech_API.registerCover(aStack, new GT_CopiedBlockTexture(Blocks.iron_block, 1, 0), null);

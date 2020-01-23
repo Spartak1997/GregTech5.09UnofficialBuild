@@ -1315,6 +1315,12 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
 
         SubTag.FOOD.addTo(MeatRaw, MeatCooked, Ice, Water, Salt, Chili, Cocoa, Cheese, Coffee, Chocolate, Milk, Honey, FryingOilHot, FishOil, SeedOil, SeedOilLin, SeedOilHemp, Wheat, Sugar, FreshWater);
 
+        SubTag.HOT_MOLTEN.addTo(Pentacadmiummagnesiumhexaoxid, Titaniumonabariumdecacoppereikosaoxid, Uraniumtriplatinid, Vanadiumtriindinid, Tetraindiumditindibariumtitaniumheptacoppertetrakaidekaoxid,
+                Tetranaquadahdiindiumhexaplatiumosminid, Longasssuperconductornameforuvwire, Longasssuperconductornameforuhvwire, Longasssuperconductornameforuevwire, Bronze, Brass, RedAlloy, CobaltBrass, BismuthBronze,
+                BlackSteel, BlackBronze, SolderingAlloy, BlueSteel, Electrum, IndiumGalliumPhosphide, RedSteel, GalliumArsenide, ConductiveIron, VibrantAlloy, ElectricalSteel, PulsatingIron, DarkSteel, EnergeticAlloy,
+                RedstoneAlloy, Enderium, Cupronickel, FerriteMixture, NickelZincFerrite, Kanthal, Nichrome, SterlingSilver, RoseGold, StainlessSteel, MeteoricSteel, VanadiumSteel, Ultimet, TungstenSteel, TungstenCarbide,
+                VanadiumGallium, YttriumBariumCuprate, HSSG, HSSS, HSSE, NiobiumTitanium, Osmiridium, NaquadahAlloy, ElectrumFlux, Diamericiumtitanium);
+
         Wood.add(SubTag.WOOD, SubTag.FLAMMABLE, SubTag.NO_SMELTING, SubTag.NO_SMASHING);
         WoodSealed.add(SubTag.WOOD, SubTag.FLAMMABLE, SubTag.NO_SMELTING, SubTag.NO_SMASHING, SubTag.NO_WORKING);
         Peanutwood.add(SubTag.WOOD, SubTag.FLAMMABLE, SubTag.NO_SMELTING, SubTag.NO_SMASHING);
