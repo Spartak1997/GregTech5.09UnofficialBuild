@@ -489,7 +489,7 @@ if(Loader.isModLoaded("Railcraft")){
         GT_Values.RA.addFluidExtractionRecipe(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Mercury, 1L), GT_Values.NI, Materials.Mercury.getFluid(1000L), 10000, 128, 4);
         GT_Values.RA.addFluidExtractionRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Monazite, 1L), GT_Values.NI, Materials.Helium.getGas(200L), 10000, 64, 64);
 
-        GT_Values.RA.addFluidExtractionRecipe(GT_ModHandler.getModItem("IC2","blockAlloyGlass", 1L, 0), GT_Values.NI, Materials.ReinforcedGlass.getMolten(144), 10000, 100, 1920);
+        GT_Values.RA.addFluidExtractionRecipe(GT_ModHandler.getModItem("IC2","blockAlloyGlass", 1L, 0), GT_Values.NI, Materials.ReinforcedGlass.getMolten(144), 10000, 200, 120);
         
         GT_Values.RA.addFluidSmelterRecipe(new ItemStack(Items.snowball, 1, 0), GT_Values.NI, Materials.Water.getFluid(250L), 10000, 32, 4);
         GT_Values.RA.addFluidSmelterRecipe(new ItemStack(Blocks.snow, 1, 0), GT_Values.NI, Materials.Water.getFluid(1000L), 10000, 128, 4);
@@ -850,7 +850,9 @@ if(Loader.isModLoaded("Railcraft")){
         GT_Values.RA.addFluidSolidifierRecipe(ItemList.Shape_Mold_Ball.get(0L, new Object[0]), new FluidStack(ItemList.sToluene,100), ItemList.GelledToluene.get(1, new Object[0]), 100, 16);
         GT_Values.RA.addChemicalRecipe(ItemList.GelledToluene.get(4, new Object[0]), GT_Values.NI, Materials.SulfuricAcid.getFluid(250), GT_Values.NF, new ItemStack(Blocks.tnt,1), 200, 24);
         
-        GT_Values.RA.addFluidSolidifierRecipe(ItemList.Shape_Mold_Ball.get(0L, new Object[0]), Materials.ReinforcedGlass.getMolten(288), ItemList.Circuit_Parts_Reinforced_Glass_Tube.get(1, new Object[0]), 200, 1920);
+        GT_Values.RA.addFluidSolidifierRecipe(ItemList.Shape_Mold_Ball.get(0L, new Object[0]), Materials.ReinforcedGlass.getMolten(288), ItemList.Circuit_Parts_Reinforced_Glass_Tube.get(1, new Object[0]), 400, 1920);
+        
+	GT_Values.RA.addFluidSolidifierRecipe(GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.BlackSteel, 1L), Materials.ReinforcedGlass.getMolten(144), ItemList.Cleanroom_Glass.get(1, new Object[0]), 200, 120);
         
         GT_Values.RA.addChemicalRecipe(new ItemStack(Items.sugar), GT_OreDictUnificator.get(OrePrefixes.dustTiny, Materials.Plastic, 1), new FluidStack(ItemList.sToluene, 133), GT_Values.NF, ItemList.GelledToluene.get(2, new Object[0]), 140, 192);
 
