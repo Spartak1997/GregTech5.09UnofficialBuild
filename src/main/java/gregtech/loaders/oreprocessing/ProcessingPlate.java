@@ -34,6 +34,7 @@ public class ProcessingPlate implements gregtech.api.interfaces.IOreRecipeRegist
         boolean aNoSmashing = aMaterial.contains(SubTag.NO_SMASHING);
         boolean aNoWorking = aMaterial.contains(SubTag.NO_WORKING);
         boolean aFreezing = aMaterial.contains(SubTag.HOT_MOLTEN);
+        boolean aFreezFilter = aMaterial.contains(SubTag.FREEZ_FAVORITE);
         boolean aSuperbase = aMaterial.contains(SubTag.SUPER_COND_BASE);
         long aMaterialMass = aMaterial.getMass();
         
@@ -50,18 +51,18 @@ public class ProcessingPlate implements gregtech.api.interfaces.IOreRecipeRegist
 
                 int zTime;
                 int zEU;
-                if (aFreezing && aSuperbase && (aMaterial == Materials.RedAlloy ) && (aMaterial == Materials.BlueAlloy )&& (aMaterial == Materials.RoseGold ) && (aMaterial == Materials.Electrum )) {
+                if (aFreezing && !aSuperbase && aFreezFilter) {
                     zTime = 21;
                     zEU = 120;
                     GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, zEU);
                 }
-                if (aFreezing && aMaterial.mMeltingPoint <= 1000 && !aSuperbase && !(aMaterial == Materials.RedAlloy ) && !(aMaterial == Materials.BlueAlloy )) {//128 UE/t
-                   zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                if (aFreezing && aMaterial.mMeltingPoint <= 1000 && !aSuperbase && !aFreezFilter) {//128 UE/t
+                   zTime = (int) Math.max(aMaterialMass * 3L, 1L)/8;
                    zEU = 120;
                         GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, zEU);
                 }
-                if (aFreezing && aMaterial.mMeltingPoint <= 4000 && !aSuperbase && !(aMaterial == Materials.RoseGold ) && !(aMaterial == Materials.Electrum )) {//480 UE/t
-                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                if (aFreezing && aMaterial.mMeltingPoint <= 4000 && !aSuperbase && !aFreezFilter) {//480 UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/6;
                     zEU = 120*4;
                     GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, zEU);
                 }

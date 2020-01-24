@@ -45,27 +45,27 @@ public class ProcessingWire implements gregtech.api.interfaces.IOreRecipeRegistr
                 int zTime;
                 int zEU;
                 if (aFreezing && aMaterial.mMeltingPoint <= 4000 && aSuperbase ) {//480 UE/t
-                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zTime = 150;
                     zEU = 120*4;
                     GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_SuperWire.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.wireGt01, aMaterial, 2L), zTime*20, zEU);
                 }
                 if (aFreezing && aMaterial.mMeltingPoint <= 6000 && aSuperbase) {//2k UE/t
-                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zTime = 175;
                     zEU = 120*4*4;
                     GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_SuperWire.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.wireGt01, aMaterial, 2L), zTime*20, zEU);
                 }
                 if (aFreezing && aMaterial.mMeltingPoint <= 9000 && aSuperbase) {//8k UE/t
-                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zTime = 200;
                     zEU = 120*4*4*4;
                     GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_SuperWire.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.wireGt01, aMaterial, 2L), zTime*20, zEU);
                 }
                 if (aFreezing && aMaterial.mMeltingPoint <= 10799 && aSuperbase) {//32k UE/t
-                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zTime = 215;
                     zEU = 120*4*4*4*4;
                     GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_SuperWire.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.wireGt01, aMaterial, 2L), zTime*20, zEU);
                 }
                 if (aFreezing && aMaterial.mMeltingPoint >= 10800 && aSuperbase) {//122k UE/t
-                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zTime = 230;
                     zEU = 120*4*4*4*4*4;
                     GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_SuperWire.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.wireGt01, aMaterial, 2L), zTime*20, zEU);
                 }

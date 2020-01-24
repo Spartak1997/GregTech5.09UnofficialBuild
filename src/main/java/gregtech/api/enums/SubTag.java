@@ -116,6 +116,14 @@ public final class SubTag implements ICondition<ISubTagContainer> {
      */
     public static final SubTag SUPER_COND_BASE = getNewSubTag("SUPER_COND_BASE");
     /**
+     * If this Material is filters for Freez Solid
+     */
+    public static final SubTag FREEZ_FAVORITE = getNewSubTag("FREEZ_FAVORITE");
+    /**
+     * If this Material is filters for Vacuum Freezer
+     */
+    public static final SubTag NOT_VACUUM_FREEZER = getNewSubTag("NOT_VACUUM_FREEZER");
+    /**
      * If this Material is some kind of Stone
      */
     public static final SubTag STONE = getNewSubTag("STONE");

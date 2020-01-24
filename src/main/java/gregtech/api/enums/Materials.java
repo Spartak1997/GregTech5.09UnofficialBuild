@@ -1315,15 +1315,21 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
 
         SubTag.FOOD.addTo(MeatRaw, MeatCooked, Ice, Water, Salt, Chili, Cocoa, Cheese, Coffee, Chocolate, Milk, Honey, FryingOilHot, FishOil, SeedOil, SeedOilLin, SeedOilHemp, Wheat, Sugar, FreshWater);
 
+/**     <For Blast Smelter and Freezer Solidifier> **/
         SubTag.HOT_MOLTEN.addTo(Pentacadmiummagnesiumhexaoxid, Titaniumonabariumdecacoppereikosaoxid, Uraniumtriplatinid, Vanadiumtriindinid, Tetraindiumditindibariumtitaniumheptacoppertetrakaidekaoxid,
                 Tetranaquadahdiindiumhexaplatiumosminid, Longasssuperconductornameforuvwire, Longasssuperconductornameforuhvwire, Longasssuperconductornameforuevwire, Bronze, Brass, RedAlloy, CobaltBrass, BismuthBronze,
                 BlackSteel, BlackBronze, SolderingAlloy, BlueSteel, Electrum, IndiumGalliumPhosphide, RedSteel, GalliumArsenide, ConductiveIron, VibrantAlloy, ElectricalSteel, PulsatingIron, DarkSteel, EnergeticAlloy,
                 RedstoneAlloy, Enderium, Cupronickel, FerriteMixture, NickelZincFerrite, Kanthal, Nichrome, SterlingSilver, RoseGold, StainlessSteel, MeteoricSteel, VanadiumSteel, Ultimet, TungstenSteel, TungstenCarbide,
                 VanadiumGallium, YttriumBariumCuprate, HSSG, HSSS, HSSE, NiobiumTitanium, Osmiridium, NaquadahAlloy, ElectrumFlux, Diamericiumtitanium, BlueAlloy, RoseGold, DamascusSteel, Magnalium, Invar,  BorosilicateGlass);
-
         SubTag.SUPER_COND_BASE.addTo(Pentacadmiummagnesiumhexaoxid, Titaniumonabariumdecacoppereikosaoxid, Uraniumtriplatinid, Vanadiumtriindinid, Tetraindiumditindibariumtitaniumheptacoppertetrakaidekaoxid,
                 Tetranaquadahdiindiumhexaplatiumosminid, Longasssuperconductornameforuvwire, Longasssuperconductornameforuhvwire, Longasssuperconductornameforuevwire);
+        SubTag.FREEZ_FAVORITE.addTo(RedAlloy, BlueAlloy, Electrum, RoseGold, SolderingAlloy, RedstoneAlloy, Brass, CobaltBrass, Cupronickel, Invar, Bronze, BismuthBronze);
+/*      <For Blast Smelter and Freezer Solidifier/> **/
 
+/**     <For optimisation Vacuum Freezer recipes> **/
+        SubTag.NOT_VACUUM_FREEZER.addTo(Plastic, Polycaprolactam, Rubber, StyreneButadieneRubber, Epoxid, EpoxidFiberReinforced, Polystyrene, Lithium, Silicone, Polybenzimidazole, PolyphenyleneSulfide,
+                Beryllium, PolyvinylChloride, Carbon, Polytetrafluoroethylene, BorosilicateGlass, Obsidian, Magnesium, Magnalium, Aluminium, Silicon, NickelZincFerrite, Potassium, Manganese);
+/*     <For optimisation Vacuum Freezer recipes/> **/
 
         Wood.add(SubTag.WOOD, SubTag.FLAMMABLE, SubTag.NO_SMELTING, SubTag.NO_SMASHING);
         WoodSealed.add(SubTag.WOOD, SubTag.FLAMMABLE, SubTag.NO_SMELTING, SubTag.NO_SMASHING, SubTag.NO_WORKING);
@@ -1506,8 +1512,8 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
         initMaterialProperties(); //No more material addition or manipulation should be done past this point!
         MATERIALS_ARRAY = MATERIALS_MAP.values().toArray(new Materials[MATERIALS_MAP.size()]); //Generate standard object array. This is a lot faster to loop over.
         VALUES = Arrays.asList(MATERIALS_ARRAY);
-        /*if(!Loader.isModLoaded("spartakcore"))
-            if (!GT_Mod.gregtechproxy.mEnableAllComponents) OrePrefixes.initMaterialComponents();*/
+        if(!Loader.isModLoaded("spartakcore"))      /* ТУТ ПОПАБОЛЬ */
+            if (!GT_Mod.gregtechproxy.mEnableAllComponents) OrePrefixes.initMaterialComponents();
         for (Materials aMaterial : MATERIALS_ARRAY) {
             if (aMaterial.mMetaItemSubID >= 0) {
                 if (aMaterial.mMetaItemSubID < 1000) {
