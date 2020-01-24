@@ -10,6 +10,8 @@ import gregtech.api.util.GT_OreDictUnificator;
 import gregtech.api.util.GT_Utility;
 import gregtech.common.GT_Proxy;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.FluidRegistry;
+import net.minecraftforge.fluids.FluidStack;
 
 import java.util.ArrayList;
 
@@ -29,12 +31,45 @@ public class ProcessingWire implements gregtech.api.interfaces.IOreRecipeRegistr
     }
 
     public void registerOre(OrePrefixes aPrefix, Materials aMaterial, String aOreDictName, String aModName, ItemStack aStack) {
+        boolean aFreezing = aMaterial.contains(SubTag.HOT_MOLTEN);
+        boolean aSuperbase = aMaterial.contains(SubTag.SUPER_COND_BASE);
+        long aMaterialMass = aMaterial.getMass();
         int cableWidth;
         OrePrefixes correspondingCable;
         switch (aPrefix) {
             case wireGt01:
                 cableWidth = 1;
                 correspondingCable = OrePrefixes.cableGt01;
+
+                //supercinduits base
+                int zTime;
+                int zEU;
+                if (aFreezing && aMaterial.mMeltingPoint <= 4000 && aSuperbase ) {//480 UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_SuperWire.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.wireGt01, aMaterial, 2L), zTime*20, zEU);
+                }
+                if (aFreezing && aMaterial.mMeltingPoint <= 6000 && aSuperbase) {//2k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_SuperWire.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.wireGt01, aMaterial, 2L), zTime*20, zEU);
+                }
+                if (aFreezing && aMaterial.mMeltingPoint <= 9000 && aSuperbase) {//8k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_SuperWire.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.wireGt01, aMaterial, 2L), zTime*20, zEU);
+                }
+                if (aFreezing && aMaterial.mMeltingPoint <= 10799 && aSuperbase) {//32k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_SuperWire.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.wireGt01, aMaterial, 2L), zTime*20, zEU);
+                }
+                if (aFreezing && aMaterial.mMeltingPoint >= 10800 && aSuperbase) {//122k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4*4*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_SuperWire.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.wireGt01, aMaterial, 2L), zTime*20, zEU);
+                }
+
                 if (!aMaterial.contains(gregtech.api.enums.SubTag.NO_SMASHING)) {
                     GT_Values.RA.addBenderRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_OreDictUnificator.get(OrePrefixes.springSmall, aMaterial, 2L), 100, 8);
                     GT_Values.RA.addWiremillRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_OreDictUnificator.get(OrePrefixes.wireFine, aMaterial, 4L), 200, 8);

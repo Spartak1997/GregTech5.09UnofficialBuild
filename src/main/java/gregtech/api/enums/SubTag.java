@@ -112,6 +112,10 @@ public final class SubTag implements ICondition<ISubTagContainer> {
      */
     public static final SubTag HOT_MOLTEN = getNewSubTag("HOT_MOLTEN");
     /**
+     * If this Material is some kind of Superconductive Base
+     */
+    public static final SubTag SUPER_COND_BASE = getNewSubTag("SUPER_COND_BASE");
+    /**
      * If this Material is some kind of Stone
      */
     public static final SubTag STONE = getNewSubTag("STONE");

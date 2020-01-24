@@ -24,6 +24,8 @@ public class ProcessingIngot implements gregtech.api.interfaces.IOreRecipeRegist
     public void registerOre(OrePrefixes aPrefix, Materials aMaterial, String aOreDictName, String aModName, ItemStack aStack) {
         boolean aNoSmashing = aMaterial.contains(SubTag.NO_SMASHING);
         boolean aNoSmelting = aMaterial.contains(SubTag.NO_SMELTING);
+        boolean aFreezing = aMaterial.contains(SubTag.HOT_MOLTEN);
+        boolean aSuperbase = aMaterial.contains(SubTag.SUPER_COND_BASE);
         long aMaterialMass = aMaterial.getMass();
         boolean aSpecialRecipeReq = aMaterial.mUnificatable && (aMaterial.mMaterialInto == aMaterial) && !aMaterial.contains(SubTag.NO_SMASHING);
 
@@ -53,6 +55,44 @@ public class ProcessingIngot implements gregtech.api.interfaces.IOreRecipeRegist
                         GT_ModHandler.addCraftingRecipe(GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), GT_Proxy.tBits, new Object[]{"XXX", "XXX", "XXX", Character.valueOf('X'), OrePrefixes.nugget.get(aMaterial)});
                     if ((aMaterial.contains(SubTag.MORTAR_GRINDABLE)) && (GregTech_API.sRecipeFile.get(ConfigCategories.Tools.mortar, aMaterial.mName, true)))
                         GT_ModHandler.addCraftingRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial, 1L), GT_Proxy.tBits, new Object[]{"X", "m", Character.valueOf('X'), OrePrefixes.ingot.get(aMaterial)});
+                }
+
+                int zTime;
+                int zEU;
+                if (aFreezing && aSuperbase && !(aMaterial == Materials.RedAlloy ) && (aMaterial == Materials.BlueAlloy )&& !(aMaterial == Materials.RoseGold ) && !(aMaterial == Materials.Electrum )) {
+                    zTime = 21;
+                    zEU = 120;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Ingot.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), zTime*20, zEU);
+                }
+                if (aFreezing && aMaterial.mMeltingPoint <= 1000 && !aSuperbase && !(aMaterial == Materials.RedAlloy ) && !(aMaterial == Materials.BlueAlloy )) {//128 UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Ingot.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), zTime*20, zEU);
+                }
+                if (aFreezing && aMaterial.mMeltingPoint <= 4000 && !aSuperbase && !(aMaterial == Materials.RoseGold ) && !(aMaterial == Materials.Electrum )) {//480 UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Ingot.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), zTime*20, zEU);
+                }
+                if (aFreezing && aMaterial.mMeltingPoint <= 6000 && !aSuperbase) {//2k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Ingot.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), zTime*20, zEU);
+                }
+                if (aFreezing && aMaterial.mMeltingPoint <= 9000 && !aSuperbase) {//8k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Ingot.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), zTime*20, zEU);
+                }
+                if (aFreezing && aMaterial.mMeltingPoint <= 10800 && !aSuperbase) {//32k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Ingot.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), zTime*20, zEU);
+                }
+                if (aFreezing && aMaterial.mMeltingPoint >= 10800 && !aSuperbase) {//122k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4*4*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Ingot.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), zTime*20, zEU);
                 }
 
                 if (!aNoSmashing) {

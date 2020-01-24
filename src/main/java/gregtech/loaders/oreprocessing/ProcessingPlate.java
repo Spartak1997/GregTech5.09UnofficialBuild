@@ -34,6 +34,7 @@ public class ProcessingPlate implements gregtech.api.interfaces.IOreRecipeRegist
         boolean aNoSmashing = aMaterial.contains(SubTag.NO_SMASHING);
         boolean aNoWorking = aMaterial.contains(SubTag.NO_WORKING);
         boolean aFreezing = aMaterial.contains(SubTag.HOT_MOLTEN);
+        boolean aSuperbase = aMaterial.contains(SubTag.SUPER_COND_BASE);
         long aMaterialMass = aMaterial.getMass();
         
         switch (aPrefix) {
@@ -48,37 +49,44 @@ public class ProcessingPlate implements gregtech.api.interfaces.IOreRecipeRegist
                 }
 
                 int zTime;
-                if (aFreezing && aMaterial.mMeltingPoint <= 1000) {//128 UE/t
-                   zTime = 1 + (int) Math.random()* 4;
-                        GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_Mold_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, 120);
+                int zEU;
+                if (aFreezing && aSuperbase && !(aMaterial == Materials.RedAlloy ) && (aMaterial == Materials.BlueAlloy )&& !(aMaterial == Materials.RoseGold ) && !(aMaterial == Materials.Electrum )) {
+                    zTime = 21;
+                    zEU = 120;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, zEU);
                 }
-                if (aFreezing && aMaterial.mMeltingPoint <= 4000 && !(aMaterial == Materials.Pentacadmiummagnesiumhexaoxid || aMaterial == Materials.Titaniumonabariumdecacoppereikosaoxid)) {//480 UE/t
-                    zTime = 1 + (int) Math.random()* 4;
-                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_Mold_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, 120*4^1);
+                if (aFreezing && aMaterial.mMeltingPoint <= 1000 && !aSuperbase && !(aMaterial == Materials.RedAlloy ) && !(aMaterial == Materials.BlueAlloy )) {//128 UE/t
+                   zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                   zEU = 120;
+                        GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, zEU);
                 }
-                if (aFreezing && aMaterial.mMeltingPoint <= 6000 && !(aMaterial == Materials.Uraniumtriplatinid || aMaterial == Materials.Vanadiumtriindinid || aMaterial == Materials.Tetraindiumditindibariumtitaniumheptacoppertetrakaidekaoxid )) {//2k UE/t
-                    zTime = 1 + (int) Math.random()* 4;
-                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_Mold_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, 120*4^2);
+                if (aFreezing && aMaterial.mMeltingPoint <= 4000 && !aSuperbase && !(aMaterial == Materials.RoseGold ) && !(aMaterial == Materials.Electrum )) {//480 UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, zEU);
                 }
-                if (aFreezing && aMaterial.mMeltingPoint <= 9000 && !(aMaterial == Materials.Tetranaquadahdiindiumhexaplatiumosminid || aMaterial == Materials.Longasssuperconductornameforuvwire )) {//8k UE/t
-                    zTime = 1 + (int) Math.random()* 4;
-                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_Mold_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, 120*4^3);
+                if (aFreezing && aMaterial.mMeltingPoint <= 6000 && !aSuperbase) {//2k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, zEU);
                 }
-                if (aFreezing && aMaterial.mMeltingPoint <= 10800) {//32k UE/t
-                    zTime = 1 + (int) Math.random()* 4;
-                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_Mold_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, 120*4^4);
+                if (aFreezing && aMaterial.mMeltingPoint <= 9000 && !aSuperbase) {//8k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, zEU);
                 }
-                if (aFreezing && aMaterial.mMeltingPoint >= 10800 && !(aMaterial == Materials.Longasssuperconductornameforuhvwire || aMaterial == Materials.Longasssuperconductornameforuevwire )) {//122k UE/t
-                    zTime = 1 + (int) Math.random()* 4;
-                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_Mold_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, 120*4^5);
+                if (aFreezing && aMaterial.mMeltingPoint <= 10800 && !aSuperbase) {//32k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, zEU);
+                }
+                if (aFreezing && aMaterial.mMeltingPoint >= 10800 && !aSuperbase) {//122k UE/t
+                    zTime = (int) Math.max(aMaterialMass * 3L, 1L)/4;
+                    zEU = 120*4*4*4*4*4;
+                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, zEU);
                 }
 
-                if (aFreezing && (aMaterial == Materials.Pentacadmiummagnesiumhexaoxid || aMaterial == Materials.Titaniumonabariumdecacoppereikosaoxid || aMaterial == Materials.Uraniumtriplatinid || aMaterial == Materials.Vanadiumtriindinid
-                               || aMaterial == Materials.Tetraindiumditindibariumtitaniumheptacoppertetrakaidekaoxid || aMaterial == Materials.Tetranaquadahdiindiumhexaplatiumosminid || aMaterial == Materials.Longasssuperconductornameforuvwire || aMaterial == Materials.Longasssuperconductornameforuhvwire
-                               || aMaterial == Materials.Longasssuperconductornameforuevwire )) {//122k UE/t
-                    zTime = 150;
-                    GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_Mold_Plate.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.plate, aMaterial, 1L), zTime*20, 120*4^5);
-                }
+
 
 
                 switch (aMaterial.mName) {

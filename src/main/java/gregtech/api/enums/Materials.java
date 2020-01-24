@@ -1321,6 +1321,10 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
                 RedstoneAlloy, Enderium, Cupronickel, FerriteMixture, NickelZincFerrite, Kanthal, Nichrome, SterlingSilver, RoseGold, StainlessSteel, MeteoricSteel, VanadiumSteel, Ultimet, TungstenSteel, TungstenCarbide,
                 VanadiumGallium, YttriumBariumCuprate, HSSG, HSSS, HSSE, NiobiumTitanium, Osmiridium, NaquadahAlloy, ElectrumFlux, Diamericiumtitanium, BlueAlloy, RoseGold, DamascusSteel, Magnalium, Invar,  BorosilicateGlass);
 
+        SubTag.SUPER_COND_BASE.addTo(Pentacadmiummagnesiumhexaoxid, Titaniumonabariumdecacoppereikosaoxid, Uraniumtriplatinid, Vanadiumtriindinid, Tetraindiumditindibariumtitaniumheptacoppertetrakaidekaoxid,
+                Tetranaquadahdiindiumhexaplatiumosminid, Longasssuperconductornameforuvwire, Longasssuperconductornameforuhvwire, Longasssuperconductornameforuevwire);
+
+
         Wood.add(SubTag.WOOD, SubTag.FLAMMABLE, SubTag.NO_SMELTING, SubTag.NO_SMASHING);
         WoodSealed.add(SubTag.WOOD, SubTag.FLAMMABLE, SubTag.NO_SMELTING, SubTag.NO_SMASHING, SubTag.NO_WORKING);
         Peanutwood.add(SubTag.WOOD, SubTag.FLAMMABLE, SubTag.NO_SMELTING, SubTag.NO_SMASHING);
