@@ -59,7 +59,7 @@ public class ProcessingIngot implements gregtech.api.interfaces.IOreRecipeRegist
 
                 int zTime;
                 int zEU;
-                if (aFreezing && aSuperbase && !(aMaterial == Materials.RedAlloy ) && (aMaterial == Materials.BlueAlloy )&& !(aMaterial == Materials.RoseGold ) && !(aMaterial == Materials.Electrum )) {
+                if (aFreezing && aSuperbase && (aMaterial == Materials.RedAlloy ) && (aMaterial == Materials.BlueAlloy )&& (aMaterial == Materials.RoseGold ) && (aMaterial == Materials.Electrum )) {
                     zTime = 21;
                     zEU = 120;
                     GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Ingot.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), zTime*20, zEU);
