@@ -791,7 +791,7 @@ public enum OrePrefixes {
                 }
                   //itemCasing
                     if (!enableUnusedItemCasing && !(aMaterial == Materials.Tin || aMaterial == Materials.Copper || aMaterial == Materials.Bronze || aMaterial == Materials.Iron || aMaterial == Materials.Steel || aMaterial == Materials.Aluminium ||
-		    aMaterial == Materials.StainlessSteel || aMaterial == Materials.Titanium || aMaterial == Materials.TungstenSteel || aMaterial == Materials.Iridium || aMaterial == Materials.Tungsten || aMaterial == Materials.FluxElectrum ||
+		    aMaterial == Materials.StainlessSteel || aMaterial == Materials.Titanium || aMaterial == Materials.TungstenSteel || aMaterial == Materials.Iridium || aMaterial == Materials.Tungsten || aMaterial == Materials.ElectrumFlux ||
 		    aMaterial == Materials.Lead || aMaterial == Materials.Electrum)) 
 		    
 		    itemCasing.mDisabledItems.add(aMaterial);
