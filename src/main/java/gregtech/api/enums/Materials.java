@@ -1328,7 +1328,8 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
 
 /**     <For optimisation Vacuum Freezer recipes> **/
         SubTag.NOT_VACUUM_FREEZER.addTo(Plastic, Polycaprolactam, Rubber, StyreneButadieneRubber, Epoxid, EpoxidFiberReinforced, Polystyrene, Lithium, Silicone, Polybenzimidazole, PolyphenyleneSulfide,
-                Beryllium, PolyvinylChloride, Carbon, Polytetrafluoroethylene, BorosilicateGlass, Obsidian, Magnesium, Magnalium, Aluminium, Silicon, NickelZincFerrite, Potassium, Manganese);
+                Beryllium, PolyvinylChloride, Carbon, Polytetrafluoroethylene, BorosilicateGlass, Obsidian, Magnesium, Magnalium, Aluminium, Silicon, NickelZincFerrite, Potassium, Manganese, RedAlloy, DarkSteel, Ichorium, PulsatingIron,
+                EnergeticAlloy, EuropiumoxideMagnetic);
 /*     <For optimisation Vacuum Freezer recipes/> **/
 
         Wood.add(SubTag.WOOD, SubTag.FLAMMABLE, SubTag.NO_SMELTING, SubTag.NO_SMASHING);

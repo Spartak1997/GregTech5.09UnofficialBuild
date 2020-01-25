@@ -26,7 +26,9 @@ public class ProcessingIngot implements gregtech.api.interfaces.IOreRecipeRegist
         boolean aNoSmelting = aMaterial.contains(SubTag.NO_SMELTING);
         boolean aFreezing = aMaterial.contains(SubTag.HOT_MOLTEN);
         boolean aSuperbase = aMaterial.contains(SubTag.SUPER_COND_BASE);
-        boolean aFreezFilter = aMaterial.contains(SubTag.FREEZ_FAVORITE);
+        boolean aFreezSolidFilter = aMaterial.contains(SubTag.FREEZ_FAVORITE);
+        boolean aFreezerFilter = aMaterial.contains(SubTag.NOT_VACUUM_FREEZER);
+
         long aMaterialMass = aMaterial.getMass();
         boolean aSpecialRecipeReq = aMaterial.mUnificatable && (aMaterial.mMaterialInto == aMaterial) && !aMaterial.contains(SubTag.NO_SMASHING);
 
@@ -60,17 +62,17 @@ public class ProcessingIngot implements gregtech.api.interfaces.IOreRecipeRegist
 
                 int zTime;
                 int zEU;
-                if (aFreezing && !aSuperbase && aFreezFilter) {
+                if (aFreezing && !aSuperbase && aFreezSolidFilter) {
                     zTime = 21;
                     zEU = 120;
                     GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Ingot.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), zTime*20, zEU);
                 }
-                if (aFreezing && aMaterial.mMeltingPoint <= 1000 && !aSuperbase && !aFreezFilter) {//128 UE/t
+                if (aFreezing && aMaterial.mMeltingPoint <= 1000 && !aSuperbase && !aFreezSolidFilter) {//128 UE/t
                     zTime = (int) Math.max(aMaterialMass * 3L, 1L)/8;
                     zEU = 120;
                     GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Ingot.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), zTime*20, zEU);
                 }
-                if (aFreezing && aMaterial.mMeltingPoint <= 4000 && !aSuperbase && !aFreezFilter) {//480 UE/t
+                if (aFreezing && aMaterial.mMeltingPoint <= 4000 && !aSuperbase && !aFreezSolidFilter) {//480 UE/t
                     zTime = (int) Math.max(aMaterialMass * 3L, 1L)/6;
                     zEU = 120*4;
                     GT_Values.RA.addFreezerSolidifierRecipe(ItemList.Shape_MoldTungSteel_Ingot.get(0L), new FluidStack(FluidRegistry.getFluid("ic2coolant"), 100), aMaterial.getMoltenHot(144), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), zTime*20, zEU);
@@ -145,8 +147,12 @@ public class ProcessingIngot implements gregtech.api.interfaces.IOreRecipeRegist
                 }
                 break;
             case ingotHot:
-                GT_Values.RA.addVacuumFreezerRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), (int) Math.max(aMaterialMass * 3L, 1L));
-                GT_Values.RA.addSuperCoolingFreezerRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), Materials.SuperCoolant.getFluid(150), new FluidStack(FluidRegistry.getFluid("ic2hotcoolant"), 50), (int) Math.max(aMaterialMass * 3L, 1L)/6, (int) Math.max(aMaterial.getMass() / 10L, 1L) * aMaterial.mBlastFurnaceTemp);
+                if (!aFreezerFilter) {
+                    GT_Values.RA.addVacuumFreezerRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), (int) Math.max(aMaterialMass * 3L, 1L));
+                }
+                if (!aFreezerFilter) {
+                    GT_Values.RA.addSuperCoolingFreezerRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), Materials.SuperCoolant.getFluid(150), new FluidStack(FluidRegistry.getFluid("ic2hotcoolant"), 50), (int) Math.max(aMaterialMass * 3L, 1L) / 6, (int) Math.max(aMaterial.getMass() / 10L, 1L) * aMaterial.mBlastFurnaceTemp);
+                }
                 break;
         }
     }
