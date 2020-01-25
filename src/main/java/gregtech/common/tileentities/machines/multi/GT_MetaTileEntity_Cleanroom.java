@@ -45,7 +45,7 @@ public class GT_MetaTileEntity_Cleanroom extends GT_MetaTileEntity_MultiBlockBas
 				"1x LV or 1x MV Energy Hatch, 1x Maintainance Hatch",
 				"Up to 20 Machine Hull Item & Energy transfer through walls",
 				"Remaining Blocks: Plascrete, 20 min",
-				GT_Values.cleanroomGlass+"% of the Plascrete can be Glass Casing (min 20 Plascrete still apply)",
+				GT_Values.cleanroomGlass+"% of the Plascrete can be Cleanroom Glass (min 20 Plascrete still apply)",
 				"Consumes 40 EU/t when first turned on and 4 EU/t once at 100% efficiency",
 				"An energy hatch accepts up to 2A, so you can use 2A LV or 1A MV",
 				"2 LV batteries + 1 LV generator or 1 MV generator",
