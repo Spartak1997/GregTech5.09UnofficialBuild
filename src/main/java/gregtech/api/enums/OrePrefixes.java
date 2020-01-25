@@ -653,9 +653,9 @@ public enum OrePrefixes {
         for (Materials aMaterial : Materials.values()) {
             if (aMaterial.mMetaItemSubID > 0) {
                 if (aMaterial.mBlastFurnaceTemp <= 1750) ingotHot.mDisabledItems.add(aMaterial); //Moved HotIngot code from GT_MetaGenerated_Item_01 so all this is in once place
-                if (!enableUnusedSprings && (aMaterial != Materials.Titanium)) spring.mDisabledItems.add(aMaterial);
-                if (!enableUnusedSmallSprings) springSmall.mDisabledItems.add(aMaterial);
-                if (!enableUnusedRounds && !(aMaterial == Materials.HSSE || aMaterial == Materials.Neutronium || aMaterial == Materials.HSSG)) round.mDisabledItems.add(aMaterial);
+                if (!enableUnusedSprings && !(aMaterial == Materials.Titanium || aMaterial == Materials.Copper || aMaterial == Materials.Cupronickel || aMaterial == Materials.Kanthal || aMaterial == Materials.Nichrome || aMaterial == Materials.TungstenSteel || aMaterial == Materials.Tungsten || aMaterial == Materials.VanadiumGallium || aMaterial == Materials.HSSG || aMaterial == Materials.Naquadah || aMaterial == Materials.NaquadahAlloy || aMaterial == Materials.Tritanium || aMaterial == Materials.Neutronium || aMaterial == Materials.Draconium || aMaterial == Materials.Steel || aMaterial == Materials.TungstenSteel || aMaterial == Materials.Chrome || aMaterial == Materials.Iridium || aMaterial == Materials.Osmium || aMaterial == Materials.Gold || aMaterial == Materials.Aluminium || aMaterial == Materials.Vanadiumtriindinid || aMaterial == Materials.Tetraindiumditindibariumtitaniumheptacoppertetrakaidekaoxid || aMaterial == Materials.Tetranaquadahdiindiumhexaplatiumosminid || aMaterial == Materials.ElectrumFlux || aMaterial == Materials.Europium || aMaterial == Materials.Diamericiumtitanium || aMaterial == Materials.Lead || aMaterial == Materials.Tin || aMaterial == Materials.Quantium || aMaterial == Materials.BlackPlutonium)) spring.mDisabledItems.add(aMaterial);
+                if (!enableUnusedSmallSprings && !(aMaterial == Materials.Copper || aMaterial == Materials.Iron || aMaterial == Materials.Steel || aMaterial == Materials.Lead || aMaterial == Materials.Tin || aMaterial == Materials.Copper || aMaterial == Materials.Gold || aMaterial == Materials.Aluminium || aMaterial == Materials.Tungsten || aMaterial == Materials.VanadiumGallium || aMaterial == Materials.Naquadah || aMaterial == Materials.NaquadahAlloy || aMaterial == Materials.Europium || aMaterial == Materials.Draconium || aMaterial == Materials.Diamericiumtitanium || aMaterial == Materials.Neutronium || aMaterial == Materials.Quantium)) springSmall.mDisabledItems.add(aMaterial);
+                if (!enableUnusedRounds && !(aMaterial == Materials.HSSE || aMaterial == Materials.Neutronium || aMaterial == Materials.HSSG || aMaterial == Materials.Osmiridium || aMaterial == Materials.Tritanium || aMaterial == Materials.HSSS || aMaterial == Materials.Infuscolium || aMaterial == Materials.CosmicNeutronium)) round.mDisabledItems.add(aMaterial);
                 if (!enableUnusedCrates) {
                     if (!(aMaterial == Materials.DamascusSteel || aMaterial == Materials.Steel || aMaterial == Materials.Bronze || aMaterial == Materials.Manganese))
                         crateGtIngot.mDisabledItems.add(aMaterial);
@@ -686,60 +686,81 @@ public enum OrePrefixes {
                 if (!enableUnusedQuinIngots) ingotQuintuple.mDisabledItems.add(aMaterial);
                 if (!enableUnusedDoublePlates && ((aMaterial.mTypes & 0x40) == 0) && !(aMaterial == Materials.Paper || aMaterial == Materials.Aluminium || aMaterial == Materials.Steel || aMaterial == Materials.TungstenSteel))
                     plateDouble.mDisabledItems.add(aMaterial);
-                if (!enableUnusedTriplePlates && !(aMaterial == Materials.Paper)) plateTriple.mDisabledItems.add(aMaterial);
-                if (!enableUnusedQuadPlates && !(aMaterial == Materials.Paper)) plateQuadruple.mDisabledItems.add(aMaterial);
-                if (!enableUnusedQuinPlates && !(aMaterial == Materials.Paper)) plateQuintuple.mDisabledItems.add(aMaterial);
-                if (!(enableUnusedDensePlates || GregTech_API.mGTPlusPlus) && !(aMaterial == Materials.Iron || aMaterial == Materials.Copper || aMaterial == Materials.Lead || aMaterial == Materials.Paper))
+                if (!enableUnusedTriplePlates && !(aMaterial == Materials.Paper || aMaterial == Materials.Phoenixite || aMaterial == Materials.Silicon || aMaterial == Materials.Desh || aMaterial == Materials.Polybenzimidazole || aMaterial == Materials.Iridium || aMaterial == Materials.Osmiridium || aMaterial == Materials.Sunnarium || aMaterial == Materials.Americium || aMaterial == Materials.ElectrumFlux || aMaterial == Materials.HSSG || aMaterial == Materials.HSSS || aMaterial == Materials.GalliumArsenide || aMaterial == Materials.PerroxPolymer)) plateTriple.mDisabledItems.add(aMaterial);
+                if (!enableUnusedQuadPlates && !(aMaterial == Materials.Paper || aMaterial == Materials.Silicon || aMaterial == Materials.Polybenzimidazole || aMaterial == Materials.Sunnarium || aMaterial == Materials.Infuscolium || aMaterial == Materials.ElectrumFlux || aMaterial == Materials.Titanium || aMaterial == Materials.TungstenSteel)) plateQuadruple.mDisabledItems.add(aMaterial);
+                if (!enableUnusedQuinPlates && !(aMaterial == Materials.Paper || aMaterial == Materials.Silicon || aMaterial == Materials.Polybenzimidazole || aMaterial == Materials.Sunnarium || aMaterial == Materials.Titanium || aMaterial == Materials.Aluminium || aMaterial == Materials.StainlessSteel)) plateQuintuple.mDisabledItems.add(aMaterial);
+                if (!(enableUnusedDensePlates || GregTech_API.mGTPlusPlus) && !(aMaterial == Materials.Iron || aMaterial == Materials.Copper || aMaterial == Materials.Lead || aMaterial == Materials.Neutronium || aMaterial == Materials.Duranium || aMaterial == Materials.Plutonium241 || aMaterial == Materials.Osmiridium || aMaterial == Materials.Europium || aMaterial == Materials.Americium || aMaterial == Materials.Infuscolium || aMaterial == Materials.Silicon || aMaterial == Materials.Polybenzimidazole || aMaterial == Materials.Sunnarium || aMaterial == Materials.ElectrumFlux || aMaterial == Materials.Neutronium || aMaterial == Materials.PerroxPolymer || aMaterial == Materials.Iron || aMaterial == Materials.Steel || aMaterial == Materials.Paper))
                     plateDense.mDisabledItems.add(aMaterial);
 				
                 //Rotors
                 if (!enableUnusedRotors && !(aMaterial == Materials.Titanium || aMaterial == Materials.Chrome || aMaterial == Materials.Tin || aMaterial == Materials.Osmium ||
                         aMaterial == Materials.Iridium || aMaterial == Materials.Bronze || aMaterial == Materials.Steel || aMaterial == Materials.StainlessSteel ||
-                        aMaterial == Materials.TungstenSteel || aMaterial == Materials.HSSG || aMaterial == Materials.HSSE || aMaterial == Materials.Neutronium))
+                        aMaterial == Materials.TungstenSteel || aMaterial == Materials.HSSG || aMaterial == Materials.HSSE || aMaterial == Materials.HSSS || aMaterial == Materials.Osmiridium ||
+			aMaterial == Materials.NaquadahAlloy || aMaterial == Materials.Neutronium || aMaterial == Materials.Diamericiumtitanium || aMaterial == Materials.Aluminium ||
+			aMaterial == Materials.CosmicNeutronium || aMaterial == Materials.Lead || aMaterial == Materials.Phoenixite))
                     rotor.mDisabledItems.add(aMaterial);
                 //Rings
                 if (!enableUnusedRings && !(aMaterial == Materials.Titanium || aMaterial == Materials.Chrome || aMaterial == Materials.Iron || aMaterial == Materials.Tin ||
                         aMaterial == Materials.Osmium || aMaterial == Materials.Iridium || aMaterial == Materials.Bronze || aMaterial == Materials.WroughtIron ||
                         aMaterial == Materials.Steel || aMaterial == Materials.StainlessSteel || aMaterial == Materials.PigIron || aMaterial == Materials.TungstenSteel ||
                         aMaterial == Materials.Rubber || aMaterial == Materials.HSSE || aMaterial == Materials.Neutronium || aMaterial == Materials.HSSG || aMaterial == Materials.Aluminium || 
-                        aMaterial == Materials.Invar || aMaterial == Materials.Brass || aMaterial == Materials.Paper || aMaterial == Materials.Silicone || aMaterial == Materials.StyreneButadieneRubber))
+                        aMaterial == Materials.Invar || aMaterial == Materials.Brass || aMaterial == Materials.Paper || aMaterial == Materials.Silicone || aMaterial == Materials.StyreneButadieneRubber ||
+			aMaterial == Materials.HSSS || aMaterial == Materials.Osmiridium || aMaterial == Materials.NaquadahAlloy || aMaterial == Materials.Neutronium || aMaterial == Materials.Diamericiumtitanium ||
+			aMaterial == Materials.Aluminium || aMaterial == Materials.CosmicNeutronium || aMaterial == Materials.Lead || aMaterial == Materials.Phoenixite || aMaterial == Materials.Tritanium ||
+			aMaterial == Materials.NickelZincFerrite || aMaterial == Materials.Infuscolium || aMaterial == Materials.Silver))
                     ring.mDisabledItems.add(aMaterial);
                 //Foil
                 if (!enableUnusedFoil && !(aMaterial == Materials.Zinc || aMaterial == Materials.Aluminium || aMaterial == Materials.Silicon || aMaterial == Materials.Gold ||
                         aMaterial == Materials.Electrum || aMaterial == Materials.Platinum || aMaterial == Materials.Osmiridium || aMaterial == Materials.Osmium ||
-                        aMaterial == Materials.AnnealedCopper || aMaterial == Materials.Steel || aMaterial == Materials.Copper || aMaterial == Materials.YttriumBariumCuprate
-                        || aMaterial == Materials.VanadiumGallium || aMaterial == Materials.NiobiumTitanium || aMaterial == Materials.Naquadah || aMaterial == Materials.Manganese ||
+                        aMaterial == Materials.AnnealedCopper || aMaterial == Materials.Steel || aMaterial == Materials.Copper || aMaterial == Materials.YttriumBariumCuprate || 
+                        aMaterial == Materials.VanadiumGallium || aMaterial == Materials.NiobiumTitanium || aMaterial == Materials.Naquadah || aMaterial == Materials.Manganese ||
                         aMaterial == Materials.Plastic || aMaterial == Materials.Silicone || aMaterial == Materials.PolyvinylChloride || aMaterial == Materials.PolyphenyleneSulfide ||
-                		aMaterial == Materials.Nichrome || aMaterial == Materials.BlackSteel || aMaterial == Materials.Titanium || aMaterial == Materials.TungstenSteel || 
-                		aMaterial == Materials.Tungsten || aMaterial == Materials.HSSG || aMaterial == Materials.NaquadahAlloy || aMaterial == Materials.Duranium || 
-                		aMaterial == Materials.Europium))
+                	aMaterial == Materials.Nichrome || aMaterial == Materials.BlackSteel || aMaterial == Materials.Titanium || aMaterial == Materials.TungstenSteel || 
+                	aMaterial == Materials.Tungsten || aMaterial == Materials.HSSG || aMaterial == Materials.NaquadahAlloy || aMaterial == Materials.Duranium || 
+                	aMaterial == Materials.Europium || aMaterial == Materials.Bronze || aMaterial == Materials.StainlessSteel || aMaterial == Materials.VanadiumSteel ||
+			aMaterial == Materials.TungstenCarbide || aMaterial == Materials.Naquadria || aMaterial == Materials.Infuscolium  || aMaterial == Materials.Naquadah ||
+			aMaterial == Materials.Neutronium || aMaterial == Materials.Phoenixite || aMaterial == Materials.Gallium || aMaterial == Materials.Tantalum ||
+			aMaterial == Materials.Tin || aMaterial == Materials.Diamericiumtitanium || aMaterial == Materials.Polybenzimidazole || aMaterial == Materials.ElectrumFlux))
                     foil.mDisabledItems.add(aMaterial);
                 //Fine Wire
                 if (!enableUnusedFineWires && !(aMaterial == Materials.Steel || aMaterial == Materials.AnnealedCopper || aMaterial == Materials.Platinum || aMaterial == Materials.Osmium ||
                         aMaterial == Materials.Tin || aMaterial == Materials.Lead || aMaterial == Materials.SolderingAlloy || aMaterial == Materials.Copper || aMaterial == Materials.Electrum ||
-                        aMaterial == Materials.Gold || aMaterial == Materials.RedAlloy || aMaterial == Materials.Graphene || aMaterial == Materials.NiobiumTitanium || aMaterial == Materials.YttriumBariumCuprate ))
+                        aMaterial == Materials.Gold || aMaterial == Materials.RedAlloy || aMaterial == Materials.Graphene || aMaterial == Materials.NiobiumTitanium || aMaterial == Materials.YttriumBariumCuprate ||
+			aMaterial == Materials.NaquadahAlloy || aMaterial == Materials.Americium || aMaterial == Materials.Neutronium || aMaterial == Materials.Osmiridium || aMaterial == Materials.Europium ||
+			aMaterial == Materials.StainlessSteel || aMaterial == Materials.Iridium || aMaterial == Materials.Infuscolium || aMaterial == Materials.Aluminium || aMaterial == Materials.EnergeticAlloy ||
+			aMaterial == Materials.VibrantAlloy || aMaterial == Materials.TungstenSteel || aMaterial == Materials.Iridium || aMaterial == Materials.ElectrumFlux || aMaterial == Materials.BlackPlutonium ||
+			aMaterial == Materials.Lanthanum || aMaterial == Materials.Tritanium || aMaterial == Materials.Cobalt))
                     wireFine.mDisabledItems.add(aMaterial);
                 //Gears
                 if (!enableUnusedGears && !(aMaterial == Materials.Aluminium || aMaterial == Materials.Titanium || aMaterial == Materials.Iron || aMaterial == Materials.Copper ||
                         aMaterial == Materials.Tin || aMaterial == Materials.Gold || aMaterial == Materials.Stone || aMaterial == Materials.Bronze ||
                         aMaterial == Materials.Steel || aMaterial == Materials.StainlessSteel || aMaterial == Materials.TungstenSteel || aMaterial == Materials.CobaltBrass ||
-                        aMaterial == Materials.Diamond || aMaterial == Materials.Wood || aMaterial == Materials.HSSG || aMaterial == Materials.HSSE || aMaterial == Materials.Neutronium))
+                        aMaterial == Materials.Diamond || aMaterial == Materials.Wood || aMaterial == Materials.HSSG || aMaterial == Materials.HSSE || aMaterial == Materials.Neutronium ||
+			aMaterial == Materials.HSSS || aMaterial == Materials.Osmiridium || aMaterial == Materials.NaquadahAlloy || aMaterial == Materials.WroughtIron || aMaterial == Materials.CosmicNeutronium))
                     gearGt.mDisabledItems.add(aMaterial);
                 //Small Gears
                 if (!enableUnusedSmallGears && !(aMaterial == Materials.Aluminium || aMaterial == Materials.Titanium || aMaterial == Materials.Steel || aMaterial == Materials.StainlessSteel ||
-                        aMaterial == Materials.TungstenSteel || aMaterial == Materials.HSSG || aMaterial == Materials.HSSE || aMaterial == Materials.Neutronium))
+                        aMaterial == Materials.TungstenSteel || aMaterial == Materials.HSSG || aMaterial == Materials.HSSE || aMaterial == Materials.Neutronium ||
+			aMaterial == Materials.HSSS || aMaterial == Materials.Osmiridium || aMaterial == Materials.NaquadahAlloy || aMaterial == Materials.WroughtIron || aMaterial == Materials.CosmicNeutronium))
                     gearGtSmall.mDisabledItems.add(aMaterial);
                 //Bolts
                 if (!enableUnusedBolts && ((aMaterial.mTypes & 0x40) == 0) && !(aMaterial == Materials.Titanium || aMaterial == Materials.Chrome || aMaterial == Materials.Iron ||
                         aMaterial == Materials.Tin || aMaterial == Materials.Osmium || aMaterial == Materials.Iridium || aMaterial == Materials.Neutronium ||
                         aMaterial == Materials.Bronze || aMaterial == Materials.WroughtIron || aMaterial == Materials.Steel || aMaterial == Materials.StainlessSteel ||
-                        aMaterial == Materials.PigIron || aMaterial == Materials.TungstenSteel || aMaterial == Materials.Tungsten || aMaterial == Materials.HSSE || aMaterial == Materials.HSSG))
+                        aMaterial == Materials.PigIron || aMaterial == Materials.TungstenSteel || aMaterial == Materials.Tungsten || aMaterial == Materials.HSSE || aMaterial == Materials.HSSG ||
+			aMaterial == Materials.BlueAlloy || aMaterial == Materials.Gold || aMaterial == Materials.HSSS || aMaterial == Materials.RedAlloy || aMaterial == Materials.AnnealedCopper ||
+			aMaterial == Materials.Silver || aMaterial == Materials.Platinum || aMaterial == Materials.Europium || aMaterial == Materials.Americium || aMaterial == Materials.NiobiumTitanium ||
+			aMaterial == Materials.YttriumBariumCuprate || aMaterial == Materials.Electrum || aMaterial == Materials.Diamond || aMaterial == Materials.Indium || aMaterial == Materials.Phoenixite ||
+			aMaterial == Materials.Wood || aMaterial == Materials.Duranium || aMaterial == Materials.Infuscolium))
                     bolt.mDisabledItems.add(aMaterial);
                 //Screws
                 if (!enableUnusedScrews && ((aMaterial.mTypes & 0x40) == 0) && !(aMaterial == Materials.Titanium || aMaterial == Materials.Chrome || aMaterial == Materials.Iron ||
                         aMaterial == Materials.Tin || aMaterial == Materials.Osmium || aMaterial == Materials.Iridium || aMaterial == Materials.Neutronium ||
                         aMaterial == Materials.Bronze || aMaterial == Materials.WroughtIron || aMaterial == Materials.Steel || aMaterial == Materials.StainlessSteel ||
-                        aMaterial == Materials.PigIron || aMaterial == Materials.TungstenSteel || aMaterial == Materials.HSSE || aMaterial == Materials.HSSG))
+                        aMaterial == Materials.PigIron || aMaterial == Materials.TungstenSteel || aMaterial == Materials.HSSE || aMaterial == Materials.HSSG ||
+			aMaterial == Materials.Gold || aMaterial == Materials.HSSS || aMaterial == Materials.RedAlloy || aMaterial == Materials.AnnealedCopper || aMaterial == Materials.Silver ||
+			aMaterial == Materials.Platinum || aMaterial == Materials.Europium || aMaterial == Materials.Americium || aMaterial == Materials.Diamond || aMaterial == Materials.Phoenixite ||
+			aMaterial == Materials.Wood || aMaterial == Materials.Duranium || aMaterial == Materials.Infuscolium))
                     screw.mDisabledItems.add(aMaterial);
                 //Rods
                 if (!enableUnusedRods && ((aMaterial.mTypes & 0x40) == 0) && !(aMaterial == Materials.Titanium || aMaterial == Materials.Chrome || aMaterial == Materials.Iron ||
@@ -752,12 +773,13 @@ public enum OrePrefixes {
                         aMaterial == Materials.Electrum || aMaterial == Materials.NaquadahEnriched || aMaterial == Materials.CobaltBrass || aMaterial == Materials.IronMagnetic ||
                         aMaterial == Materials.SteelMagnetic || aMaterial == Materials.NeodymiumMagnetic || aMaterial == Materials.EuropiumoxideMagnetic || aMaterial == Materials.VanadiumGallium || aMaterial == Materials.Diamond ||
                         aMaterial == Materials.Wood || aMaterial == Materials.Plastic || aMaterial == Materials.Lead || aMaterial == Materials.SolderingAlloy || aMaterial == Materials.Lapis || 
-                        aMaterial == Materials.Lazurite || aMaterial == Materials.Sodalite|| aMaterial == Materials.PolyvinylChloride))
+                        aMaterial == Materials.Lazurite || aMaterial == Materials.Sodalite|| aMaterial == Materials.PolyvinylChloride || aMaterial == Materials.Duranium || aMaterial == Materials.Infuscolium || aMaterial == Materials.CosmicNeutronium ||
+			aMaterial == Materials.Europiumoxide))
                     stick.mDisabledItems.add(aMaterial);
                 //Long Rods
                 if (!enableUnusedLongRods && ((aMaterial.mTypes & 0x40) == 0) && !(aMaterial == Materials.Titanium || aMaterial == Materials.NeodymiumMagnetic || aMaterial == Materials.EuropiumoxideMagnetic || aMaterial == Materials.HSSG || aMaterial == Materials.HSSE ||
                         aMaterial == Materials.Neutronium || aMaterial == Materials.Americium || aMaterial == Materials.WroughtIron || aMaterial == Materials.Magnalium ||
-                        aMaterial == Materials.TungstenSteel))
+                        aMaterial == Materials.TungstenSteel || aMaterial == Materials.Europiumoxide))
                     stickLong.mDisabledItems.add(aMaterial);
 
                 if (!enableUnusedGems && ((aMaterial.mTypes & 0x04) == 0)){
@@ -768,7 +790,11 @@ public enum OrePrefixes {
                     gemExquisite.mDisabledItems.add(aMaterial);
                 }
                   //itemCasing
-                    if (!enableUnusedItemCasing) itemCasing.mDisabledItems.add(aMaterial);
+                    if (!enableUnusedItemCasing && !(aMaterial == Materials.Tin || aMaterial == Materials.Copper || aMaterial == Materials.Bronze || aMaterial == Materials.Iron || aMaterial == Materials.Steel || aMaterial == Materials.Aluminium ||
+		    aMaterial == Materials.StainlessSteel || aMaterial == Materials.Titanium || aMaterial == Materials.TungstenSteel || aMaterial == Materials.Iridium || aMaterial == Materials.Tungsten || aMaterial == Materials.FluxElectrum ||
+		    aMaterial == Materials.Lead || aMaterial == Materials.Electrum)) 
+		    
+		    itemCasing.mDisabledItems.add(aMaterial);
                 }
             }
         for (IMaterialHandler aRegistrator : Materials.mMaterialHandlers) {
