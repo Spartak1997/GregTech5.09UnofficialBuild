@@ -379,7 +379,7 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
     public static Materials Vinegar = new MaterialBuilder(690, TextureSet.SET_FLUID, "Vinegar").setColor(Dyes.dyeBrown).constructMaterial();
     public static Materials Wheat = new Materials(881, TextureSet.SET_POWDER, 		1.0F, 0, 0, 1, 255, 255, 196, 0, "Wheat", "Wheat", 0, 0, -1, 0, false, false, 1, 1, 1, Dyes.dyeYellow, Arrays.asList(new TC_Aspects.TC_AspectStack(TC_Aspects.MESSIS, 2)));
     public static Materials WoodGas = new MaterialBuilder(660, TextureSet.SET_FLUID, "Wood Gas").addCell().addGas().setRGB(222, 205, 135).setColor(Dyes.dyeBrown).setFuelType(MaterialBuilder.GAS).setFuelPower(24).constructMaterial();
-    public static Materials WoodTar = new MaterialBuilder(662, TextureSet.SET_FLUID, "Wood Tar").addCell().addFluid().setRGB(40, 23, 11).setColor(Dyes.dyeBrown).setFuelType(MaterialBuilder.SEMI).setFuelPower(50).constructMaterial();
+    public static Materials WoodTar = new MaterialBuilder(662, TextureSet.SET_FLUID, "Wood Tar").addCell().addFluid().addSemi().setRGB(40, 23, 11).setColor(Dyes.dyeBrown).setFuelType(MaterialBuilder.SEMI).setFuelPower(50).constructMaterial();
     public static Materials WoodVinegar = new MaterialBuilder(661, TextureSet.SET_FLUID, "Wood Vinegar").addCell().addFluid().setRGB(212, 85, 0).setColor(Dyes.dyeBrown).constructMaterial();
 
     /**
@@ -526,7 +526,7 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
     public static Materials BioDiesel = new MaterialBuilder(627, TextureSet.SET_FLUID, "Bio Diesel").addCell().addFluid().setRGB(255, 128, 0).setColor(Dyes.dyeOrange).setFuelType(MaterialBuilder.DIESEL).setFuelPower(192).constructMaterial();
     public static Materials NitrationMixture = new MaterialBuilder(628, TextureSet.SET_FLUID, "Nitration Mixture").addCell().setRGB(230, 226, 171).setColor(Dyes.dyeBrown).constructMaterial();
 
-    public static Materials Creosote = new MaterialBuilder(712, TextureSet.SET_FLUID, "Creosot").addCell().addFluid().setRGB(128, 64, 0).setColor(Dyes.dyeBrown).setFuelType(MaterialBuilder.SEMI).setFuelPower(50).constructMaterial();
+    public static Materials Creosote = new MaterialBuilder(712, TextureSet.SET_FLUID, "Creosot").addCell().addSemi().setRGB(128, 64, 0).setColor(Dyes.dyeBrown).setFuelType(MaterialBuilder.SEMI).setFuelPower(50).constructMaterial();
 
     public static Materials Glycerol = new MaterialBuilder(629, TextureSet.SET_FLUID, "Glycerol").addCell().addFluid().setRGB(135, 222, 135).setColor(Dyes.dyeLime).setFuelType(MaterialBuilder.SEMIFLUID).setFuelType(164).setMaterialList(new MaterialStack(Carbon, 3), new MaterialStack(Hydrogen, 8), new MaterialStack(Oxygen, 3)).addElectrolyzerRecipe().constructMaterial();
     public static Materials SodiumBisulfate = new MaterialBuilder(630, TextureSet.SET_FLUID, "Sodium Bisulfate").addDustItems().setRGB(0, 68, 85).setColor(Dyes.dyeBlue).setMaterialList(new MaterialStack(Sodium, 1), new MaterialStack(Hydrogen, 1), new MaterialStack(Sulfur, 1), new MaterialStack(Oxygen, 4)).constructMaterial();
@@ -918,7 +918,7 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
     public boolean mHasParentMod = true, mHasPlasma = false, mHasGas = false, mCustomOre = false;
     public Fluid mSolid = null, mFluid = null, mGas = null, mPlasma = null;
 
-    private boolean hasCorrespondingFluid = false, hasCorrespondingGas = false, canBeCracked = false;
+    private boolean hasCorrespondingFluid = false, hasCorrespondingGas = false, hasCorrespondingSemi = false, canBeCracked = false;
     private Fluid[] hydroCrackedFluids = new Fluid[3], steamCrackedFluids = new Fluid[3];
 
     /**
@@ -2161,11 +2161,18 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
 	public boolean hasCorrespondingGas() {
 		return hasCorrespondingGas;
 	}
-
-	public Materials setHasCorrespondingGas(boolean hasCorrespondingGas) {
+		public Materials setHasCorrespondingGas(boolean hasCorrespondingGas) {
 		this.hasCorrespondingGas = hasCorrespondingGas;
 		return this;
 	}
+    public boolean hasCorrespondingSemi() {
+        return hasCorrespondingSemi;
+    }
+        public Materials setHasCorrespondingSemi(boolean hasCorrespondingSemi) {
+        this.hasCorrespondingSemi = hasCorrespondingSemi;
+        return this;
+    }
+
     public boolean canBeCracked() {
       return canBeCracked;
 

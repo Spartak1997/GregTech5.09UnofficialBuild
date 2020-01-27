@@ -33,6 +33,7 @@ public class MaterialBuilder {
 	private List<TC_Aspects.TC_AspectStack> aspects = new ArrayList<TC_Aspects.TC_AspectStack>();
 	private boolean hasCorrespondingFluid = false;
 	private boolean hasCorrespondingGas = false;
+	private boolean hasCorrespondingSemi = false;
 	private boolean canBeCracked = false;
 	private boolean canBeSteamCracked = false;
 	private int liquidTemperature = 300;
@@ -50,6 +51,7 @@ public class MaterialBuilder {
 				blastFurnaceRequired, transparent, oreValue, densityMultiplier, densityDivider, color, extraData, materialList, aspects)
 				.setHasCorrespondingFluid(hasCorrespondingFluid)
 				.setHasCorrespondingGas(hasCorrespondingGas)
+				.setHasCorrespondingSemi(hasCorrespondingSemi)
 				.setCanBeCracked(canBeCracked);
 	}
 
@@ -110,6 +112,11 @@ public class MaterialBuilder {
 
 	public MaterialBuilder addGas(){
 		this.hasCorrespondingGas = true;
+		return this;
+	}
+
+	public MaterialBuilder addSemi(){
+		this.hasCorrespondingSemi = true;
 		return this;
 	}
 
