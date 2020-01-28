@@ -284,6 +284,14 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
         }
         return true;
     }
+    public boolean addCokeOvenRecipes(ItemStack aInput, ItemStack aOutput, FluidStack aFluidOutput, int aDuration) {
+        if ((aInput == null) || (aOutput == null)) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sCokeOvenRecipes.addRecipe(true, new ItemStack[]{aInput}, new ItemStack[]{aOutput}, null, null, null, new FluidStack[]{aFluidOutput}, aDuration, 0, 0);
+        return true;
+    }
+
 
     public boolean addCannerRecipe(ItemStack aInput1, ItemStack aInput2, ItemStack aOutput1, ItemStack aOutput2, int aDuration, int aEUt) {
         if ((aInput1 == null) || (aOutput1 == null)) {
