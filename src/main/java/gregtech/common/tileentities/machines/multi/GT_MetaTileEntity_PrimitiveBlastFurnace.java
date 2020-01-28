@@ -295,7 +295,7 @@ public abstract class GT_MetaTileEntity_PrimitiveBlastFurnace extends MetaTileEn
             }
         }
 
-        this.mMaxProgresstime = recipe.mDuration;
+        this.mMaxProgresstime = recipe.mDuration/getTier();
         this.mOutputItems = recipe.mOutputs;
         return true;
     }
@@ -315,6 +315,8 @@ public abstract class GT_MetaTileEntity_PrimitiveBlastFurnace extends MetaTileEn
     public byte getTileEntityBaseType() {
         return 0;
     }
+
+    public abstract byte getTier();
 
     public abstract String getName();
 }

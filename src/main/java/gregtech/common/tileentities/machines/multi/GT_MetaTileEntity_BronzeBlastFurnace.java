@@ -53,6 +53,11 @@ public class GT_MetaTileEntity_BronzeBlastFurnace
     }
 
     @Override
+    public byte getTier()  {
+        return 4;
+    }
+
+    @Override
     public String getName() {
         return "Bronze Blast Furnace";
     }

@@ -52,6 +52,11 @@ public class GT_MetaTileEntity_BrickedBlastFurnace extends GT_MetaTileEntity_Pri
 		return metaID == 15;
 	}
 
+    @Override
+    public byte getTier()  {
+        return 1;
+    }
+
 	@Override
 	public String getName() {
 		return "Bricked Blast Furnace";
