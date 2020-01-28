@@ -23,7 +23,7 @@ public class GT_MetaTileEntity_Boiler_Lava
         extends GT_MetaTileEntity_Boiler {
     public GT_MetaTileEntity_Boiler_Lava(int aID, String aName, String aNameRegional) {
         super(aID, aName, aNameRegional, new String[]{
-                "A Boiler running off Lava",
+                "A Boiler running off Lava or Creosote",
                 "Produces 600L of Steam per second",
                 "Causes 20 Pollution per second"});
     }
@@ -135,7 +135,7 @@ public class GT_MetaTileEntity_Boiler_Lava
     }
 
     public final int fill(FluidStack aFluid, boolean doFill) {
-        if ((GT_ModHandler.isLava(aFluid)) && (this.mProcessingEnergy < 50)) {
+        if ((GT_ModHandler.isLava(aFluid)) || (GT_ModHandler.isCreosote(aFluid)) && (this.mProcessingEnergy < 50)) {
             int tFilledAmount = Math.min(50, aFluid.amount);
             if (doFill) {
                 this.mProcessingEnergy += tFilledAmount;
