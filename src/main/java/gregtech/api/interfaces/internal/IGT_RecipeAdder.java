@@ -224,7 +224,7 @@ public interface IGT_RecipeAdder {
      */
     public boolean addPrimitiveBlastRecipe(ItemStack aInput1, ItemStack aInput2, int aCoalAmount, ItemStack aOutput1, ItemStack aOutput2, int aDuration);
 
-    public boolean addCokeOvenRecipes(ItemStack aInput, ItemStack aOutput, FluidStack aFluidOutput, int aDuration);
+    public boolean addCokeOvenRecipes(ItemStack aInput, ItemStack aOutput, FluidStack aFluidOutput, int aDuration, int aEUt);
 
     /**
      * Adds a Canning Machine Recipe

@@ -284,11 +284,8 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
         }
         return true;
     }
-    public boolean addCokeOvenRecipes(ItemStack aInput, ItemStack aOutput, FluidStack aFluidOutput, int aDuration) {
-        if ((aInput == null) || (aOutput == null)) {
-            return false;
-        }
-        GT_Recipe.GT_Recipe_Map.sCokeOvenRecipes.addRecipe(true, new ItemStack[]{aInput}, new ItemStack[]{aOutput}, null, null, null, new FluidStack[]{aFluidOutput}, aDuration, 0, 0);
+    public boolean addCokeOvenRecipes(ItemStack aInput, ItemStack aOutput, FluidStack aFluidOutput, int aDuration, int aEUt) {
+        GT_Recipe.GT_Recipe_Map.sCokeOvenRecipes.addRecipe(true, new ItemStack[]{aInput}, new ItemStack[]{aOutput}, null, null, null, new FluidStack[]{aFluidOutput}, aDuration, aEUt, 0);
         return true;
     }
 
