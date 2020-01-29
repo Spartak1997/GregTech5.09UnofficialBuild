@@ -585,7 +585,7 @@ public class GT_Recipe implements Comparable<GT_Recipe> {
         public static final GT_Recipe_Map sTinyWormHoleRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.tinywormhole", "Tiny Wormhole", null, RES_PATH_GUI + "basicmachines/Tesseract", 1, 6, 0, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sFarmRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.farm", "Tree Farm Factory", null, RES_PATH_GUI + "basicmachines/Default", 6, 6, 0, 0, 1, E, 1, E, true, true);
 
-        public static final GT_Recipe_Map sCokeOvenRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(200), "gt.recipe.cokeoven", "Coke Oven", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 1, 0, 1, E, 1, E, false, true);
+        public static final GT_Recipe_Map sCokeOvenRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(200), "gt.recipe.cokeoven", "Coke Oven", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 1, 0, 1, E, 1, E, true, true);
 
         public static final GT_Recipe_Map sSpaceResearchRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(900), "gt.recipe.spaceresearch", "Space Research Station", null, RES_PATH_GUI + "basicmachines/SpaceResearch", 6, 1, 1, 0, 1, E, 1, E, true, true);
         //public static final GT_Recipe_Map sSpaceResearchRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.spaceresearch", "Space Research Station", null, RES_PATH_GUI + "basicmachines/SpaceResearchStation", 6, 1, 0, 0, 1, E, 1, E, true, true);
