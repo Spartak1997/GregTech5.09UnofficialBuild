@@ -526,7 +526,7 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
     public static Materials BioDiesel = new MaterialBuilder(627, TextureSet.SET_FLUID, "Bio Diesel").addCell().addFluid().setRGB(255, 128, 0).setColor(Dyes.dyeOrange).setFuelType(MaterialBuilder.DIESEL).setFuelPower(192).constructMaterial();
     public static Materials NitrationMixture = new MaterialBuilder(628, TextureSet.SET_FLUID, "Nitration Mixture").addCell().setRGB(230, 226, 171).setColor(Dyes.dyeBrown).constructMaterial();
 
-    public static Materials Creosote = new MaterialBuilder(712, TextureSet.SET_FLUID, "Creosot").addCell().addSemi().setRGB(128, 64, 0).setColor(Dyes.dyeBrown).setFuelType(MaterialBuilder.SEMI).setFuelPower(50).constructMaterial();
+    public static Materials Creosote = new MaterialBuilder(712, TextureSet.SET_FLUID, "Creosot").addCell().addSemi().setRGB(128, 64, 0).setColor(Dyes.dyeBrown).setFuelType(MaterialBuilder.SEMI).setFuelPower(10).constructMaterial();
 
     public static Materials Glycerol = new MaterialBuilder(629, TextureSet.SET_FLUID, "Glycerol").addCell().addFluid().setRGB(135, 222, 135).setColor(Dyes.dyeLime).setFuelType(MaterialBuilder.SEMIFLUID).setFuelType(164).setMaterialList(new MaterialStack(Carbon, 3), new MaterialStack(Hydrogen, 8), new MaterialStack(Oxygen, 3)).addElectrolyzerRecipe().constructMaterial();
     public static Materials SodiumBisulfate = new MaterialBuilder(630, TextureSet.SET_FLUID, "Sodium Bisulfate").addDustItems().setRGB(0, 68, 85).setColor(Dyes.dyeBlue).setMaterialList(new MaterialStack(Sodium, 1), new MaterialStack(Hydrogen, 1), new MaterialStack(Sulfur, 1), new MaterialStack(Oxygen, 4)).constructMaterial();
