@@ -1608,8 +1608,11 @@ if(Loader.isModLoaded("Railcraft")){
         GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.TungstenSteel, 6L), ItemList.Casing_Turbine.get(1L, new Object[0]), ItemList.Casing_Turbine3.get(2L, new Object[0]), 50, 16);
         GT_Values.RA.addAssemblerRecipe(ItemList.Casing_SolidSteel.get(1, new Object[0]), GT_Utility.getIntegratedCircuit(6), Materials.Polytetrafluoroethylene.getMolten(216), ItemList.Casing_Chemically_Inert.get(1, new Object[0]), 50, 16);
         GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.TungstenCarbide, 6L), GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.TungstenCarbide, 1L), ItemList.Casing_RadiationProof.get(2L, new Object[0]), 50, 16);
-        GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Bronze, 6L), new ItemStack(Blocks.brick_block, 1), ItemList.Casing_BronzePlatedBricks.get(2L, new Object[0]), 50, 16);
-        GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Neutronium, 6L), GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.Neutronium, 1L), ItemList.Casing_RobustNeutronium.get(2L, new Object[0]), 50, 16);
+        if(GT_Mod.gregtechproxy.mComponentAssembler){
+	GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Bronze, 4L), new ItemStack(Blocks.brick_block, 1), ItemList.Casing_BronzePlatedBricks.get(1L, new Object[0]), 60, 4);
+	}
+	GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Bronze, 6L), new ItemStack(Blocks.brick_block, 1), ItemList.Casing_BronzePlatedBricks.get(2L, new Object[0]), 50, 16);
+	GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Neutronium, 6L), GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.Neutronium, 1L), ItemList.Casing_RobustNeutronium.get(2L, new Object[0]), 50, 16);
         
         if (GT_Mod.gregtechproxy.mHardMachineCasings) {
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Lead, 2L), ItemList.Casing_ULV.get(1L, new Object[0]), Materials.Plastic.getMolten(288), ItemList.Hull_ULV.get(1L, new Object[0]), 25, 8);
