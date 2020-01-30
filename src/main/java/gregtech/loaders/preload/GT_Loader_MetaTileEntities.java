@@ -58,7 +58,7 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         if (Loader.isModLoaded("DraconicEvolution")){
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_UMV.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', OrePrefixes.plate.get(Materials.DraconiumAwakened)});
         }
-        GT_ModHandler.addCraftingRecipe(ItemList.Casing_BronzePlatedBricks.get(2L, new Object[0]), bits, new Object[]{"PhP", "PBP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Bronze), 'B', new ItemStack(Blocks.brick_block, 1)});
+        //GT_ModHandler.addCraftingRecipe(ItemList.Casing_BronzePlatedBricks.get(2L, new Object[0]), bits, new Object[]{"PhP", "PBP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Bronze), 'B', new ItemStack(Blocks.brick_block, 1)});
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_SolidSteel.get(2L, new Object[0]), bits, new Object[]{"PhP", "PFP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Steel), 'F', OrePrefixes.frameGt.get(Materials.Steel)});
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_StableTitanium.get(2L, new Object[0]), bits, new Object[]{"PhP", "PFP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Titanium), 'F', OrePrefixes.frameGt.get(Materials.Titanium)});
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_HeatProof.get(2L, new Object[0]), bits, new Object[]{"PhP", "PFP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Invar), 'F', OrePrefixes.frameGt.get(Materials.Invar)});
@@ -449,7 +449,7 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         
         ItemList.Machine_Bronze_BlastFurnace.set(new GT_MetaTileEntity_BronzeBlastFurnace(108, "bronzemachine.blastfurnace", "Bronze Plated Blast Furnace").getStackForm(1L));
         if (!Loader.isModLoaded("terrafirmacraft")) {
-            GT_ModHandler.addCraftingRecipe(ItemList.Machine_Bronze_BlastFurnace.get(1L, new Object[0]), bits, new Object[]{"PFP", "FwF", "PFP", 'P', OrePrefixes.plate.get(Materials.Bronze), 'F', OreDictNames.craftingFurnace});
+            GT_ModHandler.addCraftingRecipe(ItemList.Machine_Bronze_BlastFurnace.get(1L, new Object[0]), bits, new Object[]{"BFB", "FwF", "PFP", 'B', ItemList.Casing_BronzePlatedBricks, 'P', OrePrefixes.plateDouble.get(Materials.Steel), 'F', OreDictNames.craftingIronFurnace});
         }
 
         ItemList.Machine_Bricked_BlastFurnace.set(new GT_MetaTileEntity_BrickedBlastFurnace(130, "multimachine.brickedblastfurnace", "Bricked Blast Furnace").getStackForm(1L));
