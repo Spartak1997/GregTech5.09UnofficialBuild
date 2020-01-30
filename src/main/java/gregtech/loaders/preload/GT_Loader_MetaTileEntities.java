@@ -449,14 +449,16 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         GT_ModHandler.addCraftingRecipe(ItemList.Machine_Bronze_Boiler_Solar.get(1L, new Object[0]), bits, new Object[]{"GGG", "SSS", aTextPlateMotor, 'M', ItemList.Hull_Bronze_Bricks, 'P', OrePrefixes.pipeSmall.get(Materials.Bronze), 'S', OrePrefixes.plateDouble.get(Materials.Silver), 'G', new ItemStack(Blocks.glass, 1)});
         GT_ModHandler.addCraftingRecipe(ItemList.Machine_HP_Solar.get(1L), bits, new Object[]{"GGG", "SSS", aTextPlateMotor, 'M', ItemList.Hull_Steel_Bricks, 'P', OrePrefixes.pipeSmall.get(Materials.Steel), 'S', OrePrefixes.plateTriple.get(Materials.Silver), 'G', GT_ModHandler.getModItem("IC2","blockAlloyGlass",1L)});
         
-        ItemList.Machine_Bronze_BlastFurnace.set(new GT_MetaTileEntity_BronzeBlastFurnace(108, "bronzemachine.blastfurnace", "Bronze Plated Blast Furnace").getStackForm(1L));
-        if (!Loader.isModLoaded("terrafirmacraft")) {
-            GT_ModHandler.addCraftingRecipe(ItemList.Machine_Bronze_BlastFurnace.get(1L, new Object[0]), bits, new Object[]{"BPB", "PCP", "BPB", 'B', ItemList.Casing_BronzePlatedBricks, 'P', OrePrefixes.plateTriple.get(Materials.Steel), 'C', ItemList.Machine_Bricked_BlastFurnace});
-        }
+
 
         ItemList.Machine_Bricked_BlastFurnace.set(new GT_MetaTileEntity_BrickedBlastFurnace(130, "multimachine.brickedblastfurnace", "Bricked Blast Furnace").getStackForm(1L));
         if (GT_Mod.gregtechproxy.mBrickedBlastFurnace) {
         	GT_ModHandler.addCraftingRecipe(ItemList.Machine_Bricked_BlastFurnace.get(1L, new Object[0]), GT_ModHandler.RecipeBits.NOT_REMOVABLE | GT_ModHandler.RecipeBits.BUFFERED, new Object[]{"PFP", "FwF", "PFP", 'P', ItemList.Casing_Firebricks, 'F', OreDictNames.craftingIronFurnace});
+        }
+
+        ItemList.Machine_Bronze_BlastFurnace.set(new GT_MetaTileEntity_BronzeBlastFurnace(108, "bronzemachine.blastfurnace", "Bronze Plated Blast Furnace").getStackForm(1L));
+        if (!Loader.isModLoaded("terrafirmacraft")) {
+            GT_ModHandler.addCraftingRecipe(ItemList.Machine_Bronze_BlastFurnace.get(1L, new Object[0]), bits, new Object[]{"BPB", "PCP", "BPB", 'B', ItemList.Casing_BronzePlatedBricks, 'P', OrePrefixes.plateTriple.get(Materials.Steel), 'C', ItemList.Machine_Bricked_BlastFurnace});
         }
         
         ItemList.Machine_Bronze_Furnace.set(new GT_MetaTileEntity_Furnace_Bronze(103, "bronzemachine.furnace", "Steam Furnace").getStackForm(1L));
