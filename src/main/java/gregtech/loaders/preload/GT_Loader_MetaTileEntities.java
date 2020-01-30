@@ -58,8 +58,10 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         if (Loader.isModLoaded("DraconicEvolution")){
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_UMV.get(1L, new Object[0]), bits, new Object[]{aTextPlate, aTextPlateWrench, aTextPlate, 'P', OrePrefixes.plate.get(Materials.DraconiumAwakened)});
         }
-        //GT_ModHandler.addCraftingRecipe(ItemList.Casing_BronzePlatedBricks.get(2L, new Object[0]), bits, new Object[]{"PhP", "PBP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Bronze), 'B', new ItemStack(Blocks.brick_block, 1)});
-        GT_ModHandler.addCraftingRecipe(ItemList.Casing_SolidSteel.get(2L, new Object[0]), bits, new Object[]{"PhP", "PFP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Steel), 'F', OrePrefixes.frameGt.get(Materials.Steel)});
+	if(!GT_Mod.gregtechproxy.mComponentAssembler){
+	GT_ModHandler.addCraftingRecipe(ItemList.Casing_BronzePlatedBricks.get(2L, new Object[0]), bits, new Object[]{"PhP", "PBP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Bronze), 'B', new ItemStack(Blocks.brick_block, 1)});
+	}
+	GT_ModHandler.addCraftingRecipe(ItemList.Casing_SolidSteel.get(2L, new Object[0]), bits, new Object[]{"PhP", "PFP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Steel), 'F', OrePrefixes.frameGt.get(Materials.Steel)});
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_StableTitanium.get(2L, new Object[0]), bits, new Object[]{"PhP", "PFP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Titanium), 'F', OrePrefixes.frameGt.get(Materials.Titanium)});
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_HeatProof.get(2L, new Object[0]), bits, new Object[]{"PhP", "PFP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Invar), 'F', OrePrefixes.frameGt.get(Materials.Invar)});
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_FrostProof.get(2L, new Object[0]), bits, new Object[]{"PhP", "PFP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Aluminium), 'F', OrePrefixes.frameGt.get(Materials.Aluminium)});
