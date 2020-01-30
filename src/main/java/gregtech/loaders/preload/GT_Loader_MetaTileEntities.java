@@ -451,7 +451,7 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         
         ItemList.Machine_Bronze_BlastFurnace.set(new GT_MetaTileEntity_BronzeBlastFurnace(108, "bronzemachine.blastfurnace", "Bronze Plated Blast Furnace").getStackForm(1L));
         if (!Loader.isModLoaded("terrafirmacraft")) {
-            GT_ModHandler.addCraftingRecipe(ItemList.Machine_Bronze_BlastFurnace.get(1L, new Object[0]), bits, new Object[]{"BFB", "FwF", "PFP", 'B', ItemList.Casing_BronzePlatedBricks, 'P', OrePrefixes.plateDouble.get(Materials.Steel), 'F', OreDictNames.craftingIronFurnace});
+            GT_ModHandler.addCraftingRecipe(ItemList.Machine_Bronze_BlastFurnace.get(1L, new Object[0]), bits, new Object[]{"BPB", "PCP", "BPB", 'B', ItemList.Casing_BronzePlatedBricks, 'P', OrePrefixes.plateTriple.get(Materials.Steel), 'C', ItemList.Machine_Bricked_BlastFurnace});
         }
 
         ItemList.Machine_Bricked_BlastFurnace.set(new GT_MetaTileEntity_BrickedBlastFurnace(130, "multimachine.brickedblastfurnace", "Bricked Blast Furnace").getStackForm(1L));
