@@ -9,6 +9,9 @@ import gregtech.api.objects.GT_RenderedTexture;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumChatFormatting;
+import net.minecraftforge.common.util.ForgeDirection;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.IFluidHandler;
 
 public class GT_MetaTileEntity_QuantumTank
         extends GT_MetaTileEntity_BasicTank {
@@ -43,6 +46,29 @@ public class GT_MetaTileEntity_QuantumTank
     public boolean onRightclick(IGregTechTileEntity aBaseMetaTileEntity, EntityPlayer aPlayer) {
         if (aBaseMetaTileEntity.isClientSide()) return true;
         aBaseMetaTileEntity.openGUI(aPlayer);
+        return true;
+    }
+
+    @Override
+    public void onPostTick(IGregTechTileEntity aBaseMetaTileEntity, long aTick) {
+        super.onPostTick(aBaseMetaTileEntity, aTick);
+        if (getBaseMetaTileEntity().isServerSide()) {
+            if (this.mFluid != null) {
+                IFluidHandler tTank = aBaseMetaTileEntity.getITankContainerAtSide((byte) 0);
+                if (tTank != null) {
+                    FluidStack tDrained = drain((mTier+1)*5000, false);
+                    if (tDrained != null) {
+                        int tFilledAmount = tTank.fill(ForgeDirection.DOWN, tDrained, false);
+                        if (tFilledAmount > 0)
+                            tTank.fill(ForgeDirection.DOWN, drain(tFilledAmount, true), true);
+                    }
+                }
+            }
+        }
+    }
+
+    @Override
+    public boolean isLiquidOutput(byte aSide) {
         return true;
     }
 
