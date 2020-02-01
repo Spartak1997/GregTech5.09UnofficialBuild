@@ -11,6 +11,7 @@ import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_BasicTank;
 import gregtech.api.objects.GT_RenderedTexture;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.common.util.ForgeDirection;
+import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTankInfo;
 import net.minecraftforge.fluids.IFluidHandler;
 
@@ -55,6 +56,22 @@ public class GT_MetaTileEntity_WaterGenerator extends GT_MetaTileEntity_BasicTan
 
             for(byte tSide = 0; tSide < 6; ++tSide) {
                 IFluidHandler tTileEntity = aBaseMetaTileEntity.getITankContainerAtSide(tSide);
+                if (this.mFluid != null) {
+                    IFluidHandler tTank = aBaseMetaTileEntity.getITankContainerAtSide(tSide);
+                    if (tTank != null) {
+                        FluidStack tDrained = drain((mTier+1)*5000, false);
+                        if (tDrained != null) {
+                            int tFilledAmount = tTank.fill(ForgeDirection.UNKNOWN, tDrained, false);
+                            if (tFilledAmount > 0)
+                                tTank.fill(ForgeDirection.DOWN, drain(tFilledAmount, true), true);
+                            tTank.fill(ForgeDirection.UP, drain(tFilledAmount, true), true);
+                            tTank.fill(ForgeDirection.EAST, drain(tFilledAmount, true), true);
+                            tTank.fill(ForgeDirection.NORTH, drain(tFilledAmount, true), true);
+                            tTank.fill(ForgeDirection.WEST, drain(tFilledAmount, true), true);
+                            tTank.fill(ForgeDirection.SOUTH, drain(tFilledAmount, true), true);
+                        }
+                    }
+                }
                 if (tTileEntity != null) {
                     if (tTileEntity instanceof IGregTechTileEntity && aBaseMetaTileEntity.getColorization() >= 0) {
                         byte tColor = ((IGregTechTileEntity)tTileEntity).getColorization();
