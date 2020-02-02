@@ -203,7 +203,7 @@ public abstract class GT_MetaTileEntity_PrimitiveBlastFurnace extends MetaTileEn
                 GT_Pollution.addPollution(this.getBaseMetaTileEntity().getWorld(),
                         new ChunkPosition(this.getBaseMetaTileEntity().getXCoord(), this.getBaseMetaTileEntity().getYCoord(),
                                 this.getBaseMetaTileEntity().getZCoord()),
-                        200);
+                        setPollut());
             }
 
             aBaseMetaTileEntity.setActive((this.mMaxProgresstime > 0) && (this.mMachine));
@@ -242,6 +242,8 @@ public abstract class GT_MetaTileEntity_PrimitiveBlastFurnace extends MetaTileEn
             }
         }
     }
+
+    public abstract int setPollut();
 
     private void addOutputProducts() {
         if (this.mOutputItems == null) {
@@ -319,6 +321,4 @@ public abstract class GT_MetaTileEntity_PrimitiveBlastFurnace extends MetaTileEn
     public abstract byte getTier();
 
     public abstract String getName();
-
-    public abstract int getPollutionPerTick(ItemStack aStack);
 }
