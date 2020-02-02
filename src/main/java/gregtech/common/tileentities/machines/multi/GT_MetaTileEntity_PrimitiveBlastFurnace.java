@@ -319,4 +319,6 @@ public abstract class GT_MetaTileEntity_PrimitiveBlastFurnace extends MetaTileEn
     public abstract byte getTier();
 
     public abstract String getName();
+
+    public abstract int getPollutionPerTick(ItemStack aStack);
 }
