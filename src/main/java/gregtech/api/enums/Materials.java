@@ -842,10 +842,10 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
     @Deprecated public static Materials DarkAshes = new Materials(DarkAsh, false);
     @Deprecated public static Materials Abyssal = new Materials(Basalt, false);
     @Deprecated public static Materials Adamant = new Materials(Adamantium, true);
-    @Deprecated public static Materials AluminumBrass = new Materials(AluminiumBrass, false);
-   // @Deprecated public static Materials Aluminum = new Materials(Aluminium, false);
-    @Deprecated public static Materials NaturalAluminum = new Materials(Aluminium, false);
-    @Deprecated public static Materials NaturalAluminium = new Materials(Aluminium, false);
+//    @Deprecated public static Materials AluminumBrass = new Materials(AluminiumBrass, false);
+//    @Deprecated public static Materials Aluminum = new Materials(Aluminium, false);
+//    @Deprecated public static Materials NaturalAluminum = new Materials(Aluminum, false);
+//    @Deprecated public static Materials NaturalAluminium = new Materials(Aluminium, false);
     @Deprecated public static Materials Americum = new Materials(Americium, false);
     @Deprecated public static Materials Beryl = new Materials(Emerald, false);
     @Deprecated public static Materials BlackGranite = new Materials(GraniteBlack, false);
