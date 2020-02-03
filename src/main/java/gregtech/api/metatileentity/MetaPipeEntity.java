@@ -229,6 +229,9 @@ public abstract class MetaPipeEntity implements IMetaTileEntity, IConnectable {
     }
 
     @Override
+    public void onHardHammerRightClick(byte aSide, EntityPlayer aPlayer, float aX, float aY, float aZ) {/**/}
+
+    @Override
     public void onExplosion() {/*Do nothing*/}
 
     @Override

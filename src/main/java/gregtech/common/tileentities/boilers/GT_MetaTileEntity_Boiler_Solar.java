@@ -11,6 +11,7 @@ import gregtech.api.util.GT_ModHandler;
 import gregtech.api.util.GT_Utility;
 import gregtech.common.gui.GT_Container_Boiler;
 import gregtech.common.gui.GT_GUIContainer_Boiler;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumChatFormatting;
@@ -39,9 +40,8 @@ public class GT_MetaTileEntity_Boiler_Solar
                 "Steam Power by the Sun",
                 "Produces 120L of Steam per second",
                 "Calcifies over time, reducing Steam output to 40L/s",
-                "Break and replace to decalcify"};
+                "Rigth click with hammer to decalcify"};
     }
-
 
     public ITexture[][][] getTextureSet(ITexture[] aTextures) {
         ITexture[][][] rTextures = new ITexture[4][17][];
@@ -125,6 +125,15 @@ public class GT_MetaTileEntity_Boiler_Solar
         } else {
             return this.basicOutput;
         }
+    }
+
+    @Override
+    public void onHardHammerRightClick(byte aSide, EntityPlayer aPlayer, float aX, float aY, float aZ) {
+        if(this.mRunTime > (CALCIFICATION_TIME / 3)) {
+            this.mRunTime = 0;
+            GT_Utility.sendChatToPlayer(aPlayer, "You have eliminated calcification. Efficiency restored.");
+        }
+        return;
     }
 
     public int getBasicOutput() {

@@ -1296,6 +1296,7 @@ public class BaseMetaTileEntity extends BaseTileEntity implements IGregTechTileE
                             mInputDisabled = !mInputDisabled;
                             if (mInputDisabled) mOutputDisabled = !mOutputDisabled;
                             GT_Utility.sendChatToPlayer(aPlayer, trans("086","Auto-Input: ") + (mInputDisabled ? trans("087","Disabled") : trans("088","Enabled") + trans("089","  Auto-Output: ") + (mOutputDisabled ? trans("087","Disabled") : trans("088","Enabled"))));
+                            mMetaTileEntity.onHardHammerRightClick(aSide, aPlayer, aX, aY, aZ);
                             GT_Utility.sendSoundToPlayers(worldObj, GregTech_API.sSoundList.get(1), 1.0F, -1, xCoord, yCoord, zCoord);
                         }
                         return true;

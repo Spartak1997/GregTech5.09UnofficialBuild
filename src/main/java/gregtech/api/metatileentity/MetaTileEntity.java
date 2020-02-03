@@ -186,6 +186,9 @@ public abstract class MetaTileEntity implements IMetaTileEntity {
         }
         return false;
     }
+
+    @Override
+    public void onHardHammerRightClick(byte aSide, EntityPlayer aPlayer, float aX, float aY, float aZ) { /* */}
         
     @Override
     public void onExplosion() {/*Do nothing*/}

@@ -144,6 +144,11 @@ public interface IMetaTileEntity extends ISidedInventory, IFluidTank, IFluidHand
     boolean onSolderingToolRightClick(byte aSide, byte aWrenchingSide, EntityPlayer aPlayer, float aX, float aY, float aZ);
 
     /**
+     * When a Player rightclicks the Facing with a hammer.
+     */
+    void onHardHammerRightClick(byte aSide, EntityPlayer aPlayer, float aX, float aY, float aZ);
+
+    /**
      * Called right before this Machine explodes
      */
     void onExplosion();
