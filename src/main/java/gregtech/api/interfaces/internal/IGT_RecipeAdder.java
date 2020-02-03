@@ -678,6 +678,11 @@ public interface IGT_RecipeAdder {
      */
     public boolean addArcFurnaceRecipe(ItemStack aInput, ItemStack[] aOutputs, int[] aChances, int aDuration, int aEUt, boolean hidden);
 
+
+    public boolean addDustWashRecipe(ItemStack aInput,FluidStack aFluidInput, ItemStack aOutput, int aDuration, int aEUt);
+
+
+
     
     /**
      * Adds a Recipe for the GT Pulveriser. (up to 4 Outputs)

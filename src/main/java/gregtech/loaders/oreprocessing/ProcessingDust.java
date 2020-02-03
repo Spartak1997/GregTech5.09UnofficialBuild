@@ -33,6 +33,10 @@ public class ProcessingDust implements gregtech.api.interfaces.IOreRecipeRegistr
                     }
                 }
 
+                GT_Values.RA.addDustWashRecipe(GT_OreDictUnificator.get(OrePrefixes.dustPure, aMaterial, 1L), Materials.Water.getFluid(100L), GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial, 1L), 4, 7);
+                GT_Values.RA.addDustWashRecipe(GT_OreDictUnificator.get(OrePrefixes.dustImpure, aMaterial, 1L), Materials.Water.getFluid(100L), GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial, 1L), 4, 7);
+
+
                 ItemStack tDustStack;
                 if ((null != (tDustStack = GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial.mSmeltInto, 1L))) && (!aMaterial.contains(SubTag.NO_SMELTING))) {
                     if (aMaterial.mBlastFurnaceRequired) {

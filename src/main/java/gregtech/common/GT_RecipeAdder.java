@@ -1218,6 +1218,11 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
         return true;
     }
 
+    public boolean addDustWashRecipe(ItemStack aInput, FluidStack aFluidInput, ItemStack aOutput, int aDuration, int aEUt) {
+	    GT_Recipe.GT_Recipe_Map.sDustWashRecipes.addRecipe(true, new ItemStack[]{aInput}, new ItemStack[]{aOutput}, null, new FluidStack[]{aFluidInput}, null, aDuration, aEUt, 0);
+	    return true;
+    }
+
 
 
     public boolean addAutoclaveRecipe(ItemStack aInput, FluidStack aFluid, ItemStack aOutput, int aChance, int aDuration, int aEUt) {
