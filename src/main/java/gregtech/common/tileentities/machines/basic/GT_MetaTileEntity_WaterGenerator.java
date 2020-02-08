@@ -17,7 +17,7 @@ import net.minecraftforge.fluids.IFluidHandler;
 
 public class GT_MetaTileEntity_WaterGenerator extends GT_MetaTileEntity_BasicTank {
     public GT_MetaTileEntity_WaterGenerator(int aID, String aName, String aNameRegional, int aTier, Object[] aRecipe) {
-        super(aID, aName, aNameRegional, aTier, 3, "Condense " + 100 * ((aTier+1)+(aTier)) + "L per tick of water from Air.", new ITexture[0]);
+        super(aID, aName, aNameRegional, aTier, 3, "Condense " + 100 * (1 << aTier - 1) * (1 << aTier - 1) + "L per tick of water from Air.", new ITexture[0]);
     }
 
     public GT_MetaTileEntity_WaterGenerator(String mName, byte mTier, String aDescription, ITexture[][][] mTextures) {
@@ -93,7 +93,7 @@ public class GT_MetaTileEntity_WaterGenerator extends GT_MetaTileEntity_BasicTan
     }
 
     private int generateWaterAmount() {
-        return 100 * ((this.mTier+1)+(this.mTier));
+        return 100 * (1 << this.mTier - 1) * (1 << this.mTier - 1);
     }
 
     public boolean onRightclick(IGregTechTileEntity aBaseMetaTileEntity, EntityPlayer aPlayer) {
