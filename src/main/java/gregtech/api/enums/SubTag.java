@@ -108,6 +108,10 @@ public final class SubTag implements ICondition<ISubTagContainer> {
      */
     public static final SubTag FOOD = getNewSubTag("FOOD");
     /**
+     * If this Material is some kind of Pure or Impure dust and crashed
+     */
+    public static final SubTag PUREIMPURE = getNewSubTag("PUREIMPURE");
+    /**
      * If this Material is some kind of Stone
      */
     public static final SubTag STONE = getNewSubTag("STONE");

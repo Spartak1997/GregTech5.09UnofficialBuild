@@ -20,6 +20,7 @@ public class ProcessingDust implements gregtech.api.interfaces.IOreRecipeRegistr
     }
 
     public void registerOre(OrePrefixes aPrefix, Materials aMaterial, String aOreDictName, String aModName, ItemStack aStack) {
+        boolean aWasher = aMaterial.contains(SubTag.PUREIMPURE);
         switch (aPrefix) {
             case dust:
                 if (aMaterial.mFuelPower > 0)
@@ -32,10 +33,10 @@ public class ProcessingDust implements gregtech.api.interfaces.IOreRecipeRegistr
                         GT_RecipeRegistrator.registerReverseArcSmelting(GT_Utility.copyAmount(1L, new Object[]{aStack}), aMaterial, aPrefix.mMaterialAmount, null, null, null);
                     }
                 }
-
-                GT_Values.RA.addDustWashRecipe(GT_OreDictUnificator.get(OrePrefixes.dustPure, aMaterial, 1L), Materials.Water.getFluid(100L), GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial, 1L), 4, 7);
-                GT_Values.RA.addDustWashRecipe(GT_OreDictUnificator.get(OrePrefixes.dustImpure, aMaterial, 1L), Materials.Water.getFluid(100L), GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial, 1L), 4, 7);
-
+                if (aWasher) {
+                    GT_Values.RA.addDustWashRecipe(GT_OreDictUnificator.get(OrePrefixes.dustPure, aMaterial, 1L), Materials.Water.getFluid(100L), GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial, 1L), 4, 7);
+                    GT_Values.RA.addDustWashRecipe(GT_OreDictUnificator.get(OrePrefixes.dustImpure, aMaterial, 1L), Materials.Water.getFluid(100L), GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial, 1L), 4, 7);
+                }
 
                 ItemStack tDustStack;
                 if ((null != (tDustStack = GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial.mSmeltInto, 1L))) && (!aMaterial.contains(SubTag.NO_SMELTING))) {

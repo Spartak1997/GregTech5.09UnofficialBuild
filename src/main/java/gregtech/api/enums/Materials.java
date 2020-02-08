@@ -22,6 +22,7 @@ import net.minecraftforge.fluids.FluidStack;
 
 import java.util.*;
 
+import static com.spartakcore.gthandler.GT_CoreModSupport.CokeCoal;
 import static gregtech.api.enums.GT_Values.M;
 
 public class Materials implements IColorModulationContainer, ISubTagContainer {
@@ -1312,6 +1313,15 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
                 TungstenSteel, AstralSilver, Midasium, Mithril, BlueAlloy, RedAlloy, CobaltBrass, Thaumium, IronMagnetic, SteelMagnetic, NeodymiumMagnetic, EuropiumoxideMagnetic, Knightmetal, HSSG, HSSE, HSSS, TungstenCarbide, Endium,
                 VanadiumSteel, Kalendrite, Ignatius, Infinity, InfinityCatalyst, BlackPlutonium, Draconium, DraconiumAwakened, Pentacadmiummagnesiumhexaoxid,Titaniumonabariumdecacoppereikosaoxid,
                 Uraniumtriplatinid, Vanadiumtriindinid, Tetraindiumditindibariumtitaniumheptacoppertetrakaidekaoxid, Tetranaquadahdiindiumhexaplatiumosminid);
+
+        SubTag.PUREIMPURE.addTo(
+                Sphalerite, Ichorium, DeepIron, Ledox, Bentonite, Copper, Galena, Aluminium, Thorium, DraconiumAwakened, BandedIron, Endstone, Beryllium, Magnesite, Europium, GreenSapphire, Uraninite, Uranium235, BrownLimonite, Iridium, Coal, Stone, Chrome,
+                DraconiumAwakened, Bastnasite, Midasium, Almandine, Opal, Grossular, Cinnabar, Emerald, Flint, Bedrockium, Tantalite, Spessartine, BlackPlutonium, Infuscolium, BrownLimonite, Phosphorus, GarnetRed, Sheldonite, Pyrochlore, Molybdenum,
+                CertusQuartz, Salt, Pyrope, Talc, Infuscolium, Pentlandite, Neutronium, ShadowIron, MysteriousCrystal, Topaz, Osmium, Tungstate, Pyrite, Zinc, Diatomite, Tantalite, Amethyst, Ruby, Bismuth, AstralSilver, Marble, Europium, Spodumene, Magnetite,
+                Glauconite, Calcite, Soapstone, Powellite, Gold, Quantium, Osmium, Netherrack, Infinity, Orichalcum, MeteoricIron, Pyrolusite, Chalcopyrite, InfinityCatalyst, Manganese, Quartzite, Desh, Scheelite, Olivine, Oriharukon, Naquadah, NaquadahEnriched,
+                Iron, Neodymium, Chromite, Nickel, Plutonium, Firestone, Sapphire, Lazurite, BlueTopaz, RedGranite, Garnierite, Monazite, Amber, Magnesite, Apatite, Thorium, Diamond, Barite, Tanzanite, Redstone, Lepidolite, Malachite, Palladium, Lead,
+                Saltpeter, Lapotron, BrownLimonite, Tin, Platinum, Cassiterite, Adamantium, Sodalite, Uranium235, Stibnite, Bauxite, Wulfenite, CosmicNeutronium, Spessartine, Molybdenite, Sulfur, Naquadria, Phosphate, Lignite, CokeCoal, Titanium, Vanadium,
+                VanadiumMagnetite, Redrock, Graphite, NetherQuartz, Lithium, GreenSapphire, CassiteriteSand, Silver, RockSalt, Basalt, Ilmenite, Tetrahedrite, Bauxite, YellowLimonite, GarnetYellow, Cobaltite, Lapis);
 
         SubTag.FOOD.addTo(MeatRaw, MeatCooked, Ice, Water, Salt, Chili, Cocoa, Cheese, Coffee, Chocolate, Milk, Honey, FryingOilHot, FishOil, SeedOil, SeedOilLin, SeedOilHemp, Wheat, Sugar, FreshWater);
 
