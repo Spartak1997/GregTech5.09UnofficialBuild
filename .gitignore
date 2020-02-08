@@ -74,3 +74,4 @@ classes/
 
 # Linux
 *~
+build/
