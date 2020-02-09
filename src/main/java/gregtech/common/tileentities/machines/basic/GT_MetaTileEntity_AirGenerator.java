@@ -89,7 +89,7 @@ public class GT_MetaTileEntity_AirGenerator extends GT_MetaTileEntity_BasicTank 
     }
 
     private int generateAirAmount() {
-        return 100 * (1 << this.mTier - 1) * (1 << this.mTier - 1);
+        return (100 * (1 << this.mTier - 1) * (1 << this.mTier - 1));
     }
 
     public boolean onRightclick(IGregTechTileEntity aBaseMetaTileEntity, EntityPlayer aPlayer) {
@@ -154,7 +154,7 @@ public class GT_MetaTileEntity_AirGenerator extends GT_MetaTileEntity_BasicTank 
     }
 
     public int getCapacity() {
-        return 100 * ((this.mTier+1)+(this.mTier)) * 20;
+        return 100 * (1 << this.mTier - 1) * (1 << this.mTier - 1) * 20;
     }
 
     public int getTankPressure() {
