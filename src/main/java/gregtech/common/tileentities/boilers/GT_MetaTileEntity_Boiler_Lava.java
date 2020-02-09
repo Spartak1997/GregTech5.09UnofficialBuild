@@ -144,4 +144,9 @@ public class GT_MetaTileEntity_Boiler_Lava
         }
         return super.fill(aFluid, doFill);
     }
+
+    public int getCapacity() {
+        return 32000;
+    }
+
 }
