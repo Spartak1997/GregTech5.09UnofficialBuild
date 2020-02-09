@@ -52,43 +52,6 @@ public class GT_MetaTileEntity_QuantumTank
     }
 
     @Override
-    public void onPostTick(IGregTechTileEntity aBaseMetaTileEntity, long aTick) {
-        super.onPostTick(aBaseMetaTileEntity, aTick);
-        if (getBaseMetaTileEntity().isServerSide()) {
-            for(byte tSide = 0; tSide < 1; ++tSide) {
-                IFluidHandler tTileEntity = aBaseMetaTileEntity.getITankContainerAtSide(tSide);
-                if (tTileEntity != null) {
-                    if (tTileEntity instanceof IGregTechTileEntity && aBaseMetaTileEntity.getColorization() >= 0) {
-                        byte tColor = ((IGregTechTileEntity)tTileEntity).getColorization();
-                        if (tColor >= 0 && (tColor & 15) != (aBaseMetaTileEntity.getColorization() & 15)) {
-                            continue;
-                        }
-                    }
-
-                    FluidTankInfo[] inf = tTileEntity.getTankInfo(ForgeDirection.getOrientation(tSide).getOpposite());
-                    FluidTankInfo[] var7 = inf;
-                    int var8 = inf.length;
-
-                    for(int var9 = 0; var9 < var8; ++var9) {
-                        FluidTankInfo info = var7[var9];
-                        if (info != null && (info.fluid == null || info.fluid.getFluidID() < 0 || info.fluid.getFluidID() == 1L)) {
-                            int amount = info.capacity;
-                            if (info.fluid != null && info.fluid.amount != info.capacity) {
-                                amount = info.capacity - info.fluid.amount;
-                            }
-
-                            if (this.getFluidAmount() >= amount && tTileEntity.fill(ForgeDirection.getOrientation(tSide).getOpposite(), this.drain(amount, false), false) > 0) {
-                                tTileEntity.fill(ForgeDirection.getOrientation(tSide).getOpposite(), this.drain(amount, true), true);
-                            }
-                            break;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    @Override
     public boolean isLiquidOutput(byte aSide) {
         return true;
     }
