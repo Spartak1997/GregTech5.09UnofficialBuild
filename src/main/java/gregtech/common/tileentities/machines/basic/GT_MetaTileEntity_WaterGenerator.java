@@ -8,34 +8,51 @@ import gregtech.api.interfaces.ITexture;
 import gregtech.api.interfaces.metatileentity.IMetaTileEntity;
 import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_BasicTank;
+import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_Hatch;
 import gregtech.api.objects.GT_RenderedTexture;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTankInfo;
 import net.minecraftforge.fluids.IFluidHandler;
 
-public class GT_MetaTileEntity_WaterGenerator extends GT_MetaTileEntity_BasicTank {
-    public GT_MetaTileEntity_WaterGenerator(int aID, String aName, String aNameRegional, int aTier, Object[] aRecipe) {
-        super(aID, aName, aNameRegional, aTier, 3, "Condense " + 100 * (1 << aTier - 1) * (1 << aTier - 1) + "L per tick of water from Air.", new ITexture[0]);
+public class GT_MetaTileEntity_WaterGenerator extends GT_MetaTileEntity_Hatch {
+
+    public GT_MetaTileEntity_WaterGenerator(final int aID, final String aName, final String aNameRegional, final int aTier) {
+        super(aID, aName, aNameRegional, aTier, 3, "Condense " + 100 * (1 << aTier - 1) * (1 << aTier - 1) + "L per tick of water from Air.");
     }
 
-    public GT_MetaTileEntity_WaterGenerator(String mName, byte mTier, String aDescription, ITexture[][][] mTextures) {
-        super(mName, mTier, 3, aDescription, mTextures);
+    public GT_MetaTileEntity_WaterGenerator(final String aName, final int aTier, final String aDescription, final ITexture[][][] aTextures) {
+        super(aName, aTier, 3, "Condense" + 100 * (1 << aTier - 1) * (1 << aTier - 1) + "L per tick of water from Air.", aTextures);
     }
 
     public IMetaTileEntity newMetaEntity(IGregTechTileEntity aTileEntity) {
         return new GT_MetaTileEntity_WaterGenerator(this.mName, this.mTier, this.mDescription, this.mTextures);
     }
 
-    public ITexture[] getTexture(IGregTechTileEntity aBaseMetaTileEntity, byte aSide, byte aFacing, byte aColorIndex, boolean aActive, boolean aRedstone) {
-        return aSide == 1 ? new ITexture[]{BlockIcons.MACHINE_CASINGS[this.mTier][aColorIndex + 1], new GT_RenderedTexture(BlockIcons.OVERLAY_QTANK)} : new ITexture[]{BlockIcons.MACHINE_CASINGS[this.mTier][aColorIndex + 1]};
-    }
-    
-    public ITexture[] getSides(byte aColor) {
-        return null;
+    public ITexture[][][] getTextureSet(ITexture[] aTextures) {
+        return new ITexture[0][0][0];
     }
 
+    @Override
+    public ITexture[] getTexture(IGregTechTileEntity aBaseMetaTileEntity, byte aSide, byte aFacing, byte aColorIndex, boolean aActive, boolean aRedstone) {
+        return aSide != aFacing
+                ? aSide == 1
+                ? new ITexture[]{Textures.BlockIcons.MACHINE_CASINGS[mTier][aColorIndex + 1], new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_QTANK)}
+                : new ITexture[]{Textures.BlockIcons.MACHINE_CASINGS[mTier][aColorIndex + 1]} :
+                aActive
+                        ? getTexturesActive(Textures.BlockIcons.MACHINE_CASINGS[mTier][aColorIndex + 1])
+                        : getTexturesInactive(Textures.BlockIcons.MACHINE_CASINGS[mTier][aColorIndex + 1]);
+    }
+
+    public ITexture[] getTexturesActive(ITexture aBaseTexture) {
+        return new ITexture[]{aBaseTexture, new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_PIPE_OUT)};
+    }
+
+    public ITexture[] getTexturesInactive(ITexture aBaseTexture) {
+        return new ITexture[]{aBaseTexture, new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_PIPE_OUT)};
+    }
 
     public void onPostTick(IGregTechTileEntity aBaseMetaTileEntity, long aTick) {
         super.onPostTick(aBaseMetaTileEntity, aTick);
@@ -46,7 +63,7 @@ public class GT_MetaTileEntity_WaterGenerator extends GT_MetaTileEntity_BasicTan
                         this.mFluid = null;
                     }
 
-                    this.fill(Materials.Water.getFluid((long)this.generateWaterAmount()), true);
+                    this.fill(Materials.Water.getFluid((long) this.generateWaterAmount()), true);
                 }
 
                 this.getBaseMetaTileEntity().setActive(true);
@@ -54,38 +71,50 @@ public class GT_MetaTileEntity_WaterGenerator extends GT_MetaTileEntity_BasicTan
                 this.getBaseMetaTileEntity().setActive(false);
             }
 
-            for(byte tSide = 0; tSide < 6; ++tSide) {
-                IFluidHandler tTileEntity = aBaseMetaTileEntity.getITankContainerAtSide(tSide);
-                if (tTileEntity != null) {
-                    if (tTileEntity instanceof IGregTechTileEntity && aBaseMetaTileEntity.getColorization() >= 0) {
-                        byte tColor = ((IGregTechTileEntity)tTileEntity).getColorization();
-                        if (tColor >= 0 && (tColor & 15) != (aBaseMetaTileEntity.getColorization() & 15)) {
-                            continue;
-                        }
-                    }
 
-                    FluidTankInfo[] inf = tTileEntity.getTankInfo(ForgeDirection.getOrientation(tSide).getOpposite());
-                    FluidTankInfo[] var7 = inf;
-                    int var8 = inf.length;
+            IFluidHandler tTileEntity = aBaseMetaTileEntity.getITankContainerAtSide(aBaseMetaTileEntity.getFrontFacing());
+            if (tTileEntity != null) {
 
-                    for(int var9 = 0; var9 < var8; ++var9) {
-                        FluidTankInfo info = var7[var9];
-                        if (info != null && (info.fluid == null || info.fluid.getFluidID() < 0 || info.fluid.getFluidID() == Materials.Water.getFluid(1L).getFluidID())) {
-                            int amount = info.capacity;
-                            if (info.fluid != null && info.fluid.amount != info.capacity) {
-                                amount = info.capacity - info.fluid.amount;
+
+                FluidTankInfo[] inf = tTileEntity.getTankInfo(ForgeDirection.getOrientation(aBaseMetaTileEntity.getFrontFacing()));
+                FluidTankInfo[] var7 = inf;
+                int var8 = inf.length;
+
+                for (int var9 = 0; var9 < var8; ++var9) {
+                    FluidTankInfo info = var7[var9];
+                    if (info != null && (info.fluid == null || info.fluid.getFluidID() < 0 || info.fluid.getFluidID() == Materials.Water.getFluid(1L).getFluidID())) {
+
+                        for (boolean temp = true; temp && mFluid != null; ) {
+                            temp = false;
+                            FluidStack tDrained = aBaseMetaTileEntity.drain(ForgeDirection.getOrientation(aBaseMetaTileEntity.getFrontFacing()), Math.max(1, mFluid.amount), false);
+                            if (tDrained != null) {
+                                int tFilledAmount = tTileEntity.fill(ForgeDirection.getOrientation(aBaseMetaTileEntity.getBackFacing()), tDrained, false);
+                                if (tFilledAmount > 0) {
+                                    temp = true;
+                                    tTileEntity.fill(ForgeDirection.getOrientation(aBaseMetaTileEntity.getBackFacing()), aBaseMetaTileEntity.drain(ForgeDirection.getOrientation(aBaseMetaTileEntity.getFrontFacing()), tFilledAmount, true), true);
+                                }
                             }
-
-                            if (this.getFluidAmount() >= amount && tTileEntity.fill(ForgeDirection.getOrientation(tSide).getOpposite(), this.drain(amount, false), false) > 0) {
-                                tTileEntity.fill(ForgeDirection.getOrientation(tSide).getOpposite(), this.drain(amount, true), true);
-                            }
-                            break;
                         }
+
+//                            if (this.getFluidAmount() >= amount && tTileEntity.fill(ForgeDirection.getOrientation(tSide).getOpposite(), this.drain(amount, false), false) > 0) {
+//                                tTileEntity.fill(ForgeDirection.getOrientation(tSide).getOpposite(), this.drain(amount, true), true);
+//                            }
+//                            break;
                     }
                 }
             }
         }
 
+    }
+
+    @Override
+    public boolean allowPullStack(IGregTechTileEntity aBaseMetaTileEntity, int aIndex, byte aSide, ItemStack aStack) {
+        return aSide == aBaseMetaTileEntity.getFrontFacing() && aIndex == 1;
+    }
+
+    @Override
+    public boolean allowPutStack(IGregTechTileEntity aBaseMetaTileEntity, int aIndex, byte aSide, ItemStack aStack) {
+        return aSide == aBaseMetaTileEntity.getFrontFacing() && aIndex == 0;
     }
 
     public boolean isLiquidOutput(byte aSide) {
@@ -124,9 +153,9 @@ public class GT_MetaTileEntity_WaterGenerator extends GT_MetaTileEntity_BasicTan
     public long maxEUStore() {
         return GT_Values.V[this.mTier] * 64L;
     }
-	
-	public long maxEUInput() {
-    	return GT_Values.V[this.mTier];
+
+    public long maxEUInput() {
+        return GT_Values.V[this.mTier];
     }
 
     public long maxSteamStore() {
@@ -162,7 +191,7 @@ public class GT_MetaTileEntity_WaterGenerator extends GT_MetaTileEntity_BasicTan
     }
 
     public int getTankPressure() {
-        return 2147483647;
+        return 100;
     }
 
     public boolean isFluidChangingAllowed() {
@@ -191,9 +220,5 @@ public class GT_MetaTileEntity_WaterGenerator extends GT_MetaTileEntity_BasicTan
 
     public boolean displaysStackSize() {
         return false;
-    }
-
-    public ITexture[][][] getTextureSet(ITexture[] aTextures) {
-        return null;
     }
 }
