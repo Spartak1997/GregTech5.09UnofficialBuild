@@ -138,6 +138,12 @@ public class GT_CraftingRecipeLoader implements Runnable {
 
         GT_ModHandler.addCraftingRecipe(new ItemStack(Items.comparator, 1, 0), GT_ModHandler.RecipeBits.BUFFERED | GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{" T ", "TQT", "SSS", 'Q', OreDictNames.craftingQuartz, 'S', OrePrefixes.stoneSmooth, 'T', OreDictNames.craftingRedstoneTorch});
 
+	GT_ModHandler.removeRecipeByOutput(new ItemStack(Items.compass, 1, 0));
+	GT_ModHandler.addCraftingRecipe(new ItemStack(Items.compass, 1, 0), GT_ModHandler.RecipeBits.BUFFERED | GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"SGI", "RPR", "AsS", 'G', new ItemStack(Blocks.glass_pane, 1, 32767), 'S', OrePrefixes.screw.get(Materials.Iron), 'A', OrePrefixes.bolt.get(Materials.RedAlloy), 'I', OrePrefixes.bolt.get(Materials.Iron), 'R', OrePrefixes.ring.get(Materials.Iron), 'P', OrePrefixes.plate.get(Materials.Iron)});
+		
+	GT_ModHandler.removeRecipeByOutput(new ItemStack(Items.clock, 1, 0));
+	GT_ModHandler.addCraftingRecipe(new ItemStack(Items.clock, 1, 0), GT_ModHandler.RecipeBits.BUFFERED | GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"SGI", "RPR", "AsS", 'G', new ItemStack(Blocks.glass_pane, 1, 32767), 'S', OrePrefixes.screw.get(Materials.Gold), 'A', OrePrefixes.bolt.get(Materials.RedAlloy), 'I', OrePrefixes.bolt.get(Materials.Gold), 'R', OrePrefixes.ring.get(Materials.Gold), 'P', OrePrefixes.plate.get(Materials.Gold)});
+
         GT_Log.out.println("GT_Mod: Adding Tool Recipes.");
         GT_ModHandler.addCraftingRecipe(new ItemStack(Items.minecart, 1), GT_ModHandler.RecipeBits.BUFFERED | GT_ModHandler.RecipeBits.NOT_REMOVABLE | GT_ModHandler.RecipeBits.DELETE_ALL_OTHER_SHAPED_RECIPES, new Object[]{" h ", "PwP", "WPW", 'P', OrePrefixes.plate.get(Materials.Iron), 'W', ItemList.Component_Minecart_Wheels_Iron});
         GT_ModHandler.addCraftingRecipe(new ItemStack(Items.minecart, 1), GT_ModHandler.RecipeBits.BUFFERED | GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{" h ", "PwP", "WPW", 'P', OrePrefixes.plate.get(Materials.Steel), 'W', ItemList.Component_Minecart_Wheels_Steel});
