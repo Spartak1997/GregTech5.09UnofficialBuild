@@ -1505,14 +1505,14 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         //ItemList.Nuclear_Reactor1.set(new GT_MetaTileEntity_NuclearReactor1(12106, "multimachine.nuclear1", "Nuclear Reactor Mk 1").getStackForm(1L));
         
         
-        ItemList.Machine_LV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12120, "basicmachine.e_airgenerator.tier.01", "Basic Electric Air Condenser", 1, null).getStackForm(1L));
-        ItemList.Machine_MV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12121, "basicmachine.e_airgenerator.tier.02", "Advanced Electric Air Condenser", 2, null).getStackForm(1L));
-        ItemList.Machine_HV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12122, "basicmachine.e_airgenerator.tier.03", "Advanced Electric Air Condenser II", 3, null).getStackForm(1L));
-        ItemList.Machine_EV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12123, "basicmachine.e_airgenerator.tier.04", "Advanced Electric Air Condenser III", 4, null).getStackForm(1L));
-        ItemList.Machine_IV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12124, "basicmachine.e_airgenerator.tier.05", "Advanced Electric Air Condenser IV", 5, null).getStackForm(1L));
-        ItemList.Machine_LuV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12125, "basicmachine.e_airgenerator.tier.06", "Advanced Electric Air Condenser V", 6, null).getStackForm(1L));
-        ItemList.Machine_ZPM_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12126, "basicmachine.e_airgenerator.tier.07", "Advanced Electric Air Condenser VI", 7, null).getStackForm(1L));
-        ItemList.Machine_UV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12127, "basicmachine.e_airgenerator.tier.08", "Advanced Electric Air Condenser VII", 8, null).getStackForm(1L));
+        ItemList.Machine_LV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12120, "basicmachine.e_airgenerator.tier.01", "Basic Electric Air Condenser", 1).getStackForm(1L));
+        ItemList.Machine_MV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12121, "basicmachine.e_airgenerator.tier.02", "Advanced Electric Air Condenser", 2).getStackForm(1L));
+        ItemList.Machine_HV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12122, "basicmachine.e_airgenerator.tier.03", "Advanced Electric Air Condenser II", 3).getStackForm(1L));
+        ItemList.Machine_EV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12123, "basicmachine.e_airgenerator.tier.04", "Advanced Electric Air Condenser III", 4).getStackForm(1L));
+        ItemList.Machine_IV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12124, "basicmachine.e_airgenerator.tier.05", "Advanced Electric Air Condenser IV", 5).getStackForm(1L));
+        ItemList.Machine_LuV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12125, "basicmachine.e_airgenerator.tier.06", "Advanced Electric Air Condenser V", 6).getStackForm(1L));
+        ItemList.Machine_ZPM_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12126, "basicmachine.e_airgenerator.tier.07", "Advanced Electric Air Condenser VI", 7).getStackForm(1L));
+        ItemList.Machine_UV_AirGenerator.set(new GT_MetaTileEntity_AirGenerator(12127, "basicmachine.e_airgenerator.tier.08", "Advanced Electric Air Condenser VII", 8).getStackForm(1L));
         GT_ModHandler.addCraftingRecipe(ItemList.Machine_LV_AirGenerator.get(1L, new Object[0]), bitsd, new Object[]{"EPE", "CMC", "EPE", 'M', ItemList.Hull_LV, 'E', OrePrefixes.circuit.get(Materials.Basic), 'P', ItemList.Electric_Pump_LV, 'C', new ItemStack(Blocks.glass, 1)});
         GT_ModHandler.addCraftingRecipe(ItemList.Machine_MV_AirGenerator.get(1L, new Object[0]), bitsd, new Object[]{"EPE", "CMC", "EPE", 'M', ItemList.Hull_MV, 'E', OrePrefixes.circuit.get(Materials.Good), 'P', ItemList.Electric_Pump_MV, 'C', new ItemStack(Blocks.glass, 1)});
         GT_ModHandler.addCraftingRecipe(ItemList.Machine_HV_AirGenerator.get(1L, new Object[0]), bitsd, new Object[]{"EPE", "CMC", "EPE", 'M', ItemList.Hull_HV, 'E', OrePrefixes.circuit.get(Materials.Advanced), 'P', ItemList.Electric_Pump_HV, 'C', new ItemStack(Blocks.glass, 1)});
