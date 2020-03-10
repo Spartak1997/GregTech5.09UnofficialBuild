@@ -224,7 +224,6 @@ public interface IGT_RecipeAdder {
      */
     public boolean addPrimitiveBlastRecipe(ItemStack aInput1, ItemStack aInput2, int aCoalAmount, ItemStack aOutput1, ItemStack aOutput2, int aDuration);
 
-//    public boolean addCokeOvenRecipes(ItemStack aInput, ItemStack aOutput, FluidStack aFluidOutput, int aDuration, int aEUt);
     public boolean addCokeOvenRecipes(ItemStack aInput, ItemStack aOutput, FluidStack aFluidOutput, int aDuration);
 
     /**
@@ -703,9 +702,11 @@ public interface IGT_RecipeAdder {
     public boolean addFlotationUnitRecipe(ItemStack aInput, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput1, ItemStack aOutput2, ItemStack aOutput3, ItemStack aOutput4, ItemStack aOutput5, ItemStack aOutput6, int[] aChances, int aDuration, int aEUt);
     
     public boolean addMultiblockCentrifugeRecipe(ItemStack[] aInputs, FluidStack[] aFluidInputs, FluidStack[] aFluidOutputs, ItemStack[] aOutputs, int[] aChances, int aDuration, int aEUt);
-    
+
     public boolean addMultiblockElectrolyzerRecipe(ItemStack[] aInputs, FluidStack[] aFluidInputs, FluidStack[] aFluidOutputs, ItemStack[] aOutputs, int[] aChances, int aDuration, int aEUt);
-    
+
+    public boolean addNuclearReactorRecipe(ItemStack aInput, ItemStack aOutput, FluidStack aFluidInput, FluidStack aFluidOutput, int aDuration);
+
     public boolean addTesseractRecipe(ItemStack aInput, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput1, ItemStack aOutput2, ItemStack aOutput3, ItemStack aOutput4, ItemStack aOutput5, ItemStack aOutput6, int[] aChances, int aDuration, int aEUt);
     
     public boolean addTinyWormHoleRecipe(ItemStack aInput, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput1, ItemStack aOutput2, ItemStack aOutput3, ItemStack aOutput4, ItemStack aOutput5, ItemStack aOutput6, int[] aChances, int aDuration, int aEUt);

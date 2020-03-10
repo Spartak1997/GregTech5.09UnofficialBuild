@@ -139,6 +139,11 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
         return true;
     }
 
+    public boolean addNuclearReactorRecipe(ItemStack aInput, ItemStack aOutput, FluidStack aFluidInput, FluidStack aFluidOutput, int aDuration) {
+        GT_Recipe.GT_Recipe_Map.sNuclearReactorRecipes.addRecipe(true, new ItemStack[]{aInput}, new ItemStack[]{aOutput}, null, null, new FluidStack[]{aFluidInput}, new FluidStack[]{aFluidOutput}, aDuration, 0, 0);
+        return true;
+    }
+
     public boolean addChemicalRecipe(ItemStack aInput1, ItemStack aInput2, ItemStack aOutput, int aDuration) {
         return addChemicalRecipe(aInput1, aInput2, null, null, aOutput, aDuration);
     }

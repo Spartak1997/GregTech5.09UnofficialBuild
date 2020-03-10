@@ -200,8 +200,11 @@ public class GT_Recipe implements Comparable<GT_Recipe> {
                     break;
                 // Semifluid Generator
                 case 6:
-                GT_Recipe_Map.sSemifluidFuels.addRecipe(this);
-                break;
+                    GT_Recipe_Map.sSemifluidFuels.addRecipe(this);
+                    break;
+                case 7:
+                    GT_Recipe_Map.sNukeFuels.addRecipe(this);
+                    break;
                 // Fluid Generator. Usually 3. Every wrong Type ends up in the Semifluid Generator
                 default:
                     GT_Recipe_Map.sDenseLiquidFuels.addRecipe(this);
@@ -585,12 +588,8 @@ public class GT_Recipe implements Comparable<GT_Recipe> {
         public static final GT_Recipe_Map sTinyWormHoleRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.tinywormhole", "Tiny Wormhole", null, RES_PATH_GUI + "basicmachines/Tesseract", 1, 6, 0, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sFarmRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.farm", "Tree Farm Factory", null, RES_PATH_GUI + "basicmachines/Default", 6, 6, 0, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sDustWashRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(300), "gt.recipe.dustwash", "Dust Washer", null, RES_PATH_GUI + "basicmachines/Autoclave", 1, 1, 1, 1, 1, E, 1, E, true, true);
-
         public static final GT_Recipe_Map sCokeOvenRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(200), "gt.recipe.cokeoven", "Coke Oven", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 1, 0, 1, E, 1, E, true, true);
-
         public static final GT_Recipe_Map sSpaceResearchRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(900), "gt.recipe.spaceresearch", "Space Research Station", null, RES_PATH_GUI + "basicmachines/SpaceResearch", 6, 1, 1, 0, 1, E, 1, E, true, true);
-        //public static final GT_Recipe_Map sSpaceResearchRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.spaceresearch", "Space Research Station", null, RES_PATH_GUI + "basicmachines/SpaceResearchStation", 6, 1, 0, 0, 1, E, 1, E, true, true);
-
         public static final GT_Recipe_Map sMultiblockChemicalRecipes = new GT_Recipe_Map_LargeChemicalReactor();
         public static final GT_Recipe_Map sDistillationRecipes = new GT_Recipe_Map_DistillationTower();
         public static final GT_Recipe_Map sCrakingRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(70), "gt.recipe.craker", "Oil Cracker", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 1, 2, 1, E, 1, E, true, true);
@@ -613,8 +612,10 @@ public class GT_Recipe implements Comparable<GT_Recipe> {
         public static final GT_Recipe_Map sMassFabFakeRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(2), "gt.recipe.massfab", "Mass Fabrication", null, RES_PATH_GUI + "basicmachines/Massfabricator", 1, 0, 1, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sMultiblockCentrifugeRecipes = new GT_Recipe_Map_MultiblockCentrifugeRecipe();
         public static final GT_Recipe_Map sMultiblockElectrolyzerRecipes = new GT_Recipe_Map_MultiblockElectrolyzerRecipe();
+        public static final GT_Recipe_Map sNuclearReactorRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.nuclearreactor", "Nuclear Reactor", null, RES_PATH_GUI + "basicmachines/Default", 2, 3, 0, 0, 1, E, 1, E, true, true);
 
         public static final GT_Recipe_Map_Fuel sSemifluidFuels = new GT_Recipe_Map_Fuel(new HashSet<GT_Recipe>(25), "gt.recipe.semifluidgeneratorfuel", "Semifluid Generator Fuel", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 0, 0, 1, "Fuel Value: ", 1000, " EU", true, true);
+        public static final GT_Recipe_Map_Fuel sNukeFuels = new GT_Recipe_Map_Fuel(new HashSet<GT_Recipe>(25), "gt.recipe.nukesteam", "Nuclear Turbine Fuel", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 0, 0, 1, "Fuel Value: ", 1000, " EU", true, true);
         public static final GT_Recipe_Map_Fuel sDieselFuels = new GT_Recipe_Map_Fuel(new HashSet<GT_Recipe>(20), "gt.recipe.dieselgeneratorfuel", "Diesel Generator Fuel", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 0, 0, 1, "Fuel Value: ", 1000, " EU", true, true);
         public static final GT_Recipe_Map_Fuel sTurbineFuels = new GT_Recipe_Map_Fuel(new HashSet<GT_Recipe>(25), "gt.recipe.gasturbinefuel", "Gas Turbine Fuel", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 0, 0, 1, "Fuel Value: ", 1000, " EU", true, true);
         public static final GT_Recipe_Map_Fuel sHotFuels = new GT_Recipe_Map_Fuel(new HashSet<GT_Recipe>(10), "gt.recipe.thermalgeneratorfuel", "Thermal Generator Fuel", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 0, 0, 1, "Fuel Value: ", 1000, " EU", true, false);
