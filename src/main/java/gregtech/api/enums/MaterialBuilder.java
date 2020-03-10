@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MaterialBuilder {
-	public static final int DIESEL = 0, GAS = 1, THERMAL = 2, SEMIFLUID = 3, PLASMA = 4, MAGIC = 5, SEMI = 6;
+	public static final int DIESEL = 0, GAS = 1, THERMAL = 2, SEMIFLUID = 3, PLASMA = 4, MAGIC = 5, SEMI = 6, NUKE = 7;
 
 	private int metaItemSubID;
 	private TextureSet iconSet;
