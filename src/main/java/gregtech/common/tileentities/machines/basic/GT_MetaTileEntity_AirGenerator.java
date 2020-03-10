@@ -8,41 +8,62 @@ import gregtech.api.interfaces.ITexture;
 import gregtech.api.interfaces.metatileentity.IMetaTileEntity;
 import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_BasicTank;
+import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_Hatch;
 import gregtech.api.objects.GT_RenderedTexture;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTankInfo;
 import net.minecraftforge.fluids.IFluidHandler;
 
-public class GT_MetaTileEntity_AirGenerator extends GT_MetaTileEntity_BasicTank {
-    public GT_MetaTileEntity_AirGenerator(int aID, String aName, String aNameRegional, int aTier, Object[] aRecipe) {
-        super(aID, aName, aNameRegional, aTier, 3, "Condense " + 100 * (1 << aTier - 1) * (1 << aTier - 1)  + "L per tick of Air.", new ITexture[0]);
+public class GT_MetaTileEntity_AirGenerator extends GT_MetaTileEntity_Hatch {
+
+    public GT_MetaTileEntity_AirGenerator(final int aID, final String aName, final String aNameRegional, final int aTier) {
+        super(aID, aName, aNameRegional, aTier, 3, "Condense " + 100 * (1 << aTier - 1) * (1 << aTier - 1)  + " L per tick of Air.");
     }
 
-    public GT_MetaTileEntity_AirGenerator(String mName, byte mTier, String aDescription, ITexture[][][] mTextures) {
-        super(mName, mTier, 3, aDescription, mTextures);
+    public GT_MetaTileEntity_AirGenerator(final String aName, final int aTier, final String aDescription, final ITexture[][][] aTextures) {
+        super(aName, aTier, 3, "Condense " + 100 * (1 << aTier - 1) * (1 << aTier - 1)  + " L per tick of Air.", aTextures);
     }
 
     public IMetaTileEntity newMetaEntity(IGregTechTileEntity aTileEntity) {
         return new GT_MetaTileEntity_AirGenerator(this.mName, this.mTier, this.mDescription, this.mTextures);
     }
 
+    public ITexture[][][] getTextureSet(ITexture[] aTextures) {
+        return new ITexture[0][0][0];
+    }
+
     @Override
     public ITexture[] getTexture(IGregTechTileEntity aBaseMetaTileEntity, byte aSide, byte aFacing, byte aColorIndex, boolean aActive, boolean aRedstone) {
-        return new ITexture[]{Textures.BlockIcons.MACHINE_CASINGS[mTier][aColorIndex + 1], (aSide == 0 || aSide == 1) ? new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_PIPE_OUT) : new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_DRAIN)};
+        return aSide != aFacing
+                ? (aSide == 0 || aSide == 1)
+                ? new ITexture[]{Textures.BlockIcons.MACHINE_CASINGS[mTier][aColorIndex + 1]}
+                : new ITexture[]{Textures.BlockIcons.MACHINE_CASINGS[mTier][aColorIndex + 1], new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_DRAIN)} :
+                aActive
+                        ? getTexturesActive(Textures.BlockIcons.MACHINE_CASINGS[mTier][aColorIndex + 1])
+                        : getTexturesInactive(Textures.BlockIcons.MACHINE_CASINGS[mTier][aColorIndex + 1]);
     }
-    
+
+    public ITexture[] getTexturesActive(ITexture aBaseTexture) {
+        return new ITexture[]{aBaseTexture, new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_PIPE_OUT)};
+    }
+
+    public ITexture[] getTexturesInactive(ITexture aBaseTexture) {
+        return new ITexture[]{aBaseTexture, new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_PIPE_OUT)};
+    }
+
     public void onPostTick(IGregTechTileEntity aBaseMetaTileEntity, long aTick) {
         super.onPostTick(aBaseMetaTileEntity, aTick);
         if (this.getBaseMetaTileEntity().isServerSide()) {
             if (this.getBaseMetaTileEntity().isAllowedToWork()) {
-                if (this.getFluidAmount() + this.generateAirAmount() <= this.getCapacity() && this.getBaseMetaTileEntity().decreaseStoredEnergyUnits(GT_Values.V[this.mTier], false)) {
+                if (this.getFluidAmount() + this.generateWaterAmount() <= this.getCapacity() && this.getBaseMetaTileEntity().decreaseStoredEnergyUnits(GT_Values.V[this.mTier], false)) {
                     if (this.mFluid != null && this.mFluid.getFluidID() != Materials.Air.getGas(1L).getFluidID()) {
                         this.mFluid = null;
                     }
 
-                    this.fill(Materials.Air.getGas((long)this.generateAirAmount()), true);
+                    this.fill(Materials.Water.getFluid((long) this.generateWaterAmount()), true);
                 }
 
                 this.getBaseMetaTileEntity().setActive(true);
@@ -50,45 +71,57 @@ public class GT_MetaTileEntity_AirGenerator extends GT_MetaTileEntity_BasicTank 
                 this.getBaseMetaTileEntity().setActive(false);
             }
 
-            for(byte tSide = 0; tSide < 6; ++tSide) {
-                IFluidHandler tTileEntity = aBaseMetaTileEntity.getITankContainerAtSide(tSide);
-                if (tTileEntity != null) {
-                    if (tTileEntity instanceof IGregTechTileEntity && aBaseMetaTileEntity.getColorization() >= 0) {
-                        byte tColor = ((IGregTechTileEntity)tTileEntity).getColorization();
-                        if (tColor >= 0 && (tColor & 15) != (aBaseMetaTileEntity.getColorization() & 15)) {
-                            continue;
-                        }
-                    }
 
-                    FluidTankInfo[] inf = tTileEntity.getTankInfo(ForgeDirection.getOrientation(tSide).getOpposite());
-                    FluidTankInfo[] var7 = inf;
-                    int var8 = inf.length;
+            IFluidHandler tTileEntity = aBaseMetaTileEntity.getITankContainerAtSide(aBaseMetaTileEntity.getFrontFacing());
+            if (tTileEntity != null) {
 
-                    for(int var9 = 0; var9 < var8; ++var9) {
-                        FluidTankInfo info = var7[var9];
-                        if (info != null && (info.fluid == null || info.fluid.getFluidID() < 0 || info.fluid.getFluidID() == Materials.Air.getGas(1L).getFluidID())) {
-                            int amount = info.capacity;
-                            if (info.fluid != null && info.fluid.amount != info.capacity) {
-                                amount = info.capacity - info.fluid.amount;
+
+                FluidTankInfo[] inf = tTileEntity.getTankInfo(ForgeDirection.getOrientation(aBaseMetaTileEntity.getFrontFacing()));
+                FluidTankInfo[] var7 = inf;
+                int var8 = inf.length;
+
+                for (int var9 = 0; var9 < var8; ++var9) {
+                    FluidTankInfo info = var7[var9];
+                    if (info != null && (info.fluid == null || info.fluid.getFluidID() < 0 || info.fluid.getFluidID() == Materials.Air.getFluid(1L).getFluidID())) {
+
+                        for (boolean temp = true; temp && mFluid != null; ) {
+                            temp = false;
+                            FluidStack tDrained = aBaseMetaTileEntity.drain(ForgeDirection.getOrientation(aBaseMetaTileEntity.getFrontFacing()), Math.max(1, mFluid.amount), false);
+                            if (tDrained != null) {
+                                int tFilledAmount = tTileEntity.fill(ForgeDirection.getOrientation(aBaseMetaTileEntity.getBackFacing()), tDrained, false);
+                                if (tFilledAmount > 0) {
+                                    temp = true;
+                                    tTileEntity.fill(ForgeDirection.getOrientation(aBaseMetaTileEntity.getBackFacing()), aBaseMetaTileEntity.drain(ForgeDirection.getOrientation(aBaseMetaTileEntity.getFrontFacing()), tFilledAmount, true), true);
+                                }
                             }
-
-                            if (this.getFluidAmount() >= amount && tTileEntity.fill(ForgeDirection.getOrientation(tSide).getOpposite(), this.drain(amount, false), false) > 0) {
-                                tTileEntity.fill(ForgeDirection.getOrientation(tSide).getOpposite(), this.drain(amount, true), true);
-                            }
-                            break;
                         }
+
+//                            if (this.getFluidAmount() >= amount && tTileEntity.fill(ForgeDirection.getOrientation(tSide).getOpposite(), this.drain(amount, false), false) > 0) {
+//                                tTileEntity.fill(ForgeDirection.getOrientation(tSide).getOpposite(), this.drain(amount, true), true);
+//                            }
+//                            break;
                     }
+                }
             }
         }
+
     }
 
-}
+    @Override
+    public boolean allowPullStack(IGregTechTileEntity aBaseMetaTileEntity, int aIndex, byte aSide, ItemStack aStack) {
+        return aSide == aBaseMetaTileEntity.getFrontFacing() && aIndex == 1;
+    }
+
+    @Override
+    public boolean allowPutStack(IGregTechTileEntity aBaseMetaTileEntity, int aIndex, byte aSide, ItemStack aStack) {
+        return aSide == aBaseMetaTileEntity.getFrontFacing() && aIndex == 0;
+    }
 
     public boolean isLiquidOutput(byte aSide) {
         return true;
     }
 
-    private int generateAirAmount() {
+    private int generateWaterAmount() {
         return (100 * (1 << this.mTier - 1) * (1 << this.mTier - 1));
     }
 
@@ -122,7 +155,7 @@ public class GT_MetaTileEntity_AirGenerator extends GT_MetaTileEntity_BasicTank 
     }
 
     public long maxEUInput() {
-    	return GT_Values.V[this.mTier];
+        return GT_Values.V[this.mTier];
     }
 
     public long maxSteamStore() {
@@ -158,7 +191,7 @@ public class GT_MetaTileEntity_AirGenerator extends GT_MetaTileEntity_BasicTank 
     }
 
     public int getTankPressure() {
-        return 2147483647;
+        return 100;
     }
 
     public boolean isFluidChangingAllowed() {
@@ -189,7 +222,4 @@ public class GT_MetaTileEntity_AirGenerator extends GT_MetaTileEntity_BasicTank 
         return false;
     }
 
-    public ITexture[][][] getTextureSet(ITexture[] aTextures) {
-        return null;
-    }
 }
