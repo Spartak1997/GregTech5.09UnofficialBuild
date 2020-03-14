@@ -58,12 +58,12 @@ public class GT_MetaTileEntity_AirGenerator extends GT_MetaTileEntity_Hatch {
         super.onPostTick(aBaseMetaTileEntity, aTick);
         if (this.getBaseMetaTileEntity().isServerSide()) {
             if (this.getBaseMetaTileEntity().isAllowedToWork()) {
-                if (this.getFluidAmount() + this.generateWaterAmount() <= this.getCapacity() && this.getBaseMetaTileEntity().decreaseStoredEnergyUnits(GT_Values.V[this.mTier], false)) {
+                if (this.getFluidAmount() + this.generateAirAmount() <= this.getCapacity() && this.getBaseMetaTileEntity().decreaseStoredEnergyUnits(GT_Values.V[this.mTier], false)) {
                     if (this.mFluid != null && this.mFluid.getFluidID() != Materials.Air.getGas(1L).getFluidID()) {
                         this.mFluid = null;
                     }
 
-                    this.fill(Materials.Water.getFluid((long) this.generateWaterAmount()), true);
+                    this.fill(Materials.Air.getGas((long) this.generateAirAmount()), true);
                 }
 
                 this.getBaseMetaTileEntity().setActive(true);
@@ -121,7 +121,7 @@ public class GT_MetaTileEntity_AirGenerator extends GT_MetaTileEntity_Hatch {
         return true;
     }
 
-    private int generateWaterAmount() {
+    private int generateAirAmount() {
         return (100 * (1 << this.mTier - 1) * (1 << this.mTier - 1));
     }
 
