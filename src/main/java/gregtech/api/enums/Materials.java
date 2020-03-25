@@ -947,13 +947,13 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
     public boolean mHasParentMod = true, mHasPlasma = false, mHasGas = false, mCustomOre = false;
     public Fluid mSolid = null, mFluid = null, mGas = null, mPlasma = null;
 
-    private boolean hasCorrespondingFluid = false, hasCorrespondingGas = false, hasCorrespondingSemi = false, canBeCracked = false;
+    private boolean hasCorrespondingFluid = false, hasCorrespondingGas = false, hasCorrespondingSemi = false, canBeCracked = false, hasCorrespondingMoltenHot = false;
     private Fluid[] hydroCrackedFluids = new Fluid[3], steamCrackedFluids = new Fluid[3];
 
     /**
      * This Fluid is used as standard Unit for Molten Materials. 1296 is a Molten Block, that means 144 is one Material Unit worth of fluid.
      */
-    public Fluid mStandardMoltenFluid = null;
+    public Fluid mStandardMoltenFluid = null, mStandardMoltenHot = null;
 
     static {
         genMaterials();
@@ -2153,6 +2153,11 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
         return new GT_FluidStack(mStandardMoltenFluid, (int) aAmount);
     }
 
+    public FluidStack getMoltenHot(long aAmount) {
+        if (mStandardMoltenHot == null) return null;
+        return new GT_FluidStack(mStandardMoltenHot, (int) aAmount);
+    }
+
     @Override
     public short[] getRGBA() {
         return mRGBa;
@@ -2194,6 +2199,15 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
 
 	public Materials setHasCorrespondingFluid(boolean hasCorrespondingFluid) {
 		this.hasCorrespondingFluid = hasCorrespondingFluid;
+		return this;
+	}
+
+    public boolean hasCorrespondingMoltenHot() {
+        return hasCorrespondingMoltenHot;
+    }
+
+	public Materials setHasCorrespondingMoltenHot(boolean hasCorrespondingMoltenHot) {
+		this.hasCorrespondingMoltenHot = hasCorrespondingMoltenHot;
 		return this;
 	}
 

@@ -32,6 +32,7 @@ public class MaterialBuilder {
 	private List<MaterialStack> materialList = new ArrayList<MaterialStack>();
 	private List<TC_Aspects.TC_AspectStack> aspects = new ArrayList<TC_Aspects.TC_AspectStack>();
 	private boolean hasCorrespondingFluid = false;
+	private boolean hasCorrespondingMoltenHot = false;
 	private boolean hasCorrespondingGas = false;
 	private boolean hasCorrespondingSemi = false;
 	private boolean canBeCracked = false;
@@ -107,6 +108,11 @@ public class MaterialBuilder {
 
 	public MaterialBuilder addFluid(){
 		this.hasCorrespondingFluid = true;
+		return this;
+	}
+
+	public MaterialBuilder addMoltenHot(){
+		this.hasCorrespondingMoltenHot = true;
 		return this;
 	}
 
