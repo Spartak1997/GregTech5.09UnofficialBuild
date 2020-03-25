@@ -252,7 +252,7 @@ public interface IGT_RecipeAdder {
 
     public boolean addBlastSmelterRecipe(ItemStack[] aInputs, ItemStack aOutput, FluidStack aFluidInput, FluidStack aFluidOutput, int aDuration, int aEUt, int aLevel);
 
-    
+    public boolean addFreezerSolidifierRecipe(ItemStack aMold, FluidStack aInput1, FluidStack aInput2, ItemStack aOutput, int aDuration, int aEUt);
     /**
      * Adds a CNC-Machine Recipe
      *
@@ -706,6 +706,15 @@ public interface IGT_RecipeAdder {
     public boolean addMultiblockElectrolyzerRecipe(ItemStack[] aInputs, FluidStack[] aFluidInputs, FluidStack[] aFluidOutputs, ItemStack[] aOutputs, int[] aChances, int aDuration, int aEUt);
 
     public boolean addNuclearReactorRecipe(ItemStack aInput, ItemStack aOutput, FluidStack aFluidInput, FluidStack aFluidOutput, int aDuration);
+
+    /**
+     * Recipe adder Tiered Lines
+     * */
+    public boolean addPrimitiveLineRecipe(ItemStack[] aInputs, ItemStack aOutput, FluidStack[] aFluidInputs, int aDuration, int aEUt);
+
+    public boolean addBasicLineRecipe(ItemStack[] aInputs, ItemStack aOutput, FluidStack[] aFluidInputs, int aDuration, int aEUt);
+
+    public boolean addAdvancedLineRecipe(ItemStack[] aInputs, ItemStack aOutput, FluidStack[] aFluidInputs, int aDuration, int aEUt);
 
     public boolean addTesseractRecipe(ItemStack aInput, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput1, ItemStack aOutput2, ItemStack aOutput3, ItemStack aOutput4, ItemStack aOutput5, ItemStack aOutput6, int[] aChances, int aDuration, int aEUt);
     

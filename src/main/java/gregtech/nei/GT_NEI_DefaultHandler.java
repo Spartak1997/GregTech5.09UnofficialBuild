@@ -577,6 +577,110 @@ public class GT_NEI_DefaultHandler
                     }
                     tStartIndex++;
                     break;
+                case 33:
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 12, 0));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 30, 0));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 48, 0));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 12, 18));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 30, 18));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 48, 18));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 12, 36));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 30, 36));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 48, 36));
+                    }
+                    tStartIndex++;
+                    break;
+                case 44:
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 12, 0));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 30, 0));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 48, 0));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 66, 0));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 12, 18));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 30, 18));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 48, 18));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 66, 18));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 12, 36));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 30, 36));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 48, 36));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 66, 36));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 12, 54));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 30, 54));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 48, 54));
+                    }
+                    tStartIndex++;
+                    if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
+                        this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 66, 54));
+                    }
+                    tStartIndex++;
+                    break;
                 default:
                     if (aRecipe.getRepresentativeInput(tStartIndex) != null) {
                         this.mInputs.add(new FixedPositionedStack(aRecipe.getRepresentativeInput(tStartIndex), 12, -4));
@@ -782,6 +886,12 @@ public class GT_NEI_DefaultHandler
                     }
                     tStartIndex++;
                     break;
+                case 3344:
+                    if (aRecipe.getOutput(tStartIndex) != null) {
+                        this.mOutputs.add(new FixedPositionedStack(aRecipe.getOutput(tStartIndex), 138, 0, aRecipe.getOutputChance(tStartIndex)));
+                    }
+                    tStartIndex++;
+                    break;
                 default:
                     if (aRecipe.getOutput(tStartIndex) != null) {
                         this.mOutputs.add(new FixedPositionedStack(aRecipe.getOutput(tStartIndex), 102, -4, aRecipe.getOutputChance(tStartIndex)));
@@ -826,6 +936,7 @@ public class GT_NEI_DefaultHandler
                     this.mInputs.add(new FixedPositionedStack(GT_Utility.getFluidDisplayStack(aRecipe.mFluidInputs[1], true), 30, 52));
                 }
             }
+
             if (aRecipe.mFluidOutputs.length > 1) {
                 if (aRecipe.mFluidOutputs[0] != null && (aRecipe.mFluidOutputs[0].getFluid() != null)) {
                     this.mOutputs.add(new FixedPositionedStack(GT_Utility.getFluidDisplayStack(aRecipe.mFluidOutputs[0], true), 120, 5));

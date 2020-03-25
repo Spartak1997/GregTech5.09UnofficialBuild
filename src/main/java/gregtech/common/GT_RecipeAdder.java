@@ -144,6 +144,40 @@ public class GT_RecipeAdder implements IGT_RecipeAdder {
         return true;
     }
 
+    public boolean addPrimitiveLineRecipe(ItemStack[] aInputs, ItemStack aOutput, FluidStack[] aFluidInputs, int aDuration, int aEUt) {
+        if (aEUt <= 0) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sPrimitiveLine.addRecipe(true, aInputs, new ItemStack[]{aOutput}, null, null, aFluidInputs, null, aDuration, aEUt, 0);
+        return true;
+    }
+
+    public boolean addFreezerSolidifierRecipe(ItemStack aMold, FluidStack aInput1,FluidStack aInput2, ItemStack aOutput, int aDuration, int aEUt) {
+        if ((aMold == null) || (aInput1 == null) || (aInput1 == null)|| (aOutput == null)) {
+        }
+        if ((aDuration = GregTech_API.sRecipeFile.get("freezersolidifier", aOutput, aDuration)) <= 0) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sFreezerSolidficationRecipes.addRecipe(true, new ItemStack[]{aMold}, new ItemStack[]{aOutput}, null, new FluidStack[]{aInput1,aInput2}, null, aDuration, aEUt, 0);
+        return true;
+    }
+
+    public boolean addBasicLineRecipe(ItemStack[] aInputs, ItemStack aOutput, FluidStack[] aFluidInputs, int aDuration, int aEUt) {
+        if (aEUt <= 0) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sBasicline.addRecipe(true, aInputs, new ItemStack[]{aOutput}, null, null, aFluidInputs, null, aDuration, aEUt, 0);
+        return true;
+    }
+
+    public boolean addAdvancedLineRecipe(ItemStack[] aInputs, ItemStack aOutput, FluidStack[] aFluidInputs, int aDuration, int aEUt) {
+        if (aEUt <= 0) {
+            return false;
+        }
+        GT_Recipe.GT_Recipe_Map.sAdvanecedline.addRecipe(true, aInputs, new ItemStack[]{aOutput}, null, null, aFluidInputs, null, aDuration, aEUt, 0);
+        return true;
+    }
+
     public boolean addChemicalRecipe(ItemStack aInput1, ItemStack aInput2, ItemStack aOutput, int aDuration) {
         return addChemicalRecipe(aInput1, aInput2, null, null, aOutput, aDuration);
     }
