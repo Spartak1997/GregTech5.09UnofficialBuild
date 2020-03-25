@@ -75,3 +75,4 @@ classes/
 # Linux
 *~
 build/
+*.rar
