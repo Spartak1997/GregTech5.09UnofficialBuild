@@ -27,11 +27,6 @@ import java.util.Random;
 
 import static gregtech.api.enums.GT_Values.*;
 
-import gtPlusPlus.core.material.ALLOY;
-import gtPlusPlus.core.material.ELEMENT;
-import gtPlusPlus.core.material.Material;
-
-
 /**
  * NEVER INCLUDE THIS FILE IN YOUR MOD!!!
  * <p/>
