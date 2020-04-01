@@ -613,10 +613,10 @@ public class GT_Recipe implements Comparable<GT_Recipe> {
         public static final GT_Recipe_Map sMultiblockElectrolyzerRecipes = new GT_Recipe_Map_MultiblockElectrolyzerRecipe();
         public static final GT_Recipe_Map sNuclearReactorRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.nuclearreactor", "Nuclear Reactor", null, RES_PATH_GUI + "basicmachines/Default", 2, 3, 0, 0, 1, E, 1, E, true, true);
 
-        public static final GT_Recipe_Map sBlastSmelterRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(800), "gt.recipe.blastsmelter", "Blast Smelter", null, RES_PATH_GUI + "basicmachines/Default", 9, 1, 1, 0, 1, "Heat Capacity: ", 1, " K", false, true);
-        public static final GT_Recipe_Map sFreezerSolidficationRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(35000), "gt.recipe.freezersolidifier", "Freezer Solidifier", null, RES_PATH_GUI + "basicmachines/FluidSolidifier", 1, 1, 1, 2, 1, E, 1, E, true, true);
-        public static final GT_Recipe_Map sPrimitiveLine = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.primitiveline", "Primitive Line", null, RES_PATH_GUI + "Primitiveline", 33, 3344, 1, 0, 1, E, 1, E, true, true);
-        public static final GT_Recipe_Map sBasicline = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.basicline", "Basic Line", null, RES_PATH_GUI + "Basicline", 44, 3344, 1, 0, 1, E, 1, E, true, true);
+        public static final GT_Recipe_Map sBlastSmelterRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(800), "gt.recipe.blastsmelter", "         Blast Smelter", null, RES_PATH_GUI + "basicmachines/BlastSmelter", 9, 1, 1, 0, 1, "Heat Capacity: ", 1, " K", false, true);
+        public static final GT_Recipe_Map sFreezerSolidficationRecipes = new GT_Recipe_Map(new HashSet<GT_Recipe>(35000), "gt.recipe.freezersolidifier", "Freezer Solidifier", null, RES_PATH_GUI + "basicmachines/FreezSolidifier", 1, 1, 1, 2, 1, E, 1, E, true, true);
+        public static final GT_Recipe_Map sPrimitiveLine = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.primitiveline", "3D Printer 3x3", null, RES_PATH_GUI + "Primitiveline", 33, 3344, 1, 0, 1, E, 1, E, true, true);
+        public static final GT_Recipe_Map sBasicline = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.basicline", "3D Printer 4x4", null, RES_PATH_GUI + "Basicline", 44, 3344, 1, 0, 1, E, 1, E, true, true);
         public static final GT_Recipe_Map sAdvanecedline = new GT_Recipe_Map(new HashSet<GT_Recipe>(1000), "gt.recipe.advancedline", "Advanced Line", null, RES_PATH_GUI + "Advancedline", 44, 3344, 1, 0, 1, E, 1, E, true, true);
 
         public static final GT_Recipe_Map_Fuel sSemifluidFuels = new GT_Recipe_Map_Fuel(new HashSet<GT_Recipe>(25), "gt.recipe.semifluidgeneratorfuel", "Semifluid Generator Fuel", null, RES_PATH_GUI + "basicmachines/Default", 1, 1, 0, 0, 1, "Fuel Value: ", 1000, " EU", true, true);
