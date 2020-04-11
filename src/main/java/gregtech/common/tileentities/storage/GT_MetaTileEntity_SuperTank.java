@@ -21,7 +21,7 @@ public class GT_MetaTileEntity_SuperTank
     public boolean OutputFluid = false;
 
 
-    public GT_MetaTileEntity_SuperTank(int aID, String aName, String aNameRegional, int aTier) {
+    public GT_MetaTileEntity_SuperTank(int aID, String aName, String aNameRegional,  int aTier) {
         super(aID, aName, aNameRegional, aTier, 3, "Stores " + CommonSizeCompute(aTier) + "L of fluid");
     }
 
@@ -62,6 +62,10 @@ public class GT_MetaTileEntity_SuperTank
         return new ITexture[]{aBaseTexture, new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_PIPE_OUT)};
     }
 
+    public String[] getDescription() {
+        return new String[] { this.mDescription, EnumChatFormatting.GREEN +"SHIFT + Screwdriver" +EnumChatFormatting.RESET+ " for on/off mode auto output fluid"};
+    }
+
     public void onPostTick(IGregTechTileEntity aBaseMetaTileEntity, long aTick) {
         super.onPostTick(aBaseMetaTileEntity, aTick);
         if (this.getBaseMetaTileEntity().isServerSide()) {
@@ -97,10 +101,12 @@ public class GT_MetaTileEntity_SuperTank
     public void onScrewdriverRightClick(byte aSide, EntityPlayer aPlayer, float aX, float aY, float aZ) {
         super.onScrewdriverRightClick(aSide, aPlayer, aX, aY, aZ);
         this.OutputFluid = !OutputFluid;
-        if (!this.OutputFluid) {
-            GT_Utility.sendChatToPlayer(aPlayer, "Fluid Output Disabled");
-        } else {
-            GT_Utility.sendChatToPlayer(aPlayer, "Fluid Output Enabled");
+        if (aPlayer.isSneaking()) {
+            if (!this.OutputFluid) {
+                GT_Utility.sendChatToPlayer(aPlayer, "Fluid Output Disabled");
+            } else {
+                GT_Utility.sendChatToPlayer(aPlayer, "Fluid Output Enabled");
+            }
         }
     }
 

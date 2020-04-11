@@ -11,6 +11,7 @@ import gregtech.api.util.GT_Utility;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.IFluidHandler;
@@ -57,7 +58,7 @@ public class GT_MetaTileEntity_PortableTank extends GT_MetaTileEntity_BasicTank 
 
 	@Override
 	public String[] getDescription() {
-		return new String[] { this.mDescription, "Portable Tank"};
+		return new String[] { this.mDescription, "Portable Tank", EnumChatFormatting.GREEN +"SHIFT + Screwdriver" +EnumChatFormatting.RESET+ " for on/off mode auto output fluid"};
 	}
 
 	public void onPostTick(IGregTechTileEntity aBaseMetaTileEntity, long aTick) {
@@ -94,10 +95,12 @@ public class GT_MetaTileEntity_PortableTank extends GT_MetaTileEntity_BasicTank 
 	public void onScrewdriverRightClick(byte aSide, EntityPlayer aPlayer, float aX, float aY, float aZ) {
 		super.onScrewdriverRightClick(aSide, aPlayer, aX, aY, aZ);
 		this.OutputFluid = !OutputFluid;
-		if (!this.OutputFluid) {
-			GT_Utility.sendChatToPlayer(aPlayer, "Fluid Output Disabled");
-		} else {
-			GT_Utility.sendChatToPlayer(aPlayer, "Fluid Output Enabled");
+		if (aPlayer.isSneaking()) {
+			if (!this.OutputFluid) {
+				GT_Utility.sendChatToPlayer(aPlayer, "Fluid Output Disabled");
+			} else {
+				GT_Utility.sendChatToPlayer(aPlayer, "Fluid Output Enabled");
+			}
 		}
 	}
 
