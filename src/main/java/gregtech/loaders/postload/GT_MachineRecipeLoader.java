@@ -1614,8 +1614,9 @@ if(Loader.isModLoaded("Railcraft")){
 	}
 	GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Bronze, 6L), new ItemStack(Blocks.brick_block, 1), ItemList.Casing_BronzePlatedBricks.get(2L, new Object[0]), 50, 16);
 	GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Neutronium, 6L), GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.Neutronium, 1L), ItemList.Casing_RobustNeutronium.get(2L, new Object[0]), 50, 16);
+        GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.HSLA, 6L), GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.HSLA, 1L), ItemList.Casing_HSLA.get(2L, new Object[0]), 50, 16);
         
-        if (GT_Mod.gregtechproxy.mHardMachineCasings) {
+	if (GT_Mod.gregtechproxy.mHardMachineCasings) {
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Lead, 2L), ItemList.Casing_ULV.get(1L, new Object[0]), Materials.Plastic.getMolten(288), ItemList.Hull_ULV.get(1L, new Object[0]), 25, 8);
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Tin, 2L), ItemList.Casing_LV.get(1L, new Object[0]), Materials.Plastic.getMolten(288), ItemList.Hull_LV.get(1L, new Object[0]), 50, 30);
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Copper, 2L), ItemList.Casing_MV.get(1L, new Object[0]), Materials.Plastic.getMolten(288), ItemList.Hull_MV.get(1L, new Object[0]), 50, 120);
