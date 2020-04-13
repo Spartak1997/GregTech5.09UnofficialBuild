@@ -102,8 +102,9 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_FrostHazard.get(1L, new Object[0]), bits, new Object[]{"BY ", " M ", "   ", 'M', ItemList.Casing_SolidSteel, 'Y', Dyes.dyeYellow, 'B', Dyes.dyeBlack});
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_NoiseHazard.get(1L, new Object[0]), bits, new Object[]{"   ", " M ", "BY ", 'M', ItemList.Casing_SolidSteel, 'Y', Dyes.dyeYellow, 'B', Dyes.dyeBlack});
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_RobustNeutronium.get(2L, new Object[0]), bits, new Object[]{"PhP", "PFP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.Neutronium), 'F', OrePrefixes.frameGt.get(Materials.Neutronium)});
+        GT_ModHandler.addCraftingRecipe(ItemList.Casing_HSLA.get(2L, new Object[0]), bits, new Object[]{"PhP", "PFP", aTextPlateWrench, 'P', OrePrefixes.plate.get(Materials.HSLA), 'F', OrePrefixes.frameGt.get(Materials.HSLA)});
         
-        GT_ModHandler.addShapelessCraftingRecipe(ItemList.Casing_SolidSteel.get(1L, new Object[0]), bits, new Object[]{ItemList.Casing_Stripes_A});
+	 GT_ModHandler.addShapelessCraftingRecipe(ItemList.Casing_SolidSteel.get(1L, new Object[0]), bits, new Object[]{ItemList.Casing_Stripes_A});
         GT_ModHandler.addShapelessCraftingRecipe(ItemList.Casing_SolidSteel.get(1L, new Object[0]), bits, new Object[]{ItemList.Casing_Stripes_B});
         GT_ModHandler.addShapelessCraftingRecipe(ItemList.Casing_SolidSteel.get(1L, new Object[0]), bits, new Object[]{ItemList.Casing_RadioactiveHazard});
         GT_ModHandler.addShapelessCraftingRecipe(ItemList.Casing_SolidSteel.get(1L, new Object[0]), bits, new Object[]{ItemList.Casing_BioHazard});
