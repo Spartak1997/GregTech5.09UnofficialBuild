@@ -21,6 +21,7 @@ import gregtech.common.GT_RecipeAdder;
 import gregtech.common.entities.GT_Entity_Arrow;
 import gregtech.common.entities.GT_Entity_Arrow_Potion;
 import gregtech.common.items.GT_MetaGenerated_Tool_01;
+import gregtech.common.items.ItemDebug;
 import gregtech.common.items.armor.components.LoadArmorComponents;
 import gregtech.common.items.behaviors.Behaviour_DataOrb;
 import gregtech.common.tileentities.machines.basic.GT_MetaTileEntity_Massfabricator;
@@ -653,6 +654,8 @@ public class GT_Mod implements IGT_Mod {
         }
         if (FMLCommonHandler.instance().getEffectiveSide().isServer())
         	GT_Assemblyline_Server.fillMap(aEvent);
+
+        ItemDebug.getInstance().registerItem();
     }
 
     @Mod.EventHandler

@@ -20,6 +20,7 @@ import gregtech.api.objects.GT_ItemStack;
 import gregtech.api.threads.GT_Runnable_MachineBlockUpdate;
 import gregtech.api.util.*;
 import gregtech.api.world.GT_Worldgen;
+import gregtech.common.items.ItemDebug;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -27,6 +28,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -623,4 +625,16 @@ public class GregTech_API {
         sToolList.add(new GT_ItemStack(GT_Utility.copyAmount(1, aTool)));
         return true;
     }
+
+    public static ItemStack getStackofAmountFromOreDict(String oredictName, final int amount){
+        final ArrayList<ItemStack> list = OreDictionary.getOres(oredictName);
+        if(!list.isEmpty()) {
+            final ItemStack ret = list.get(0).copy();
+            ret.stackSize = amount;
+            return ret;
+        }
+        System.err.println("Failed to find " + oredictName + " in OreDict");
+        return new ItemStack(ItemDebug.getInstance(), amount);
+    }
+
 }
