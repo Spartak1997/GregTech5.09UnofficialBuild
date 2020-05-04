@@ -5,9 +5,9 @@ import static gregtech.api.enums.GT_Values.VN;
 
 import java.util.ArrayList;
 
-import com.spartakcore.gthandler.tileentities.hatches.GT_MetaTileEntity_Primitive_Hatch_Output;
-import com.spartakcore.gthandler.tileentities.hatches.GT_MetaTileEntity_Primitive_InputBus;
-import com.spartakcore.gthandler.tileentities.hatches.GT_MetaTileEntity_Primitive_OutputBus;
+import com.impact.mods.GregTech.tileentities.hatches.GT_MetaTileEntity_Primitive_Hatch_Output;
+import com.impact.mods.GregTech.tileentities.hatches.GT_MetaTileEntity_Primitive_InputBus;
+import com.impact.mods.GregTech.tileentities.hatches.GT_MetaTileEntity_Primitive_OutputBus;
 import gregtech.GT_Mod;
 import gregtech.api.GregTech_API;
 import gregtech.api.enums.ConfigCategories;

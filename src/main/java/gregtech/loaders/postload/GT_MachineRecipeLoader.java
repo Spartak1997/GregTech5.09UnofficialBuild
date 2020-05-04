@@ -1,6 +1,5 @@
 package gregtech.loaders.postload;
 
-import com.spartakcore.gthandler.GT_CoreModSupport;
 import codechicken.nei.api.API;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -1777,7 +1776,7 @@ if(Loader.isModLoaded("Railcraft")){
             GT_Values.RA.addPyrolyseRecipe(GT_OreDictUnificator.get(OrePrefixes.block, Materials.Coal, 8), null, 1, EnumCube.COKE_BLOCK.getItem(8), Materials.Creosote.getFluid(32000), 2560, 64);
             GT_Values.RA.addPyrolyseRecipe(GT_OreDictUnificator.get(OrePrefixes.block, Materials.Coal, 8), Materials.Nitrogen.getGas(1000), 2, EnumCube.COKE_BLOCK.getItem(8), Materials.Creosote.getFluid(32000), 1280, 96);
         }
-	GT_Values.RA.addCokeOvenRecipes(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Coal, 1), GT_OreDictUnificator.get(OrePrefixes.gem, GT_CoreModSupport.CokeCoal, 1L), Materials.Creosote.getFluid(500), 800);
+	GT_Values.RA.addCokeOvenRecipes(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Coal, 1), GT_OreDictUnificator.get(OrePrefixes.gem, Materials.CokeCoal, 1L), Materials.Creosote.getFluid(500), 800);
         run2();
 
         GT_Utility.removeSimpleIC2MachineRecipe(new ItemStack(Blocks.cobblestone), GT_ModHandler.getMaceratorRecipeList(), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Stone, 1L));

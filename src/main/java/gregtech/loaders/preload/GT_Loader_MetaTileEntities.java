@@ -1,7 +1,6 @@
 package gregtech.loaders.preload;
 
 import codechicken.nei.api.API;
-import com.spartakcore.gthandler.CustomItemList;
 import cpw.mods.fml.common.Loader;
 import gregtech.GT_Mod;
 import gregtech.api.GregTech_API;
