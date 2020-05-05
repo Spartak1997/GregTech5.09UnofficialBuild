@@ -319,6 +319,10 @@ if(Loader.isModLoaded("Railcraft")){
         GT_Values.RA.addMixerRecipe(EnumCube.COKE_BLOCK.getItem(), ItemList.MSFMixture.get(1, new Object[]{}), GT_ModHandler.getModItem("Thaumcraft", "ItemResource", 4), null, Materials.HeavyFuel.getFluid(375), null, ItemList.Block_MSSFUEL.get(1, new Object[]{}), 120, 96);
 		GT_Values.RA.addMixerRecipe(EnumCube.COKE_BLOCK.getItem(), ItemList.MSFMixture.get(1, new Object[]{}), GT_ModHandler.getModItem("Thaumcraft", "ItemResource", 4), null, Materials.LPG.getFluid(375), null, ItemList.Block_MSSFUEL.get(1, new Object[]{}), 120, 96);
         }}
+        GT_Values.RA.addMixerRecipe(GregTech_API.getStackofAmountFromOreDict("blockCokeCoal", 1), ItemList.SFMixture.get(1, new Object[]{}), null, null, Materials.NitroFuel.getFluid(250), null, ItemList.Block_SSFUEL.get(1, new Object[]{}), 120, 96);
+        GT_Values.RA.addMixerRecipe(GregTech_API.getStackofAmountFromOreDict("blockCokeCoal", 1), ItemList.SFMixture.get(1, new Object[]{}), null, null, Materials.HeavyFuel.getFluid(375), null, ItemList.Block_SSFUEL.get(1, new Object[]{}), 120, 96);
+        GT_Values.RA.addMixerRecipe(GregTech_API.getStackofAmountFromOreDict("blockCokeCoal", 1), ItemList.SFMixture.get(1, new Object[]{}), null, null, Materials.LPG.getFluid(375), null, ItemList.Block_SSFUEL.get(1, new Object[]{}), 120, 96);
+
         GT_Values.RA.addExtruderRecipe(ItemList.FR_Wax.get(1L, new Object[0]), ItemList.Shape_Extruder_Cell.get(0L, new Object[0]), ItemList.FR_WaxCapsule.get(1L, new Object[0]), 64, 16);
         GT_Values.RA.addExtruderRecipe(ItemList.FR_RefractoryWax.get(1L, new Object[0]), ItemList.Shape_Extruder_Cell.get(0L, new Object[0]), ItemList.FR_RefractoryCapsule.get(1L, new Object[0]), 128, 16);
 
@@ -1776,7 +1780,12 @@ if(Loader.isModLoaded("Railcraft")){
             GT_Values.RA.addPyrolyseRecipe(GT_OreDictUnificator.get(OrePrefixes.block, Materials.Coal, 8), null, 1, EnumCube.COKE_BLOCK.getItem(8), Materials.Creosote.getFluid(32000), 2560, 64);
             GT_Values.RA.addPyrolyseRecipe(GT_OreDictUnificator.get(OrePrefixes.block, Materials.Coal, 8), Materials.Nitrogen.getGas(1000), 2, EnumCube.COKE_BLOCK.getItem(8), Materials.Creosote.getFluid(32000), 1280, 96);
         }
-	GT_Values.RA.addCokeOvenRecipes(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Coal, 1), GT_OreDictUnificator.get(OrePrefixes.gem, Materials.CokeCoal, 1L), Materials.Creosote.getFluid(500), 800);
+        GT_Values.RA.addPyrolyseRecipe(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Coal, 16), null, 1, GT_OreDictUnificator.get(OrePrefixes.gem, Materials.CokeCoal, 16), Materials.Creosote.getFluid(8000), 640, 64);
+        GT_Values.RA.addPyrolyseRecipe(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Coal, 16), Materials.Nitrogen.getGas(1000), 2, GT_OreDictUnificator.get(OrePrefixes.gem, Materials.CokeCoal, 16), Materials.Creosote.getFluid(8000), 320, 96);
+        GT_Values.RA.addPyrolyseRecipe(GT_OreDictUnificator.get(OrePrefixes.block, Materials.Coal, 8), null, 1, GregTech_API.getStackofAmountFromOreDict("blockCokeCoal", 8), Materials.Creosote.getFluid(32000), 2560, 64);
+        GT_Values.RA.addPyrolyseRecipe(GT_OreDictUnificator.get(OrePrefixes.block, Materials.Coal, 8), Materials.Nitrogen.getGas(1000), 2, GregTech_API.getStackofAmountFromOreDict("blockCokeCoal", 8), Materials.Creosote.getFluid(32000), 1280, 96);
+
+        GT_Values.RA.addCokeOvenRecipes(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Coal, 1), GT_OreDictUnificator.get(OrePrefixes.gem, Materials.CokeCoal, 1L), Materials.Creosote.getFluid(500), 800);
         run2();
 
         GT_Utility.removeSimpleIC2MachineRecipe(new ItemStack(Blocks.cobblestone), GT_ModHandler.getMaceratorRecipeList(), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Stone, 1L));
@@ -3826,9 +3835,9 @@ if(Loader.isModLoaded("Railcraft")){
     	GT_Values.RA.addPrimitiveBlastRecipe(Materials.Iron.getDust(1), GT_Values.NI, 4, Materials.Steel.getIngots(1), GT_Values.NI, 7200);
     	GT_Values.RA.addPrimitiveBlastRecipe(Materials.Iron.getBlocks(1), GT_Values.NI, 36, Materials.Steel.getIngots(9), GT_Values.NI, 64800);
     	GT_Values.RA.addPrimitiveBlastRecipe(Materials.Steel.getDust(1), GT_Values.NI, 2, Materials.Steel.getIngots(1), GT_Values.NI, 7200);
-    	GT_Values.RA.addPrimitiveBlastRecipe(Materials.Iron.getNuggets(36), GT_Values.NI, 1, Materials.WroughtIron.getNuggets(36), GT_Values.NI, 200);
-    	
-    	//Roasting
+    	GT_Values.RA.addPrimitiveBlastRecipe(Materials.Iron.getNuggets(36), GT_Values.NI, 2, Materials.WroughtIron.getNuggets(36), GT_Values.NI, 200);
+
+        //Roasting
     	GT_Values.RA.addBlastRecipe(Materials.Tetrahedrite.getDust(1), GT_Values.NI, Materials.Oxygen.getGas(3000), Materials.SulfurDioxide.getGas(2000), Materials.CupricOxide.getDust(1), Materials.AntimonyTrioxide.getDustTiny(3), 120, 120, 1200);
     	GT_Values.RA.addBlastRecipe(Materials.Chalcopyrite.getDust(1), Materials.SiliconDioxide.getDust(1), Materials.Oxygen.getGas(3000), Materials.SulfurDioxide.getGas(2000), Materials.CupricOxide.getDust(1), Materials.Ferrosilite.getDust(1), 120, 120, 1200);
     	
