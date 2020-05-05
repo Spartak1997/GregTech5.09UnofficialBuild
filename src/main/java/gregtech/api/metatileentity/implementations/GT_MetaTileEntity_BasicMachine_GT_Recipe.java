@@ -40,30 +40,6 @@ public class GT_MetaTileEntity_BasicMachine_GT_Recipe extends GT_MetaTileEntity_
     private final boolean mSharedTank, mRequiresFluidForFiltering;
     private final byte mGUIParameterA, mGUIParameterB;
 
-    public static String rotorTumbaga= "rotorTumbaga";
-    public static String rotorPotin= "rotorPotin";
-    public static String rotorEglinSteel= "rotorEglinSteel";
-    public static String rotorZirconiumCarbide= "rotorZirconiumCarbide";
-	public static String rotorIncoloy020= "rotorIncoloy020";
-	public static String rotorStellite= "rotorStellite";
-	public static String rotorNitinol60= "rotorNitinol60";
-	public static String rotorArceusAlloy2B= "rotorArceusAlloy2B";
-	public static String rotorCinobiteA243= "rotorCinobiteA243";
-	public static String rotorAbyssalAlloy= "rotorAbyssalAlloy";
-	public static String rotorQuantum= "rotorQuantum";
-	
-	public static String plateTumbaga= "plateTumbaga";
-    public static String platePotin= "platePotin";
-    public static String plateEglinSteel= "plateEglinSteel";
-    public static String plateZirconiumCarbide= "plateZirconiumCarbide";
-	public static String plateIncoloy020= "plateIncoloy020";
-	public static String plateStellite= "plateStellite";
-	public static String plateNitinol60= "plateNitinol60";
-	public static String plateArceusAlloy2B= "plateArceusAlloy2B";
-	public static String plateCinobiteA243= "plateCinobiteA243";
-	public static String plateAbyssalAlloy= "plateAbyssalAlloy";
-	public static String plateQuantum= "plateQuantum";
-	
     public GT_MetaTileEntity_BasicMachine_GT_Recipe(int aID, String aName, String aNameRegional, int aTier, String aDescription, GT_Recipe_Map aRecipes, int aInputSlots, int aOutputSlots, int aTankCapacity, int aGUIParameterA, int aGUIParameterB, String aGUIName, String aSound, boolean aSharedTank, boolean aRequiresFluidForFiltering, int aSpecialEffect, String aOverlays, Object[] aRecipe) {
         super(aID, aName, aNameRegional, aTier, aRecipes.mAmperage, aDescription, aInputSlots, aOutputSlots, aGUIName, aRecipes.mNEIName, new ITexture[]{new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("basicmachines/" + aOverlays.toLowerCase(Locale.ENGLISH) + "/OVERLAY_SIDE_ACTIVE")), new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("basicmachines/" + aOverlays.toLowerCase(Locale.ENGLISH) + "/OVERLAY_SIDE")), new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("basicmachines/" + aOverlays.toLowerCase(Locale.ENGLISH) + "/OVERLAY_FRONT_ACTIVE")), new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("basicmachines/" + aOverlays.toLowerCase(Locale.ENGLISH) + "/OVERLAY_FRONT")), new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("basicmachines/" + aOverlays.toLowerCase(Locale.ENGLISH) + "/OVERLAY_TOP_ACTIVE")), new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("basicmachines/" + aOverlays.toLowerCase(Locale.ENGLISH) + "/OVERLAY_TOP")), new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("basicmachines/" + aOverlays.toLowerCase(Locale.ENGLISH) + "/OVERLAY_BOTTOM_ACTIVE")), new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("basicmachines/" + aOverlays.toLowerCase(Locale.ENGLISH) + "/OVERLAY_BOTTOM"))});
         mSharedTank = aSharedTank;
@@ -123,50 +99,9 @@ public class GT_MetaTileEntity_BasicMachine_GT_Recipe extends GT_MetaTileEntity_
                     }
                 }
 
-                if (GT_Mod.gregtechproxy.mGTPlusPlusHard) {
                 if (aRecipe[i] == X.PLATE) {
                     switch (mTier) {
                         case 0:
-                        case 1:
-                            aRecipe[i] = "plateTumbaga";
-                            break;
-                        case 2:
-                            aRecipe[i] = "platePotin";
-                            break;
-                        case 3:
-                            aRecipe[i] = "plateEglinSteel";
-                            break;
-                        case 4:
-                            aRecipe[i] = "plateZirconiumCarbide";
-                            break;
-                        case 5:
-                            aRecipe[i] = "plateIncoloy020";
-                            break;
-                        case 6:
-                            aRecipe[i] = "plateStellite";
-                            break;
-                        case 7:
-                            aRecipe[i] = "plateNitinol60";
-                            break;
-                        case 8:
-                            aRecipe[i] = "plateArceusAlloy2B";
-                            break;
-                        case 9:
-                            aRecipe[i] = "plateCinobiteA243";
-                            break;
-                        case 10:
-                            aRecipe[i] = "plateAbyssalAlloy";
-                            break;
-                        default:
-                            aRecipe[i] = "plateQuantum";
-                            break;
-                    }
-                    continue;
-                }
-                }else {
-                	if (aRecipe[i] == X.PLATE) {
-                        switch (mTier) {
-                            case 0:
                             case 1:
                                 aRecipe[i] = OrePrefixes.plate.get(Materials.Steel);
                                 break;
@@ -200,7 +135,6 @@ public class GT_MetaTileEntity_BasicMachine_GT_Recipe extends GT_MetaTileEntity_
                         }
                         continue;
                     }
-                }
 
                 if (aRecipe[i] == X.PIPE) {
                     switch (mTier) {
@@ -545,50 +479,9 @@ public class GT_MetaTileEntity_BasicMachine_GT_Recipe extends GT_MetaTileEntity_
                     continue;
                 }
 
-                if (GT_Mod.gregtechproxy.mGTPlusPlusHard) {
                 if (aRecipe[i] == X.ROTOR) {
                     switch (mTier) {
                         case 0:
-                        case 1:
-                            aRecipe[i] = "rotorTumbaga";
-                            break;
-                        case 2:
-                            aRecipe[i] = "rotorPotin";
-                            break;
-                        case 3:
-                            aRecipe[i] = "rotorEglinSteel";
-                            break;
-                        case 4:
-                            aRecipe[i] = "rotorZirconiumCarbide";
-                            break;
-                        case 5:
-                            aRecipe[i] = "rotorIncoloy020";
-                            break;
-                        case 6:
-                            aRecipe[i] = "rotorStellite";
-                            break;
-                        case 7:
-                            aRecipe[i] = "rotorNitinol60";
-                            break;
-                        case 8:
-                            aRecipe[i] = "rotorArceusAlloy2B";
-                            break;
-                        case 9:
-                            aRecipe[i] = "rotorCinobiteA243";
-                            break;
-                        case 10:
-                            aRecipe[i] = "rotorAbyssalAlloy";
-                            break;
-                        default:
-                            aRecipe[i] = "rotorQuantum";
-                            break;
-                    }
-                    continue;
-                }
-                }else {
-                	if (aRecipe[i] == X.ROTOR) {
-                        switch (mTier) {
-                            case 0:
                             case 1:
                                 aRecipe[i] = OrePrefixes.rotor.get(Materials.Tin);
                                 break;
@@ -625,7 +518,6 @@ public class GT_MetaTileEntity_BasicMachine_GT_Recipe extends GT_MetaTileEntity_
                         }
                         continue;
                     }
-                }
 
                 if (aRecipe[i] == X.MOTOR) {
                     switch (mTier) {
