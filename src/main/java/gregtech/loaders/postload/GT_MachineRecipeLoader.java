@@ -14,8 +14,6 @@ import gregtech.common.items.GT_VolumetricFlask;
 import ic2.api.recipe.ILiquidHeatExchangerManager.HeatExchangeProperty;
 import ic2.api.recipe.Recipes;
 import ic2.core.Ic2Items;
-//import mods.railcraft.common.blocks.aesthetics.cube.EnumCube;
-//import mods.railcraft.common.items.RailcraftToolItems;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
