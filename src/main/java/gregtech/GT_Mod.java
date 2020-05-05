@@ -71,7 +71,6 @@ import static gregtech.api.enums.GT_Values.MOD_ID_FR;
 
 @Mod(modid = "gregtech", name = "GregTech", version = "MC1710", useMetadata = false, 
 dependencies =  " required-after:IC2;" +
-        " after:spartakcore;"+
         " after:Forestry;" +
         " after:PFAAGeologica;" +
         " after:Thaumcraft;" +
