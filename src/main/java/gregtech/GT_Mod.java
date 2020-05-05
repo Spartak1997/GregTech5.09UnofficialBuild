@@ -179,8 +179,6 @@ public class GT_Mod implements IGT_Mod {
         GregTech_API.mIC2Classic = Loader.isModLoaded("IC2-Classic-Spmod");
         GregTech_API.mMagneticraft = Loader.isModLoaded("Magneticraft");
         GregTech_API.mImmersiveEngineering = Loader.isModLoaded("ImmersiveEngineering");
-        GregTech_API.mGTPlusPlus = Loader.isModLoaded("miscutils");        
-        GregTech_API.mGTPlusPlus = Loader.isModLoaded("miscutils");
         GregTech_API.mTranslocator = Loader.isModLoaded("Translocator");
         GregTech_API.mTConstruct = Loader.isModLoaded("TConstruct");
         GregTech_API.mGalacticraft = Loader.isModLoaded("GalacticraftCore");
@@ -345,7 +343,6 @@ public class GT_Mod implements IGT_Mod {
         gregtechproxy.mEnableCleanroom = tMainConfig.get("general", "EnableCleanroom", true).getBoolean(true);
         gregtechproxy.mLowGravProcessing = Loader.isModLoaded(GT_Values.MOD_ID_GC_CORE) && tMainConfig.get("general", "LowGravProcessing", true).getBoolean(true);
         gregtechproxy.mLowGravProcessingCircuits = Loader.isModLoaded(GT_Values.MOD_ID_GC_CORE) && tMainConfig.get("general", "LowGravProcessingCircuits", false).getBoolean(false);
-        gregtechproxy.mGTPlusPlusHard = Loader.isModLoaded("miscutils") && tMainConfig.get("general", "GTPlusPlusHard", false).getBoolean(false);
         gregtechproxy.mBartHard = Loader.isModLoaded("bartworks") && tMainConfig.get("general", "BartHard", false).getBoolean(false);
         gregtechproxy.mComponentAssembler = tMainConfig.get("general","ComponentAssembler",false).getBoolean(false);
         
