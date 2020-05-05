@@ -240,6 +240,12 @@ public abstract class GT_MetaTileEntity_Boiler
                     if (aBaseMetaTileEntity.getRandomNumber(2) == 0) {
                         aBaseMetaTileEntity.addStackToSlot(3, GT_OreDictUnificator.get(OrePrefixes.dustTiny, Materials.Ash, 1L));
                     }
+                } else if (GT_OreDictUnificator.isItemStackInstanceOf(this.mInventory[2], OrePrefixes.gem.get(Materials.CokeCoal))) {
+                    this.mProcessingEnergy += 640;
+                    aBaseMetaTileEntity.decrStackSize(2, 1);
+                    if (aBaseMetaTileEntity.getRandomNumber(2) == 0) {
+                        aBaseMetaTileEntity.addStackToSlot(3, GT_OreDictUnificator.get(OrePrefixes.dustTiny, Materials.Ash, 1L));
+                    }
                 } else if ((GT_OreDictUnificator.isItemStackInstanceOf(this.mInventory[2], OrePrefixes.gem.get(Materials.Lignite))) || (GT_OreDictUnificator.isItemStackInstanceOf(this.mInventory[2], OrePrefixes.dust.get(Materials.Lignite))) || (GT_OreDictUnificator.isItemStackInstanceOf(this.mInventory[2], OrePrefixes.dustImpure.get(Materials.Lignite))) || (GT_OreDictUnificator.isItemStackInstanceOf(this.mInventory[2], OrePrefixes.crushed.get(Materials.Lignite)))) {
                     this.mProcessingEnergy += 120;
                     aBaseMetaTileEntity.decrStackSize(2, 1);

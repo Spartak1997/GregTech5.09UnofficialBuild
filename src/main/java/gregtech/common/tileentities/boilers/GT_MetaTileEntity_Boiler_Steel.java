@@ -157,6 +157,11 @@ public class GT_MetaTileEntity_Boiler_Steel
                     byproductChance = 2;
                     byproduct = Materials.Ash;
                     validFuel = true;
+                } else if (GT_OreDictUnificator.isItemStackInstanceOf(this.mInventory[2], OrePrefixes.gem.get(Materials.CokeCoal))) {
+                    fuelEnergy = 640;
+                    byproductChance = 2;
+                    byproduct = Materials.Ash;
+                    validFuel = true;
                 } else if ((GT_OreDictUnificator.isItemStackInstanceOf(this.mInventory[2], OrePrefixes.gem.get(Materials.Lignite))) ||
                            (GT_OreDictUnificator.isItemStackInstanceOf(this.mInventory[2], OrePrefixes.dust.get(Materials.Lignite))) ||
                            (GT_OreDictUnificator.isItemStackInstanceOf(this.mInventory[2], OrePrefixes.dustImpure.get(Materials.Lignite))) ||
