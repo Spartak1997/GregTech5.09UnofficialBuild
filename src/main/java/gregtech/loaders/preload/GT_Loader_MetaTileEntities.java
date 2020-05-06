@@ -1647,10 +1647,6 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         makeWires(Materials.Longasssuperconductornameforuhvwire, 2500, 2L, 2L, 12L, gregtech.api.enums.GT_Values.V[9], true, aBoolConst_0);
         makeWires(Materials.Longasssuperconductornameforuevwire, 2520, 2L, 2L, 16L, gregtech.api.enums.GT_Values.V[10], true, aBoolConst_0);
 
-        if (Loader.isModLoaded("Thaumcraft")){
-        makeWires(Materials.Ichorium, 2540, 2L, 2L, 12L, GT_Values.V[9], false, true);
-        }
-
         makeWires(Materials.Draconium, 11390, bEC ? 4L : 16L, bEC ? 32L : 64L, 8L, GT_Values.V[10], true, false);
         makeWires(Materials.DraconiumAwakened, 11410, bEC ? 4L : 16L, bEC ? 16L : 32L, 1L, GT_Values.V[14], false, false);
 
@@ -1714,6 +1710,12 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         generateFluidPipes(Materials.Polybenzimidazole, Materials.Polybenzimidazole.mName, "PBI", 5370, 600, 1000, true);
         generateFluidPipes(Materials.Infuscolium, Materials.Infuscolium.mName, 5380, 14600, 1000000, true);
         generateFluidPipes(Materials.DraconiumAwakened, Materials.DraconiumAwakened.mName, 5390, 45000, 10000000, true);
+        generateFluidPipes(Materials.Lead, Materials.Lead.mName, 5450, 432, 1200, true);
+        generateFluidPipes(Materials.Potin, Materials.Potin.mName, 5460, 576, 2000, true);
+        generateFluidPipes(Materials.MaragingSteel300, Materials.MaragingSteel300.mName, 5470, 8400, 2500, true);
+        generateFluidPipes(Materials.Inconel690, Materials.Inconel690.mName, 5480, 9000, 4800, true);
+        generateFluidPipes(Materials.Inconel792, Materials.Inconel792.mName, 5490, 9600, 5500, true);
+        generateFluidPipes(Materials.HSLA, Materials.HSLA.mName, 5500, 560, 6200, true);
 
         GT_OreDictUnificator.registerOre(OrePrefixes.pipeSmall.get(Materials.Ultimate), new GT_MetaPipeEntity_Fluid(5165, "GT_Pipe_HighPressure_Small", "Small High Pressure Fluid Pipe", 0.375F, Materials.Redstone, 4800, 1500, true).getStackForm(1L));
         GT_OreDictUnificator.registerOre(OrePrefixes.pipeMedium.get(Materials.Ultimate), new GT_MetaPipeEntity_Fluid(5166, "GT_Pipe_HighPressure", "High Pressure Fluid Pipe", 0.5F, Materials.Redstone, 7200, 1500, true).getStackForm(1L));
