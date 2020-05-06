@@ -655,126 +655,126 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         ItemList.Machine_HV_AlloySmelter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(203, "basicmachine.alloysmelter.tier.03", "Advanced Alloy Smelter II", 3, "HighTech combination Smelter", GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "ALLOY_SMELTER", new Object[]{"ECE", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
         ItemList.Machine_EV_AlloySmelter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(204, "basicmachine.alloysmelter.tier.04", "Advanced Alloy Smelter III", 4, "HighTech combination Smelter", GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "ALLOY_SMELTER", new Object[]{"ECE", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
         ItemList.Machine_IV_AlloySmelter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(205, "basicmachine.alloysmelter.tier.05", "Advanced Alloy Smelter IV", 5, "HighTech combination Smelter", GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "ALLOY_SMELTER", new Object[]{"ECE", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
-        ItemList.Machine_LuV_AlloySmelter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(206, "basicmachine.alloysmelter.tier.06", "Advanced Alloy Smelter V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "ALLOY_SMELTER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_AlloySmelter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(207, "basicmachine.alloysmelter.tier.07", "Advanced Alloy Smelter VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "ALLOY_SMELTER", null).getStackForm(1L));
-        ItemList.Machine_UV_AlloySmelter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(208, "basicmachine.alloysmelter.tier.08", "Advanced Alloy Smelter VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "ALLOY_SMELTER", null).getStackForm(1L));
+        ItemList.Machine_LuV_AlloySmelter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(206, "basicmachine.alloysmelter.tier.06", "Advanced Alloy Smelter V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "ALLOY_SMELTER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_AlloySmelter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(207, "basicmachine.alloysmelter.tier.07", "Advanced Alloy Smelter VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "ALLOY_SMELTER", null).getStackForm(1L));
+        ItemList.Machine_UV_AlloySmelter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(208, "basicmachine.alloysmelter.tier.08", "Advanced Alloy Smelter VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "ALLOY_SMELTER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(211, "basicmachine.assembler.tier.01", "Basic Assembling Machine", 1, "Avengers, Assemble!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 6, 1, 16000, 0, 1, "Assembler.png", "", aBoolConst_0, aBoolConst_0, 0, "ASSEMBLER", new Object[]{"ACA", "VMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'A', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_MV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(212, "basicmachine.assembler.tier.02", "Advanced Assembling Machine", 2, "Avengers, Assemble!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 24000, 0, 1, "Assembler2.png", "", aBoolConst_0, aBoolConst_0, 0, "ASSEMBLER", new Object[]{"ACA", "VMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'A', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_HV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(213, "basicmachine.assembler.tier.03", "Advanced Assembling Machine II", 3, "Avengers, Assemble!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 32000, 0, 1, "Assembler2.png", "", aBoolConst_0, aBoolConst_0, 0, "ASSEMBLER", new Object[]{"ACA", "VMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'A', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(214, "basicmachine.assembler.tier.04", "Advanced Assembling Machine III", 4, "Avengers, Assemble!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 48000, 0, 1, "Assembler2.png", "", aBoolConst_0, aBoolConst_0, 0, "ASSEMBLER", new Object[]{"ACA", "VMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'A', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(215, "basicmachine.assembler.tier.05", "Advanced Assembling Machine IV", 5, "Avengers, Assemble!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 64000, 0, 1, "Assembler2.png", "", aBoolConst_0, aBoolConst_0, 0, "ASSEMBLER", new Object[]{"ACA", "VMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'A', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(216, "basicmachine.assembler.tier.06", "Advanced Assembling Machine V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 64000, 0, 1, "Assembler2.png", "", aBoolConst_0, aBoolConst_0, 0, "ASSEMBLER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(217, "basicmachine.assembler.tier.07", "Advanced Assembling Machine VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 64000, 0, 1, "Assembler2.png", "", aBoolConst_0, aBoolConst_0, 0, "ASSEMBLER", null).getStackForm(1L));
-        ItemList.Machine_UV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(218, "basicmachine.assembler.tier.08", "Advanced Assembling Machine VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 64000, 0, 1, "Assembler2.png", "", aBoolConst_0, aBoolConst_0, 0, "ASSEMBLER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(216, "basicmachine.assembler.tier.06", "Advanced Assembling Machine V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 64000, 0, 1, "Assembler2.png", "", aBoolConst_0, aBoolConst_0, 0, "ASSEMBLER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(217, "basicmachine.assembler.tier.07", "Advanced Assembling Machine VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 64000, 0, 1, "Assembler2.png", "", aBoolConst_0, aBoolConst_0, 0, "ASSEMBLER", null).getStackForm(1L));
+        ItemList.Machine_UV_Assembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(218, "basicmachine.assembler.tier.08", "Advanced Assembling Machine VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 64000, 0, 1, "Assembler2.png", "", aBoolConst_0, aBoolConst_0, 0, "ASSEMBLER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Bender.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(221, "basicmachine.bender.tier.01", "Basic Bending Machine", 1, "Boo, he's bad! We want BENDER!!!", GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "BENDER", new Object[]{aTextPlateWrench, aTextCableHull, aTextMotorWire, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_MV_Bender.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(222, "basicmachine.bender.tier.02", "Advanced Bending Machine", 2, "Boo, he's bad! We want BENDER!!!", GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "BENDER", new Object[]{aTextPlateWrench, aTextCableHull, aTextMotorWire, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_HV_Bender.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(223, "basicmachine.bender.tier.03", "Advanced Bending Machine II", 3, "Boo, he's bad! We want BENDER!!!", GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "BENDER", new Object[]{aTextPlateWrench, aTextCableHull, aTextMotorWire, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_Bender.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(224, "basicmachine.bender.tier.04", "Advanced Bending Machine III", 4, "Boo, he's bad! We want BENDER!!!", GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "BENDER", new Object[]{aTextPlateWrench, aTextCableHull, aTextMotorWire, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_Bender.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(225, "basicmachine.bender.tier.05", "Advanced Bending Machine IV", 5, "Boo, he's bad! We want BENDER!!!", GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "BENDER", new Object[]{aTextPlateWrench, aTextCableHull, aTextMotorWire, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_Bender.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(226, "basicmachine.bender.tier.06", "Advanced Bending Machine V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "BENDER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Bender.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(227, "basicmachine.bender.tier.07", "Advanced Bending Machine VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "BENDER", null).getStackForm(1L));
-        ItemList.Machine_UV_Bender.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(228, "basicmachine.bender.tier.08", "Advanced Bending Machine VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "BENDER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Bender.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(226, "basicmachine.bender.tier.06", "Advanced Bending Machine V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "BENDER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Bender.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(227, "basicmachine.bender.tier.07", "Advanced Bending Machine VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "BENDER", null).getStackForm(1L));
+        ItemList.Machine_UV_Bender.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(228, "basicmachine.bender.tier.08", "Advanced Bending Machine VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "BENDER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Canner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(231, "basicmachine.canner.tier.01", "Basic Canning Machine", 1, "Unmobile Food Canning Machine GTA4", GT_Recipe.GT_Recipe_Map.sCannerRecipes, 2, 2, 0, 0, 1, "Canner.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CANNER", new Object[]{aTextWirePump, aTextCableHull, "GGG", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_Canner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(232, "basicmachine.canner.tier.02", "Advanced Canning Machine", 2, "Unmobile Food Canning Machine GTA4", GT_Recipe.GT_Recipe_Map.sCannerRecipes, 2, 2, 0, 0, 1, "Canner.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CANNER", new Object[]{aTextWirePump, aTextCableHull, "GGG", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_Canner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(233, "basicmachine.canner.tier.03", "Advanced Canning Machine II", 3, "Unmobile Food Canning Machine GTA4", GT_Recipe.GT_Recipe_Map.sCannerRecipes, 2, 2, 0, 0, 1, "Canner.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CANNER", new Object[]{aTextWirePump, aTextCableHull, "GGG", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_Canner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(234, "basicmachine.canner.tier.04", "Advanced Canning Machine III", 4, "Unmobile Food Canning Machine GTA4", GT_Recipe.GT_Recipe_Map.sCannerRecipes, 2, 2, 0, 0, 1, "Canner.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CANNER", new Object[]{aTextWirePump, aTextCableHull, "GGG", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_Canner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(235, "basicmachine.canner.tier.05", "Advanced Canning Machine IV", 5, "Unmobile Food Canning Machine GTA4", GT_Recipe.GT_Recipe_Map.sCannerRecipes, 2, 2, 0, 0, 1, "Canner.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CANNER", new Object[]{aTextWirePump, aTextCableHull, "GGG", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_Canner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(236, "basicmachine.canner.tier.06", "Advanced Canning Machine V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCannerRecipes, 2, 2, 0, 0, 1, "Canner.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CANNER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Canner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(237, "basicmachine.canner.tier.07", "Advanced Canning Machine VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCannerRecipes, 2, 2, 0, 0, 1, "Canner.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CANNER", null).getStackForm(1L));
-        ItemList.Machine_UV_Canner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(238, "basicmachine.canner.tier.08", "Advanced Canning Machine VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCannerRecipes, 2, 2, 0, 0, 1, "Canner.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CANNER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Canner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(236, "basicmachine.canner.tier.06", "Advanced Canning Machine V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCannerRecipes, 2, 2, 0, 0, 1, "Canner.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CANNER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Canner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(237, "basicmachine.canner.tier.07", "Advanced Canning Machine VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCannerRecipes, 2, 2, 0, 0, 1, "Canner.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CANNER", null).getStackForm(1L));
+        ItemList.Machine_UV_Canner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(238, "basicmachine.canner.tier.08", "Advanced Canning Machine VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCannerRecipes, 2, 2, 0, 0, 1, "Canner.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CANNER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Compressor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(241, "basicmachine.compressor.tier.01", "Basic Compressor", 1, "Compress-O-Matic C77", GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "COMPRESSOR", new Object[]{" C ", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_MV_Compressor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(242, "basicmachine.compressor.tier.02", "Advanced Compressor", 2, "Compress-O-Matic C77", GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "COMPRESSOR", new Object[]{" C ", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_HV_Compressor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(243, "basicmachine.compressor.tier.03", "Advanced Compressor II", 3, "Compress-O-Matic C77", GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "COMPRESSOR", new Object[]{" C ", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_Compressor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(244, "basicmachine.compressor.tier.04", "Advanced Compressor III", 4, "Compress-O-Matic C77", GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "COMPRESSOR", new Object[]{" C ", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_Compressor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(245, "basicmachine.compressor.tier.05", "Singularity Compressor", 5, "Compress-O-Matic C77", GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "COMPRESSOR", new Object[]{" C ", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_Compressor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(246, "basicmachine.compressor.tier.06", "Singularity Compressor", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "COMPRESSOR", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Compressor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(247, "basicmachine.compressor.tier.07", "Singularity Compressor", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "COMPRESSOR", null).getStackForm(1L));
-        ItemList.Machine_UV_Compressor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(248, "basicmachine.compressor.tier.08", "Singularity Compressor", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "COMPRESSOR", null).getStackForm(1L));
+        ItemList.Machine_LuV_Compressor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(246, "basicmachine.compressor.tier.06", "Singularity Compressor", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "COMPRESSOR", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Compressor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(247, "basicmachine.compressor.tier.07", "Singularity Compressor", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "COMPRESSOR", null).getStackForm(1L));
+        ItemList.Machine_UV_Compressor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(248, "basicmachine.compressor.tier.08", "Singularity Compressor", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "COMPRESSOR", null).getStackForm(1L));
 
         ItemList.Machine_LV_Cutter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(251, "basicmachine.cutter.tier.01", "Basic Cutting Machine", 1, "Slice'N Dice", GT_Recipe.GT_Recipe_Map.sCutterRecipes, 1, 2, 1000, 0, 1, "Cutter.png", "", aBoolConst_0, aBoolConst_0, 0, "CUTTER", new Object[]{"WCG", "VMB", "CWE", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS, 'B', OreDictNames.craftingDiamondBlade}).getStackForm(1L));
         ItemList.Machine_MV_Cutter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(252, "basicmachine.cutter.tier.02", "Advanced Cutting Machine", 2, "Slice'N Dice", GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png", "", aBoolConst_0, aBoolConst_0, 0, "CUTTER", new Object[]{"WCG", "VMB", "CWE", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS, 'B', OreDictNames.craftingDiamondBlade}).getStackForm(1L));
         ItemList.Machine_HV_Cutter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(253, "basicmachine.cutter.tier.03", "Advanced Cutting Machine II", 3, "Slice'N Dice", GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png", "", aBoolConst_0, aBoolConst_0, 0, "CUTTER", new Object[]{"WCG", "VMB", "CWE", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS, 'B', OreDictNames.craftingDiamondBlade}).getStackForm(1L));
         ItemList.Machine_EV_Cutter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(254, "basicmachine.cutter.tier.04", "Advanced Cutting Machine III", 4, "Slice'N Dice", GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png", "", aBoolConst_0, aBoolConst_0, 0, "CUTTER", new Object[]{"WCG", "VMB", "CWE", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS, 'B', OreDictNames.craftingDiamondBlade}).getStackForm(1L));
         ItemList.Machine_IV_Cutter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(255, "basicmachine.cutter.tier.05", "Advanced Cutting Machine IV", 5, "Slice'N Dice", GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png", "", aBoolConst_0, aBoolConst_0, 0, "CUTTER", new Object[]{"WCG", "VMB", "CWE", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS, 'B', OreDictNames.craftingDiamondBlade}).getStackForm(1L));
-        ItemList.Machine_LuV_Cutter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(256, "basicmachine.cutter.tier.06", "Advanced Cutting Machine V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png", "", aBoolConst_0, aBoolConst_0, 0, "CUTTER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Cutter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(257, "basicmachine.cutter.tier.07", "Advanced Cutting Machine VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png", "", aBoolConst_0, aBoolConst_0, 0, "CUTTER", null).getStackForm(1L));
-        ItemList.Machine_UV_Cutter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(258, "basicmachine.cutter.tier.08", "Advanced Cutting Machine VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png", "", aBoolConst_0, aBoolConst_0, 0, "CUTTER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Cutter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(256, "basicmachine.cutter.tier.06", "Advanced Cutting Machine V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png", "", aBoolConst_0, aBoolConst_0, 0, "CUTTER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Cutter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(257, "basicmachine.cutter.tier.07", "Advanced Cutting Machine VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png", "", aBoolConst_0, aBoolConst_0, 0, "CUTTER", null).getStackForm(1L));
+        ItemList.Machine_UV_Cutter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(258, "basicmachine.cutter.tier.08", "Advanced Cutting Machine VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png", "", aBoolConst_0, aBoolConst_0, 0, "CUTTER", null).getStackForm(1L));
 
         ItemList.Machine_LV_E_Furnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(261, "basicmachine.e_furnace.tier.01", "Basic Electric Furnace", 1, "Not like using a Commodore 64", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_FURNACE", new Object[]{"ECE", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING}).getStackForm(1L));
         ItemList.Machine_MV_E_Furnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(262, "basicmachine.e_furnace.tier.02", "Advanced Electric Furnace", 2, "Not like using a Commodore 64", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_FURNACE", new Object[]{"ECE", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING}).getStackForm(1L));
         ItemList.Machine_HV_E_Furnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(263, "basicmachine.e_furnace.tier.03", "Advanced Electric Furnace II", 3, "Not like using a Commodore 64", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_FURNACE", new Object[]{"ECE", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING}).getStackForm(1L));
         ItemList.Machine_EV_E_Furnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(264, "basicmachine.e_furnace.tier.04", "Advanced Electric Furnace III", 4, "Not like using a Commodore 64", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_FURNACE", new Object[]{"ECE", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING}).getStackForm(1L));
         ItemList.Machine_IV_E_Furnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(265, "basicmachine.e_furnace.tier.05", "Electron Exitement Processor", 5, "Not like using a Commodore 64", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_FURNACE", new Object[]{"ECE", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING}).getStackForm(1L));
-        ItemList.Machine_LuV_E_Furnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(266, "basicmachine.e_furnace.tier.06", "Electron Exitement Processor", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_FURNACE", null).getStackForm(1L));
-        ItemList.Machine_ZPM_E_Furnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(267, "basicmachine.e_furnace.tier.07", "Electron Exitement Processor", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_FURNACE", null).getStackForm(1L));
-        ItemList.Machine_UV_E_Furnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(268, "basicmachine.e_furnace.tier.08", "Electron Exitement Processor", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_FURNACE", null).getStackForm(1L));
+        ItemList.Machine_LuV_E_Furnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(266, "basicmachine.e_furnace.tier.06", "Electron Exitement Processor", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_FURNACE", null).getStackForm(1L));
+        ItemList.Machine_ZPM_E_Furnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(267, "basicmachine.e_furnace.tier.07", "Electron Exitement Processor", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_FURNACE", null).getStackForm(1L));
+        ItemList.Machine_UV_E_Furnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(268, "basicmachine.e_furnace.tier.08", "Electron Exitement Processor", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_FURNACE", null).getStackForm(1L));
 
         ItemList.Machine_LV_Extractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(271, "basicmachine.extractor.tier.01", "Basic Extractor", 1, "Dejuicer-Device of Doom - D123", GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "EXTRACTOR", new Object[]{"GCG", "EMP", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_Extractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(272, "basicmachine.extractor.tier.02", "Advanced Extractor", 2, "Dejuicer-Device of Doom - D123", GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "EXTRACTOR", new Object[]{"GCG", "EMP", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_Extractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(273, "basicmachine.extractor.tier.03", "Advanced Extractor II", 3, "Dejuicer-Device of Doom - D123", GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "EXTRACTOR", new Object[]{"GCG", "EMP", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_Extractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(274, "basicmachine.extractor.tier.04", "Advanced Extractor III", 4, "Dejuicer-Device of Doom - D123", GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "EXTRACTOR", new Object[]{"GCG", "EMP", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_Extractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(275, "basicmachine.extractor.tier.05", "Vacuum Extractor", 5, "Dejuicer-Device of Doom - D123", GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "EXTRACTOR", new Object[]{"GCG", "EMP", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_Extractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(276, "basicmachine.extractor.tier.06", "Vacuum Extractor", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "EXTRACTOR", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Extractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(277, "basicmachine.extractor.tier.07", "Vacuum Extractor", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "EXTRACTOR", null).getStackForm(1L));
-        ItemList.Machine_UV_Extractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(278, "basicmachine.extractor.tier.08", "Vacuum Extractor", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "EXTRACTOR", null).getStackForm(1L));
+        ItemList.Machine_LuV_Extractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(276, "basicmachine.extractor.tier.06", "Vacuum Extractor", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "EXTRACTOR", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Extractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(277, "basicmachine.extractor.tier.07", "Vacuum Extractor", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "EXTRACTOR", null).getStackForm(1L));
+        ItemList.Machine_UV_Extractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(278, "basicmachine.extractor.tier.08", "Vacuum Extractor", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "EXTRACTOR", null).getStackForm(1L));
 
         ItemList.Machine_LV_Extruder.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(281, "basicmachine.extruder.tier.01", "Basic Extruder", 1, "Universal Machine for Metal Working", GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "EXTRUDER", new Object[]{"CCE", "XMP", "CCE", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'X', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
         ItemList.Machine_MV_Extruder.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(282, "basicmachine.extruder.tier.02", "Advanced Extruder", 2, "Universal Machine for Metal Working", GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "EXTRUDER", new Object[]{"CCE", "XMP", "CCE", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'X', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
         ItemList.Machine_HV_Extruder.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(283, "basicmachine.extruder.tier.03", "Advanced Extruder II", 3, "Universal Machine for Metal Working", GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "EXTRUDER", new Object[]{"CCE", "XMP", "CCE", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'X', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
         ItemList.Machine_EV_Extruder.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(284, "basicmachine.extruder.tier.04", "Advanced Extruder III", 4, "Universal Machine for Metal Working", GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "EXTRUDER", new Object[]{"CCE", "XMP", "CCE", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'X', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
         ItemList.Machine_IV_Extruder.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(285, "basicmachine.extruder.tier.05", "Advanced Extruder IV", 5, "Universal Machine for Metal Working", GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "EXTRUDER", new Object[]{"CCE", "XMP", "CCE", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'X', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PIPE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
-        ItemList.Machine_LuV_Extruder.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(286, "basicmachine.extruder.tier.06", "Advanced Extruder V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "EXTRUDER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Extruder.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(287, "basicmachine.extruder.tier.07", "Advanced Extruder VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "EXTRUDER", null).getStackForm(1L));
-        ItemList.Machine_UV_Extruder.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(288, "basicmachine.extruder.tier.08", "Advanced Extruder VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "EXTRUDER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Extruder.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(286, "basicmachine.extruder.tier.06", "Advanced Extruder V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "EXTRUDER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Extruder.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(287, "basicmachine.extruder.tier.07", "Advanced Extruder VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "EXTRUDER", null).getStackForm(1L));
+        ItemList.Machine_UV_Extruder.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(288, "basicmachine.extruder.tier.08", "Advanced Extruder VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(208)), aBoolConst_0, aBoolConst_0, 0, "EXTRUDER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Lathe.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(291, "basicmachine.lathe.tier.01", "Basic Lathe", 1, "Produces Rods more efficiently", GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", aBoolConst_0, aBoolConst_0, 0, "LATHE", new Object[]{aTextWireCoil, "EMD", "CWP", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'D', OrePrefixes.gem.get(Materials.Diamond)}).getStackForm(1L));
         ItemList.Machine_MV_Lathe.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(292, "basicmachine.lathe.tier.02", "Advanced Lathe", 2, "Produces Rods more efficiently", GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", aBoolConst_0, aBoolConst_0, 0, "LATHE", new Object[]{aTextWireCoil, "EMD", "CWP", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'D', OreDictNames.craftingIndustrialDiamond}).getStackForm(1L));
         ItemList.Machine_HV_Lathe.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(293, "basicmachine.lathe.tier.03", "Advanced Lathe II", 3, "Produces Rods more efficiently", GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", aBoolConst_0, aBoolConst_0, 0, "LATHE", new Object[]{aTextWireCoil, "EMD", "CWP", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'D', OreDictNames.craftingIndustrialDiamond}).getStackForm(1L));
         ItemList.Machine_EV_Lathe.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(294, "basicmachine.lathe.tier.04", "Advanced Lathe III", 4, "Produces Rods more efficiently", GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", aBoolConst_0, aBoolConst_0, 0, "LATHE", new Object[]{aTextWireCoil, "EMD", "CWP", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'D', OreDictNames.craftingIndustrialDiamond}).getStackForm(1L));
         ItemList.Machine_IV_Lathe.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(295, "basicmachine.lathe.tier.05", "Advanced Lathe IV", 5, "Produces Rods more efficiently", GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", aBoolConst_0, aBoolConst_0, 0, "LATHE", new Object[]{aTextWireCoil, "EMD", "CWP", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'D', OreDictNames.craftingIndustrialDiamond}).getStackForm(1L));
-        ItemList.Machine_LuV_Lathe.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(296, "basicmachine.lathe.tier.06", "Advanced Lathe V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", aBoolConst_0, aBoolConst_0, 0, "LATHE", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Lathe.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(297, "basicmachine.lathe.tier.07", "Advanced Lathe VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", aBoolConst_0, aBoolConst_0, 0, "LATHE", null).getStackForm(1L));
-        ItemList.Machine_UV_Lathe.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(298, "basicmachine.lathe.tier.08", "Advanced Lathe VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", aBoolConst_0, aBoolConst_0, 0, "LATHE", null).getStackForm(1L));
+        ItemList.Machine_LuV_Lathe.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(296, "basicmachine.lathe.tier.06", "Advanced Lathe V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", aBoolConst_0, aBoolConst_0, 0, "LATHE", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Lathe.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(297, "basicmachine.lathe.tier.07", "Advanced Lathe VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", aBoolConst_0, aBoolConst_0, 0, "LATHE", null).getStackForm(1L));
+        ItemList.Machine_UV_Lathe.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(298, "basicmachine.lathe.tier.08", "Advanced Lathe VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", aBoolConst_0, aBoolConst_0, 0, "LATHE", null).getStackForm(1L));
 
         ItemList.Machine_LV_Macerator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(301, "basicmachine.macerator.tier.01", "Basic Macerator", 1, "Schreddering your Ores", GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 1, 0, 0, 1, "Macerator1.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(201)), aBoolConst_0, aBoolConst_0, 1, "MACERATOR", new Object[]{"PEG", "WWM", "CCW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OrePrefixes.gem.get(Materials.Diamond)}).getStackForm(1L));
         ItemList.Machine_MV_Macerator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(302, "basicmachine.macerator.tier.02", "Advanced Macerator", 2, "Schreddering your Ores", GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 1, 0, 0, 1, "Macerator1.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(201)), aBoolConst_0, aBoolConst_0, 1, "MACERATOR", new Object[]{"PEG", "WWM", "CCW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OreDictNames.craftingIndustrialDiamond}).getStackForm(1L));
         ItemList.Machine_HV_Macerator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(303, "basicmachine.macerator.tier.03", "Universal Macerator", 3, "Schreddering your Ores with Byproducts", GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 2, 0, 0, 1, "Macerator2.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(201)), aBoolConst_0, aBoolConst_0, 1, "PULVERIZER", new Object[]{"PEG", "WWM", "CCW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OreDictNames.craftingGrinder}).getStackForm(1L));
         ItemList.Machine_EV_Macerator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(304, "basicmachine.macerator.tier.04", "Universal Pulverizer", 4, "Schreddering your Ores with Byproducts", GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 3, 0, 0, 1, "Macerator3.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(201)), aBoolConst_0, aBoolConst_0, 1, "PULVERIZER", new Object[]{"PEG", "WWM", "CCW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OreDictNames.craftingGrinder}).getStackForm(1L));
         ItemList.Machine_IV_Macerator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(305, "basicmachine.macerator.tier.05", "Blend-O-Matic 9001", 5, "Schreddering your Ores with Byproducts", GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 4, 0, 0, 1, "Macerator4.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(201)), aBoolConst_0, aBoolConst_0, 1, "PULVERIZER", new Object[]{"PEG", "WWM", "CCW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OreDictNames.craftingGrinder}).getStackForm(1L));
-        ItemList.Machine_LuV_Macerator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(306, "basicmachine.macerator.tier.06", "Blend-O-Matic 9001", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 4, 0, 0, 1, "Macerator4.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(201)), aBoolConst_0, aBoolConst_0, 1, "PULVERIZER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Macerator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(307, "basicmachine.macerator.tier.07", "Blend-O-Matic 9001", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 4, 0, 0, 1, "Macerator4.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(201)), aBoolConst_0, aBoolConst_0, 1, "PULVERIZER", null).getStackForm(1L));
-        ItemList.Machine_UV_Macerator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(308, "basicmachine.macerator.tier.08", "Blend-O-Matic 9001", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 4, 0, 0, 1, "Macerator4.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(201)), aBoolConst_0, aBoolConst_0, 1, "PULVERIZER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Macerator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(306, "basicmachine.macerator.tier.06", "Blend-O-Matic 9001", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 4, 0, 0, 1, "Macerator4.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(201)), aBoolConst_0, aBoolConst_0, 1, "PULVERIZER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Macerator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(307, "basicmachine.macerator.tier.07", "Blend-O-Matic 9001", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 4, 0, 0, 1, "Macerator4.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(201)), aBoolConst_0, aBoolConst_0, 1, "PULVERIZER", null).getStackForm(1L));
+        ItemList.Machine_UV_Macerator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(308, "basicmachine.macerator.tier.08", "Blend-O-Matic 9001", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 4, 0, 0, 1, "Macerator4.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(201)), aBoolConst_0, aBoolConst_0, 1, "PULVERIZER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Microwave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(311, "basicmachine.microwave.tier.01", "Basic Microwave", 1, "Did you really read the instruction Manual?", GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "MICROWAVE", new Object[]{"LWC", "LMR", "LEC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'L', OrePrefixes.plate.get(Materials.Lead)}).getStackForm(1L));
         ItemList.Machine_MV_Microwave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(312, "basicmachine.microwave.tier.02", "Advanced Microwave", 2, "Did you really read the instruction Manual?", GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "MICROWAVE", new Object[]{"LWC", "LMR", "LEC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'L', OrePrefixes.plate.get(Materials.Lead)}).getStackForm(1L));
         ItemList.Machine_HV_Microwave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(313, "basicmachine.microwave.tier.03", "Advanced Microwave II", 3, "Did you really read the instruction Manual?", GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "MICROWAVE", new Object[]{"LWC", "LMR", "LEC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'L', OrePrefixes.plate.get(Materials.Lead)}).getStackForm(1L));
         ItemList.Machine_EV_Microwave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(314, "basicmachine.microwave.tier.04", "Advanced Microwave III", 4, "Did you really read the instruction Manual?", GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "MICROWAVE", new Object[]{"LWC", "LMR", "LEC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'L', OrePrefixes.plate.get(Materials.Lead)}).getStackForm(1L));
         ItemList.Machine_IV_Microwave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(315, "basicmachine.microwave.tier.05", "Advanced Microwave IV", 5, "Did you really read the instruction Manual?", GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "MICROWAVE", new Object[]{"LWC", "LMR", "LEC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'L', OrePrefixes.plate.get(Materials.Lead)}).getStackForm(1L));
-        ItemList.Machine_LuV_Microwave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(316, "basicmachine.microwave.tier.06", "Advanced Microwave V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "MICROWAVE", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Microwave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(317, "basicmachine.microwave.tier.07", "Advanced Microwave VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "MICROWAVE", null).getStackForm(1L));
-        ItemList.Machine_UV_Microwave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(318, "basicmachine.microwave.tier.08", "Advanced Microwave VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "MICROWAVE", null).getStackForm(1L));
+        ItemList.Machine_LuV_Microwave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(316, "basicmachine.microwave.tier.06", "Advanced Microwave V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "MICROWAVE", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Microwave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(317, "basicmachine.microwave.tier.07", "Advanced Microwave VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "MICROWAVE", null).getStackForm(1L));
+        ItemList.Machine_UV_Microwave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(318, "basicmachine.microwave.tier.08", "Advanced Microwave VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "MICROWAVE", null).getStackForm(1L));
 
         ItemList.Machine_LV_Printer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(321, "basicmachine.printer.tier.01", "Basic Printer", 1, "It can copy Books and paint Stuff", GT_Recipe.GT_Recipe_Map.sPrinterRecipes, 1, 1, 16000, 0, 1, "Printer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 1, "PRINTER", new Object[]{aTextMotorWire, aTextCableHull, "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_MV_Printer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(322, "basicmachine.printer.tier.02", "Advanced Printer", 2, "It can copy Books and paint Stuff", GT_Recipe.GT_Recipe_Map.sPrinterRecipes, 1, 1, 16000, 0, 1, "Printer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 1, "PRINTER", new Object[]{aTextMotorWire, aTextCableHull, "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_HV_Printer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(323, "basicmachine.printer.tier.03", "Advanced Printer II", 3, "It can copy Books and paint Stuff", GT_Recipe.GT_Recipe_Map.sPrinterRecipes, 1, 1, 16000, 0, 1, "Printer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 1, "PRINTER", new Object[]{aTextMotorWire, aTextCableHull, "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_Printer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(324, "basicmachine.printer.tier.04", "Advanced Printer III", 4, "It can copy Books and paint Stuff", GT_Recipe.GT_Recipe_Map.sPrinterRecipes, 1, 1, 16000, 0, 1, "Printer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 1, "PRINTER", new Object[]{aTextMotorWire, aTextCableHull, "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_Printer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(325, "basicmachine.printer.tier.05", "Advanced Printer IV", 5, "It can copy Books and paint Stuff", GT_Recipe.GT_Recipe_Map.sPrinterRecipes, 1, 1, 16000, 0, 1, "Printer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 1, "PRINTER", new Object[]{aTextMotorWire, aTextCableHull, "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_Printer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(326, "basicmachine.printer.tier.06", "Advanced Printer V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPrinterRecipes, 1, 1, 16000, 0, 1, "Printer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 1, "PRINTER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Printer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(327, "basicmachine.printer.tier.07", "Advanced Printer VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPrinterRecipes, 1, 1, 16000, 0, 1, "Printer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 1, "PRINTER", null).getStackForm(1L));
-        ItemList.Machine_UV_Printer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(328, "basicmachine.printer.tier.08", "Advanced Printer VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPrinterRecipes, 1, 1, 16000, 0, 1, "Printer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 1, "PRINTER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Printer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(326, "basicmachine.printer.tier.06", "Advanced Printer V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPrinterRecipes, 1, 1, 16000, 0, 1, "Printer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 1, "PRINTER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Printer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(327, "basicmachine.printer.tier.07", "Advanced Printer VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPrinterRecipes, 1, 1, 16000, 0, 1, "Printer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 1, "PRINTER", null).getStackForm(1L));
+        ItemList.Machine_UV_Printer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(328, "basicmachine.printer.tier.08", "Advanced Printer VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPrinterRecipes, 1, 1, 16000, 0, 1, "Printer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 1, "PRINTER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Recycler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(331, "basicmachine.recycler.tier.01", "Basic Recycler", 1, "Compress, burn, obliterate and filter EVERYTHING", GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "RECYCLER", new Object[]{"GCG", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OrePrefixes.dust.get(Materials.Glowstone)}).getStackForm(1L));
         ItemList.Machine_MV_Recycler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(332, "basicmachine.recycler.tier.02", "Advanced Recycler", 2, "Compress, burn, obliterate and filter EVERYTHING", GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "RECYCLER", new Object[]{"GCG", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OrePrefixes.dust.get(Materials.Glowstone)}).getStackForm(1L));
         ItemList.Machine_HV_Recycler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(333, "basicmachine.recycler.tier.03", "Advanced Recycler II", 3, "Compress, burn, obliterate and filter EVERYTHING", GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "RECYCLER", new Object[]{"GCG", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OrePrefixes.dust.get(Materials.Glowstone)}).getStackForm(1L));
         ItemList.Machine_EV_Recycler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(334, "basicmachine.recycler.tier.04", "Advanced Recycler III", 4, "Compress, burn, obliterate and filter EVERYTHING", GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "RECYCLER", new Object[]{"GCG", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OrePrefixes.dust.get(Materials.Glowstone)}).getStackForm(1L));
         ItemList.Machine_IV_Recycler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(335, "basicmachine.recycler.tier.05", "The Oblitterator", 5, "Compress, burn, obliterate and filter EVERYTHING", GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "RECYCLER", new Object[]{"GCG", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OrePrefixes.dust.get(Materials.Glowstone)}).getStackForm(1L));
-        ItemList.Machine_LuV_Recycler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(336, "basicmachine.recycler.tier.06", "The Oblitterator", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "RECYCLER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Recycler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(337, "basicmachine.recycler.tier.07", "The Oblitterator", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "RECYCLER", null).getStackForm(1L));
-        ItemList.Machine_UV_Recycler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(338, "basicmachine.recycler.tier.08", "The Oblitterator", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "RECYCLER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Recycler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(336, "basicmachine.recycler.tier.06", "The Oblitterator", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "RECYCLER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Recycler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(337, "basicmachine.recycler.tier.07", "The Oblitterator", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "RECYCLER", null).getStackForm(1L));
+        ItemList.Machine_UV_Recycler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(338, "basicmachine.recycler.tier.08", "The Oblitterator", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "RECYCLER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Scanner.set(new GT_MetaTileEntity_Scanner(341, "basicmachine.scanner.tier.01", "Basic Scanner", 1).getStackForm(1L));
         ItemList.Machine_MV_Scanner.set(new GT_MetaTileEntity_Scanner(342, "basicmachine.scanner.tier.02", "Advanced Scanner", 2).getStackForm(1L));
@@ -796,45 +796,45 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         ItemList.Machine_HV_Wiremill.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(353, "basicmachine.wiremill.tier.03", "Advanced Wiremill II", 3, "Produces Wires more efficiently", GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "WIREMILL", new Object[]{aTextMotorWire, aTextCableHull, aTextMotorWire, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_Wiremill.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(354, "basicmachine.wiremill.tier.04", "Advanced Wiremill III", 4, "Produces Wires more efficiently", GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "WIREMILL", new Object[]{aTextMotorWire, aTextCableHull, aTextMotorWire, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_Wiremill.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(355, "basicmachine.wiremill.tier.05", "Advanced Wiremill IV", 5, "Produces Wires more efficiently", GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "WIREMILL", new Object[]{aTextMotorWire, aTextCableHull, aTextMotorWire, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_Wiremill.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(356, "basicmachine.wiremill.tier.06", "Advanced Wiremill V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "WIREMILL", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Wiremill.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(357, "basicmachine.wiremill.tier.07", "Advanced Wiremill VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "WIREMILL", null).getStackForm(1L));
-        ItemList.Machine_UV_Wiremill.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(358, "basicmachine.wiremill.tier.08", "Advanced Wiremill VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "WIREMILL", null).getStackForm(1L));
+        ItemList.Machine_LuV_Wiremill.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(356, "basicmachine.wiremill.tier.06", "Advanced Wiremill V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "WIREMILL", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Wiremill.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(357, "basicmachine.wiremill.tier.07", "Advanced Wiremill VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "WIREMILL", null).getStackForm(1L));
+        ItemList.Machine_UV_Wiremill.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(358, "basicmachine.wiremill.tier.08", "Advanced Wiremill VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(204)), aBoolConst_0, aBoolConst_0, 0, "WIREMILL", null).getStackForm(1L));
 
         ItemList.Machine_LV_Centrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(361, "basicmachine.centrifuge.tier.01", "Basic Centrifuge", 1, "Separating Molecules", GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "CENTRIFUGE", new Object[]{"CEC", aTextWireHull, "CEC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_MV_Centrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(362, "basicmachine.centrifuge.tier.02", "Advanced Centrifuge", 2, "Separating Molecules", GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "CENTRIFUGE", new Object[]{"CEC", aTextWireHull, "CEC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_HV_Centrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(363, "basicmachine.centrifuge.tier.03", "Turbo Centrifuge", 3, "Separating Molecules", GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "CENTRIFUGE", new Object[]{"CEC", aTextWireHull, "CEC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_Centrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(364, "basicmachine.centrifuge.tier.04", "Molecular Separator", 4, "Separating Molecules", GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "CENTRIFUGE", new Object[]{"CEC", aTextWireHull, "CEC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_Centrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(365, "basicmachine.centrifuge.tier.05", "Molecular Cyclone", 5, "Separating Molecules", GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "CENTRIFUGE", new Object[]{"CEC", aTextWireHull, "CEC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_Centrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(366, "basicmachine.centrifuge.tier.06", "Molecular Cyclone", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "CENTRIFUGE", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Centrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(367, "basicmachine.centrifuge.tier.07", "Molecular Cyclone", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "CENTRIFUGE", null).getStackForm(1L));
-        ItemList.Machine_UV_Centrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(368, "basicmachine.centrifuge.tier.08", "Molecular Cyclone", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "CENTRIFUGE", null).getStackForm(1L));
+        ItemList.Machine_LuV_Centrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(366, "basicmachine.centrifuge.tier.06", "Molecular Cyclone", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "CENTRIFUGE", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Centrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(367, "basicmachine.centrifuge.tier.07", "Molecular Cyclone", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "CENTRIFUGE", null).getStackForm(1L));
+        ItemList.Machine_UV_Centrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(368, "basicmachine.centrifuge.tier.08", "Molecular Cyclone", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 64000, 0, 1, "Centrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "CENTRIFUGE", null).getStackForm(1L));
 
         ItemList.Machine_LV_Electrolyzer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(371, "basicmachine.electrolyzer.tier.01", "Basic Electrolyzer", 1, "Electrolyzing Molecules", GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png", "", aBoolConst_0, aBoolConst_0, 0, "ELECTROLYZER", new Object[]{"IGI", "IMI", "CWC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', OrePrefixes.wireGt01.get(Materials.Gold), 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_Electrolyzer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(372, "basicmachine.electrolyzer.tier.02", "Advanced Electrolyzer", 2, "Electrolyzing Molecules", GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png", "", aBoolConst_0, aBoolConst_0, 0, "ELECTROLYZER", new Object[]{"IGI", "IMI", "CWC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', OrePrefixes.wireGt01.get(Materials.Silver), 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_Electrolyzer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(373, "basicmachine.electrolyzer.tier.03", "Advanced Electrolyzer II", 3, "Electrolyzing Molecules", GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png", "", aBoolConst_0, aBoolConst_0, 0, "ELECTROLYZER", new Object[]{"IGI", "IMI", "CWC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', OrePrefixes.wireGt01.get(Materials.Electrum), 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_Electrolyzer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(374, "basicmachine.electrolyzer.tier.04", "Advanced Electrolyzer III", 4, "Electrolyzing Molecules", GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png", "", aBoolConst_0, aBoolConst_0, 0, "ELECTROLYZER", new Object[]{"IGI", "IMI", "CWC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', OrePrefixes.wireGt01.get(Materials.Platinum), 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_Electrolyzer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(375, "basicmachine.electrolyzer.tier.05", "Molecular Disintegrator E-4908", 5, "Electrolyzing Molecules", GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png", "", aBoolConst_0, aBoolConst_0, 0, "ELECTROLYZER", new Object[]{"IGI", "IMI", "CWC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', OrePrefixes.wireGt01.get(Materials.Osmium), 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_Electrolyzer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(376, "basicmachine.electrolyzer.tier.06", "Molecular Disintegrator E-4908", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png", "", aBoolConst_0, aBoolConst_0, 0, "ELECTROLYZER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Electrolyzer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(377, "basicmachine.electrolyzer.tier.07", "Molecular Disintegrator E-4908", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png", "", aBoolConst_0, aBoolConst_0, 0, "ELECTROLYZER", null).getStackForm(1L));
-        ItemList.Machine_UV_Electrolyzer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(378, "basicmachine.electrolyzer.tier.08", "Molecular Disintegrator E-4908", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png", "", aBoolConst_0, aBoolConst_0, 0, "ELECTROLYZER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Electrolyzer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(376, "basicmachine.electrolyzer.tier.06", "Molecular Disintegrator E-4908", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png", "", aBoolConst_0, aBoolConst_0, 0, "ELECTROLYZER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Electrolyzer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(377, "basicmachine.electrolyzer.tier.07", "Molecular Disintegrator E-4908", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png", "", aBoolConst_0, aBoolConst_0, 0, "ELECTROLYZER", null).getStackForm(1L));
+        ItemList.Machine_UV_Electrolyzer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(378, "basicmachine.electrolyzer.tier.08", "Molecular Disintegrator E-4908", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png", "", aBoolConst_0, aBoolConst_0, 0, "ELECTROLYZER", null).getStackForm(1L));
 
         ItemList.Machine_LV_ThermalCentrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(381, "basicmachine.thermalcentrifuge.tier.01", "Basic Thermal Centrifuge", 1, "Separating Ores more precisely", GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "THERMAL_CENTRIFUGE", new Object[]{"CEC", "OMO", "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
         ItemList.Machine_MV_ThermalCentrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(382, "basicmachine.thermalcentrifuge.tier.02", "Advanced Thermal Centrifuge", 2, "Separating Ores more precisely", GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "THERMAL_CENTRIFUGE", new Object[]{"CEC", "OMO", "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
         ItemList.Machine_HV_ThermalCentrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(383, "basicmachine.thermalcentrifuge.tier.03", "Advanced Thermal Centrifuge II", 3, "Separating Ores more precisely", GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "THERMAL_CENTRIFUGE", new Object[]{"CEC", "OMO", "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
         ItemList.Machine_EV_ThermalCentrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(384, "basicmachine.thermalcentrifuge.tier.04", "Advanced Thermal Centrifuge III", 4, "Separating Ores more precisely", GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "THERMAL_CENTRIFUGE", new Object[]{"CEC", "OMO", "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
         ItemList.Machine_IV_ThermalCentrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(385, "basicmachine.thermalcentrifuge.tier.05", "Blaze Sweatshop T-6350", 5, "Separating Ores more precisely", GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "THERMAL_CENTRIFUGE", new Object[]{"CEC", "OMO", "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE}).getStackForm(1L));
-        ItemList.Machine_LuV_ThermalCentrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(386, "basicmachine.thermalcentrifuge.tier.06", "Blaze Sweatshop T-6350", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "THERMAL_CENTRIFUGE", null).getStackForm(1L));
-        ItemList.Machine_ZPM_ThermalCentrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(387, "basicmachine.thermalcentrifuge.tier.07", "Blaze Sweatshop T-6350", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "THERMAL_CENTRIFUGE", null).getStackForm(1L));
-        ItemList.Machine_UV_ThermalCentrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(388, "basicmachine.thermalcentrifuge.tier.08", "Blaze Sweatshop T-6350", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "THERMAL_CENTRIFUGE", null).getStackForm(1L));
+        ItemList.Machine_LuV_ThermalCentrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(386, "basicmachine.thermalcentrifuge.tier.06", "Blaze Sweatshop T-6350", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "THERMAL_CENTRIFUGE", null).getStackForm(1L));
+        ItemList.Machine_ZPM_ThermalCentrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(387, "basicmachine.thermalcentrifuge.tier.07", "Blaze Sweatshop T-6350", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "THERMAL_CENTRIFUGE", null).getStackForm(1L));
+        ItemList.Machine_UV_ThermalCentrifuge.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(388, "basicmachine.thermalcentrifuge.tier.08", "Blaze Sweatshop T-6350", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png", "", aBoolConst_0, aBoolConst_0, 0, "THERMAL_CENTRIFUGE", null).getStackForm(1L));
 
         ItemList.Machine_LV_OreWasher.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(391, "basicmachine.orewasher.tier.01", "Basic Ore Washing Plant", 1, "Getting more Byproducts from your Ores", GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png", "", aBoolConst_0, aBoolConst_0, 0, "ORE_WASHER", new Object[]{"RGR", "CEC", aTextWireHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_OreWasher.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(392, "basicmachine.orewasher.tier.02", "Advanced Ore Washing Plant", 2, "Getting more Byproducts from your Ores", GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png", "", aBoolConst_0, aBoolConst_0, 0, "ORE_WASHER", new Object[]{"RGR", "CEC", aTextWireHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_OreWasher.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(393, "basicmachine.orewasher.tier.03", "Advanced Ore Washing Plant II", 3, "Getting more Byproducts from your Ores", GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png", "", aBoolConst_0, aBoolConst_0, 0, "ORE_WASHER", new Object[]{"RGR", "CEC", aTextWireHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_OreWasher.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(394, "basicmachine.orewasher.tier.04", "Advanced Ore Washing Plant III", 4, "Getting more Byproducts from your Ores", GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png", "", aBoolConst_0, aBoolConst_0, 0, "ORE_WASHER", new Object[]{"RGR", "CEC", aTextWireHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_OreWasher.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(395, "basicmachine.orewasher.tier.05", "Repurposed Laundry-Washer I-360", 5, "Getting more Byproducts from your Ores", GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png", "", aBoolConst_0, aBoolConst_0, 0, "ORE_WASHER", new Object[]{"RGR", "CEC", aTextWireHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_OreWasher.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(396, "basicmachine.orewasher.tier.06", "Repurposed Laundry-Washer I-360", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png", "", aBoolConst_0, aBoolConst_0, 0, "ORE_WASHER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_OreWasher.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(397, "basicmachine.orewasher.tier.07", "Repurposed Laundry-Washer I-360", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png", "", aBoolConst_0, aBoolConst_0, 0, "ORE_WASHER", null).getStackForm(1L));
-        ItemList.Machine_UV_OreWasher.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(398, "basicmachine.orewasher.tier.08", "Repurposed Laundry-Washer I-360", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png", "", aBoolConst_0, aBoolConst_0, 0, "ORE_WASHER", null).getStackForm(1L));
+        ItemList.Machine_LuV_OreWasher.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(396, "basicmachine.orewasher.tier.06", "Repurposed Laundry-Washer I-360", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png", "", aBoolConst_0, aBoolConst_0, 0, "ORE_WASHER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_OreWasher.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(397, "basicmachine.orewasher.tier.07", "Repurposed Laundry-Washer I-360", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png", "", aBoolConst_0, aBoolConst_0, 0, "ORE_WASHER", null).getStackForm(1L));
+        ItemList.Machine_UV_OreWasher.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(398, "basicmachine.orewasher.tier.08", "Repurposed Laundry-Washer I-360", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png", "", aBoolConst_0, aBoolConst_0, 0, "ORE_WASHER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Boxinator.set(new GT_MetaTileEntity_Boxinator(401, "basicmachine.boxinator.tier.01", "Basic Packager", 1).getStackForm(1L));
         ItemList.Machine_MV_Boxinator.set(new GT_MetaTileEntity_Boxinator(402, "basicmachine.boxinator.tier.02", "Advanced Packager", 2).getStackForm(1L));
@@ -856,27 +856,27 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         ItemList.Machine_HV_Unboxinator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(413, "basicmachine.unboxinator.tier.03", "Advanced Unpackager II", 3, "Grabs things out of Boxes", GT_Recipe.GT_Recipe_Map.sUnboxinatorRecipes, 1, 2, 0, 0, 1, "Unpackager.png", "", aBoolConst_0, aBoolConst_0, 0, "UNBOXINATOR", new Object[]{"BCB", "VMR", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'B', OreDictNames.craftingChest}).getStackForm(1L));
         ItemList.Machine_EV_Unboxinator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(414, "basicmachine.unboxinator.tier.04", "Advanced Unpackager III", 4, "Grabs things out of Boxes", GT_Recipe.GT_Recipe_Map.sUnboxinatorRecipes, 1, 2, 0, 0, 1, "Unpackager.png", "", aBoolConst_0, aBoolConst_0, 0, "UNBOXINATOR", new Object[]{"BCB", "VMR", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'B', OreDictNames.craftingChest}).getStackForm(1L));
         ItemList.Machine_IV_Unboxinator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(415, "basicmachine.unboxinator.tier.05", "Unboxinator", 5, "Grabs things out of Boxes", GT_Recipe.GT_Recipe_Map.sUnboxinatorRecipes, 1, 2, 0, 0, 1, "Unpackager.png", "", aBoolConst_0, aBoolConst_0, 0, "UNBOXINATOR", new Object[]{"BCB", "VMR", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'B', OreDictNames.craftingChest}).getStackForm(1L));
-        ItemList.Machine_LuV_Unboxinator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(416, "basicmachine.unboxinator.tier.06", "Unboxinator", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sUnboxinatorRecipes, 1, 2, 0, 0, 1, "Unpackager.png", "", aBoolConst_0, aBoolConst_0, 0, "UNBOXINATOR", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Unboxinator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(417, "basicmachine.unboxinator.tier.07", "Unboxinator", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sUnboxinatorRecipes, 1, 2, 0, 0, 1, "Unpackager.png", "", aBoolConst_0, aBoolConst_0, 0, "UNBOXINATOR", null).getStackForm(1L));
-        ItemList.Machine_UV_Unboxinator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(418, "basicmachine.unboxinator.tier.08", "Unboxinator", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sUnboxinatorRecipes, 1, 2, 0, 0, 1, "Unpackager.png", "", aBoolConst_0, aBoolConst_0, 0, "UNBOXINATOR", null).getStackForm(1L));
+        ItemList.Machine_LuV_Unboxinator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(416, "basicmachine.unboxinator.tier.06", "Unboxinator", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sUnboxinatorRecipes, 1, 2, 0, 0, 1, "Unpackager.png", "", aBoolConst_0, aBoolConst_0, 0, "UNBOXINATOR", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Unboxinator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(417, "basicmachine.unboxinator.tier.07", "Unboxinator", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sUnboxinatorRecipes, 1, 2, 0, 0, 1, "Unpackager.png", "", aBoolConst_0, aBoolConst_0, 0, "UNBOXINATOR", null).getStackForm(1L));
+        ItemList.Machine_UV_Unboxinator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(418, "basicmachine.unboxinator.tier.08", "Unboxinator", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sUnboxinatorRecipes, 1, 2, 0, 0, 1, "Unpackager.png", "", aBoolConst_0, aBoolConst_0, 0, "UNBOXINATOR", null).getStackForm(1L));
 
         ItemList.Machine_LV_ChemicalReactor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(421, "basicmachine.chemicalreactor.tier.01", "Basic Chemical Reactor", 1, "Letting Chemicals react with each other", GT_Recipe.GT_Recipe_Map.sChemicalRecipes, 2, 2, 16000, 0, 1, "ChemicalReactor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CHEMICAL_REACTOR", new Object[]{"GRG", "WEW", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_ChemicalReactor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(422, "basicmachine.chemicalreactor.tier.02", "Advanced Chemical Reactor", 2, "Letting Chemicals react with each other", GT_Recipe.GT_Recipe_Map.sChemicalRecipes, 2, 2, 16000, 0, 1, "ChemicalReactor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CHEMICAL_REACTOR", new Object[]{"GRG", "WEW", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_ChemicalReactor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(423, "basicmachine.chemicalreactor.tier.03", "Advanced Chemical Reactor II", 3, "Letting Chemicals react with each other", GT_Recipe.GT_Recipe_Map.sChemicalRecipes, 2, 2, 16000, 0, 1, "ChemicalReactor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CHEMICAL_REACTOR", new Object[]{"GRG", "WEW", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OrePrefixes.pipeMedium.get(Materials.Plastic)}).getStackForm(1L));
         ItemList.Machine_EV_ChemicalReactor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(424, "basicmachine.chemicalreactor.tier.04", "Advanced Chemical Reactor III", 4, "Letting Chemicals react with each other", GT_Recipe.GT_Recipe_Map.sChemicalRecipes, 2, 2, 16000, 0, 1, "ChemicalReactor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CHEMICAL_REACTOR", new Object[]{"GRG", "WEW", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OrePrefixes.pipeLarge.get(Materials.Plastic)}).getStackForm(1L));
         ItemList.Machine_IV_ChemicalReactor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(425, "basicmachine.chemicalreactor.tier.05", "Advanced Chemical Reactor IV", 5, "Letting Chemicals react with each other", GT_Recipe.GT_Recipe_Map.sChemicalRecipes, 2, 2, 16000, 0, 1, "ChemicalReactor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CHEMICAL_REACTOR", new Object[]{"GRG", "WEW", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', OrePrefixes.pipeHuge.get(Materials.Plastic)}).getStackForm(1L));
-        ItemList.Machine_LuV_ChemicalReactor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(426, "basicmachine.chemicalreactor.tier.06", "Advanced Chemical Reactor V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalRecipes, 2, 2, 16000, 0, 1, "ChemicalReactor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
-        ItemList.Machine_ZPM_ChemicalReactor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(427, "basicmachine.chemicalreactor.tier.07", "Advanced Chemical Reactor VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalRecipes, 2, 2, 16000, 0, 1, "ChemicalReactor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
-        ItemList.Machine_UV_ChemicalReactor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(428, "basicmachine.chemicalreactor.tier.08", "Advanced Chemical Reactor VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalRecipes, 2, 2, 16000, 0, 1, "ChemicalReactor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
+        ItemList.Machine_LuV_ChemicalReactor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(426, "basicmachine.chemicalreactor.tier.06", "Advanced Chemical Reactor V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalRecipes, 2, 2, 16000, 0, 1, "ChemicalReactor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
+        ItemList.Machine_ZPM_ChemicalReactor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(427, "basicmachine.chemicalreactor.tier.07", "Advanced Chemical Reactor VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalRecipes, 2, 2, 16000, 0, 1, "ChemicalReactor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
+        ItemList.Machine_UV_ChemicalReactor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(428, "basicmachine.chemicalreactor.tier.08", "Advanced Chemical Reactor VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalRecipes, 2, 2, 16000, 0, 1, "ChemicalReactor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
 
         ItemList.Machine_LV_FluidCanner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(431, "basicmachine.fluidcanner.tier.01", "Basic Fluid Canner", 1, "Puts Fluids into and out of Containers", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes, 1, 1, 16000, 0, 1, "FluidCanner.png", "", true, aBoolConst_0, 0, "FLUID_CANNER", new Object[]{"GCG", "GMG", "WPW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_FluidCanner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(432, "basicmachine.fluidcanner.tier.02", "Advanced Fluid Canner", 2, "Puts Fluids into and out of Containers", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes, 1, 1, 32000, 0, 1, "FluidCanner.png", "", true, aBoolConst_0, 0, "FLUID_CANNER", new Object[]{"GCG", "GMG", "WPW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_FluidCanner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(433, "basicmachine.fluidcanner.tier.03", "Quick Fluid Canner", 3, "Puts Fluids into and out of Containers", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes, 1, 1, 48000, 0, 1, "FluidCanner.png", "", true, aBoolConst_0, 0, "FLUID_CANNER", new Object[]{"GCG", "GMG", "WPW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_FluidCanner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(434, "basicmachine.fluidcanner.tier.04", "Turbo Fluid Canner", 4, "Puts Fluids into and out of Containers", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes, 1, 1, 64000, 0, 1, "FluidCanner.png", "", true, aBoolConst_0, 0, "FLUID_CANNER", new Object[]{"GCG", "GMG", "WPW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_FluidCanner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(435, "basicmachine.fluidcanner.tier.05", "Instant Fluid Canner", 5, "Puts Fluids into and out of Containers", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes, 1, 1, 80000, 0, 1, "FluidCanner.png", "", true, aBoolConst_0, 0, "FLUID_CANNER", new Object[]{"GCG", "GMG", "WPW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_FluidCanner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(436, "basicmachine.fluidcanner.tier.06", "Instant Fluid Canner", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes, 1, 1, 80000, 0, 1, "FluidCanner.png", "", true, aBoolConst_0, 0, "FLUID_CANNER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_FluidCanner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(437, "basicmachine.fluidcanner.tier.07", "Instant Fluid Canner", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes, 1, 1, 80000, 0, 1, "FluidCanner.png", "", true, aBoolConst_0, 0, "FLUID_CANNER", null).getStackForm(1L));
-        ItemList.Machine_UV_FluidCanner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(438, "basicmachine.fluidcanner.tier.08", "Instant Fluid Canner", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes, 1, 1, 80000, 0, 1, "FluidCanner.png", "", true, aBoolConst_0, 0, "FLUID_CANNER", null).getStackForm(1L));
+        ItemList.Machine_LuV_FluidCanner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(436, "basicmachine.fluidcanner.tier.06", "Instant Fluid Canner", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes, 1, 1, 80000, 0, 1, "FluidCanner.png", "", true, aBoolConst_0, 0, "FLUID_CANNER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_FluidCanner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(437, "basicmachine.fluidcanner.tier.07", "Instant Fluid Canner", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes, 1, 1, 80000, 0, 1, "FluidCanner.png", "", true, aBoolConst_0, 0, "FLUID_CANNER", null).getStackForm(1L));
+        ItemList.Machine_UV_FluidCanner.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(438, "basicmachine.fluidcanner.tier.08", "Instant Fluid Canner", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes, 1, 1, 80000, 0, 1, "FluidCanner.png", "", true, aBoolConst_0, 0, "FLUID_CANNER", null).getStackForm(1L));
 
         ItemList.Machine_LV_RockBreaker.set(new GT_MetaTileEntity_RockBreaker(441, "basicmachine.rockbreaker.tier.01", "Basic Rock Breaker", 1).getStackForm(1L));
         ItemList.Machine_MV_RockBreaker.set(new GT_MetaTileEntity_RockBreaker(442, "basicmachine.rockbreaker.tier.02", "Advanced Rock Breaker", 2).getStackForm(1L));
@@ -928,9 +928,9 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         ItemList.Machine_HV_Amplifab.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(473, "basicmachine.amplifab.tier.03", "Advanced Amplifabricator II", 3, "Extracting UU Amplifier", GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "AMPLIFAB", new Object[]{aTextWirePump, aTextPlateMotor, "CPC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.BETTER_CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4}).getStackForm(1L));
         ItemList.Machine_EV_Amplifab.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(474, "basicmachine.amplifab.tier.04", "Advanced Amplifabricator III", 4, "Extracting UU Amplifier", GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "AMPLIFAB", new Object[]{aTextWirePump, aTextPlateMotor, "CPC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.BETTER_CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4}).getStackForm(1L));
         ItemList.Machine_IV_Amplifab.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(475, "basicmachine.amplifab.tier.05", "Advanced Amplifabricator IV", 5, "Extracting UU Amplifier", GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "AMPLIFAB", new Object[]{aTextWirePump, aTextPlateMotor, "CPC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.BETTER_CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4}).getStackForm(1L));
-        ItemList.Machine_LuV_Amplifab.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(476, "basicmachine.amplifab.tier.06", "Advanced Amplifabricator IV", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "AMPLIFAB", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Amplifab.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(477, "basicmachine.amplifab.tier.07", "Advanced Amplifabricator IV", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "AMPLIFAB", null).getStackForm(1L));
-        ItemList.Machine_UV_Amplifab.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(478, "basicmachine.amplifab.tier.08", "Advanced Amplifabricator IV", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "AMPLIFAB", null).getStackForm(1L));
+        ItemList.Machine_LuV_Amplifab.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(476, "basicmachine.amplifab.tier.06", "Advanced Amplifabricator IV", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "AMPLIFAB", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Amplifab.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(477, "basicmachine.amplifab.tier.07", "Advanced Amplifabricator IV", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "AMPLIFAB", null).getStackForm(1L));
+        ItemList.Machine_UV_Amplifab.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(478, "basicmachine.amplifab.tier.08", "Advanced Amplifabricator IV", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "AMPLIFAB", null).getStackForm(1L));
 
         ItemList.Machine_LV_Replicator.set(new GT_MetaTileEntity_Replicator(481, "basicmachine.replicator.tier.01", "Basic Replicator", 1).getStackForm(1L));
         ItemList.Machine_MV_Replicator.set(new GT_MetaTileEntity_Replicator(482, "basicmachine.replicator.tier.02", "Advanced Replicator", 2).getStackForm(1L));
@@ -967,162 +967,162 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         ItemList.Machine_HV_Fermenter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(503, "basicmachine.fermenter.tier.03", "Advanced Fermenter II", 3, "Fermenting Fluids", GT_Recipe.GT_Recipe_Map.sFermentingRecipes, 1, 1, 1000, 0, 1, "Fermenter.png", "", aBoolConst_0, aBoolConst_0, 0, "FERMENTER", new Object[]{aTextWirePump, "GMG", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_Fermenter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(504, "basicmachine.fermenter.tier.04", "Advanced Fermenter III", 4, "Fermenting Fluids", GT_Recipe.GT_Recipe_Map.sFermentingRecipes, 1, 1, 1000, 0, 1, "Fermenter.png", "", aBoolConst_0, aBoolConst_0, 0, "FERMENTER", new Object[]{aTextWirePump, "GMG", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_Fermenter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(505, "basicmachine.fermenter.tier.05", "Advanced Fermenter IV", 5, "Fermenting Fluids", GT_Recipe.GT_Recipe_Map.sFermentingRecipes, 1, 1, 1000, 0, 1, "Fermenter.png", "", aBoolConst_0, aBoolConst_0, 0, "FERMENTER", new Object[]{aTextWirePump, "GMG", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_Fermenter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(506, "basicmachine.fermenter.tier.06", "Advanced Fermenter V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFermentingRecipes, 1, 1, 1000, 0, 1, "Fermenter.png", "", aBoolConst_0, aBoolConst_0, 0, "FERMENTER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Fermenter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(507, "basicmachine.fermenter.tier.07", "Advanced Fermenter VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFermentingRecipes, 1, 1, 1000, 0, 1, "Fermenter.png", "", aBoolConst_0, aBoolConst_0, 0, "FERMENTER", null).getStackForm(1L));
-        ItemList.Machine_UV_Fermenter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(508, "basicmachine.fermenter.tier.08", "Advanced Fermenter VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFermentingRecipes, 1, 1, 1000, 0, 1, "Fermenter.png", "", aBoolConst_0, aBoolConst_0, 0, "FERMENTER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Fermenter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(506, "basicmachine.fermenter.tier.06", "Advanced Fermenter V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFermentingRecipes, 1, 1, 1000, 0, 1, "Fermenter.png", "", aBoolConst_0, aBoolConst_0, 0, "FERMENTER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Fermenter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(507, "basicmachine.fermenter.tier.07", "Advanced Fermenter VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFermentingRecipes, 1, 1, 1000, 0, 1, "Fermenter.png", "", aBoolConst_0, aBoolConst_0, 0, "FERMENTER", null).getStackForm(1L));
+        ItemList.Machine_UV_Fermenter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(508, "basicmachine.fermenter.tier.08", "Advanced Fermenter VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFermentingRecipes, 1, 1, 1000, 0, 1, "Fermenter.png", "", aBoolConst_0, aBoolConst_0, 0, "FERMENTER", null).getStackForm(1L));
 
         ItemList.Machine_LV_FluidExtractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(511, "basicmachine.fluidextractor.tier.01", "Basic Fluid Extractor", 1, "Extracting Fluids from Items", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes, 1, 1, 16000, 0, 1, "FluidExtractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "FLUID_EXTRACTOR", new Object[]{"GCG", "PME", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_FluidExtractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(512, "basicmachine.fluidextractor.tier.02", "Advanced Fluid Extractor", 2, "Extracting Fluids from Items", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes, 1, 1, 16000, 0, 1, "FluidExtractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "FLUID_EXTRACTOR", new Object[]{"GCG", "PME", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_FluidExtractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(513, "basicmachine.fluidextractor.tier.03", "Advanced Fluid Extractor II", 3, "Extracting Fluids from Items", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes, 1, 1, 16000, 0, 1, "FluidExtractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "FLUID_EXTRACTOR", new Object[]{"GCG", "PME", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_FluidExtractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(514, "basicmachine.fluidextractor.tier.04", "Advanced Fluid Extractor III", 4, "Extracting Fluids from Items", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes, 1, 1, 16000, 0, 1, "FluidExtractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "FLUID_EXTRACTOR", new Object[]{"GCG", "PME", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_FluidExtractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(515, "basicmachine.fluidextractor.tier.05", "Advanced Fluid Extractor IV", 5, "Extracting Fluids from Items", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes, 1, 1, 16000, 0, 1, "FluidExtractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "FLUID_EXTRACTOR", new Object[]{"GCG", "PME", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_FluidExtractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(516, "basicmachine.fluidextractor.tier.06", "Advanced Fluid Extractor V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes, 1, 1, 16000, 0, 1, "FluidExtractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
-        ItemList.Machine_ZPM_FluidExtractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(517, "basicmachine.fluidextractor.tier.07", "Advanced Fluid Extractor VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes, 1, 1, 16000, 0, 1, "FluidExtractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
-        ItemList.Machine_UV_FluidExtractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(518, "basicmachine.fluidextractor.tier.08", "Advanced Fluid Extractor VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes, 1, 1, 16000, 0, 1, "FluidExtractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
+        ItemList.Machine_LuV_FluidExtractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(516, "basicmachine.fluidextractor.tier.06", "Advanced Fluid Extractor V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes, 1, 1, 16000, 0, 1, "FluidExtractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
+        ItemList.Machine_ZPM_FluidExtractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(517, "basicmachine.fluidextractor.tier.07", "Advanced Fluid Extractor VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes, 1, 1, 16000, 0, 1, "FluidExtractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
+        ItemList.Machine_UV_FluidExtractor.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(518, "basicmachine.fluidextractor.tier.08", "Advanced Fluid Extractor VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes, 1, 1, 16000, 0, 1, "FluidExtractor.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
 
         ItemList.Machine_LV_FluidSolidifier.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(521, "basicmachine.fluidsolidifier.tier.01", "Basic Fluid Solidifier", 1, "Cools Fluids down to form Solids", GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_SOLIDIFIER", new Object[]{"PGP", aTextWireHull, "CBC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS, 'B', OreDictNames.craftingChest}).getStackForm(1L));
         ItemList.Machine_MV_FluidSolidifier.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(522, "basicmachine.fluidsolidifier.tier.02", "Advanced Fluid Solidifier", 2, "Cools Fluids down to form Solids", GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_SOLIDIFIER", new Object[]{"PGP", aTextWireHull, "CBC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS, 'B', OreDictNames.craftingChest}).getStackForm(1L));
         ItemList.Machine_HV_FluidSolidifier.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(523, "basicmachine.fluidsolidifier.tier.03", "Advanced Fluid Solidifier II", 3, "Cools Fluids down to form Solids", GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_SOLIDIFIER", new Object[]{"PGP", aTextWireHull, "CBC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS, 'B', OreDictNames.craftingChest}).getStackForm(1L));
         ItemList.Machine_EV_FluidSolidifier.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(524, "basicmachine.fluidsolidifier.tier.04", "Advanced Fluid Solidifier III", 4, "Cools Fluids down to form Solids", GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_SOLIDIFIER", new Object[]{"PGP", aTextWireHull, "CBC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS, 'B', OreDictNames.craftingChest}).getStackForm(1L));
         ItemList.Machine_IV_FluidSolidifier.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(525, "basicmachine.fluidsolidifier.tier.05", "Advanced Fluid Solidifier IV", 5, "Cools Fluids down to form Solids", GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_SOLIDIFIER", new Object[]{"PGP", aTextWireHull, "CBC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS, 'B', OreDictNames.craftingChest}).getStackForm(1L));
-        ItemList.Machine_LuV_FluidSolidifier.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(526, "basicmachine.fluidsolidifier.tier.06", "Advanced Fluid Solidifier V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_SOLIDIFIER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_FluidSolidifier.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(527, "basicmachine.fluidsolidifier.tier.07", "Advanced Fluid Solidifier VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_SOLIDIFIER", null).getStackForm(1L));
-        ItemList.Machine_UV_FluidSolidifier.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(528, "basicmachine.fluidsolidifier.tier.08", "Advanced Fluid Solidifier VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_SOLIDIFIER", null).getStackForm(1L));
+        ItemList.Machine_LuV_FluidSolidifier.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(526, "basicmachine.fluidsolidifier.tier.06", "Advanced Fluid Solidifier V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_SOLIDIFIER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_FluidSolidifier.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(527, "basicmachine.fluidsolidifier.tier.07", "Advanced Fluid Solidifier VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_SOLIDIFIER", null).getStackForm(1L));
+        ItemList.Machine_UV_FluidSolidifier.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(528, "basicmachine.fluidsolidifier.tier.08", "Advanced Fluid Solidifier VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_SOLIDIFIER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Distillery.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(531, "basicmachine.distillery.tier.01", "Basic Distillery", 1, "Extracting the most relevant Parts of Fluids", GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "DISTILLERY", new Object[]{"GBG", aTextCableHull, aTextWirePump, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'B', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_DISTILLATION, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_Distillery.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(532, "basicmachine.distillery.tier.02", "Advanced Distillery", 2, "Extracting the most relevant Parts of Fluids", GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "DISTILLERY", new Object[]{"GBG", aTextCableHull, aTextWirePump, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'B', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_DISTILLATION, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_Distillery.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(533, "basicmachine.distillery.tier.03", "Advanced Distillery II", 3, "Extracting the most relevant Parts of Fluids", GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "DISTILLERY", new Object[]{"GBG", aTextCableHull, aTextWirePump, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'B', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_DISTILLATION, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_Distillery.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(534, "basicmachine.distillery.tier.04", "Advanced Distillery III", 4, "Extracting the most relevant Parts of Fluids", GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "DISTILLERY", new Object[]{"GBG", aTextCableHull, aTextWirePump, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'B', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_DISTILLATION, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_Distillery.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(535, "basicmachine.distillery.tier.05", "Advanced Distillery IV", 5, "Extracting the most relevant Parts of Fluids", GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "DISTILLERY", new Object[]{"GBG", aTextCableHull, aTextWirePump, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'B', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_DISTILLATION, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_Distillery.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(536, "basicmachine.distillery.tier.06", "Advanced Distillery V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "DISTILLERY", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Distillery.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(537, "basicmachine.distillery.tier.07", "Advanced Distillery VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "DISTILLERY", null).getStackForm(1L));
-        ItemList.Machine_UV_Distillery.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(538, "basicmachine.distillery.tier.08", "Advanced Distillery VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "DISTILLERY", null).getStackForm(1L));
+        ItemList.Machine_LuV_Distillery.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(536, "basicmachine.distillery.tier.06", "Advanced Distillery V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "DISTILLERY", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Distillery.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(537, "basicmachine.distillery.tier.07", "Advanced Distillery VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "DISTILLERY", null).getStackForm(1L));
+        ItemList.Machine_UV_Distillery.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(538, "basicmachine.distillery.tier.08", "Advanced Distillery VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(200)), aBoolConst_0, aBoolConst_0, 0, "DISTILLERY", null).getStackForm(1L));
 
         ItemList.Machine_LV_ChemicalBath.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(541, "basicmachine.chemicalbath.tier.01", "Basic Chemical Bath", 1, "Bathing Ores in Chemicals to separate them", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes, 1, 3, 8000, 0, 1, "ChemicalBath.png", "", aBoolConst_0, true, 0, "CHEMICAL_BATH", new Object[]{"VGW", "PGV", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_ChemicalBath.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(542, "basicmachine.chemicalbath.tier.02", "Advanced Chemical Bath", 2, "Bathing Ores in Chemicals to separate them", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes, 1, 3, 8000, 0, 1, "ChemicalBath.png", "", aBoolConst_0, true, 0, "CHEMICAL_BATH", new Object[]{"VGW", "PGV", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_ChemicalBath.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(543, "basicmachine.chemicalbath.tier.03", "Advanced Chemical Bath II", 3, "Bathing Ores in Chemicals to separate them", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes, 1, 3, 8000, 0, 1, "ChemicalBath.png", "", aBoolConst_0, true, 0, "CHEMICAL_BATH", new Object[]{"VGW", "PGV", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_ChemicalBath.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(544, "basicmachine.chemicalbath.tier.04", "Advanced Chemical Bath III", 4, "Bathing Ores in Chemicals to separate them", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes, 1, 3, 8000, 0, 1, "ChemicalBath.png", "", aBoolConst_0, true, 0, "CHEMICAL_BATH", new Object[]{"VGW", "PGV", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_ChemicalBath.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(545, "basicmachine.chemicalbath.tier.05", "Advanced Chemical Bath IV", 5, "Bathing Ores in Chemicals to separate them", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes, 1, 3, 8000, 0, 1, "ChemicalBath.png", "", aBoolConst_0, true, 0, "CHEMICAL_BATH", new Object[]{"VGW", "PGV", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_ChemicalBath.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(546, "basicmachine.chemicalbath.tier.06", "Advanced Chemical Bath V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes, 1, 3, 8000, 0, 1, "ChemicalBath.png", "", aBoolConst_0, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
-        ItemList.Machine_ZPM_ChemicalBath.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(547, "basicmachine.chemicalbath.tier.07", "Advanced Chemical Bath VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes, 1, 3, 8000, 0, 1, "ChemicalBath.png", "", aBoolConst_0, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
-        ItemList.Machine_UV_ChemicalBath.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(548, "basicmachine.chemicalbath.tier.08", "Advanced Chemical Bath VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes, 1, 3, 8000, 0, 1, "ChemicalBath.png", "", aBoolConst_0, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
+        ItemList.Machine_LuV_ChemicalBath.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(546, "basicmachine.chemicalbath.tier.06", "Advanced Chemical Bath V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes, 1, 3, 8000, 0, 1, "ChemicalBath.png", "", aBoolConst_0, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
+        ItemList.Machine_ZPM_ChemicalBath.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(547, "basicmachine.chemicalbath.tier.07", "Advanced Chemical Bath VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes, 1, 3, 8000, 0, 1, "ChemicalBath.png", "", aBoolConst_0, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
+        ItemList.Machine_UV_ChemicalBath.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(548, "basicmachine.chemicalbath.tier.08", "Advanced Chemical Bath VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes, 1, 3, 8000, 0, 1, "ChemicalBath.png", "", aBoolConst_0, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
 
         ItemList.Machine_LV_Polarizer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(551, "basicmachine.polarizer.tier.01", "Basic Polarizer", 1, "Bipolarising your Magnets", GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "POLARIZER", new Object[]{"ZSZ", aTextWireHull, "ZSZ", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'S', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_ELECTROMAGNETIC, 'Z', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_ELECTRIC, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_MV_Polarizer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(552, "basicmachine.polarizer.tier.02", "Advanced Polarizer", 2, "Bipolarising your Magnets", GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "POLARIZER", new Object[]{"ZSZ", aTextWireHull, "ZSZ", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'S', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_ELECTROMAGNETIC, 'Z', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_ELECTRIC, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_HV_Polarizer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(553, "basicmachine.polarizer.tier.03", "Advanced Polarizer II", 3, "Bipolarising your Magnets", GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "POLARIZER", new Object[]{"ZSZ", aTextWireHull, "ZSZ", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'S', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_ELECTROMAGNETIC, 'Z', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_ELECTRIC, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_Polarizer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(554, "basicmachine.polarizer.tier.04", "Advanced Polarizer III", 4, "Bipolarising your Magnets", GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "POLARIZER", new Object[]{"ZSZ", aTextWireHull, "ZSZ", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'S', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_ELECTROMAGNETIC, 'Z', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_ELECTRIC, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_Polarizer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(555, "basicmachine.polarizer.tier.05", "Advanced Polarizer IV", 5, "Bipolarising your Magnets", GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "POLARIZER", new Object[]{"ZSZ", aTextWireHull, "ZSZ", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'S', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_ELECTROMAGNETIC, 'Z', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_ELECTRIC, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_Polarizer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(556, "basicmachine.polarizer.tier.06", "Advanced Polarizer V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "POLARIZER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Polarizer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(557, "basicmachine.polarizer.tier.07", "Advanced Polarizer VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "POLARIZER", null).getStackForm(1L));
-        ItemList.Machine_UV_Polarizer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(558, "basicmachine.polarizer.tier.08", "Advanced Polarizer VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "POLARIZER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Polarizer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(556, "basicmachine.polarizer.tier.06", "Advanced Polarizer V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "POLARIZER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Polarizer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(557, "basicmachine.polarizer.tier.07", "Advanced Polarizer VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "POLARIZER", null).getStackForm(1L));
+        ItemList.Machine_UV_Polarizer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(558, "basicmachine.polarizer.tier.08", "Advanced Polarizer VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "POLARIZER", null).getStackForm(1L));
 
         ItemList.Machine_LV_ElectromagneticSeparator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(561, "basicmachine.electromagneticseparator.tier.01", "Basic Electromagnetic Separator", 1, "Separating the magnetic Ores from the rest", GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "ELECTROMAGNETIC_SEPARATOR", new Object[]{"VWZ", "WMS", "CWZ", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'S', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_ELECTROMAGNETIC, 'Z', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_ELECTRIC, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_MV_ElectromagneticSeparator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(562, "basicmachine.electromagneticseparator.tier.02", "Advanced Electromagnetic Separator", 2, "Separating the magnetic Ores from the rest", GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "ELECTROMAGNETIC_SEPARATOR", new Object[]{"VWZ", "WMS", "CWZ", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'S', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_ELECTROMAGNETIC, 'Z', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_ELECTRIC, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_HV_ElectromagneticSeparator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(563, "basicmachine.electromagneticseparator.tier.03", "Advanced Electromagnetic Separator II", 3, "Separating the magnetic Ores from the rest", GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "ELECTROMAGNETIC_SEPARATOR", new Object[]{"VWZ", "WMS", "CWZ", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'S', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_ELECTROMAGNETIC, 'Z', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_ELECTRIC, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_ElectromagneticSeparator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(564, "basicmachine.electromagneticseparator.tier.04", "Advanced Electromagnetic Separator III", 4, "Separating the magnetic Ores from the rest", GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "ELECTROMAGNETIC_SEPARATOR", new Object[]{"VWZ", "WMS", "CWZ", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'S', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_ELECTROMAGNETIC, 'Z', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_ELECTRIC, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_ElectromagneticSeparator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(565, "basicmachine.electromagneticseparator.tier.05", "Advanced Electromagnetic Separator IV", 5, "Separating the magnetic Ores from the rest", GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "ELECTROMAGNETIC_SEPARATOR", new Object[]{"VWZ", "WMS", "CWZ", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'S', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.STICK_ELECTROMAGNETIC, 'Z', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_ELECTRIC, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_ElectromagneticSeparator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(566, "basicmachine.electromagneticseparator.tier.06", "Advanced Electromagnetic Separator V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "ELECTROMAGNETIC_SEPARATOR", null).getStackForm(1L));
-        ItemList.Machine_ZPM_ElectromagneticSeparator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(567, "basicmachine.electromagneticseparator.tier.07", "Advanced Electromagnetic Separator VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "ELECTROMAGNETIC_SEPARATOR", null).getStackForm(1L));
-        ItemList.Machine_UV_ElectromagneticSeparator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(568, "basicmachine.electromagneticseparator.tier.08", "Advanced Electromagnetic Separator VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "ELECTROMAGNETIC_SEPARATOR", null).getStackForm(1L));
+        ItemList.Machine_LuV_ElectromagneticSeparator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(566, "basicmachine.electromagneticseparator.tier.06", "Advanced Electromagnetic Separator V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "ELECTROMAGNETIC_SEPARATOR", null).getStackForm(1L));
+        ItemList.Machine_ZPM_ElectromagneticSeparator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(567, "basicmachine.electromagneticseparator.tier.07", "Advanced Electromagnetic Separator VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "ELECTROMAGNETIC_SEPARATOR", null).getStackForm(1L));
+        ItemList.Machine_UV_ElectromagneticSeparator.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(568, "basicmachine.electromagneticseparator.tier.08", "Advanced Electromagnetic Separator VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "ELECTROMAGNETIC_SEPARATOR", null).getStackForm(1L));
 
         ItemList.Machine_LV_Autoclave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(571, "basicmachine.autoclave.tier.01", "Basic Autoclave", 1, "Crystallizing your Dusts", GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png", "", aBoolConst_0, aBoolConst_0, 0, "AUTOCLAVE", new Object[]{"IGI", "IMI", "CPC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_Autoclave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(572, "basicmachine.autoclave.tier.02", "Advanced Autoclave", 2, "Crystallizing your Dusts", GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png", "", aBoolConst_0, aBoolConst_0, 0, "AUTOCLAVE", new Object[]{"IGI", "IMI", "CPC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_Autoclave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(573, "basicmachine.autoclave.tier.03", "Advanced Autoclave II", 3, "Crystallizing your Dusts", GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png", "", aBoolConst_0, aBoolConst_0, 0, "AUTOCLAVE", new Object[]{"IGI", "IMI", "CPC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_Autoclave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(574, "basicmachine.autoclave.tier.04", "Advanced Autoclave III", 4, "Crystallizing your Dusts", GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png", "", aBoolConst_0, aBoolConst_0, 0, "AUTOCLAVE", new Object[]{"IGI", "IMI", "CPC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_Autoclave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(575, "basicmachine.autoclave.tier.05", "Advanced Autoclave IV", 5, "Crystallizing your Dusts", GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png", "", aBoolConst_0, aBoolConst_0, 0, "AUTOCLAVE", new Object[]{"IGI", "IMI", "CPC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_Autoclave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(576, "basicmachine.autoclave.tier.06", "Advanced Autoclave V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png", "", aBoolConst_0, aBoolConst_0, 0, "AUTOCLAVE", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Autoclave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(577, "basicmachine.autoclave.tier.07", "Advanced Autoclave VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png", "", aBoolConst_0, aBoolConst_0, 0, "AUTOCLAVE", null).getStackForm(1L));
-        ItemList.Machine_UV_Autoclave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(578, "basicmachine.autoclave.tier.08", "Advanced Autoclave VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png", "", aBoolConst_0, aBoolConst_0, 0, "AUTOCLAVE", null).getStackForm(1L));
+        ItemList.Machine_LuV_Autoclave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(576, "basicmachine.autoclave.tier.06", "Advanced Autoclave V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png", "", aBoolConst_0, aBoolConst_0, 0, "AUTOCLAVE", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Autoclave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(577, "basicmachine.autoclave.tier.07", "Advanced Autoclave VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png", "", aBoolConst_0, aBoolConst_0, 0, "AUTOCLAVE", null).getStackForm(1L));
+        ItemList.Machine_UV_Autoclave.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(578, "basicmachine.autoclave.tier.08", "Advanced Autoclave VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png", "", aBoolConst_0, aBoolConst_0, 0, "AUTOCLAVE", null).getStackForm(1L));
 
         ItemList.Machine_LV_Mixer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(581, "basicmachine.mixer.tier.01", "Basic Mixer", 1, "Will it Blend?", GT_Recipe.GT_Recipe_Map.sMixerRecipes, 6, 1, 16000, 0, 1, "Mixer.png", "", aBoolConst_0, aBoolConst_0, 0, "MIXER", new Object[]{"GRG", "GEG", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_Mixer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(582, "basicmachine.mixer.tier.02", "Advanced Mixer", 2, "Will it Blend?", GT_Recipe.GT_Recipe_Map.sMixerRecipes, 6, 1, 24000, 0, 1, "Mixer.png", "", aBoolConst_0, aBoolConst_0, 0, "MIXER", new Object[]{"GRG", "GEG", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_Mixer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(583, "basicmachine.mixer.tier.03", "Advanced Mixer II", 3, "Will it Blend?", GT_Recipe.GT_Recipe_Map.sMixerRecipes, 6, 1, 32000, 0, 1, "Mixer.png", "", aBoolConst_0, aBoolConst_0, 0, "MIXER", new Object[]{"GRG", "GEG", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_Mixer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(584, "basicmachine.mixer.tier.04", "Advanced Mixer III", 4, "Will it Blend?", GT_Recipe.GT_Recipe_Map.sMixerRecipes, 6, 1, 48000, 0, 1, "Mixer.png", "", aBoolConst_0, aBoolConst_0, 0, "MIXER", new Object[]{"GRG", "GEG", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_Mixer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(585, "basicmachine.mixer.tier.05", "Advanced Mixer IV", 5, "Will it Blend?", GT_Recipe.GT_Recipe_Map.sMixerRecipes, 6, 1, 64000, 0, 1, "Mixer.png", "", aBoolConst_0, aBoolConst_0, 0, "MIXER", new Object[]{"GRG", "GEG", aTextCableHull, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'R', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_Mixer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(586, "basicmachine.mixer.tier.06", "Advanced Mixer V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMixerRecipes, 6, 1, 64000, 0, 1, "Mixer.png", "", aBoolConst_0, aBoolConst_0, 0, "MIXER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Mixer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(587, "basicmachine.mixer.tier.07", "Advanced Mixer VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMixerRecipes, 6, 1, 64000, 0, 1, "Mixer.png", "", aBoolConst_0, aBoolConst_0, 0, "MIXER", null).getStackForm(1L));
-        ItemList.Machine_UV_Mixer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(588, "basicmachine.mixer.tier.08", "Advanced Mixer VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMixerRecipes, 6, 1, 64000, 0, 1, "Mixer.png", "", aBoolConst_0, aBoolConst_0, 0, "MIXER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Mixer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(586, "basicmachine.mixer.tier.06", "Advanced Mixer V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMixerRecipes, 6, 1, 64000, 0, 1, "Mixer.png", "", aBoolConst_0, aBoolConst_0, 0, "MIXER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Mixer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(587, "basicmachine.mixer.tier.07", "Advanced Mixer VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMixerRecipes, 6, 1, 64000, 0, 1, "Mixer.png", "", aBoolConst_0, aBoolConst_0, 0, "MIXER", null).getStackForm(1L));
+        ItemList.Machine_UV_Mixer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(588, "basicmachine.mixer.tier.08", "Advanced Mixer VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMixerRecipes, 6, 1, 64000, 0, 1, "Mixer.png", "", aBoolConst_0, aBoolConst_0, 0, "MIXER", null).getStackForm(1L));
 
         ItemList.Machine_LV_LaserEngraver.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(591, "basicmachine.laserengraver.tier.01", "Basic Precision Laser Engraver", 1, "Don't look directly at the Laser", GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "LASER_ENGRAVER", new Object[]{"PEP", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_MV_LaserEngraver.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(592, "basicmachine.laserengraver.tier.02", "Advanced Precision Laser Engraver", 2, "Don't look directly at the Laser", GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "LASER_ENGRAVER", new Object[]{"PEP", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_HV_LaserEngraver.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(593, "basicmachine.laserengraver.tier.03", "Advanced Precision Laser Engraver II", 3, "Don't look directly at the Laser", GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "LASER_ENGRAVER", new Object[]{"PEP", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_LaserEngraver.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(594, "basicmachine.laserengraver.tier.04", "Advanced Precision Laser Engraver III", 4, "Don't look directly at the Laser", GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "LASER_ENGRAVER", new Object[]{"PEP", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_LaserEngraver.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(595, "basicmachine.laserengraver.tier.05", "Advanced Precision Laser Engraver IV", 5, "Don't look directly at the Laser", GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "LASER_ENGRAVER", new Object[]{"PEP", aTextCableHull, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_LaserEngraver.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(596, "basicmachine.laserengraver.tier.06", "Advanced Precision Laser Engraver V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "LASER_ENGRAVER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_LaserEngraver.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(597, "basicmachine.laserengraver.tier.07", "Advanced Precision Laser Engraver VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "LASER_ENGRAVER", null).getStackForm(1L));
-        ItemList.Machine_UV_LaserEngraver.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(598, "basicmachine.laserengraver.tier.08", "Advanced Precision Laser Engraver VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "LASER_ENGRAVER", null).getStackForm(1L));
+        ItemList.Machine_LuV_LaserEngraver.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(596, "basicmachine.laserengraver.tier.06", "Advanced Precision Laser Engraver V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "LASER_ENGRAVER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_LaserEngraver.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(597, "basicmachine.laserengraver.tier.07", "Advanced Precision Laser Engraver VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "LASER_ENGRAVER", null).getStackForm(1L));
+        ItemList.Machine_UV_LaserEngraver.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(598, "basicmachine.laserengraver.tier.08", "Advanced Precision Laser Engraver VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(212)), aBoolConst_0, aBoolConst_0, 0, "LASER_ENGRAVER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Press.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(601, "basicmachine.press.tier.01", "Basic Forming Press", 1, "Imprinting Images into things", GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "PRESS", new Object[]{aTextWirePump, aTextCableHull, aTextWirePump, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_MV_Press.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(602, "basicmachine.press.tier.02", "Advanced Forming Press", 2, "Imprinting Images into things", GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "PRESS", new Object[]{aTextWirePump, aTextCableHull, aTextWirePump, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_HV_Press.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(603, "basicmachine.press.tier.03", "Advanced Forming Press II", 3, "Imprinting Images into things", GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "PRESS", new Object[]{aTextWirePump, aTextCableHull, aTextWirePump, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_Press.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(604, "basicmachine.press.tier.04", "Advanced Forming Press III", 4, "Imprinting Images into things", GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "PRESS", new Object[]{aTextWirePump, aTextCableHull, aTextWirePump, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_Press.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(605, "basicmachine.press.tier.05", "Advanced Forming Press IV", 5, "Imprinting Images into things", GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "PRESS", new Object[]{aTextWirePump, aTextCableHull, aTextWirePump, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_Press.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(606, "basicmachine.press.tier.06", "Advanced Forming Press V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "PRESS", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Press.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(607, "basicmachine.press.tier.07", "Advanced Forming Press VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "PRESS", null).getStackForm(1L));
-        ItemList.Machine_UV_Press.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(608, "basicmachine.press.tier.08", "Advanced Forming Press VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "PRESS", null).getStackForm(1L));
+        ItemList.Machine_LuV_Press.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(606, "basicmachine.press.tier.06", "Advanced Forming Press V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "PRESS", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Press.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(607, "basicmachine.press.tier.07", "Advanced Forming Press VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "PRESS", null).getStackForm(1L));
+        ItemList.Machine_UV_Press.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(608, "basicmachine.press.tier.08", "Advanced Forming Press VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(203)), aBoolConst_0, aBoolConst_0, 0, "PRESS", null).getStackForm(1L));
 
         ItemList.Machine_LV_Hammer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(611, "basicmachine.hammer.tier.01", "Basic Forge Hammer", 1, "Stop, Hammertime!", GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(1)), aBoolConst_0, aBoolConst_0, 0, "HAMMER", new Object[]{aTextWirePump, aTextCableHull, "WAW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE, 'A', OreDictNames.craftingAnvil}).getStackForm(1L));
         ItemList.Machine_MV_Hammer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(612, "basicmachine.hammer.tier.02", "Advanced Forge Hammer", 2, "Stop, Hammertime!", GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(1)), aBoolConst_0, aBoolConst_0, 0, "HAMMER", new Object[]{aTextWirePump, aTextCableHull, "WAW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE, 'A', OreDictNames.craftingAnvil}).getStackForm(1L));
         ItemList.Machine_HV_Hammer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(613, "basicmachine.hammer.tier.03", "Advanced Forge Hammer II", 3, "Stop, Hammertime!", GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(1)), aBoolConst_0, aBoolConst_0, 0, "HAMMER", new Object[]{aTextWirePump, aTextCableHull, "WAW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE, 'A', OreDictNames.craftingAnvil}).getStackForm(1L));
         ItemList.Machine_EV_Hammer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(614, "basicmachine.hammer.tier.04", "Advanced Forge Hammer III", 4, "Stop, Hammertime!", GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(1)), aBoolConst_0, aBoolConst_0, 0, "HAMMER", new Object[]{aTextWirePump, aTextCableHull, "WAW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE, 'A', OreDictNames.craftingAnvil}).getStackForm(1L));
         ItemList.Machine_IV_Hammer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(615, "basicmachine.hammer.tier.05", "Advanced Forge Hammer IV", 5, "Stop, Hammertime!", GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(1)), aBoolConst_0, aBoolConst_0, 0, "HAMMER", new Object[]{aTextWirePump, aTextCableHull, "WAW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE, 'A', OreDictNames.craftingAnvil}).getStackForm(1L));
-        ItemList.Machine_LuV_Hammer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(616, "basicmachine.hammer.tier.06", "Advanced Forge Hammer V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(1)), aBoolConst_0, aBoolConst_0, 0, "HAMMER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Hammer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(617, "basicmachine.hammer.tier.07", "Advanced Forge Hammer VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(1)), aBoolConst_0, aBoolConst_0, 0, "HAMMER", null).getStackForm(1L));
-        ItemList.Machine_UV_Hammer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(618, "basicmachine.hammer.tier.08", "Advanced Forge Hammer VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(1)), aBoolConst_0, aBoolConst_0, 0, "HAMMER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Hammer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(616, "basicmachine.hammer.tier.06", "Advanced Forge Hammer V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(1)), aBoolConst_0, aBoolConst_0, 0, "HAMMER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Hammer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(617, "basicmachine.hammer.tier.07", "Advanced Forge Hammer VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(1)), aBoolConst_0, aBoolConst_0, 0, "HAMMER", null).getStackForm(1L));
+        ItemList.Machine_UV_Hammer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(618, "basicmachine.hammer.tier.08", "Advanced Forge Hammer VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(1)), aBoolConst_0, aBoolConst_0, 0, "HAMMER", null).getStackForm(1L));
 
         ItemList.Machine_LV_FluidHeater.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(621, "basicmachine.fluidheater.tier.01", "Basic Fluid Heater", 1, "Heating up your Fluids", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes, 1, 0, 8000, 0, 1, "FluidHeater.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_HEATER", new Object[]{"OGO", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_MV_FluidHeater.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(622, "basicmachine.fluidheater.tier.02", "Advanced Fluid Heater", 2, "Heating up your Fluids", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes, 1, 0, 8000, 0, 1, "FluidHeater.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_HEATER", new Object[]{"OGO", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_HV_FluidHeater.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(623, "basicmachine.fluidheater.tier.03", "Advanced Fluid Heater II", 3, "Heating up your Fluids", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes, 1, 0, 8000, 0, 1, "FluidHeater.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_HEATER", new Object[]{"OGO", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_EV_FluidHeater.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(624, "basicmachine.fluidheater.tier.04", "Advanced Fluid Heater III", 4, "Heating up your Fluids", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes, 1, 0, 8000, 0, 1, "FluidHeater.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_HEATER", new Object[]{"OGO", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
         ItemList.Machine_IV_FluidHeater.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(625, "basicmachine.fluidheater.tier.05", "Advanced Fluid Heater IV", 5, "Heating up your Fluids", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes, 1, 0, 8000, 0, 1, "FluidHeater.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_HEATER", new Object[]{"OGO", aTextPlateMotor, aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'O', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING_DOUBLE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
-        ItemList.Machine_LuV_FluidHeater.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(626, "basicmachine.fluidheater.tier.06", "Advanced Fluid Heater V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes, 1, 0, 8000, 0, 1, "FluidHeater.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_HEATER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_FluidHeater.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(627, "basicmachine.fluidheater.tier.07", "Advanced Fluid Heater VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes, 1, 0, 8000, 0, 1, "FluidHeater.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_HEATER", null).getStackForm(1L));
-        ItemList.Machine_UV_FluidHeater.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(628, "basicmachine.fluidheater.tier.08", "Advanced Fluid Heater VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes, 1, 0, 8000, 0, 1, "FluidHeater.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_HEATER", null).getStackForm(1L));
+        ItemList.Machine_LuV_FluidHeater.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(626, "basicmachine.fluidheater.tier.06", "Advanced Fluid Heater V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes, 1, 0, 8000, 0, 1, "FluidHeater.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_HEATER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_FluidHeater.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(627, "basicmachine.fluidheater.tier.07", "Advanced Fluid Heater VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes, 1, 0, 8000, 0, 1, "FluidHeater.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_HEATER", null).getStackForm(1L));
+        ItemList.Machine_UV_FluidHeater.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(628, "basicmachine.fluidheater.tier.08", "Advanced Fluid Heater VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes, 1, 0, 8000, 0, 1, "FluidHeater.png", "", aBoolConst_0, aBoolConst_0, 0, "FLUID_HEATER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Slicer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(631, "basicmachine.slicer.tier.01", "Basic Slicing Machine", 1, "Slice of Life", GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", aBoolConst_0, aBoolConst_0, 0, "SLICER", new Object[]{aTextWireCoil, "PMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_MV_Slicer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(632, "basicmachine.slicer.tier.02", "Advanced Slicing Machine", 2, "Slice of Life", GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", aBoolConst_0, aBoolConst_0, 0, "SLICER", new Object[]{aTextWireCoil, "PMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_HV_Slicer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(633, "basicmachine.slicer.tier.03", "Advanced Slicing Machine II", 3, "Slice of Life", GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", aBoolConst_0, aBoolConst_0, 0, "SLICER", new Object[]{aTextWireCoil, "PMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_Slicer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(634, "basicmachine.slicer.tier.04", "Advanced Slicing Machine III", 4, "Slice of Life", GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", aBoolConst_0, aBoolConst_0, 0, "SLICER", new Object[]{aTextWireCoil, "PMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_Slicer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(635, "basicmachine.slicer.tier.05", "Advanced Slicing Machine IV", 5, "Slice of Life", GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", aBoolConst_0, aBoolConst_0, 0, "SLICER", new Object[]{aTextWireCoil, "PMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_Slicer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(636, "basicmachine.slicer.tier.06", "Advanced Slicing Machine V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", aBoolConst_0, aBoolConst_0, 0, "SLICER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Slicer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(637, "basicmachine.slicer.tier.07", "Advanced Slicing Machine VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", aBoolConst_0, aBoolConst_0, 0, "SLICER", null).getStackForm(1L));
-        ItemList.Machine_UV_Slicer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(638, "basicmachine.slicer.tier.08", "Advanced Slicing Machine VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", aBoolConst_0, aBoolConst_0, 0, "SLICER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Slicer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(636, "basicmachine.slicer.tier.06", "Advanced Slicing Machine V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", aBoolConst_0, aBoolConst_0, 0, "SLICER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Slicer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(637, "basicmachine.slicer.tier.07", "Advanced Slicing Machine VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", aBoolConst_0, aBoolConst_0, 0, "SLICER", null).getStackForm(1L));
+        ItemList.Machine_UV_Slicer.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(638, "basicmachine.slicer.tier.08", "Advanced Slicing Machine VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", aBoolConst_0, aBoolConst_0, 0, "SLICER", null).getStackForm(1L));
 
         ItemList.Machine_LV_Sifter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(641, "basicmachine.sifter.tier.01", "Basic Sifting Machine", 1, "Stay calm and keep sifting", GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", aBoolConst_0, aBoolConst_0, 0, "SIFTER", new Object[]{"WFW", aTextPlateMotor, "CFC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'F', OreDictNames.craftingFilter, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_MV_Sifter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(642, "basicmachine.sifter.tier.02", "Advanced Sifting Machine", 2, "Stay calm and keep sifting", GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", aBoolConst_0, aBoolConst_0, 0, "SIFTER", new Object[]{"WFW", aTextPlateMotor, "CFC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'F', OreDictNames.craftingFilter, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_HV_Sifter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(643, "basicmachine.sifter.tier.03", "Advanced Sifting Machine II", 3, "Stay calm and keep sifting", GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", aBoolConst_0, aBoolConst_0, 0, "SIFTER", new Object[]{"WFW", aTextPlateMotor, "CFC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'F', OreDictNames.craftingFilter, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_EV_Sifter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(644, "basicmachine.sifter.tier.04", "Advanced Sifting Machine III", 4, "Stay calm and keep sifting", GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", aBoolConst_0, aBoolConst_0, 0, "SIFTER", new Object[]{"WFW", aTextPlateMotor, "CFC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'F', OreDictNames.craftingFilter, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
         ItemList.Machine_IV_Sifter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(645, "basicmachine.sifter.tier.05", "Advanced Sifting Machine IV", 5, "Stay calm and keep sifting", GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", aBoolConst_0, aBoolConst_0, 0, "SIFTER", new Object[]{"WFW", aTextPlateMotor, "CFC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PISTON, 'F', OreDictNames.craftingFilter, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE}).getStackForm(1L));
-        ItemList.Machine_LuV_Sifter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(646, "basicmachine.sifter.tier.06", "Advanced Sifting Machine V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", aBoolConst_0, aBoolConst_0, 0, "SIFTER", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Sifter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(647, "basicmachine.sifter.tier.07", "Advanced Sifting Machine VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", aBoolConst_0, aBoolConst_0, 0, "SIFTER", null).getStackForm(1L));
-        ItemList.Machine_UV_Sifter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(648, "basicmachine.sifter.tier.08", "Advanced Sifting Machine VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", aBoolConst_0, aBoolConst_0, 0, "SIFTER", null).getStackForm(1L));
+        ItemList.Machine_LuV_Sifter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(646, "basicmachine.sifter.tier.06", "Advanced Sifting Machine V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", aBoolConst_0, aBoolConst_0, 0, "SIFTER", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Sifter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(647, "basicmachine.sifter.tier.07", "Advanced Sifting Machine VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", aBoolConst_0, aBoolConst_0, 0, "SIFTER", null).getStackForm(1L));
+        ItemList.Machine_UV_Sifter.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(648, "basicmachine.sifter.tier.08", "Advanced Sifting Machine VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", aBoolConst_0, aBoolConst_0, 0, "SIFTER", null).getStackForm(1L));
 
         ItemList.Machine_LV_ArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(651, "basicmachine.arcfurnace.tier.01", "Basic Arc Furnace", 1, "", GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 16000, 0, 1, "ArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "ARC_FURNACE", new Object[]{"WGW", aTextCableHull, aTextPlate, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4, 'G', OrePrefixes.cell.get(Materials.Graphite)}).getStackForm(1L));
         ItemList.Machine_MV_ArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(652, "basicmachine.arcfurnace.tier.02", "Advanced Arc Furnace", 2, "", GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 24000, 0, 1, "ArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "ARC_FURNACE", new Object[]{"WGW", aTextCableHull, aTextPlate, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4, 'G', OrePrefixes.cell.get(Materials.Graphite)}).getStackForm(1L));
         ItemList.Machine_HV_ArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(653, "basicmachine.arcfurnace.tier.03", "Advanced Arc Furnace II", 3, "", GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 32000, 0, 1, "ArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "ARC_FURNACE", new Object[]{"WGW", aTextCableHull, aTextPlate, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4, 'G', OrePrefixes.cell.get(Materials.Graphite)}).getStackForm(1L));
         ItemList.Machine_EV_ArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(654, "basicmachine.arcfurnace.tier.04", "Advanced Arc Furnace III", 4, "", GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 48000, 0, 1, "ArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "ARC_FURNACE", new Object[]{"WGW", aTextCableHull, aTextPlate, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4, 'G', OrePrefixes.cell.get(Materials.Graphite)}).getStackForm(1L));
         ItemList.Machine_IV_ArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(655, "basicmachine.arcfurnace.tier.05", "Advanced Arc Furnace IV", 5, "", GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 64000, 0, 1, "ArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "ARC_FURNACE", new Object[]{"WGW", aTextCableHull, aTextPlate, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4, 'G', OrePrefixes.cell.get(Materials.Graphite)}).getStackForm(1L));
-        ItemList.Machine_LuV_ArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(656, "basicmachine.arcfurnace.tier.06", "Advanced Arc Furnace V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 64000, 0, 1, "ArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "ARC_FURNACE", null).getStackForm(1L));
-        ItemList.Machine_ZPM_ArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(657, "basicmachine.arcfurnace.tier.07", "Advanced Arc Furnace VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 64000, 0, 1, "ArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "ARC_FURNACE", null).getStackForm(1L));
-        ItemList.Machine_UV_ArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(658, "basicmachine.arcfurnace.tier.08", "Advanced Arc Furnace VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 64000, 0, 1, "ArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "ARC_FURNACE", null).getStackForm(1L));
+        ItemList.Machine_LuV_ArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(656, "basicmachine.arcfurnace.tier.06", "Advanced Arc Furnace V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 64000, 0, 1, "ArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "ARC_FURNACE", null).getStackForm(1L));
+        ItemList.Machine_ZPM_ArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(657, "basicmachine.arcfurnace.tier.07", "Advanced Arc Furnace VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 64000, 0, 1, "ArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "ARC_FURNACE", null).getStackForm(1L));
+        ItemList.Machine_UV_ArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(658, "basicmachine.arcfurnace.tier.08", "Advanced Arc Furnace VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 4, 64000, 0, 1, "ArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "ARC_FURNACE", null).getStackForm(1L));
 
         ItemList.Machine_LV_PlasmaArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(661, "basicmachine.plasmaarcfurnace.tier.01", "Basic Plasma Arc Furnace", 1, "", GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 1000, 0, 1, "PlasmaArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "PLASMA_ARC_FURNACE", new Object[]{"WGW", aTextCableHull, "TPT", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.BETTER_CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4, 'T', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'G', OrePrefixes.cell.get(Materials.Graphite)}).getStackForm(1L));
         ItemList.Machine_MV_PlasmaArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(662, "basicmachine.plasmaarcfurnace.tier.02", "Advanced Plasma Arc Furnace", 2, "", GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 2000, 0, 1, "PlasmaArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "PLASMA_ARC_FURNACE", new Object[]{"WGW", aTextCableHull, "TPT", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.BETTER_CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4, 'T', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'G', OrePrefixes.cell.get(Materials.Graphite)}).getStackForm(1L));
         ItemList.Machine_HV_PlasmaArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(663, "basicmachine.plasmaarcfurnace.tier.03", "Advanced Plasma Arc Furnace II", 3, "", GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 4000, 0, 1, "PlasmaArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "PLASMA_ARC_FURNACE", new Object[]{"WGW", aTextCableHull, "TPT", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.BETTER_CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4, 'T', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'G', OrePrefixes.cell.get(Materials.Graphite)}).getStackForm(1L));
         ItemList.Machine_EV_PlasmaArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(664, "basicmachine.plasmaarcfurnace.tier.04", "Advanced Plasma Arc Furnace III", 4, "", GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 8000, 0, 1, "PlasmaArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "PLASMA_ARC_FURNACE", new Object[]{"WGW", aTextCableHull, "TPT", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.BETTER_CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4, 'T', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'G', OrePrefixes.cell.get(Materials.Graphite)}).getStackForm(1L));
         ItemList.Machine_IV_PlasmaArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(665, "basicmachine.plasmaarcfurnace.tier.05", "Advanced Plasma Arc Furnace IV", 5, "", GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 16000, 0, 1, "PlasmaArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "PLASMA_ARC_FURNACE", new Object[]{"WGW", aTextCableHull, "TPT", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'P', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PLATE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.BETTER_CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE4, 'T', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.PUMP, 'G', OrePrefixes.cell.get(Materials.Graphite)}).getStackForm(1L));
-        ItemList.Machine_LuV_PlasmaArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(666, "basicmachine.plasmaarcfurnace.tier.06", "Advanced Plasma Arc Furnace V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 16000, 0, 1, "PlasmaArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "PLASMA_ARC_FURNACE", null).getStackForm(1L));
-        ItemList.Machine_ZPM_PlasmaArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(667, "basicmachine.plasmaarcfurnace.tier.07", "Advanced Plasma Arc Furnace VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 24000, 0, 1, "PlasmaArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "PLASMA_ARC_FURNACE", null).getStackForm(1L));
-        ItemList.Machine_UV_PlasmaArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(668, "basicmachine.plasmaarcfurnace.tier.08", "Advanced Plasma Arc Furnace VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 32000, 0, 1, "PlasmaArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "PLASMA_ARC_FURNACE", null).getStackForm(1L));
+        ItemList.Machine_LuV_PlasmaArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(666, "basicmachine.plasmaarcfurnace.tier.06", "Advanced Plasma Arc Furnace V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 16000, 0, 1, "PlasmaArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "PLASMA_ARC_FURNACE", null).getStackForm(1L));
+        ItemList.Machine_ZPM_PlasmaArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(667, "basicmachine.plasmaarcfurnace.tier.07", "Advanced Plasma Arc Furnace VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 24000, 0, 1, "PlasmaArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "PLASMA_ARC_FURNACE", null).getStackForm(1L));
+        ItemList.Machine_UV_PlasmaArcFurnace.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(668, "basicmachine.plasmaarcfurnace.tier.08", "Advanced Plasma Arc Furnace VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 32000, 0, 1, "PlasmaArcFurnace.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(202)), aBoolConst_0, aBoolConst_0, 0, "PLASMA_ARC_FURNACE", null).getStackForm(1L));
 
         ItemList.Machine_LV_Oven.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(671, "basicmachine.e_oven.tier.01", "Basic Electric Oven", 1, "Just a Furnace with a different Design", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Oven.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_OVEN", new Object[]{"CEC", aTextCableHull, "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING}).getStackForm(1L));
         ItemList.Machine_MV_Oven.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(672, "basicmachine.e_oven.tier.02", "Advanced Electric Oven", 2, "Just a Furnace with a different Design", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Oven.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_OVEN", new Object[]{"CEC", aTextCableHull, "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING}).getStackForm(1L));
         ItemList.Machine_HV_Oven.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(673, "basicmachine.e_oven.tier.03", "Advanced Electric Oven II", 3, "Just a Furnace with a different Design", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Oven.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_OVEN", new Object[]{"CEC", aTextCableHull, "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING}).getStackForm(1L));
         ItemList.Machine_EV_Oven.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(674, "basicmachine.e_oven.tier.04", "Advanced Electric Oven III", 4, "Just a Furnace with a different Design", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Oven.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_OVEN", new Object[]{"CEC", aTextCableHull, "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING}).getStackForm(1L));
         ItemList.Machine_IV_Oven.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(675, "basicmachine.e_oven.tier.05", "Advanced Electric Oven IV", 5, "Just a Furnace with a different Design", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Oven.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_OVEN", new Object[]{"CEC", aTextCableHull, "WEW", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.COIL_HEATING}).getStackForm(1L));
-        ItemList.Machine_LuV_Oven.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(676, "basicmachine.e_oven.tier.06", "Advanced Electric Oven V", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Oven.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_OVEN", null).getStackForm(1L));
-        ItemList.Machine_ZPM_Oven.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(677, "basicmachine.e_oven.tier.07", "Advanced Electric Oven VI", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Oven.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_OVEN", null).getStackForm(1L));
-        ItemList.Machine_UV_Oven.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(678, "basicmachine.e_oven.tier.08", "Advanced Electric Oven VII", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Oven.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_OVEN", null).getStackForm(1L));
+        ItemList.Machine_LuV_Oven.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(676, "basicmachine.e_oven.tier.06", "Advanced Electric Oven V", 6, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Oven.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_OVEN", null).getStackForm(1L));
+        ItemList.Machine_ZPM_Oven.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(677, "basicmachine.e_oven.tier.07", "Advanced Electric Oven VI", 7, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Oven.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_OVEN", null).getStackForm(1L));
+        ItemList.Machine_UV_Oven.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(678, "basicmachine.e_oven.tier.08", "Advanced Electric Oven VII", 8, EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Oven.png", (String) GregTech_API.sSoundList.get(Integer.valueOf(207)), aBoolConst_0, aBoolConst_0, 0, "ELECTRIC_OVEN", null).getStackForm(1L));
 
         ItemList.Machine_LV_Miner.set(new GT_MetaTileEntity_Miner(679, "basicmachine.miner.tier.01", "Basic Miner", 1).getStackForm(1L));
         ItemList.Machine_MV_Miner.set(new GT_MetaTileEntity_Miner(680, "basicmachine.miner.tier.02", "Good Miner", 2).getStackForm(1L));
@@ -1981,411 +1981,411 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 
       //Alloy Smelter
     	ItemList.AlloySmelterUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10763, "basicmachine.alloysmelter.tier.09", "Epic Alloy Integrator", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10763, "basicmachine.alloysmelter.tier.09", "Epic Alloy Integrator", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png",
 				GregTech_API.sSoundList.get(208), false, false, 0, "ALLOY_SMELTER",null).getStackForm(1L));
 
 		ItemList.AlloySmelterUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10764, "basicmachine.alloysmelter.tier.10", "Epic Alloy Integrator II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10764, "basicmachine.alloysmelter.tier.10", "Epic Alloy Integrator II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png",
 				GregTech_API.sSoundList.get(208), false, false, 0, "ALLOY_SMELTER",null).getStackForm(1L));
 
 		ItemList.AlloySmelterUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10765, "basicmachine.alloysmelter.tier.11", "Epic Alloy Integrator III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10765, "basicmachine.alloysmelter.tier.11", "Epic Alloy Integrator III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png",
 				GregTech_API.sSoundList.get(208), false, false, 0, "ALLOY_SMELTER",null).getStackForm(1L));
 
 		ItemList.AlloySmelterUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10767, "basicmachine.alloysmelter.tier.12", "Epic Alloy Integrator IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10767, "basicmachine.alloysmelter.tier.12", "Epic Alloy Integrator IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAlloySmelterRecipes, 2, 1, 0, 0, 1, "AlloySmelter.png",
 				GregTech_API.sSoundList.get(208), false, false, 0, "ALLOY_SMELTER",null).getStackForm(1L));
 		
 		//Amplifabricator
 		ItemList.AmplifabricatorUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10773, "basicmachine.amplifab.tier.09", "Epic Amplicreator", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10773, "basicmachine.amplifab.tier.09", "Epic Amplicreator", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "AMPLIFAB",null).getStackForm(1L));
 
 		ItemList.AmplifabricatorUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10774, "basicmachine.amplifab.tier.10", "Epic Amplicreator II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10774, "basicmachine.amplifab.tier.10", "Epic Amplicreator II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "AMPLIFAB",null).getStackForm(1L));
 
 		ItemList.AmplifabricatorUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10775, "basicmachine.amplifab.tier.11", "Epic Amplicreator III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10775, "basicmachine.amplifab.tier.11", "Epic Amplicreator III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "AMPLIFAB",null).getStackForm(1L));
 
 		ItemList.AmplifabricatorUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10776, "basicmachine.amplifab.tier.12", "Epic Amplicreator IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10776, "basicmachine.amplifab.tier.12", "Epic Amplicreator IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAmplifiers, 1, 1, 1000, 0, 1, "Amplifabricator.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "AMPLIFAB",null).getStackForm(1L));
 		
 		//AssemblingMachine
 		ItemList.AssemblingMachineUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10783, "basicmachine.assembler.tier.09", "Epic Assembly Constructor", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10783, "basicmachine.assembler.tier.09", "Epic Assembly Constructor", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 72000, 0, 1, "Assembler2.png",
 				"", false, false, 0, "ASSEMBLER",null).getStackForm(1L));
 
 		ItemList.AssemblingMachineUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10784, "basicmachine.assembler.tier.10", "Epic Assembly Constructor II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10784, "basicmachine.assembler.tier.10", "Epic Assembly Constructor II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 96000, 0, 1, "Assembler2.png",
 				"", false, false, 0, "ASSEMBLER",null).getStackForm(1L));
 
 		ItemList.AssemblingMachineUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10785, "basicmachine.assembler.tier.11", "Epic Assembly Constructor III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10785, "basicmachine.assembler.tier.11", "Epic Assembly Constructor III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 128000, 0, 1, "Assembler2.png",
 				"", false, false, 0, "ASSEMBLER",null).getStackForm(1L));
 
 		ItemList.AssemblingMachineUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10786, "basicmachine.assembler.tier.12", "Epic Assembly Constructor IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10786, "basicmachine.assembler.tier.12", "Epic Assembly Constructor IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAssemblerRecipes, 9, 1, 128000, 0, 1, "Assembler2.png",
 				"", false, false, 0, "ASSEMBLER",null).getStackForm(1L));
 		
 		//Autoclave
 		ItemList.AutoclaveUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10793, "basicmachine.autoclave.tier.09", "Epic Pressure Cooker", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10793, "basicmachine.autoclave.tier.09", "Epic Pressure Cooker", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png",
 				"", false, false, 0, "AUTOCLAVE",null).getStackForm(1L));
 
 		ItemList.AutoclaveUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10794, "basicmachine.autoclave.tier.10", "Epic Pressure Cooker II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10794, "basicmachine.autoclave.tier.10", "Epic Pressure Cooker II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png",
 				"", false, false, 0, "AUTOCLAVE",null).getStackForm(1L));
 
 		ItemList.AutoclaveUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10795, "basicmachine.autoclave.tier.11", "Epic Pressure Cooker III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10795, "basicmachine.autoclave.tier.11", "Epic Pressure Cooker III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png",
 				"", false, false, 0, "AUTOCLAVE",null).getStackForm(1L));
 
 		ItemList.AutoclaveUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10796, "basicmachine.autoclave.tier.12", "Epic Pressure Cooker IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10796, "basicmachine.autoclave.tier.12", "Epic Pressure Cooker IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sAutoclaveRecipes, 1, 1, 8000, 0, 1, "Autoclave.png",
 				"", false, false, 0, "AUTOCLAVE",null).getStackForm(1L));
 		
 		
 		//Bender
 		ItemList.BendingMachineUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10803, "basicmachine.bender.tier.09", "Epic Bending Unit", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10803, "basicmachine.bender.tier.09", "Epic Bending Unit", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "BENDER",null).getStackForm(1L));
 
 		ItemList.BendingMachineUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10804, "basicmachine.bender.tier.10", "Epic Bending Unit II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10804, "basicmachine.bender.tier.10", "Epic Bending Unit II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "BENDER",null).getStackForm(1L));
 
 		ItemList.BendingMachineUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10805, "basicmachine.bender.tier.11", "Epic Bending Unit III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10805, "basicmachine.bender.tier.11", "Epic Bending Unit III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "BENDER",null).getStackForm(1L));
 
 		ItemList.BendingMachineUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10806, "basicmachine.bender.tier.12", "Epic Bending Unit IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10806, "basicmachine.bender.tier.12", "Epic Bending Unit IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sBenderRecipes, 2, 1, 0, 0, 1, "Bender.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "BENDER",null).getStackForm(1L));
 		
 		
 		//Compressor
 		ItemList.CompressorUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10813, "basicmachine.compressor.tier.09", "Epic Matter Constrictor", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10813, "basicmachine.compressor.tier.09", "Epic Matter Constrictor", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "COMPRESSOR",null).getStackForm(1L));
 
 		ItemList.CompressorUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10814, "basicmachine.compressor.tier.10", "Epic Matter Constrictor II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10814, "basicmachine.compressor.tier.10", "Epic Matter Constrictor II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "COMPRESSOR",null).getStackForm(1L));
 
 		ItemList.CompressorUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10815, "basicmachine.compressor.tier.11", "Epic Matter Constrictor III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10815, "basicmachine.compressor.tier.11", "Epic Matter Constrictor III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "COMPRESSOR",null).getStackForm(1L));
 
 		ItemList.CompressorUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10816, "basicmachine.compressor.tier.12", "Epic Matter Constrictor IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10816, "basicmachine.compressor.tier.12", "Epic Matter Constrictor IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCompressorRecipes, 1, 1, 0, 0, 1, "Compressor.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "COMPRESSOR",null).getStackForm(1L));
 		
 		
 		//CuttingMaching
 		ItemList.CuttingMachineUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10823, "basicmachine.cutter.tier.09", "Epic Object Divider", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10823, "basicmachine.cutter.tier.09", "Epic Object Divider", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png",
 				"", false, false, 0, "CUTTER",null).getStackForm(1L));
 
 		ItemList.CuttingMachineUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10824, "basicmachine.cutter.tier.10", "Epic Object Divider II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10824, "basicmachine.cutter.tier.10", "Epic Object Divider II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png",
 				"", false, false, 0, "CUTTER",null).getStackForm(1L));
 
 		ItemList.CuttingMachineUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10825, "basicmachine.cutter.tier.11", "Epic Object Divider III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10825, "basicmachine.cutter.tier.11", "Epic Object Divider III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png",
 				"", false, false, 0, "CUTTER",null).getStackForm(1L));
 
 		ItemList.CuttingMachineUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10826, "basicmachine.cutter.tier.12", "Epic Object Divider IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10826, "basicmachine.cutter.tier.12", "Epic Object Divider IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCutterRecipes, 2, 2, 1000, 0, 1, "Cutter2.png",
 				"", false, false, 0, "CUTTER",null).getStackForm(1L));
 		
 		
 		//Distillery
 		ItemList.DistilleryUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10833, "basicmachine.distillery.tier.09", "Epic Fraction Splitter", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10833, "basicmachine.distillery.tier.09", "Epic Fraction Splitter", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "DISTILLERY",null).getStackForm(1L));
 
 		ItemList.DistilleryUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10834, "basicmachine.distillery.tier.10", "Epic Fraction Splitter II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10834, "basicmachine.distillery.tier.10", "Epic Fraction Splitter II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "DISTILLERY",null).getStackForm(1L));
 
 		ItemList.DistilleryUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10835, "basicmachine.distillery.tier.11", "Epic Fraction Splitter III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10835, "basicmachine.distillery.tier.11", "Epic Fraction Splitter III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "DISTILLERY",null).getStackForm(1L));
 
 		ItemList.DistilleryUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10836, "basicmachine.distillery.tier.12", "Epic Fraction Splitter IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10836, "basicmachine.distillery.tier.12", "Epic Fraction Splitter IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sDistilleryRecipes, 1, 1, 1000, 0, 1, "Distillery.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "DISTILLERY",null).getStackForm(1L));
 		
 		
 		//EFurnace
 		ItemList.ElectricFurnaceUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10843, "basicmachine.e_furnace.tier.09", "Epic Atom Stimulator", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10843, "basicmachine.e_furnace.tier.09", "Epic Atom Stimulator", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png",
 				GregTech_API.sSoundList.get(207), false, false, 0, "ELECTRIC_FURNACE",null).getStackForm(1L));
 
 		ItemList.ElectricFurnaceUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10844, "basicmachine.e_furnace.tier.10", "Epic Atom Stimulator II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10844, "basicmachine.e_furnace.tier.10", "Epic Atom Stimulator II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png",
 				GregTech_API.sSoundList.get(207), false, false, 0, "ELECTRIC_FURNACE",null).getStackForm(1L));
 
 		ItemList.ElectricFurnaceUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10845, "basicmachine.e_furnace.tier.11", "Epic Atom Stimulator III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10845, "basicmachine.e_furnace.tier.11", "Epic Atom Stimulator III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png",
 				GregTech_API.sSoundList.get(207), false, false, 0, "ELECTRIC_FURNACE",null).getStackForm(1L));
 
 		ItemList.ElectricFurnaceUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10846, "basicmachine.e_furnace.tier.12", "Epic Atom Stimulator IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10846, "basicmachine.e_furnace.tier.12", "Epic Atom Stimulator IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sFurnaceRecipes, 1, 1, 0, 0, 1, "E_Furnace.png",
 				GregTech_API.sSoundList.get(207), false, false, 0, "ELECTRIC_FURNACE",null).getStackForm(1L));
 		
 		
 		//Electrolyzer
 		ItemList.ElectrolyzerUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10853, "basicmachine.electrolyzer.tier.09", "Epic Ionizer", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10853, "basicmachine.electrolyzer.tier.09", "Epic Ionizer", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png",
 				"", false, false, 0, "ELECTROLYZER",new Object[]{"IGI", "IMI", "CWC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', OrePrefixes.wireGt01.get(Materials.Osmium), 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
 
 		ItemList.ElectrolyzerUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10854, "basicmachine.electrolyzer.tier.10", "Epic Ionizer II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10854, "basicmachine.electrolyzer.tier.10", "Epic Ionizer II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png",
 				"", false, false, 0, "ELECTROLYZER",new Object[]{"IGI", "IMI", "CWC", 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'I', OrePrefixes.wireGt01.get(Materials.Osmium), 'G', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.GLASS}).getStackForm(1L));
 
 		ItemList.ElectrolyzerUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10855, "basicmachine.electrolyzer.tier.11", "Epic Ionizer III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10855, "basicmachine.electrolyzer.tier.11", "Epic Ionizer III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png",
 				"", false, false, 0, "ELECTROLYZER",null).getStackForm(1L));
 
 		ItemList.ElectrolyzerUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10856, "basicmachine.electrolyzer.tier.12", "Epic Ionizer IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10856, "basicmachine.electrolyzer.tier.12", "Epic Ionizer IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sElectrolyzerRecipes, 2, 6, 64000, 0, 1, "Electrolyzer.png",
 				"", false, false, 0, "ELECTROLYZER",null).getStackForm(1L));
 		
 		
 		//ElectromagneticSeparator
 		ItemList.ElectromagneticSeparatorUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10863, "basicmachine.electromagneticseparator.tier.09", "Epic Magnetar Separator", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10863, "basicmachine.electromagneticseparator.tier.09", "Epic Magnetar Separator", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "ELECTROMAGNETIC_SEPARATOR",null).getStackForm(1L));
 
 		ItemList.ElectromagneticSeparatorUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10864, "basicmachine.electromagneticseparator.tier.10", "Epic Magnetar Separator II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10864, "basicmachine.electromagneticseparator.tier.10", "Epic Magnetar Separator II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "ELECTROMAGNETIC_SEPARATOR",null).getStackForm(1L));
 
 		ItemList.ElectromagneticSeparatorUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10865, "basicmachine.electromagneticseparator.tier.11", "Epic Magnetar Separator III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10865, "basicmachine.electromagneticseparator.tier.11", "Epic Magnetar Separator III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "ELECTROMAGNETIC_SEPARATOR",null).getStackForm(1L));
 
 		ItemList.ElectromagneticSeparatorUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10866, "basicmachine.electromagneticseparator.tier.12", "Epic Magnetar Separator IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10866, "basicmachine.electromagneticseparator.tier.12", "Epic Magnetar Separator IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sElectroMagneticSeparatorRecipes, 1, 3, 0, 0, 1, "ElectromagneticSeparator.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "ELECTROMAGNETIC_SEPARATOR",null).getStackForm(1L));
 		
 		
 		//Extractor
 		ItemList.ExtractorUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10873, "basicmachine.extractor.tier.09", "Epic Extractinator", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10873, "basicmachine.extractor.tier.09", "Epic Extractinator", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "EXTRACTOR",null).getStackForm(1L));
 
 		ItemList.ExtractorUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10874, "basicmachine.extractor.tier.10", "Epic Extractinator II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10874, "basicmachine.extractor.tier.10", "Epic Extractinator II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "EXTRACTOR",null).getStackForm(1L));
 
 		ItemList.ExtractorUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10875, "basicmachine.extractor.tier.11", "Epic Extractinator III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10875, "basicmachine.extractor.tier.11", "Epic Extractinator III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "EXTRACTOR",null).getStackForm(1L));
 
 		ItemList.ExtractorUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10876, "basicmachine.extractor.tier.12", "Epic Extractinator IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10876, "basicmachine.extractor.tier.12", "Epic Extractinator IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sExtractorRecipes, 1, 1, 0, 0, 1, "Extractor.png",
 				GregTech_API.sSoundList.get(200), false, false, 0, "EXTRACTOR",null).getStackForm(1L));
 		
 		
 		//Extruder
 		ItemList.ExtruderUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10883, "basicmachine.extruder.tier.09", "Epic Shape Driver", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10883, "basicmachine.extruder.tier.09", "Epic Shape Driver", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png",
 				GregTech_API.sSoundList.get(208), false, false, 0, "EXTRUDER",null).getStackForm(1L));
 
 		ItemList.ExtruderUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10884, "basicmachine.extruder.tier.10", "Epic Shape Driver II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10884, "basicmachine.extruder.tier.10", "Epic Shape Driver II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png",
 				GregTech_API.sSoundList.get(208), false, false, 0, "EXTRUDER",null).getStackForm(1L));
 
 		ItemList.ExtruderUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10885, "basicmachine.extruder.tier.11", "Epic Shape Driver III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10885, "basicmachine.extruder.tier.11", "Epic Shape Driver III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png",
 				GregTech_API.sSoundList.get(208), false, false, 0, "EXTRUDER",null).getStackForm(1L));
 
 		ItemList.ExtruderUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10886, "basicmachine.extruder.tier.12", "Epic Shape Driver IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10886, "basicmachine.extruder.tier.12", "Epic Shape Driver IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sExtruderRecipes, 2, 1, 0, 0, 1, "Extruder.png",
 				GregTech_API.sSoundList.get(208), false, false, 0, "EXTRUDER",null).getStackForm(1L));
 		
 		
 		//FluidSolidifier
 		ItemList.FluidSolidifierUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10893, "basicmachine.fluidsolidifier.tier.09", "Epic Fluid Petrificator", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10893, "basicmachine.fluidsolidifier.tier.09", "Epic Fluid Petrificator", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png",
 				"", false, false, 0, "FLUID_SOLIDIFIER",null).getStackForm(1L));
 
 		ItemList.FluidSolidifierUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10894, "basicmachine.fluidsolidifier.tier.10", "Epic Fluid Petrificator II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10894, "basicmachine.fluidsolidifier.tier.10", "Epic Fluid Petrificator II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png",
 				"", false, false, 0, "FLUID_SOLIDIFIER",null).getStackForm(1L));
 
 		ItemList.FluidSolidifierUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10895, "basicmachine.fluidsolidifier.tier.11", "Epic Fluid Petrificator III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10895, "basicmachine.fluidsolidifier.tier.11", "Epic Fluid Petrificator III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png",
 				"", false, false, 0, "FLUID_SOLIDIFIER",null).getStackForm(1L));
 
 		ItemList.FluidSolidifierUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10896, "basicmachine.fluidsolidifier.tier.12", "Epic Fluid Petrificator IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10896, "basicmachine.fluidsolidifier.tier.12", "Epic Fluid Petrificator IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sFluidSolidficationRecipes, 1, 1, 16000, 0, 1, "FluidSolidifier.png",
 				"", false, false, 0, "FLUID_SOLIDIFIER",null).getStackForm(1L));
 		
 		
 		//FormingPress
 		ItemList.FormingPressUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10903, "basicmachine.press.tier.09", "Epic Surface Shifter", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10903, "basicmachine.press.tier.09", "Epic Surface Shifter", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "PRESS",null).getStackForm(1L));
 
 		ItemList.FormingPressUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10904, "basicmachine.press.tier.10", "Epic Surface Shifter II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10904, "basicmachine.press.tier.10", "Epic Surface Shifter II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "PRESS",null).getStackForm(1L));
 
 		ItemList.FormingPressUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10905, "basicmachine.press.tier.11", "Epic Surface Shifter III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10905, "basicmachine.press.tier.11", "Epic Surface Shifter III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "PRESS",null).getStackForm(1L));
 
 		ItemList.FormingPressUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10906, "basicmachine.press.tier.12", "Epic Surface Shifter IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10906, "basicmachine.press.tier.12", "Epic Surface Shifter IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPressRecipes, 2, 1, 0, 0, 1, "Press.png",
 				GregTech_API.sSoundList.get(203), false, false, 0, "PRESS",null).getStackForm(1L));
 		
 		
 		//ForgeHammer
 		ItemList.ForgeHammerUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10913, "basicmachine.hammer.tier.09", "Epic Impact Modulator", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10913, "basicmachine.hammer.tier.09", "Epic Impact Modulator", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png",
 				GregTech_API.sSoundList.get(1), false, false, 0, "HAMMER",null).getStackForm(1L));
 
 		ItemList.ForgeHammerUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10914, "basicmachine.hammer.tier.10", "Epic Impact Modulator II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10914, "basicmachine.hammer.tier.10", "Epic Impact Modulator II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png",
 				GregTech_API.sSoundList.get(1), false, false, 0, "HAMMER",null).getStackForm(1L));
 
 		ItemList.ForgeHammerUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10915, "basicmachine.hammer.tier.11", "Epic Impact Modulator III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10915, "basicmachine.hammer.tier.11", "Epic Impact Modulator III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png",
 				GregTech_API.sSoundList.get(1), false, false, 0, "HAMMER",null).getStackForm(1L));
 
 		ItemList.ForgeHammerUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10916, "basicmachine.hammer.tier.12", "Epic Impact Modulator IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10916, "basicmachine.hammer.tier.12", "Epic Impact Modulator IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sHammerRecipes, 1, 1, 0, 6, 3, "Hammer.png",
 				GregTech_API.sSoundList.get(1), false, false, 0, "HAMMER",null).getStackForm(1L));
 		
 		
 		//Lathe
 		ItemList.LatheUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10923, "basicmachine.lathe.tier.09", "Epic Turn-O-Matic", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10923, "basicmachine.lathe.tier.09", "Epic Turn-O-Matic", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", false, false, 0, "LATHE",null).getStackForm(1L));
 
 		ItemList.LatheUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10924, "basicmachine.lathe.tier.10", "Epic Turn-O-Matic II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10924, "basicmachine.lathe.tier.10", "Epic Turn-O-Matic II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", false, false, 0, "LATHE",null).getStackForm(1L));
 
 		ItemList.LatheUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10925, "basicmachine.lathe.tier.11", "Epic Turn-O-Matic III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10925, "basicmachine.lathe.tier.11", "Epic Turn-O-Matic III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", false, false, 0, "LATHE",null).getStackForm(1L));
 
 		ItemList.LatheUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10926, "basicmachine.lathe.tier.12", "Epic Turn-O-Matic IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10926, "basicmachine.lathe.tier.12", "Epic Turn-O-Matic IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sLatheRecipes, 1, 2, 0, 0, 1, "Lathe.png", "", false, false, 0, "LATHE",null).getStackForm(1L));
 		
 		
 		//PrecisionLaserEngraver
 		ItemList.PrecisionLaserEngraverUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10933, "basicmachine.laserengraver.tier.09", "Epic Exact Photon Cannon", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10933, "basicmachine.laserengraver.tier.09", "Epic Exact Photon Cannon", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "LASER_ENGRAVER",null).getStackForm(1L));
 
 		ItemList.PrecisionLaserEngraverUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10934, "basicmachine.laserengraver.tier.10", "Epic Exact Photon Cannon II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10934, "basicmachine.laserengraver.tier.10", "Epic Exact Photon Cannon II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "LASER_ENGRAVER",null).getStackForm(1L));
 
 		ItemList.PrecisionLaserEngraverUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10935, "basicmachine.laserengraver.tier.11", "Epic Exact Photon Cannon III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10935, "basicmachine.laserengraver.tier.11", "Epic Exact Photon Cannon III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "LASER_ENGRAVER",null).getStackForm(1L));
 
 		ItemList.PrecisionLaserEngraverUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10936, "basicmachine.laserengraver.tier.12", "Epic Exact Photon Cannon IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10936, "basicmachine.laserengraver.tier.12", "Epic Exact Photon Cannon IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sLaserEngraverRecipes, 2, 1, 0, 0, 1, "LaserEngraver.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "LASER_ENGRAVER",null).getStackForm(1L));
 		
 		
 		//Macerator
 		ItemList.MaceratorUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10943, "basicmachine.macerator.tier.09", "Epic Shape Eliminator", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10943, "basicmachine.macerator.tier.09", "Epic Shape Eliminator", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 4, 0, 0, 1, "Macerator4.png",
 				GregTech_API.sSoundList.get(201), false, false, 1, "PULVERIZER",null).getStackForm(1L));
 
 		ItemList.MaceratorUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10944, "basicmachine.macerator.tier.10", "Epic Shape Eliminator II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10944, "basicmachine.macerator.tier.10", "Epic Shape Eliminator II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 4, 0, 0, 1, "Macerator4.png",
 				GregTech_API.sSoundList.get(201), false, false, 1, "PULVERIZER",null).getStackForm(1L));
 
 		ItemList.MaceratorUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10945, "basicmachine.macerator.tier.11", "Epic Shape Eliminator III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10945, "basicmachine.macerator.tier.11", "Epic Shape Eliminator III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 4, 0, 0, 1, "Macerator4.png",
 				GregTech_API.sSoundList.get(201), false, false, 1, "PULVERIZER",null).getStackForm(1L));
 
 		ItemList.MaceratorUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10946, "basicmachine.macerator.tier.12", "Epic Shape Eliminator IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10946, "basicmachine.macerator.tier.12", "Epic Shape Eliminator IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sMaceratorRecipes, 1, 4, 0, 0, 1, "Macerator4.png",
 				GregTech_API.sSoundList.get(201), false, false, 1, "PULVERIZER",null).getStackForm(1L));
 		
@@ -2402,88 +2402,88 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		
 		//Microwave
 		ItemList.MicrowaveUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10963, "basicmachine.microwave.tier.09", "Epic UFO Engine", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10963, "basicmachine.microwave.tier.09", "Epic UFO Engine", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png",
 				GregTech_API.sSoundList.get(207), false, false, 0, "MICROWAVE", null).getStackForm(1L));
 
 		ItemList.MicrowaveUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10964, "basicmachine.microwave.tier.10", "Epic UFO Engine II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10964, "basicmachine.microwave.tier.10", "Epic UFO Engine II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png",
 				GregTech_API.sSoundList.get(207), false, false, 0, "MICROWAVE", null).getStackForm(1L));
 
 		ItemList.MicrowaveUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10965, "basicmachine.microwave.tier.11", "Epic UFO Engine III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10965, "basicmachine.microwave.tier.11", "Epic UFO Engine III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png",
 				GregTech_API.sSoundList.get(207), false, false, 0, "MICROWAVE", null).getStackForm(1L));
 
 		ItemList.MicrowaveUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10966, "basicmachine.microwave.tier.12", "Epic UFO Engine IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10966, "basicmachine.microwave.tier.12", "Epic UFO Engine IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sMicrowaveRecipes, 1, 1, 0, 0, 1, "E_Furnace.png",
 				GregTech_API.sSoundList.get(207), false, false, 0, "MICROWAVE", null).getStackForm(1L));
 		
 		
 		//OreWasher
 		ItemList.OreWashingPlantUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10973, "basicmachine.orewasher.tier.09", "Epic Ore Washing Machine", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10973, "basicmachine.orewasher.tier.09", "Epic Ore Washing Machine", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png",
 				"", false, false, 0, "ORE_WASHER",null).getStackForm(1L));
 
 		ItemList.OreWashingPlantUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10974, "basicmachine.orewasher.tier.10", "Epic Ore Washing Machine II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10974, "basicmachine.orewasher.tier.10", "Epic Ore Washing Machine II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png",
 				"", false, false, 0, "ORE_WASHER",null).getStackForm(1L));
 
 		ItemList.OreWashingPlantUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10975, "basicmachine.orewasher.tier.11", "Epic Ore Washing Machine III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10975, "basicmachine.orewasher.tier.11", "Epic Ore Washing Machine III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png",
 				"", false, false, 0, "ORE_WASHER",null).getStackForm(1L));
 
 		ItemList.OreWashingPlantUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10976, "basicmachine.orewasher.tier.12", "Epic Ore Washing Machine IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10976, "basicmachine.orewasher.tier.12", "Epic Ore Washing Machine IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sOreWasherRecipes, 1, 3, 16000, 0, 1, "OreWasher.png",
 				"", false, false, 0, "ORE_WASHER",null).getStackForm(1L));
 		
 		
 		//Polarizer
 		ItemList.PolarizerUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10983, "basicmachine.polarizer.tier.09", "Epic Magnetism Inducer", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10983, "basicmachine.polarizer.tier.09", "Epic Magnetism Inducer", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "POLARIZER",null).getStackForm(1L));
 
 		ItemList.PolarizerUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10984, "basicmachine.polarizer.tier.10", "Epic Magnetism Inducer II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10984, "basicmachine.polarizer.tier.10", "Epic Magnetism Inducer II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "POLARIZER",null).getStackForm(1L));
 
 		ItemList.PolarizerUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10985, "basicmachine.polarizer.tier.11", "Epic Magnetism Inducer III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10985, "basicmachine.polarizer.tier.11", "Epic Magnetism Inducer III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "POLARIZER",null).getStackForm(1L));
 
 		ItemList.PolarizerUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10986, "basicmachine.polarizer.tier.12", "Epic Magnetism Inducer IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10986, "basicmachine.polarizer.tier.12", "Epic Magnetism Inducer IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPolarizerRecipes, 1, 1, 0, 0, 1, "Polarizer.png",
 				GregTech_API.sSoundList.get(212), false, false, 0, "POLARIZER",null).getStackForm(1L));
 		
 		
 		//Recycler
 		ItemList.RecyclerUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10993, "basicmachine.recycler.tier.09", "Epic Scrap-O-Matic", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10993, "basicmachine.recycler.tier.09", "Epic Scrap-O-Matic", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png",
 				GregTech_API.sSoundList.get(204), false, false, 0, "RECYCLER",null).getStackForm(1L));
 
 		ItemList.RecyclerUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10994, "basicmachine.recycler.tier.10", "Epic Scrap-O-Matic II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10994, "basicmachine.recycler.tier.10", "Epic Scrap-O-Matic II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png",
 				GregTech_API.sSoundList.get(204), false, false, 0, "RECYCLER",null).getStackForm(1L));
 
 		ItemList.RecyclerUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10995, "basicmachine.recycler.tier.11", "Epic Scrap-O-Matic III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10995, "basicmachine.recycler.tier.11", "Epic Scrap-O-Matic III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png",
 				GregTech_API.sSoundList.get(204), false, false, 0, "RECYCLER",null).getStackForm(1L));
 
 		ItemList.RecyclerUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				10996, "basicmachine.recycler.tier.12", "Epic Scrap-O-Matic IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				10996, "basicmachine.recycler.tier.12", "Epic Scrap-O-Matic IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sRecyclerRecipes, 1, 1, 0, 0, 1, "Recycler.png",
 				GregTech_API.sSoundList.get(204), false, false, 0, "RECYCLER",null).getStackForm(1L));
 		
@@ -2512,149 +2512,149 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		
 		//Sifter
 		ItemList.SiftingMachineUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11023, "basicmachine.sifter.tier.09", "Epic Pulsation Filter", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11023, "basicmachine.sifter.tier.09", "Epic Pulsation Filter", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", false, false, 0, "SIFTER",null).getStackForm(1L));
 
 		ItemList.SiftingMachineUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11024, "basicmachine.sifter.tier.10", "Epic Pulsation Filter II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11024, "basicmachine.sifter.tier.10", "Epic Pulsation Filter II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", false, false, 0, "SIFTER",null).getStackForm(1L));
 
 		ItemList.SiftingMachineUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11025, "basicmachine.sifter.tier.11", "Epic Pulsation Filter III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11025, "basicmachine.sifter.tier.11", "Epic Pulsation Filter III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", false, false, 0, "SIFTER",null).getStackForm(1L));
 
 		ItemList.SiftingMachineUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11026, "basicmachine.sifter.tier.12", "Epic Pulsation Filter IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11026, "basicmachine.sifter.tier.12", "Epic Pulsation Filter IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sSifterRecipes, 1, 9, 0, 2, 5, "Sifter.png", "", false, false, 0, "SIFTER",null).getStackForm(1L));
 		
 		
 		//SlicingMachine
 		ItemList.SlicingMachineUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11033, "basicmachine.slicer.tier.09", "Epic Quantum Slicer", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11033, "basicmachine.slicer.tier.09", "Epic Quantum Slicer", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", false, false, 0, "SLICER",null).getStackForm(1L));
 
 		ItemList.SlicingMachineUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11034, "basicmachine.slicer.tier.10", "Epic Quantum Slicer II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11034, "basicmachine.slicer.tier.10", "Epic Quantum Slicer II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", false, false, 0, "SLICER",null).getStackForm(1L));
 
 		ItemList.SlicingMachineUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11035, "basicmachine.slicer.tier.11", "Epic Quantum Slicer III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11035, "basicmachine.slicer.tier.11", "Epic Quantum Slicer III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", false, false, 0, "SLICER",null).getStackForm(1L));
 
 		ItemList.SlicingMachineUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11036, "basicmachine.slicer.tier.12", "Epic Quantum Slicer IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11036, "basicmachine.slicer.tier.12", "Epic Quantum Slicer IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sSlicerRecipes, 2, 1, 0, 0, 1, "Slicer.png", "", false, false, 0, "SLICER",null).getStackForm(1L));
 		
 		
 		//ThermalCentrifuge
 		ItemList.ThermalCentrifugeUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11043, "basicmachine.thermalcentrifuge.tier.09", "Epic Fire Cyclone", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11043, "basicmachine.thermalcentrifuge.tier.09", "Epic Fire Cyclone", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png",
 				"", false, false, 0, "THERMAL_CENTRIFUGE",null).getStackForm(1L));
 
 		ItemList.ThermalCentrifugeUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11044, "basicmachine.thermalcentrifuge.tier.10", "Epic Fire Cyclone II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11044, "basicmachine.thermalcentrifuge.tier.10", "Epic Fire Cyclone II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png",
 				"", false, false, 0, "THERMAL_CENTRIFUGE",null).getStackForm(1L));
 
 		ItemList.ThermalCentrifugeUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11045, "basicmachine.thermalcentrifuge.tier.11", "Epic Fire Cyclone III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11045, "basicmachine.thermalcentrifuge.tier.11", "Epic Fire Cyclone III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png",
 				"", false, false, 0, "THERMAL_CENTRIFUGE",null).getStackForm(1L));
 
 		ItemList.ThermalCentrifugeUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11046, "basicmachine.thermalcentrifuge.tier.12", "Epic Fire Cyclone IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11046, "basicmachine.thermalcentrifuge.tier.12", "Epic Fire Cyclone IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sThermalCentrifugeRecipes, 1, 3, 0, 0, 1, "ThermalCentrifuge.png",
 				"", false, false, 0, "THERMAL_CENTRIFUGE",null).getStackForm(1L));
 		
 		
 		//Wiremill
 		ItemList.WiremillUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11053, "basicmachine.wiremill.tier.09", "Epic Wire Transfigurator", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11053, "basicmachine.wiremill.tier.09", "Epic Wire Transfigurator", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png",
 				GregTech_API.sSoundList.get(204), false, false, 0, "WIREMILL",null).getStackForm(1L));
 
 		ItemList.WiremillUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11054, "basicmachine.wiremill.tier.10", "Epic Wire Transfigurator II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11054, "basicmachine.wiremill.tier.10", "Epic Wire Transfigurator II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png",
 				GregTech_API.sSoundList.get(204), false, false, 0, "WIREMILL",null).getStackForm(1L));
 
 		ItemList.WiremillUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11055, "basicmachine.wiremill.tier.11", "Epic Wire Transfigurator III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11055, "basicmachine.wiremill.tier.11", "Epic Wire Transfigurator III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png",
 				GregTech_API.sSoundList.get(204), false, false, 0, "WIREMILL",null).getStackForm(1L));
 
 		ItemList.WiremillUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11056, "basicmachine.wiremill.tier.12", "Epic Wire Transfigurator IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11056, "basicmachine.wiremill.tier.12", "Epic Wire Transfigurator IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sWiremillRecipes, 1, 1, 0, 0, 1, "Wiremill.png",
 				GregTech_API.sSoundList.get(204), false, false, 0, "WIREMILL",null).getStackForm(1L));
 		
 		
 		//ArcFurnace
 		ItemList.ArcFurnaceUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11073, "basicmachine.arcfurnace.tier.09", "Epic Short Circuit Heater", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11073, "basicmachine.arcfurnace.tier.09", "Epic Short Circuit Heater", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 1, 128000, 0, 1, "ArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "ARC_FURNACE",null).getStackForm(1L));
 
 		ItemList.ArcFurnaceUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11074, "basicmachine.arcfurnace.tier.10", "Epic Short Circuit Heater II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11074, "basicmachine.arcfurnace.tier.10", "Epic Short Circuit Heater II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 1, 128000, 0, 1, "ArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "ARC_FURNACE",null).getStackForm(1L));
 
 		ItemList.ArcFurnaceUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11075, "basicmachine.arcfurnace.tier.11", "Epic Short Circuit Heater III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11075, "basicmachine.arcfurnace.tier.11", "Epic Short Circuit Heater III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 1, 128000, 0, 1, "ArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "ARC_FURNACE",null).getStackForm(1L));
 
 		ItemList.ArcFurnaceUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11076, "basicmachine.arcfurnace.tier.12", "Epic Short Circuit Heater IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11076, "basicmachine.arcfurnace.tier.12", "Epic Short Circuit Heater IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sArcFurnaceRecipes, 1, 1, 128000, 0, 1, "ArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "ARC_FURNACE",null).getStackForm(1L));
 		
 		
 		//Centrifuge
 		ItemList.CentrifugeUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11083, "basicmachine.centrifuge.tier.09", "Epic Molecular Tornado", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11083, "basicmachine.centrifuge.tier.09", "Epic Molecular Tornado", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 128000, 0, 1, "Centrifuge.png",
 				"", false, false, 0, "CENTRIFUGE",null).getStackForm(1L));
 
 		ItemList.CentrifugeUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11084, "basicmachine.centrifuge.tier.10", "Epic Molecular Tornado II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11084, "basicmachine.centrifuge.tier.10", "Epic Molecular Tornado II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 256000, 0, 1, "Centrifuge.png",
 				"", false, false, 0, "CENTRIFUGE",null).getStackForm(1L));
 
 		ItemList.CentrifugeUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11085, "basicmachine.centrifuge.tier.11", "Epic Molecular Tornado III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11085, "basicmachine.centrifuge.tier.11", "Epic Molecular Tornado III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 512000, 0, 1, "Centrifuge.png",
 				"", false, false, 0, "CENTRIFUGE",null).getStackForm(1L));
 
 		ItemList.CentrifugeUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11086, "basicmachine.centrifuge.tier.12", "Epic Molecular Tornado IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11086, "basicmachine.centrifuge.tier.12", "Epic Molecular Tornado IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sCentrifugeRecipes, 2, 6, 1024000, 0, 1, "Centrifuge.png",
 				"", false, false, 0, "CENTRIFUGE",null).getStackForm(1L));
 		
 		
 		//PlasmaArcFurnace
 		ItemList.PlasmaArcFurnaceUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11093, "basicmachine.plasmaarcfurnace.tier.09", "Epic Plasma Discharge Heater", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11093, "basicmachine.plasmaarcfurnace.tier.09", "Epic Plasma Discharge Heater", 9, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 128000, 0, 1, "PlasmaArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "PLASMA_ARC_FURNACE",null).getStackForm(1L));
 
 
 		ItemList.PlasmaArcFurnaceUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11094, "basicmachine.plasmaarcfurnace.tier.10", "Epic Plasma Discharge Heater II",10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11094, "basicmachine.plasmaarcfurnace.tier.10", "Epic Plasma Discharge Heater II",10, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 128000, 0, 1, "PlasmaArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "PLASMA_ARC_FURNACE",null).getStackForm(1L));
 
 
 		ItemList.PlasmaArcFurnaceUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11095, "basicmachine.plasmaarcfurnace.tier.11", "Epic Plasma Discharge Heater III",11, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11095, "basicmachine.plasmaarcfurnace.tier.11", "Epic Plasma Discharge Heater III",11, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 128000, 0, 1, "PlasmaArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "PLASMA_ARC_FURNACE",null).getStackForm(1L));
 
 
 		ItemList.PlasmaArcFurnaceUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
-				11096, "basicmachine.plasmaarcfurnace.tier.12", "Epic Plasma Discharge Heater IV",12, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",
+				11096, "basicmachine.plasmaarcfurnace.tier.12", "Epic Plasma Discharge Heater IV",12, EnumChatFormatting.DARK_RED + "REMOVED",
 				GT_Recipe.GT_Recipe_Map.sPlasmaArcFurnaceRecipes, 1, 4, 128000, 0, 1, "PlasmaArcFurnace.png",
 				GregTech_API.sSoundList.get(202), false, false, 0, "PLASMA_ARC_FURNACE",null).getStackForm(1L));
 		
@@ -2677,37 +2677,37 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		//CanningMachine
 		ItemList.CanningMachineUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11133, "basicmachine.canner.tier.09", "Epic Can Operator", 9,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
 				2, 2, 0, 0, 1, "Canner.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CANNER", null).getStackForm(1L));
 
 		ItemList.CanningMachineUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11134, "basicmachine.canner.tier.10", "Epic Can Operator II",10,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
 				2, 2, 0, 0, 1, "Canner.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CANNER", null).getStackForm(1L));
 
 		ItemList.CanningMachineUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11135, "basicmachine.canner.tier.11", "Epic Can Operator III",11,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
 				2, 2, 0, 0, 1, "Canner.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CANNER", null).getStackForm(1L));
 
 		ItemList.CanningMachineUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11136, "basicmachine.canner.tier.12", "Epic Can Operator IV",12,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
 				2, 2, 0, 0, 1, "Canner.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CANNER", null).getStackForm(1L));
 		
 		ItemList.CanningMachineUXV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11137, "basicmachine.canner.tier.13", "Epic Can Operator V",13,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
 				2, 2, 0, 0, 1, "Canner.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CANNER", null).getStackForm(1L));
 		
 		ItemList.CanningMachineOPV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11138, "basicmachine.canner.tier.14", "Epic Can Operator VI",14,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCannerRecipes,
 				2, 2, 0, 0, 1, "Canner.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CANNER", null).getStackForm(1L));
 		
@@ -2715,37 +2715,37 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		//ChemicalBath
 		ItemList.ChemicalBathUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11143, "basicmachine.chemicalbath.tier.09", "Epic Chemical Dunktron", 9,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
 				1, 3, 8000, 0, 1, "ChemicalBath.png", "",
 				false, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
 
 		ItemList.ChemicalBathUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11144, "basicmachine.chemicalbath.tier.10", "Epic Chemical Dunktron II",10,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
 				1, 3, 8000, 0, 1, "ChemicalBath.png", "",
 				false, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
 
 		ItemList.ChemicalBathUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11145, "basicmachine.chemicalbath.tier.11", "Epic Chemical Dunktron III",11,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
 				1, 3, 8000, 0, 1, "ChemicalBath.png", "",
 				false, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
 
 		ItemList.ChemicalBathUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11146, "basicmachine.chemicalbath.tier.12", "Epic Chemical Dunktron IV",12,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
 				1, 3, 8000, 0, 1, "ChemicalBath.png", "",
 				false, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
 		
 		ItemList.ChemicalBathUXV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11147, "basicmachine.chemicalbath.tier.13", "Epic Chemical Dunktron V",13,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
 				1, 3, 8000, 0, 1, "ChemicalBath.png", "",
 				false, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
 		
 		ItemList.ChemicalBathOPV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11148, "basicmachine.chemicalbath.tier.14", "Epic Chemical Dunktron VI",14,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalBathRecipes,
 				1, 3, 8000, 0, 1, "ChemicalBath.png", "",
 				false, true, 0, "CHEMICAL_BATH", null).getStackForm(1L));
 		
@@ -2753,37 +2753,37 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		//ChemicalReactor
 		ItemList.ChemicalReactorUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11153, "basicmachine.chemicalreactor.tier.09", "Epic Chemical Performer", 9,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
 				2, 2, 16000, 0, 1, "ChemicalReactor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
 
 		ItemList.ChemicalReactorUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11154, "basicmachine.chemicalreactor.tier.10", "Epic Chemical Performer II",10,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
 				2, 2, 16000, 0, 1, "ChemicalReactor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
 
 		ItemList.ChemicalReactorUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11155, "basicmachine.chemicalreactor.tier.11", "Epic Chemical Performer III",11,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
 				2, 2, 16000, 0, 1, "ChemicalReactor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
 
 		ItemList.ChemicalReactorUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11156, "basicmachine.chemicalreactor.tier.12", "Epic Chemical Performer IV",12,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
 				2, 2, 16000, 0, 1, "ChemicalReactor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
 		
 		ItemList.ChemicalReactorUXV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11157, "basicmachine.chemicalreactor.tier.13", "Epic Chemical Performer V",13,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
 				2, 2, 16000, 0, 1, "ChemicalReactor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
 		
 		ItemList.ChemicalReactorOPV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11158, "basicmachine.chemicalreactor.tier.14", "Epic Chemical Performer VI",14,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sChemicalRecipes,
 				2, 2, 16000, 0, 1, "ChemicalReactor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "CHEMICAL_REACTOR", null).getStackForm(1L));
 		
@@ -2807,37 +2807,37 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		//Fermenter
 		ItemList.FermenterUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11173, "basicmachine.fermenter.tier.09", "Epic Fermentation Hastener", 9,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
 				1, 1, 2000, 0, 1, "Fermenter.png", "",
 				false, false, 0, "FERMENTER", null).getStackForm(1L));
 
 		ItemList.FermenterUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11174, "basicmachine.fermenter.tier.10", "Epic Fermentation Hastener II",10,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
 				1, 1, 2000, 0, 1, "Fermenter.png", "",
 				false, false, 0, "FERMENTER", null).getStackForm(1L));
 
 		ItemList.FermenterUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11175, "basicmachine.fermenter.tier.11", "Epic Fermentation Hastener III",11,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
 				1, 1, 4000, 0, 1, "Fermenter.png", "",
 				false, false, 0, "FERMENTER", null).getStackForm(1L));
 
 		ItemList.FermenterUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11176, "basicmachine.fermenter.tier.12", "Epic Fermentation Hastener IV",12,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
 				1, 1, 4000, 0, 1, "Fermenter.png", "",
 				false, false, 0, "FERMENTER", null).getStackForm(1L));
 		
 		ItemList.FermenterUXV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11177, "basicmachine.fermenter.tier.13", "Epic Fermentation Hastener V",13,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
 				1, 1, 8000, 0, 1, "Fermenter.png", "",
 				false, false, 0, "FERMENTER", null).getStackForm(1L));
 		
 		ItemList.FermenterOPV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11178, "basicmachine.fermenter.tier.14", "Epic Fermentation Hastener VI",14,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFermentingRecipes,
 				1, 1, 8000, 0, 1, "Fermenter.png", "",
 				false, false, 0, "FERMENTER", null).getStackForm(1L));
 		
@@ -2845,37 +2845,37 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		//FluidCanner
 		ItemList.FluidCannerUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11183, "basicmachine.fluidcanner.tier.09", "Epic Liquid Can Actuator", 9,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
 				1, 1, 144000, 0, 1, "FluidCanner.png", "",
 				true, false, 0, "FLUID_CANNER", null).getStackForm(1L));
 
 		ItemList.FluidCannerUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11184, "basicmachine.fluidcanner.tier.10", "Epic Liquid Can Actuator II",10,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
 				1, 1, 160000, 0, 1, "FluidCanner.png", "",
 				true, false, 0, "FLUID_CANNER", null).getStackForm(1L));
 
 		ItemList.FluidCannerUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11185, "basicmachine.fluidcanner.tier.11", "Epic Liquid Can Actuator III",11,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
 				1, 1, 176000, 0, 1, "FluidCanner.png", "",
 				true, false, 0, "FLUID_CANNER", null).getStackForm(1L));
 
 		ItemList.FluidCannerUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11186, "basicmachine.fluidcanner.tier.12", "Epic Liquid Can Actuator IV",12,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
 				1, 1, 192000, 0, 1, "FluidCanner.png", "",
 				true, false, 0, "FLUID_CANNER", null).getStackForm(1L));
 		
 		ItemList.FluidCannerUXV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11187, "basicmachine.fluidcanner.tier.13", "Epic Liquid Can Actuator V",13,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
 				1, 1, 192000, 0, 1, "FluidCanner.png", "",
 				true, false, 0, "FLUID_CANNER", null).getStackForm(1L));
 		
 		ItemList.FluidCannerOPV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11188, "basicmachine.fluidcanner.tier.14", "Epic Liquid Can Actuator VI",14,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidCannerRecipes,
 				1, 1, 192000, 0, 1, "FluidCanner.png", "",
 				true, false, 0, "FLUID_CANNER", null).getStackForm(1L));
 		
@@ -2883,37 +2883,37 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		//FluidExtractor
 		ItemList.FluidExtractorUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11193, "basicmachine.fluidextractor.tier.09", "Epic Liquefying Sucker", 9,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
 				1, 1, 16000, 0, 1, "FluidExtractor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
 
 		ItemList.FluidExtractorUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11194, "basicmachine.fluidextractor.tier.10", "Epic Liquefying Sucker II",10,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
 				1, 1, 16000, 0, 1, "FluidExtractor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
 
 		ItemList.FluidExtractorUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11195, "basicmachine.fluidextractor.tier.11", "Epic Liquefying Sucker III",11,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
 				1, 1, 16000, 0, 1, "FluidExtractor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
 
 		ItemList.FluidExtractorUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11196, "basicmachine.fluidextractor.tier.12", "Epic Liquefying Sucker IV",12,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
 				1, 1, 16000, 0, 1, "FluidExtractor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
 		
 		ItemList.FluidExtractorUXV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11197, "basicmachine.fluidextractor.tier.13", "Epic Liquefying Sucker V",13,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
 				1, 1, 16000, 0, 1, "FluidExtractor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
 		
 		ItemList.FluidExtractorOPV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11198, "basicmachine.fluidextractor.tier.14", "Epic Liquefying Sucker VI",14,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidExtractionRecipes,
 				1, 1, 16000, 0, 1, "FluidExtractor.png", GregTech_API.sSoundList.get(200),
 				false, false, 0, "FLUID_EXTRACTOR", null).getStackForm(1L));
 		
@@ -2921,37 +2921,37 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		//FluidHeater
 		ItemList.FluidHeaterUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11203, "basicmachine.fluidheater.tier.09", "Epic Heat Infuser", 9,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
 				1, 0, 8000, 0, 1, "FluidHeater.png", "",
 				false, false, 0, "FLUID_HEATER", null).getStackForm(1L));
 
 		ItemList.FluidHeaterUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11204, "basicmachine.fluidheater.tier.10", "Epic Heat Infuser II",10,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
 				1, 0, 8000, 0, 1, "FluidHeater.png", "",
 				false, false, 0, "FLUID_HEATER", null).getStackForm(1L));
 
 		ItemList.FluidHeaterUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11205, "basicmachine.fluidheater.tier.11", "Epic Heat Infuser III",11,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
 				1, 0, 8000, 0, 1, "FluidHeater.png", "",
 				false, false, 0, "FLUID_HEATER", null).getStackForm(1L));
 
 		ItemList.FluidHeaterUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11206, "basicmachine.fluidheater.tier.12", "Epic Heat Infuser IV",12,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
 				1, 0, 8000, 0, 1, "FluidHeater.png", "",
 				false, false, 0, "FLUID_HEATER", null).getStackForm(1L));
 		
 		ItemList.FluidHeaterUXV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11207, "basicmachine.fluidheater.tier.13", "Epic Heat Infuser V",13,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
 				1, 0, 8000, 0, 1, "FluidHeater.png", "",
 				false, false, 0, "FLUID_HEATER", null).getStackForm(1L));
 		
 		ItemList.FluidHeaterOPV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11208, "basicmachine.fluidheater.tier.14", "Epic Heat Infuser VI",14,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sFluidHeaterRecipes,
 				1, 0, 8000, 0, 1, "FluidHeater.png", "",
 				false, false, 0, "FLUID_HEATER", null).getStackForm(1L));
 		
@@ -2959,74 +2959,74 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		//Mixer
 		ItemList.MixerUHV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11213, "basicmachine.mixer.tier.09", "Epic Matter Organizer", 9,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
 				6, 1, 72000, 0, 1, "Mixer.png", "",
 				false, false, 0, "MIXER", null).getStackForm(1L));
 
 		ItemList.MixerUEV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11214, "basicmachine.mixer.tier.10", "Epic Matter Organizer II",10,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
 				6, 1, 96000, 0, 1, "Mixer.png", "",
 				false, false, 0, "MIXER", null).getStackForm(1L));
 
 		ItemList.MixerUIV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11215, "basicmachine.mixer.tier.11", "Epic Matter Organizer III",11,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
 				6, 1, 128000, 0, 1, "Mixer.png", "",
 				false, false, 0, "MIXER", null).getStackForm(1L));
 
 		ItemList.MixerUMV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11216, "basicmachine.mixer.tier.12", "Epic Matter Organizer IV",12,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
 				6, 1, 128000, 0, 1, "Mixer.png", "",
 				false, false, 0, "MIXER", null).getStackForm(1L));
 		
 		ItemList.MixerUXV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11217, "basicmachine.mixer.tier.13", "Epic Matter Organizer V",13,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
 				6, 1, 128000, 0, 1, "Mixer.png", "",
 				false, false, 0, "MIXER", null).getStackForm(1L));
 		
 		ItemList.MixerOPV.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 				11218, "basicmachine.mixer.tier.14", "Epic Matter Organizer VI",14,
-				"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
+				EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sMixerRecipes,
 				6, 1, 128000, 0, 1, "Mixer.png", "",
 				false, false, 0, "MIXER", null).getStackForm(1L));
 		
 		//Circuit Assembler
 				ItemList.Machine_UHV_CircuitAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 						12080, "basicmachine.circuitassembler.tier.09", "Epic Circuit Assembling Machine", 9,
-						"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
+						EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
 						6, 1, 16000, 0, 1, "CircuitAssembler.png", "",
 						false, false, 0, "CIRCUITASSEMBLER", new Object[]{"ACE", "VMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'A', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.BETTER_CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER}).getStackForm(1L));
 				
 				ItemList.Machine_UEV_CircuitAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 						12081, "basicmachine.circuitassembler.tier.10", "Epic Circuit Assembling Machine II", 10,
-						"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
+						EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
 						6, 1, 16000, 0, 1, "CircuitAssembler.png", "",
 						false, false, 0, "CIRCUITASSEMBLER", new Object[]{"ACE", "VMV", aTextWireCoil, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'A', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.BETTER_CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'E', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.EMITTER}).getStackForm(1L));
 				
 				ItemList.Machine_UIV_CircuitAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 						12082, "basicmachine.circuitassembler.tier.11", "Epic Circuit Assembling Machine III", 11,
-						"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
+						EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
 						6, 1, 16000, 0, 1, "CircuitAssembler.png", "",
 						false, false, 0, "CIRCUITASSEMBLER", null).getStackForm(1L));
 				
 				ItemList.Machine_UMV_CircuitAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 						12083, "basicmachine.circuitassembler.tier.12", "Epic Circuit Assembling Machine IV", 12,
-						"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
+						EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
 						6, 1, 16000, 0, 1, "CircuitAssembler.png", "",
 						false, false, 0, "CIRCUITASSEMBLER", null).getStackForm(1L));
 				
 				ItemList.Machine_UXV_CircuitAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 						12084, "basicmachine.circuitassembler.tier.13", "Epic Circuit Assembling Machine V", 13,
-						"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
+						EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
 						6, 1, 16000, 0, 1, "CircuitAssembler.png", "",
 						false, false, 0, "CIRCUITASSEMBLER", null).getStackForm(1L));
 				
 				ItemList.Machine_OPV_CircuitAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(
 						12085, "basicmachine.circuitassembler.tier.14", "Epic Circuit Assembling Machine VI", 14,
-						"ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
+						EnumChatFormatting.DARK_RED + "REMOVED", GT_Recipe.GT_Recipe_Map.sCircuitAssemblerRecipes,
 						6, 1, 16000, 0, 1, "CircuitAssembler.png", "",
 						false, false, 0, "CIRCUITASSEMBLER", null).getStackForm(1L));
 
@@ -3821,11 +3821,11 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 									ItemList.Machine_HV_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12302, "basicmachine.wireassembler.tier.03", "Advanced Wire Assembling Machine II", 3, "Wires, Assemble!",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 24000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER",new Object[]{"ACV", "WHW", "MCM", 'H', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'A', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR}).getStackForm(1L));
 									ItemList.Machine_EV_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12303, "basicmachine.wireassembler.tier.04", "Advanced Wire Assembling Machine III", 4, "Wires, Assemble!",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 24000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER",new Object[]{"ACV", "WHW", "MCM", 'H', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'A', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR}).getStackForm(1L));
 									ItemList.Machine_IV_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12304, "basicmachine.wireassembler.tier.05", "Advanced Wire Assembling Machine IV", 5, "Wires, Assemble!",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 32000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER",new Object[]{"ACV", "WHW", "MCM", 'H', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.HULL, 'V', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CONVEYOR, 'A', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.ROBOT_ARM, 'C', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.CIRCUIT, 'W', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.WIRE, 'M', GT_MetaTileEntity_BasicMachine_GT_Recipe.X.MOTOR}).getStackForm(1L));
-									ItemList.Machine_LuV_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12305, "basicmachine.wireassembler.tier.06", "Extreme Wire Assembling Machine", 6, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 32000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER", null).getStackForm(1L));
-									ItemList.Machine_ZPM_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12306, "basicmachine.wireassembler.tier.07", "Extreme Wire Assembling Machine II", 7, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 48000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER", null).getStackForm(1L));
-									ItemList.Machine_UV_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12307, "basicmachine.wireassembler.tier.08", "Extreme Wire Assembling Machine III", 8, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 48000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER",null).getStackForm(1L));
-									ItemList.Machine_UHV_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12308, "basicmachine.wireassembler.tier.09", "Epic Wire Constractor", 9, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 64000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER", null).getStackForm(1L));
-									ItemList.Machine_UEV_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12309, "basicmachine.wireassembler.tier.10", "Epic Wire Constractor II", 10, "ALL MACHINES AFTER IV TIER WILL BE REMOVED!!!",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 64000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER", null).getStackForm(1L));
+									ItemList.Machine_LuV_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12305, "basicmachine.wireassembler.tier.06", "Extreme Wire Assembling Machine", 6, EnumChatFormatting.DARK_RED + "REMOVED",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 32000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER", null).getStackForm(1L));
+									ItemList.Machine_ZPM_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12306, "basicmachine.wireassembler.tier.07", "Extreme Wire Assembling Machine II", 7, EnumChatFormatting.DARK_RED + "REMOVED",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 48000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER", null).getStackForm(1L));
+									ItemList.Machine_UV_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12307, "basicmachine.wireassembler.tier.08", "Extreme Wire Assembling Machine III", 8, EnumChatFormatting.DARK_RED + "REMOVED",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 48000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER",null).getStackForm(1L));
+									ItemList.Machine_UHV_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12308, "basicmachine.wireassembler.tier.09", "Epic Wire Constractor", 9, EnumChatFormatting.DARK_RED + "REMOVED",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 64000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER", null).getStackForm(1L));
+									ItemList.Machine_UEV_WireAssembler.set(new GT_MetaTileEntity_BasicMachine_GT_Recipe(12309, "basicmachine.wireassembler.tier.10", "Epic Wire Constractor II", 10, EnumChatFormatting.DARK_RED + "REMOVED",GT_Recipe.GT_Recipe_Map.sWireAssemblerRecipes, 6, 1, 64000, 0, 1, "Assembler.png",GregTech_API.sSoundList.get(204), aBoolConst_0, aBoolConst_0, 0, "WIREASSEMBLER", null).getStackForm(1L));
 
     }
 
