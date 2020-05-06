@@ -147,8 +147,12 @@ public class GT_Values {
     public static boolean D1 = false, D2 = false;
     /**
      * Debug parameter for cleanroom testing.
-     */     
+     */
     public static boolean debugCleanroom = false;
+    /**
+     * Debug parameter for Recipes testing.
+     */
+    public static boolean debugRecipes = false;
     /**
      * Debug parameter for driller testing.
      */     

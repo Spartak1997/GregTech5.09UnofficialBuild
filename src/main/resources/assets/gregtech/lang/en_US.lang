@@ -809,3 +809,5 @@ for.bees.species.infinity=Infinity
 
 for.mutation.condition.biomeid=Required Biome
 for.mutation.condition.dim=Required Dimension
+
+item.debug_item.name=Error Item

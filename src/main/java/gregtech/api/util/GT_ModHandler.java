@@ -11,6 +11,7 @@ import gregtech.api.interfaces.internal.IGT_CraftingRecipe;
 import gregtech.api.objects.GT_HashSet;
 import gregtech.api.objects.GT_ItemStack;
 import gregtech.api.objects.ItemData;
+import gregtech.common.items.ItemDebug;
 import ic2.api.item.IBoxable;
 import ic2.api.item.IC2Items;
 import ic2.api.item.IElectricItem;
@@ -360,7 +361,14 @@ public class GT_ModHandler {
      */
     public static ItemStack getModItem(String aModID, String aItem, long aAmount, int aMeta) {
         ItemStack rStack = getModItem(aModID, aItem, aAmount);
-        if (rStack == null) return null;
+        if (rStack == null) {
+            if (debugRecipes) {
+                System.err.println("[IMPACT] Failed to find item = Mod Name: " + aModID + " Item Name: " + aItem + " Meta: " + aMeta);
+                return new ItemStack(ItemDebug.getInstance(), 1);
+            }
+            return null;
+        }
+
         Items.feather.setDamage(rStack, aMeta);
         return rStack;
     }
@@ -370,8 +378,14 @@ public class GT_ModHandler {
      */
     public static ItemStack getModItem(String aModID, String aItem, long aAmount, int aMeta, ItemStack aReplacement) {
         ItemStack rStack = getModItem(aModID, aItem, aAmount, aReplacement);
-        if (rStack == null) return null;
-        Items.feather.setDamage(rStack, aMeta);
+        if (rStack == null) {
+            if (debugRecipes) {
+                System.err.println("[IMPACT] Failed to find item = Mod Name: " + aModID + " Item Name: " + aItem + " Meta: " + aMeta + " | its Replacement");
+                return new ItemStack(ItemDebug.getInstance(), 1);
+            }
+            return null;
+        }
+            Items.feather.setDamage(rStack, aMeta);
         return rStack;
     }
 
