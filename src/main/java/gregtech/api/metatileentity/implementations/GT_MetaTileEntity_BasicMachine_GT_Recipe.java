@@ -109,22 +109,22 @@ public class GT_MetaTileEntity_BasicMachine_GT_Recipe extends GT_MetaTileEntity_
                                 aRecipe[i] = OrePrefixes.plate.get(Materials.Aluminium);
                                 break;
                             case 3:
-                                aRecipe[i] = OrePrefixes.plate.get(Materials.StainlessSteel);
+                                aRecipe[i] = OrePrefixes.plate.get(Materials.HSLA);
                                 break;
                             case 4:
                                 aRecipe[i] = OrePrefixes.plate.get(Materials.Titanium);
                                 break;
                             case 5:
-                                aRecipe[i] = OrePrefixes.plate.get(Materials.TungstenSteel);
+                                aRecipe[i] = OrePrefixes.plate.get(Materials.HastelloyC276);
                                 break;
                             case 6:
-                                aRecipe[i] = OrePrefixes.plate.get(Materials.HSSG);
+                                aRecipe[i] = OrePrefixes.plate.get(Materials.HastelloyN);
                                 break;
                             case 7:
-                                aRecipe[i] = OrePrefixes.plate.get(Materials.HSSE);
+                                aRecipe[i] = OrePrefixes.plate.get(Materials.Lafium);
                                 break;
                             case 8:
-                                aRecipe[i] = OrePrefixes.plate.get(Materials.Europium);
+                                aRecipe[i] = OrePrefixes.plate.get(Materials.CinobiteA243);
                                 break;
                             case 9:
                                 aRecipe[i] = OrePrefixes.plate.get(Materials.Neutronium);
@@ -152,10 +152,10 @@ public class GT_MetaTileEntity_BasicMachine_GT_Recipe extends GT_MetaTileEntity_
                             aRecipe[i] = OrePrefixes.pipeMedium.get(Materials.Titanium);
                             break;
                         case 5:
-                            aRecipe[i] = OrePrefixes.pipeMedium.get(Materials.TungstenSteel);
+                            aRecipe[i] = OrePrefixes.pipeMedium.get(Materials.MaragingSteel300);
                             break;
                         case 6:
-                            aRecipe[i] = OrePrefixes.pipeMedium.get(Materials.NiobiumTitanium);
+                            aRecipe[i] = OrePrefixes.pipeMedium.get(Materials.Inconel792);
                             break;
                         case 7:
                             aRecipe[i] = OrePrefixes.pipeMedium.get(Materials.Enderium);
@@ -495,16 +495,16 @@ public class GT_MetaTileEntity_BasicMachine_GT_Recipe extends GT_MetaTileEntity_
                                 aRecipe[i] = OrePrefixes.rotor.get(Materials.StainlessSteel);
                                 break;
                             case 5:
-                                aRecipe[i] = OrePrefixes.rotor.get(Materials.TungstenSteel);
+                                aRecipe[i] = OrePrefixes.rotor.get(Materials.HastelloyC276);
                                 break;
                             case 6:
-                                aRecipe[i] = OrePrefixes.rotor.get(Materials.Chrome);
+                                aRecipe[i] = OrePrefixes.rotor.get(Materials.HastelloyN);
                                 break;
                             case 7:
-                                aRecipe[i] = OrePrefixes.rotor.get(Materials.Iridium);
+                                aRecipe[i] = OrePrefixes.rotor.get(Materials.Lafium);
                                 break;
                             case 8:
-                                aRecipe[i] = OrePrefixes.rotor.get(Materials.Osmium);
+                                aRecipe[i] = OrePrefixes.rotor.get(Materials.CinobiteA243);
                                 break;
                             case 9:
                                 aRecipe[i] = OrePrefixes.rotor.get(Materials.NaquadahAlloy);
