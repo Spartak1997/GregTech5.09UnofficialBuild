@@ -1,55 +1,68 @@
 package gregtech.common.tools;
 
-import gregtech.GT_Mod;
 import gregtech.api.enums.Textures;
 import gregtech.api.interfaces.IIconContainer;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
 
 public class GT_Tool_Drill_IV
-        extends GT_Tool_Drill_LV {
-    public int getToolDamagePerBlockBreak() {
-        return GT_Mod.gregtechproxy.mHardRock ? 6400 : 25600;
-    }
+        extends GT_Tool_Drill_RangeBase {
 
-    public int getToolDamagePerDropConversion() {
+    @Override
+    int setToolDamagePerBlockBreak() {
         return 25600;
     }
 
-    public int getToolDamagePerContainerCraft() {
+    @Override
+    int setToolDamagePerDropConversion() {
+        return 25600;
+    }
+
+    @Override
+    int setToolDamagePerContainerCraft() {
         return 204800;
     }
 
-    public int getToolDamagePerEntityAttack() {
+    @Override
+    int setToolDamagePerEntityAttack() {
         return 51200;
     }
 
-    public int getBaseQuality() {
+    @Override
+    int setBaseQuality() {
         return 1;
     }
 
-    public float getBaseDamage() {
+    @Override
+    float setBaseDamage() {
         return 4.0F;
     }
 
-    public float getSpeedMultiplier() {
+    @Override
+    float setSpeedMultiplier() {
         return 15.0F;
     }
 
-    public float getMaxDurabilityMultiplier() {
+    @Override
+    float setMaxDurabilityMultiplier() {
         return 16.0F;
     }
 
-    public void onToolCrafted(ItemStack aStack, EntityPlayer aPlayer) {
-        super.onToolCrafted(aStack, aPlayer);
-        try {
-            GT_Mod.instance.achievements.issueAchievement(aPlayer, "highpowerdrill");
-            GT_Mod.instance.achievements.issueAchievement(aPlayer, "buildDDrill");
-        } catch (Exception e) {
-        }
+    @Override
+    IIconContainer setIcon() {
+        return Textures.ItemIcons.POWER_UNIT_IV;
     }
 
-    public IIconContainer getIcon(boolean aIsToolHead, ItemStack aStack) {
-        return aIsToolHead ? gregtech.api.items.GT_MetaGenerated_Tool.getPrimaryMaterial(aStack).mIconSet.mTextures[gregtech.api.enums.OrePrefixes.toolHeadDrill.mTextureIndex] : Textures.ItemIcons.POWER_UNIT_IV;
+    @Override
+    byte RangeWidthandDepth() {
+        return 4; //9x9x9 (-4..4)
+    }
+
+    @Override
+    byte RangeHeight() {
+        return 7; //9x9x9 (-1..7)
+    }
+
+    @Override
+    String setRange() {
+        return "9x9x9";
     }
 }
