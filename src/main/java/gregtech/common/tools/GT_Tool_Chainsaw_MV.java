@@ -4,6 +4,8 @@ import gregtech.api.enums.Textures;
 import gregtech.api.interfaces.IIconContainer;
 import net.minecraft.item.ItemStack;
 
+import static gregtech.api.util.GT_Utility.ItemNBT.getDrillRangeMode;
+
 public class GT_Tool_Chainsaw_MV
         extends GT_Tool_Chainsaw_LV {
     public int getToolDamagePerBlockBreak() {

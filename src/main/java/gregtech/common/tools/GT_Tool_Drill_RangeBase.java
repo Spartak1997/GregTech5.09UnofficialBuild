@@ -21,6 +21,8 @@ import net.minecraftforge.event.world.BlockEvent;
 
 import java.util.List;
 
+import static gregtech.api.util.GT_Utility.ItemNBT.getDrillRangeMode;
+
 abstract class GT_Tool_Drill_RangeBase
         extends GT_Tool {
 
@@ -143,10 +145,11 @@ abstract class GT_Tool_Drill_RangeBase
     }
 
     public void onStatsAddedToTool(GT_MetaGenerated_Tool aItem, int aID) {
-        aItem.addItemBehavior(aID, new Behaviour_Drill(setRange()));
+        aItem.addItemBehavior(aID, new Behaviour_Drill(setRange(), setTier()));
     }
 
     abstract String setRange();
+    abstract int setTier();
 
     public void onToolCrafted(ItemStack aStack, EntityPlayer aPlayer) {
         super.onToolCrafted(aStack, aPlayer);
@@ -165,13 +168,23 @@ abstract class GT_Tool_Drill_RangeBase
 
     public int convertBlockDrops(List<ItemStack> aDrops, ItemStack aStack, EntityPlayer aPlayer, Block aBlock, int aX, int aY, int aZ, byte aMetaData, int aFortune, boolean aSilkTouch, BlockEvent.HarvestDropsEvent aEvent) {
         int rConversions = 0;
+
+        int mode = getDrillRangeMode(aStack);
+
+        int WD = mode == 1? 1: mode == 2? 2: mode == 3? 3: mode == 4? 4: 0;
+        int H = mode == 1? 1: mode == 2? 3: mode == 3? 5: mode == 4? 7: 0;
+
+        //int debugWD = RangeWidthandDepth();
+        //int debugH = RangeHeight();
+
         MovingObjectPosition raycast = raytraceFromEntity(aPlayer.worldObj, aPlayer, true, 10);
         if (raycast != null) {
             if ((this.sIsHarvestingRightNow.get() == null) && ((aPlayer instanceof EntityPlayerMP))) {
                 this.sIsHarvestingRightNow.set(this);
-                for (int i = -RangeWidthandDepth(); i <= RangeWidthandDepth(); i++) {
-                    for (int j = -1; j <= RangeHeight(); j++) {
-                        for (int k = -RangeWidthandDepth(); k <= RangeWidthandDepth(); k++) {
+
+                for (int i = -WD; i <= WD ; i++) {
+                    for (int j = mode == 0? 0 : -1; j <= H; j++) {
+                        for (int k = -WD; k <= WD; k++) {
 
                             if (aEvent.world.getBlock(aX + i, aY + j, aZ + k) == Blocks.bedrock) {
                             } else {
@@ -190,6 +203,5 @@ abstract class GT_Tool_Drill_RangeBase
         }
         return rConversions;
     }
-
 
 }

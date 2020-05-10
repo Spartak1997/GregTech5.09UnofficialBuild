@@ -66,4 +66,8 @@ public class GT_Tool_Drill_MV
         return "3x3x3";
     }
 
+    @Override
+    int setTier(){
+        return 1;
+    }
 }

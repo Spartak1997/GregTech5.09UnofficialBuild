@@ -2033,6 +2033,17 @@ public class GT_Utility {
             return rNBT == null ? new NBTTagCompound() : rNBT;
         }
 
+        public static void setDrillRangeMode(ItemStack aStack, int aMode) {
+            NBTTagCompound tNBT = getNBT(aStack);
+            tNBT.setInteger("GT.DrillRangeMode", aMode);
+            setNBT(aStack, tNBT);
+        }
+
+        public static int getDrillRangeMode(ItemStack aStack) {
+            NBTTagCompound tNBT = getNBT(aStack);
+            return tNBT.getInteger("GT.DrillRangeMode");
+        }
+
         public static void setPunchCardData(ItemStack aStack, String aPunchCardData) {
             NBTTagCompound tNBT = getNBT(aStack);
             tNBT.setString("GT.PunchCardData", aPunchCardData);

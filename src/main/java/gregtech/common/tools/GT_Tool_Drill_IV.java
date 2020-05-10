@@ -65,4 +65,9 @@ public class GT_Tool_Drill_IV
     String setRange() {
         return "9x9x9";
     }
+
+    @Override
+    int setTier(){
+        return 4;
+    }
 }
