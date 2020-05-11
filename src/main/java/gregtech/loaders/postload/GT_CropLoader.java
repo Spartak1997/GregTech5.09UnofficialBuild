@@ -8,6 +8,7 @@ import gregtech.api.util.GT_Log;
 import gregtech.api.util.GT_OreDictUnificator;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class GT_CropLoader
@@ -380,6 +381,12 @@ public class GT_CropLoader
                     "Yellow",
                     "Oil"
             }, ItemList.Crop_Drop_Rape.get(1), null);
+
+            new GT_BaseCrop(179, "Cotton", "4gname", null, 1, 1, 0, 1, 2, 1, 1, 0, 1, 0, new String[] {
+                    "String",
+                    "Ingredient"
+            }, new ItemStack(Items.string, 2), null);
+
         } catch (Throwable e) {
             GT_Log.err.println("GT_Mod: Failed to register Crops to IC2.");
             e.printStackTrace(GT_Log.err);
