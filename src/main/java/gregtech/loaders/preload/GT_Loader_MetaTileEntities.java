@@ -1540,10 +1540,6 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         //Tiny Wormhole
         ItemList.Machine_MultiblockTinyWormHole.set(new GT_MetaTileEntity_TinyWormHole(12197, "multimachine.tinywormhole", "Tiny Wormhole").getStackForm(1L));
 
-		//Super Cooling Freezer
-        ItemList.Machine_MultiblockSuperCoolingFreezer.set(new GT_MetaTileEntity_SuperCoolingFreezer(12199, "multimachine.supercoolingfreezer", "Super Cooling Freezer").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_MultiblockSuperCoolingFreezer.get(1L, new Object[0]), bitsd, new Object[]{"PPP", "CMC", "SWS", 'P', ItemList.Electric_Pump_ZPM, 'S', OrePrefixes.circuit.get(Materials.Ultimate), 'W', OrePrefixes.wireGt04.get(Materials.Naquadah), 'M', ItemList.Hull_ZPM, 'C', ItemList.Reactor_Coolant_Le_3});
-
         //Tree Farm
         //ItemList.Machine_MultiblockTreeFarm.set(new GT_MetaTileEntity_TreeFarm(12198, "multimachine.treefarm", "Tree Farm").getStackForm(1));
 

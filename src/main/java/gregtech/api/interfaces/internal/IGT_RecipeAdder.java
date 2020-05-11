@@ -740,17 +740,6 @@ public interface IGT_RecipeAdder {
 
     public boolean addSpaceResearch7Recipe(ItemStack aInput1, ItemStack aInput2, ItemStack aInput3, ItemStack aInput4, ItemStack aInput5, ItemStack aInput6, FluidStack aFluidInput, FluidStack aFluidOutput, ItemStack aOutput, int aDuration, int aEUt, boolean aPlanetTier7);
 
-
-    /**
-     * Adds a Super Cooling Freezer Recipe
-     *
-     * @param aInput1   must be != null
-     * @param aOutput1  must be != null
-     * @param aFluidInput  must be != null
-     * @param aDuration must be > 0
-     */
-    public boolean addSuperCoolingFreezerRecipe(ItemStack aInput1, ItemStack aOutput1, FluidStack aFluidInput, FluidStack aFluidOutput, int aDuration, int aEUt);
-
     /**
      * Adds a Distillation Tower Recipe
      * Every Fluid also gets separate distillation recipes
