@@ -382,9 +382,8 @@ public class GT_CropLoader
                     "Oil"
             }, ItemList.Crop_Drop_Rape.get(1), null);
 
-            new GT_BaseCrop(179, "Cotton", "4gname", null, 1, 1, 0, 1, 2, 1, 1, 0, 1, 0, new String[] {
+            new GT_BaseCrop(179, "Cotton", "4gname", null, 1, 1, 50, 1, 2, 1, 1, 0, 1, 0, new String[] {
                     "String",
-                    "Ingredient"
             }, new ItemStack(Items.string, 2), null);
 
         } catch (Throwable e) {
