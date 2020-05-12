@@ -1148,9 +1148,7 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         ItemList.Machine_Multi_Furnace.set(new GT_MetaTileEntity_MultiFurnace(1003, "multimachine.multifurnace", "Multi Smelter").getStackForm(1L));
 
         GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_BlastFurnace.get(1L, new Object[0]), bitsd, new Object[]{"FFF", aTextCableHull, aTextWireCoil, 'M', ItemList.Casing_HeatProof, 'F', ItemList.Machine_LV_Oven, 'C', OrePrefixes.circuit.get(Materials.Basic), 'W', OrePrefixes.cableGt01.get(Materials.Tin)});
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_VacuumFreezer.get(1L, new Object[0]), bitsd, new Object[]{aTextPlate, aTextCableHull, aTextWireCoil, 'M', ItemList.Casing_FrostProof, 'P', ItemList.Electric_Pump_HV, 'C', OrePrefixes.circuit.get(Materials.Data), 'W', OrePrefixes.cableGt01.get(Materials.Gold)});
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_ImplosionCompressor.get(1L, new Object[0]), bitsd, new Object[]{"OOO", aTextCableHull, aTextWireCoil, 'M', ItemList.Casing_SolidSteel, 'O', Ic2Items.reinforcedStone, 'C', OrePrefixes.circuit.get(Materials.Advanced), 'W', OrePrefixes.cableGt01.get(Materials.Gold)});
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_Furnace.get(1L, new Object[0]), bitsd, new Object[]{"FFF", aTextCableHull, aTextWireCoil, 'M', ItemList.Casing_HeatProof, 'F', ItemList.Machine_LV_Oven, 'C', OrePrefixes.circuit.get(Materials.Advanced), 'W', OrePrefixes.cableGt01.get(Materials.AnnealedCopper)});
+        GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_Furnace.get(1L, new Object[0]), bitsd, new Object[]{"FFF", aTextCableHull, aTextWireCoil, 'M', ItemList.Casing_HeatProof, 'F', ItemList.Machine_MV_Oven, 'C', OrePrefixes.circuit.get(Materials.Good), 'W', OrePrefixes.cableGt01.get(Materials.AnnealedCopper)});
 
         ItemList.Machine_Multi_LargeBoiler_Bronze.set(new GT_MetaTileEntity_LargeBoiler_Bronze(1020, "multimachine.boiler.bronze", "Large Bronze Boiler").getStackForm(1L));
         ItemList.Machine_Multi_LargeBoiler_Steel.set(new GT_MetaTileEntity_LargeBoiler_Steel(1021, "multimachine.boiler.steel", "Large Steel Boiler").getStackForm(1L));
@@ -1159,8 +1157,6 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 
         GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_LargeBoiler_Bronze.get(1L, new Object[0]), bitsd, new Object[]{aTextWireCoil, aTextCableHull, aTextWireCoil, 'M', ItemList.Casing_Firebox_Bronze, 'C', OrePrefixes.circuit.get(Materials.Basic), 'W', OrePrefixes.cableGt01.get(Materials.Tin)});
         GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_LargeBoiler_Steel.get(1L, new Object[0]), bitsd, new Object[]{aTextWireCoil, aTextCableHull, aTextWireCoil, 'M', ItemList.Casing_Firebox_Steel, 'C', OrePrefixes.circuit.get(Materials.Advanced), 'W', OrePrefixes.cableGt01.get(Materials.Copper)});
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_LargeBoiler_Titanium.get(1L, new Object[0]), bitsd, new Object[]{aTextWireCoil, aTextCableHull, aTextWireCoil, 'M', ItemList.Casing_Firebox_Titanium, 'C', OrePrefixes.circuit.get(Materials.Data), 'W', OrePrefixes.cableGt01.get(Materials.Gold)});
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_LargeBoiler_TungstenSteel.get(1L, new Object[0]), bitsd, new Object[]{aTextWireCoil, aTextCableHull, aTextWireCoil, 'M', ItemList.Casing_Firebox_TungstenSteel, 'C', OrePrefixes.circuit.get(Materials.Elite), 'W', OrePrefixes.cableGt01.get(Materials.Aluminium)});
 
         ItemList.Machine_LV_OrganicReplicator.set(new GT_MetaTileEntity_OrganicReplicator(701,"basicmachine.organicreplicator.tier.01","Basic Organic Replicator",1).getStackForm(1L));
         ItemList.Machine_MV_OrganicReplicator.set(new GT_MetaTileEntity_OrganicReplicator(702,"basicmachine.organicreplicator.tier.02","Advanced Organic Replicator",2).getStackForm(1L));
@@ -1275,18 +1271,11 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         GT_ModHandler.addCraftingRecipe(ItemList.Processing_Array_T3.get(1L, new Object[0]), bitsd, new Object[]{"CTC", "FMF", "CBC", 'M', ItemList.Processing_Array_T2, 'B', OrePrefixes.pipeLarge.get(Materials.NiobiumTitanium), 'C', OrePrefixes.circuit.get(Materials.Infinite), 'F', ItemList.Robot_Arm_UV, 'T', ItemList.Energy_Module});
 
         ItemList.Distillation_Tower.set(new GT_MetaTileEntity_DistillationTower(1126, "multimachine.distillationtower", "Distillation Tower").getStackForm(1L));
-        GT_ModHandler.addCraftingRecipe(ItemList.Distillation_Tower.get(1L, new Object[0]), bitsd, new Object[]{"CBC", "FMF", "CBC", 'M', ItemList.Hull_EV, 'B', OrePrefixes.pipeLarge.get(Materials.StainlessSteel), 'C', OrePrefixes.circuit.get(Materials.Data), 'F', ItemList.Electric_Pump_EV});
 
         ItemList.LargeSteamTurbine.set(new GT_MetaTileEntity_LargeTurbine_Steam(1131, "multimachine.largeturbine", "Large Steam Turbine").getStackForm(1L));
         ItemList.LargeGasTurbine.set(new GT_MetaTileEntity_LargeTurbine_Gas(1151, "multimachine.largegasturbine", "Large Gas Turbine").getStackForm(1L));
         ItemList.LargeHPSteamTurbine.set(new GT_MetaTileEntity_LargeTurbine_HPSteam(1152, "multimachine.largehpturbine", "Large HP Steam Turbine").getStackForm(1L));
         ItemList.LargePlasmaTurbine.set(new GT_MetaTileEntity_LargeTurbine_Plasma(1153, "multimachine.largeplasmaturbine", "Large Plasma Generator").getStackForm(1L));
-
-        GT_ModHandler.addCraftingRecipe(ItemList.LargeSteamTurbine.get(1L, new Object[0]), bitsd, new Object[]{"CPC", aTextPlateMotor, "BPB", 'M', ItemList.Hull_HV, 'B', OrePrefixes.pipeLarge.get(Materials.Steel), 'C', OrePrefixes.circuit.get(Materials.Advanced), 'P', OrePrefixes.gearGt.get(Materials.Steel)});
-        GT_ModHandler.addCraftingRecipe(ItemList.LargeGasTurbine.get(1L, new Object[0]), bitsd, new Object[]{"CPC", aTextPlateMotor, "BPB", 'M', ItemList.Hull_EV, 'B', OrePrefixes.pipeLarge.get(Materials.StainlessSteel), 'C', OrePrefixes.circuit.get(Materials.Data), 'P', OrePrefixes.gearGt.get(Materials.StainlessSteel)});
-        GT_ModHandler.addCraftingRecipe(ItemList.LargeHPSteamTurbine.get(1L), GT_ModHandler.RecipeBits.DISMANTLEABLE | GT_ModHandler.RecipeBits.NOT_REMOVABLE | GT_ModHandler.RecipeBits.REVERSIBLE | GT_ModHandler.RecipeBits.BUFFERED, new Object[]{"CPC", "PMP", "BPB", 'M', ItemList.Hull_IV, 'B', OrePrefixes.pipeLarge.get(Materials.Titanium), 'C', OrePrefixes.circuit.get(Materials.Elite), 'P', OrePrefixes.gearGt.get(Materials.Titanium)});
-        GT_ModHandler.addCraftingRecipe(ItemList.LargePlasmaTurbine.get(1L), GT_ModHandler.RecipeBits.DISMANTLEABLE | GT_ModHandler.RecipeBits.NOT_REMOVABLE | GT_ModHandler.RecipeBits.REVERSIBLE | GT_ModHandler.RecipeBits.BUFFERED, new Object[]{"CPC", "PMP", "BPB", 'M', ItemList.Hull_UV, 'B', OrePrefixes.pipeHuge.get(Materials.Naquadah), 'C',  OrePrefixes.circuit.get(Materials.Ultimate), 'P', OrePrefixes.gearGt.get(Materials.NaquadahAlloy)});
-
 
         ItemList.Pump_LV.set(new GT_MetaTileEntity_Pump(1140, "basicmachine.pump.tier.01", "Basic Pump", 1).getStackForm(1L));
         ItemList.Pump_MV.set(new GT_MetaTileEntity_Pump(1141, "basicmachine.pump.tier.02", "Advanced Pump", 2).getStackForm(1L));
@@ -1324,7 +1313,6 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         GT_ModHandler.addCraftingRecipe(ItemList.Machine_UV_WaterGenerator.get(1L, new Object[0]), bitsd, new Object[]{"CCC", "PMP", "WEW", 'M', ItemList.Hull_UV, 'E', OrePrefixes.circuit.get(Materials.Superconductor), 'P', ItemList.Pump_UV, 'C', Ic2Items.reinforcedGlass, 'W', OrePrefixes.plate.get(Materials.Tritanium)});
 
         ItemList.Teleporter.set(new GT_MetaTileEntity_Teleporter(1145, "basicmachine.teleporter", "Teleporter", 6).getStackForm(1L));
-        GT_ModHandler.addCraftingRecipe(ItemList.Teleporter.get(1L, new Object[0]), bitsd, new Object[]{"CPC", aTextPlateMotor, "BCB", 'M', ItemList.Hull_LuV, 'B', ItemList.Tool_DataOrb, 'C', OrePrefixes.circuit.get(Materials.Master), 'P', ItemList.Field_Generator_LuV});
 
         ItemList.MobRep_LV.set(new GT_MetaTileEntity_MonsterRepellent(1146, "basicmachine.mobrep.tier.01", "Basic Monster Repellator", 1).getStackForm(1L));
         ItemList.MobRep_MV.set(new GT_MetaTileEntity_MonsterRepellent(1147, "basicmachine.mobrep.tier.02", "Advanced Monster Repellator", 2).getStackForm(1L));
@@ -1345,8 +1333,6 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         GT_ModHandler.addCraftingRecipe(ItemList.MobRep_UV.get(1L, new Object[0]), bitsd, new Object[]{"EEE", " M ", "CCC", 'M', ItemList.Hull_UV, 'E', ItemList.Emitter_UV.get(1L, new Object[0]), 'C', OrePrefixes.circuit.get(Materials.Superconductor)});
 
         ItemList.Machine_Multi_HeatExchanger.set(new GT_MetaTileEntity_HeatExchanger(1154, "multimachine.heatexchanger", "Large Heat Exchanger").getStackForm(1L));
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_HeatExchanger.get(1L, new Object[0]), bitsd, new Object[]{aTextWireCoil, aTextCableHull, aTextWireCoil, 'M', ItemList.Casing_Pipe_Titanium, 'C', OrePrefixes.pipeMedium.get(Materials.Titanium), 'W', ItemList.Electric_Pump_EV});
-
 
         ItemList.Charcoal_Pile.set(new GT_MetaTileEntity_Charcoal_Pit(1155, "multimachine.charcoalpile", "Charcoal Pile Igniter").getStackForm(1));
         GT_ModHandler.addCraftingRecipe(ItemList.Charcoal_Pile.get(1L, new Object[0]), bitsd, new Object[]{"EME", "CCC", 'M', ItemList.Hull_Bronze_Bricks, 'E', OrePrefixes.nugget.get(Materials.WroughtIron), 'C', new ItemStack(Items.flint, 1)});
@@ -1371,9 +1357,6 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		ItemList.OilDrill1.set(new GT_MetaTileEntity_OilDrill1(1157, "multimachine.oildrill1", "Oil Drilling Rig").getStackForm(1));
         ItemList.OilDrill2.set(new GT_MetaTileEntity_OilDrill2(133, "multimachine.oildrill2", "Oil Drilling Rig II").getStackForm(1));
         ItemList.OilDrill3.set(new GT_MetaTileEntity_OilDrill3(134, "multimachine.oildrill3", "Oil Drilling Rig III").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.OilDrill1.get(1L, new Object[0]), bitsd, new Object[]{"WWW", "EME", "CCC", 'M', ItemList.Hull_MV, 'W', OrePrefixes.frameGt.get(Materials.Steel), 'E', OrePrefixes.circuit.get(Materials.Good), 'C', ItemList.Electric_Motor_MV});
-        GT_ModHandler.addCraftingRecipe(ItemList.OilDrill2.get(1L, new Object[0]), bitsd, new Object[]{"WWW", "EME", "CCC", 'M', ItemList.OilDrill1, 'W', OrePrefixes.frameGt.get(Materials.Titanium), 'E', OrePrefixes.circuit.get(Materials.Advanced), 'C', ItemList.Electric_Motor_HV});
-        GT_ModHandler.addCraftingRecipe(ItemList.OilDrill3.get(1L, new Object[0]), bitsd, new Object[]{"WWW", "EME", "CCC", 'M', ItemList.OilDrill2, 'W', OrePrefixes.frameGt.get(Materials.TungstenSteel), 'E', OrePrefixes.circuit.get(Materials.Data), 'C', ItemList.Electric_Motor_EV});
 
         ItemList.ConcreteBackfiller1.set(new GT_MetaTileEntity_ConcreteBackfiller1(135, "multimachine.concretebackfiller1", "Concrete Backfiller").getStackForm(1));
         ItemList.ConcreteBackfiller2.set(new GT_MetaTileEntity_ConcreteBackfiller2(136, "multimachine.concretebackfiller3", "Advanced Concrete Backfiller").getStackForm(1));
@@ -1381,26 +1364,20 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         GT_ModHandler.addCraftingRecipe(ItemList.ConcreteBackfiller2.get(1L, new Object[0]), bitsd, new Object[]{"WPW", "EME", "CQC", 'M', ItemList.ConcreteBackfiller1, 'W', OrePrefixes.frameGt.get(Materials.Titanium), 'E', OrePrefixes.circuit.get(Materials.Data), 'C', ItemList.Electric_Motor_EV, 'P', OrePrefixes.pipeLarge.get(Materials.Steel), 'Q', ItemList.Electric_Pump_EV});
 
         ItemList.OreDrill1.set(new GT_MetaTileEntity_OreDrillingPlant1(1158, "multimachine.oredrill1", "Ore Drilling Plant").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.OreDrill1.get(1L), bitsd, new Object[]{"WWW", "EME", "CCC", 'M', ItemList.Hull_EV, 'W', OrePrefixes.frameGt.get(Materials.Titanium), 'E', OrePrefixes.circuit.get(Materials.Data), 'C', ItemList.Electric_Motor_EV});
 
         ItemList.OreDrill2.set(new GT_MetaTileEntity_OreDrillingPlant2(1177, "multimachine.oredrill2", "Ore Drilling Plant II").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.OreDrill2.get(1L), bitsd, new Object[]{"WWW", "EME", "CCC", 'M', ItemList.OreDrill1, 'W', OrePrefixes.frameGt.get(Materials.TungstenSteel), 'E', OrePrefixes.circuit.get(Materials.Elite), 'C', ItemList.Electric_Motor_IV});
 
         ItemList.OreDrill3.set(new GT_MetaTileEntity_OreDrillingPlant3(1178, "multimachine.oredrill3", "Ore Drilling Plant III").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.OreDrill3.get(1L), bitsd, new Object[]{"WWW", "EME", "CCC", 'M', ItemList.OreDrill2, 'W', OrePrefixes.frameGt.get(Materials.Osmiridium), 'E', OrePrefixes.circuit.get(Materials.Master), 'C', ItemList.Electric_Motor_LuV});
 
         ItemList.OreDrill4.set(new GT_MetaTileEntity_OreDrillingPlant4(1179, "multimachine.oredrill4", "Ore Drilling Plant IV").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.OreDrill4.get(1L), bitsd, new Object[]{"WWW", "EME", "CCC", 'M', ItemList.OreDrill3, 'W', OrePrefixes.frameGt.get(Materials.Tritanium), 'E', OrePrefixes.circuit.get(Materials.Ultimate), 'C', ItemList.Electric_Motor_ZPM});
 
-	ItemList.OreDrill5.set(new GT_MetaTileEntity_OreDrillingPlant5(12190, "multimachine.oredrill5", "Ore Drilling Plant V").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.OreDrill5.get(1L), bitsd, new Object[]{"WWW", "EME", "CCC", 'M', ItemList.OreDrill4, 'W', OrePrefixes.frameGt.get(Materials.Neutronium), 'E', OrePrefixes.circuit.get(Materials.Superconductor), 'C', ItemList.Electric_Motor_UV});
+	    ItemList.OreDrill5.set(new GT_MetaTileEntity_OreDrillingPlant5(12190, "multimachine.oredrill5", "Ore Drilling Plant V").getStackForm(1));
 
         ItemList.PyrolyseOven.set(new GT_MetaTileEntity_PyrolyseOven(1159, "multimachine.pyro", "Pyrolyse Oven").getStackForm(1));
         GT_ModHandler.addCraftingRecipe(ItemList.PyrolyseOven.get(1L, new Object[0]), bitsd, new Object[]{"WEP", "EME", "WCP", 'M', ItemList.Hull_MV, 'W', ItemList.Electric_Piston_MV, 'P', OrePrefixes.wireGt04.get(Materials.Cupronickel), 'E', OrePrefixes.circuit.get(Materials.Good), 'C', ItemList.Electric_Pump_MV});
 
 
         ItemList.OilCracker.set(new GT_MetaTileEntity_OilCracker(1160, "multimachine.cracker", "Oil Cracking Unit").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.OilCracker.get(1L, new Object[0]), bitsd, new Object[]{aTextWireCoil, "EME", aTextWireCoil, 'M', ItemList.Hull_HV, 'W', ItemList.Casing_Coil_Cupronickel, 'E', OrePrefixes.circuit.get(Materials.Advanced), 'C', ItemList.Electric_Pump_HV});
 
         ItemList.MicroTransmitter_HV.set(new GT_MetaTileEntity_MicrowaveEnergyTransmitter(1161, "basicmachine.microtransmitter.03", "HV Microwave Energy Transmitter", 3).getStackForm(1L));
         ItemList.MicroTransmitter_EV.set(new GT_MetaTileEntity_MicrowaveEnergyTransmitter(1162, "basicmachine.microtransmitter.04", "EV Microwave Energy Transmitter", 4).getStackForm(1L));
@@ -1420,14 +1397,11 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         //GT_ModHandler.addCraftingRecipe(ItemList.CuringOven.get(1L, new Object[0]), bitsd, new Object[]{"CWC", aTextCableHull, aTextMotorWire, 'M', ItemList.Hull_LV, 'E', OrePrefixes.circuit.get(Materials.Basic), 'W', GT_OreDictUnificator.get(OrePrefixes.cable, Materials.Tin, 1), 'C', GT_OreDictUnificator.get(OrePrefixes.wireGt01, Materials.Cupronickel, 1)});
 
         ItemList.Machine_Multi_Assemblyline.set(new GT_MetaTileEntity_AssemblyLine(1170, "multimachine.assemblyline", "Assembly Line").getStackForm(1L));
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_Assemblyline.get(1L, new Object[0]), bitsd, new Object[]{aTextWireCoil, "EME", aTextWireCoil, 'M', ItemList.Hull_IV, 'W', ItemList.Casing_Assembler, 'E', OrePrefixes.circuit.get(Materials.Elite), 'C', ItemList.Robot_Arm_IV});
 
         ItemList.Machine_Multi_DieselEngine.set(new GT_MetaTileEntity_DieselEngine(1171, "multimachine.dieselengine", "Combustion Engine Mk1").getStackForm(1L));
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_DieselEngine.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "EME", "GWG", 'M', ItemList.Hull_EV, 'P', ItemList.Electric_Piston_EV, 'E', ItemList.Electric_Motor_EV, 'C', OrePrefixes.circuit.get(Materials.Elite), 'W', OrePrefixes.cableGt01.get(Materials.TungstenSteel), 'G', OrePrefixes.gearGt.get(Materials.Titanium)});
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_EngineIntake.get(2L, new Object[0]), bitsd, new Object[]{"PhP", "RFR", aTextPlateWrench, 'R', OrePrefixes.pipeMedium.get(Materials.Titanium), 'F', ItemList.Casing_StableTitanium, 'P', OrePrefixes.rotor.get(Materials.Titanium)});
 
         ItemList.Machine_Multi_DieselEngine2.set(new GT_MetaTileEntity_DieselEngine2(12230, "multimachine.dieselengine2", "Combustion Engine Mk2").getStackForm(1L));
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_DieselEngine2.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "EME", "GWG", 'M', ItemList.Hull_IV, 'P', ItemList.Electric_Piston_IV, 'E', ItemList.Electric_Motor_IV, 'C', OrePrefixes.circuit.get(Materials.Master), 'W', OrePrefixes.cableGt01.get(Materials.VanadiumGallium), 'G', OrePrefixes.gearGt.get(Materials.TungstenSteel)});
 
         ItemList.Machine_Multi_PlasmaEngine.set(new GT_MetaTileEntity_PlasmaEngine(12072, "multimachine.plasmaengine", "Plasma Engine").getStackForm(1L));
         //GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_PlasmaEngine.get(1L, new Object[0]), bitsd, new Object[]{"PCP", "FMF", "WCW", 'M', ItemList.Hull_MAX, 'F', ItemList.Field_Generator_UHV, 'C', OrePrefixes.circuit.get(Materials.Infinite), 'W', OrePrefixes.wireGt16.get(Materials.Superconductor), 'P', OrePrefixes.pipeMedium.get(Materials.Superconductor)});
@@ -1435,8 +1409,7 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		ItemList.Machine_Multi_Cleanroom.set(new GT_MetaTileEntity_Cleanroom(1172, "multimachine.cleanroom", "Cleanroom Controller").getStackForm(1));
 		//If Cleanroom is enabled, add a recipe, else hide from NEI.
 		if (GT_Mod.gregtechproxy.mEnableCleanroom){
-			GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_Cleanroom.get(1L, new Object[0]), bitsd, new Object[]{"FFF", "RHR", "MCM", 'H', ItemList.Hull_HV, 'F', ItemList.Component_Filter, 'R', OrePrefixes.rotor.get(Materials.StainlessSteel), 'M', ItemList.Electric_Motor_HV, 'C', OrePrefixes.circuit.get(Materials.Advanced)});
-		}
+			}
 		else {
 			if (isNEILoaded){
 				API.hideItem(ItemList.Machine_Multi_Cleanroom.get(1L, new Object[0]));
@@ -1479,12 +1452,6 @@ public class GT_Loader_MetaTileEntities implements Runnable {
         GT_ModHandler.addCraftingRecipe(ItemList.Casing_Internix_Chamber.get(1L, new Object[0]), GT_ModHandler.RecipeBits.DISMANTLEABLE | GT_ModHandler.RecipeBits.NOT_REMOVABLE | GT_ModHandler.RecipeBits.REVERSIBLE | GT_ModHandler.RecipeBits.BUFFERED, new Object[]{"PRP", "WCW", "PRP", 'P', OrePrefixes.plateDouble.get(Materials.HSSS), 'R', ItemList.Neutron_Reflector, 'W', ItemList.Electric_Pump_LuV, 'C', ItemList.Casing_Pipe_TungstenSteel});
 
         ItemList.Machine_Multi_LargeChemicalReactor.set(new GT_MetaTileEntity_LargeChemicalReactor(1169, "multimachine.chemicalreactor", "Large Chemical Reactor").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_LargeChemicalReactor.get(1L, new Object[0]), bitsd, new Object[]{"CRC", "PMP", "CBC",
-        		'C', OrePrefixes.circuit.get(Materials.Advanced),
-        		'R', OrePrefixes.rotor.get(Materials.StainlessSteel),
-        		'P', OrePrefixes.pipeLarge.get(Materials.Polytetrafluoroethylene),
-        		'M', ItemList.Electric_Motor_HV,
-        		'B', ItemList.Hull_HV});
 
         //Nuclear reactor (12106, 12107, 12108, 12109)
         //ItemList.Nuclear_Reactor1.set(new GT_MetaTileEntity_NuclearReactor1(12106, "multimachine.nuclear1", "Nuclear Reactor Mk 1").getStackForm(1L));
@@ -1521,16 +1488,13 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 
         //Flotation Unit
         ItemList.Machine_FlotationUnit.set(new GT_MetaTileEntity_FlotationUnit(12192, "multimachine.flotationunit", "Flotation Unit").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_FlotationUnit.get(1L, new Object[0]), bitsd, new Object[]{"SOS", "RHR", "MCM", 'H', ItemList.Hull_EV, 'C', OrePrefixes.circuit.get(Materials.Data), 'S', ItemList.Electric_Pump_EV, 'M', ItemList.Electric_Motor_EV, 'R', OrePrefixes.rotor.get(Materials.Titanium), 'O', OrePrefixes.pipeMedium.get(Materials.Titanium)});
 
         //Multiblock Centrifuge
         ItemList.Machine_MultiblockCentrifuge.set(new GT_MetaTileEntity_MultiblockCentrifuge(12193, "multimachine.multicentrifuge", "Multiblock Centrifuge").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_MultiblockCentrifuge.get(1L, new Object[0]), bitsd, new Object[]{"MCM", "CHC", "MCM", 'H', ItemList.Hull_EV, 'C', OrePrefixes.circuit.get(Materials.Data), 'M', ItemList.Electric_Motor_EV});
 
         //Multiblock Electrolyzer
         ItemList.Machine_MultiblockElectrolyzer.set(new GT_MetaTileEntity_MultiblockElectrolyzer(12194, "multimachine.multielectrolyzer", "Multiblock Electrolyzer").getStackForm(1));
-        GT_ModHandler.addCraftingRecipe(ItemList.Machine_MultiblockElectrolyzer.get(1L, new Object[0]), bitsd, new Object[]{"WCW", "PHP", "WCW", 'H', ItemList.Hull_IV, 'C', OrePrefixes.circuit.get(Materials.Elite), 'W', OrePrefixes.wireGt02.get(Materials.Platinum), 'P', OrePrefixes.plateDouble.get(Materials.Titanium)});
-
+        
         //Tesseract
         ItemList.Machine_MultiblockTesseract.set(new GT_MetaTileEntity_Tesseract(12195, "multimachine.tesseract", "Tesseract").getStackForm(1L));
 
