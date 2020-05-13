@@ -3985,7 +3985,7 @@ public class GT_MachineRecipeLoader implements Runnable {
                    Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,2) : new ItemStack(Blocks.chest),
                    Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,5) : new ItemStack(Blocks.chest),
                    Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,6) : GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,145),
-                   Loader.isModLoaded("avaritiaddons") ? GT_ModHandler.getModItem("avaritiaddons","CompressedChest",1) : GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,146)
+                   GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,146)
            };
            ItemStack[] tanks = {
                    GT_OreDictUnificator.get(OrePrefixes.cell,Materials.Empty,1L),
