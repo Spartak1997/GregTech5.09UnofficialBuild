@@ -74,7 +74,6 @@ dependencies =  " required-after:IC2;" +
         " after:Forestry;" +
         " after:Thaumcraft;" +
         " after:appliedenergistics2;" +
-        " after:ThermalExpansion;" +
         " after:harvestcraft;" +
         " after:BuildCraft|Transport;" +
         " after:BuildCraft|Silicon;" +
@@ -85,9 +84,6 @@ dependencies =  " required-after:IC2;" +
         " after:GalacticraftCore;" +
         " after:GalacticraftMars;" +
         " after:GalacticraftPlanets;" +
-        " after:ThermalExpansion|Transport;" +
-        " after:ThermalExpansion|Energy;" +
-        " after:ThermalExpansion|Factory;" +
         " after:UndergroundBiomes;" +
         " after:TConstruct;" +
         " after:Translocator;")
@@ -312,7 +308,6 @@ public class GT_Mod implements IGT_Mod {
         gregtechproxy.mHideUnusedOres = tMainConfig.get(aTextGeneral, "HideUnusedOres", true).getBoolean(true);
         gregtechproxy.mHideRecyclingRecipes = tMainConfig.get(aTextGeneral, "HideRecyclingRecipes", true).getBoolean(true);
         gregtechproxy.mArcSmeltIntoAnnealed = tMainConfig.get(aTextGeneral, "ArcSmeltIntoAnnealedWrought", true).getBoolean(true);
-        gregtechproxy.mTEMachineRecipes = tMainConfig.get("general", "TEMachineRecipes", false).getBoolean(false);
         gregtechproxy.mEnableAllMaterials = tMainConfig.get("general", "EnableAllMaterials", false).getBoolean(false);
         gregtechproxy.mEnableAllComponents = tMainConfig.get("general", "EnableAllComponents", false).getBoolean(false);
         gregtechproxy.mPollution = tMainConfig.get("Pollution", "EnablePollution", true).getBoolean(true);
