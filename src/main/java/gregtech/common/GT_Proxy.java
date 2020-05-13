@@ -162,7 +162,6 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
     public boolean mAE2Integration = true;
     public boolean mAE2Tunnel = true;
     public boolean mArcSmeltIntoAnnealed = true;
-    public boolean mMagneticraftRecipes = true;
     public boolean mImmersiveEngineeringRecipes = true;
     private boolean isFirstServerWorldTick = true;
     private boolean mOreDictActivated = false;
@@ -189,7 +188,6 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
     public int mPollutionSourRainLimit = 2000000;
     public final GT_UO_DimensionList mUndergroundOil = new GT_UO_DimensionList();
     public int mTicksUntilNextCraftSound = 0;
-    public double mMagneticraftBonusOutputPercent = 100.0d;
     private World mUniverse = null;
     private final String aTextThermalExpansion = "ThermalExpansion";
     private final String aTextTwilightForest = "TwilightForest";
