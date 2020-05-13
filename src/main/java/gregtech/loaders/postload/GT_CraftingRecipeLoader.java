@@ -18,7 +18,6 @@ import net.minecraftforge.fluids.FluidStack;
 public class GT_CraftingRecipeLoader implements Runnable {
     private final static String aTextIron1 = "X X";
     private final static String aTextIron2 = "XXX";
-    private final static String aTextRailcraft = "Railcraft";
     private final static String aTextMachineBeta = "machine.beta";
     private final static String aTextMachineAlpha = "machine.alpha";
 

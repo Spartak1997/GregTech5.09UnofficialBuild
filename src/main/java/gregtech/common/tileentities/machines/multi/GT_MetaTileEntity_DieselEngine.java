@@ -142,7 +142,7 @@ public class GT_MetaTileEntity_DieselEngine extends GT_MetaTileEntity_MultiBlock
 
                         final Block frontAir = getBaseMetaTileEntity().getBlock(fX, aY, fZ);
                         final String frontAirName = frontAir.getUnlocalizedName();
-                        if(!(getBaseMetaTileEntity().getAir(fX, aY, fZ) || frontAirName.equalsIgnoreCase("tile.air") || frontAirName.equalsIgnoreCase("tile.railcraft.residual.heat"))) {
+                        if(!(getBaseMetaTileEntity().getAir(fX, aY, fZ) || frontAirName.equalsIgnoreCase("tile.air"))) {
                             return false; //Fail if vent blocks are obstructed
                         }
 

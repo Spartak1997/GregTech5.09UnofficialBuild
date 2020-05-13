@@ -3,12 +3,12 @@ package gregtech.loaders.load;
 import buildcraft.api.tools.IToolWrench;
 import gregtech.api.GregTech_API;
 import gregtech.api.enums.*;
+import gregtech.api.interfaces.IToolCrowbar;
 import gregtech.api.items.GT_Generic_Item;
 import gregtech.api.util.GT_Log;
 import gregtech.api.util.GT_ModHandler;
 import gregtech.api.util.GT_OreDictUnificator;
 import gregtech.api.util.GT_Utility;
-import mods.railcraft.api.core.items.IToolCrowbar;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -66,10 +66,10 @@ public class GT_ItemIterator
                             if ((!tItem.isDamageable()) && (!GT_ModHandler.isElectricItem(new ItemStack(tItem, 1, 0)))) {
                                 if ((GregTech_API.sRecipeFile.get(ConfigCategories.Recipes.disabledrecipes, "infiniteDurabilityRCCrowbars", false)) &&
                                         (GT_ModHandler.removeRecipeByOutput(new ItemStack(tItem, 1, 32767)))) {
-                                    GT_Log.out.println("GT_Mod: Removed infinite RC Crowbar: " + tName);
+                                    GT_Log.out.println("GT_Mod: Removed infinite Fake RC Crowbar: " + tName);
                                 }
                             } else if (GregTech_API.registerCrowbar(new ItemStack(tItem, 1, 32767))) {
-                                GT_Log.out.println("GT_Mod: Registered valid RC Crowbar: " + tName);
+                                GT_Log.out.println("GT_Mod: Registered valid Fake RC Crowbar: " + tName);
                             }
                         }
                         if ((tItem instanceof IToolWrench)) {

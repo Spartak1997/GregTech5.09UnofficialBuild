@@ -74,7 +74,6 @@ dependencies =  " required-after:IC2;" +
         " after:Forestry;" +
         " after:PFAAGeologica;" +
         " after:Thaumcraft;" +
-        " after:Railcraft;" +
         " after:appliedenergistics2;" +
         " after:ThermalExpansion;" +
         " after:TwilightForest;" +

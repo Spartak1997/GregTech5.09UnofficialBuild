@@ -539,7 +539,7 @@ public class GregTech_API {
      * I even have a new Config to autodisable most infinite BC Wrenches (but that one is turned off).
      * <p/>
      * One last Bug for you to fix:
-     * My Autoregistration detects Railcrafts Crowbars, Buildcrafts Wrenches and alike, due to their Interfaces.
+     * My Autoregistration detects Buildcrafts Wrenches and alike, due to their Interfaces.
      * Guess what now became a Crowbar by accident. Try registering the Wrench at the load phase to prevent things like that from happening.
      * Yes, I know that "You need to register Tools in the Load Phase"-Part wasn't there before this. Sorry about that.
      */

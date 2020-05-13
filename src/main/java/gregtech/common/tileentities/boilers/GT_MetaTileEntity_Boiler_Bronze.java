@@ -156,7 +156,6 @@ public class GT_MetaTileEntity_Boiler_Bronze
                         GT_OreDictUnificator.isItemStackInstanceOf(this.mInventory[2], OrePrefixes.block.get(Materials.Diamond)) ||
                         GT_OreDictUnificator.isItemStackInstanceOf(this.mInventory[2], "blockCokeCoal") ||
 
-                         //if its either a Railcraft Coke Block or a custom GTNH compressed Coal/charcoal/lignite/coke block
                         (
                          Block.getBlockFromItem(this.mInventory[2].getItem()) != null && //check if the block exists
                         (
@@ -167,7 +166,6 @@ public class GT_MetaTileEntity_Boiler_Bronze
                          Block.getBlockFromItem(this.mInventory[2].getItem()).getUnlocalizedName().toLowerCase().contains("coal") ||
                          Block.getBlockFromItem(this.mInventory[2].getItem()).getUnlocalizedName().toLowerCase().contains("diamond") ||
                          Block.getBlockFromItem(this.mInventory[2].getItem()).getUnlocalizedName().toLowerCase().contains("coke") ||
-                         Block.getBlockFromItem(this.mInventory[2].getItem()).getUnlocalizedName().toLowerCase().contains("railcraft.cube") ||
                          Block.getBlockFromItem(this.mInventory[2].getItem()).getUnlocalizedName().toLowerCase().contains("lignite")
                         )
                         )

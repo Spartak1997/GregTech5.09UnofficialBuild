@@ -77,9 +77,6 @@ public class GT_Loader_ItemData
         GT_OreDictUnificator.addItemData(ItemList.IC2_Fuel_Can_Empty.get(1L, new Object[0]), new ItemData(Materials.Tin, 25401600L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(new ItemStack(Blocks.light_weighted_pressure_plate, 1, 32767), new ItemData(Materials.Gold, 7257600L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(new ItemStack(Blocks.heavy_weighted_pressure_plate, 1, 32767), new ItemData(Materials.Iron, 7257600L, new MaterialStack[0]));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("Railcraft", "tile.railcraft.anvil", 1L, 0), new ItemData(Materials.Steel, 108864000L, new MaterialStack[0]));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("Railcraft", "tile.railcraft.anvil", 1L, 1), new ItemData(Materials.Steel, 72576000L, new MaterialStack[0]));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("Railcraft", "tile.railcraft.anvil", 1L, 2), new ItemData(Materials.Steel, 36288000L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(new ItemStack(Blocks.anvil, 1, 0), new ItemData(Materials.Iron, 108864000L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(new ItemStack(Blocks.anvil, 1, 1), new ItemData(Materials.Iron, 72576000L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(new ItemStack(Blocks.anvil, 1, 2), new ItemData(Materials.Iron, 36288000L, new MaterialStack[0]));

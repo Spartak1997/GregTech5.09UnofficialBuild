@@ -150,14 +150,6 @@ public class GT_ModHandler {
         sSpecialRecipeClasses.add("dan200.qcraft.shared.QBlockRecipe");
         sSpecialRecipeClasses.add("appeng.recipes.game.FacadeRecipe");
         sSpecialRecipeClasses.add("appeng.recipes.game.DisassembleRecipe");
-        sSpecialRecipeClasses.add("mods.railcraft.common.carts.LocomotivePaintingRecipe");
-        sSpecialRecipeClasses.add("mods.railcraft.common.util.crafting.RotorRepairRecipe");
-        sSpecialRecipeClasses.add("mods.railcraft.common.util.crafting.RoutingTableCopyRecipe");
-        sSpecialRecipeClasses.add("mods.railcraft.common.util.crafting.RoutingTicketCopyRecipe");
-        sSpecialRecipeClasses.add("mods.railcraft.common.util.crafting.TankCartFilterRecipe");
-        sSpecialRecipeClasses.add("mods.railcraft.common.emblems.LocomotiveEmblemRecipe");
-        sSpecialRecipeClasses.add("mods.railcraft.common.emblems.EmblemPostColorRecipe");
-        sSpecialRecipeClasses.add("mods.railcraft.common.emblems.EmblemPostEmblemRecipe");
         sSpecialRecipeClasses.add("mods.immibis.redlogic.interaction.RecipeDyeLumarButton");
         sSpecialRecipeClasses.add("thaumcraft.common.items.armor.RecipesRobeArmorDyes");
         sSpecialRecipeClasses.add("thaumcraft.common.items.armor.RecipesVoidRobeArmorDyes");
@@ -342,14 +334,14 @@ public class GT_ModHandler {
     }
 
     /**
-     * Gets an Item from RailCraft
+     * Gets an Item from String ModID
      */
     public static ItemStack getModItem(String aModID, String aItem, long aAmount) {
         return getModItem(aModID, aItem, aAmount, null);
     }
 
     /**
-     * Gets an Item from RailCraft, and returns a Replacement Item if not possible
+     * Gets an Item from String ModID, and returns a Replacement Item if not possible
      */
     public static ItemStack getModItem(String aModID, String aItem, long aAmount, ItemStack aReplacement) {
         if (GT_Utility.isStringInvalid(aItem) || !GregTech_API.sPreloadStarted) return null;
@@ -357,7 +349,7 @@ public class GT_ModHandler {
     }
 
     /**
-     * Gets an Item from RailCraft, but the Damage Value can be specified
+     * Gets an Item from String ModID, but the Damage Value can be specified
      */
     public static ItemStack getModItem(String aModID, String aItem, long aAmount, int aMeta) {
         ItemStack rStack = getModItem(aModID, aItem, aAmount);
@@ -374,7 +366,7 @@ public class GT_ModHandler {
     }
 
     /**
-     * Gets an Item from RailCraft, but the Damage Value can be specified, and returns a Replacement Item with the same Damage if not possible
+     * Gets an Item from String ModID, but the Damage Value can be specified, and returns a Replacement Item with the same Damage if not possible
      */
     public static ItemStack getModItem(String aModID, String aItem, long aAmount, int aMeta, ItemStack aReplacement) {
         ItemStack rStack = getModItem(aModID, aItem, aAmount, aReplacement);
@@ -529,23 +521,6 @@ public class GT_ModHandler {
         return true;
     }
 
-    /**
-     * RC-BlastFurnace Recipes
-     */
-    public static boolean addRCBlastFurnaceRecipe(ItemStack aInput, ItemStack aOutput, int aTime) {
-        aOutput = GT_OreDictUnificator.get(true, aOutput);
-        if (aInput == null || aOutput == null || aTime <= 0) return false;
-        if (!GregTech_API.sRecipeFile.get(ConfigCategories.Machines.rcblastfurnace, aInput, true)) return false;
-        aInput = GT_Utility.copy(aInput);
-        aOutput = GT_Utility.copy(aOutput);
-        try {
-            mods.railcraft.api.crafting.RailcraftCraftingManager.blastFurnace.addRecipe(aInput, true, false, aTime, aOutput);
-        } catch (Throwable e) {
-            return false;
-        }
-        return true;
-    }
-
     public static boolean addPulverisationRecipe(ItemStack aInput, ItemStack aOutput1) {
         return addPulverisationRecipe(aInput, aOutput1, null, 0, false);
     }
@@ -595,18 +570,6 @@ public class GT_ModHandler {
                             ThermalExpansion.addSawmillRecipe(32000, GT_Utility.copy(aInput), GT_Utility.copy(aOutput1), GT_Utility.copy(aOutput2), aChance2 <= 0 ? 10 : aChance2);
                     }
                 } else {
-                    if (GregTech_API.sRecipeFile.get(ConfigCategories.Machines.rockcrushing, aInput, true)) {
-                        try {
-                            if (GT_Utility.getBlockFromStack(aInput) != Blocks.obsidian && GT_Utility.getBlockFromStack(aInput) != Blocks.gravel) {
-                                mods.railcraft.api.crafting.IRockCrusherRecipe tRecipe = mods.railcraft.api.crafting.RailcraftCraftingManager.rockCrusher.createNewRecipe(GT_Utility.copyAmount(1, aInput), aInput.getItemDamage() != W, false);
-                                tRecipe.addOutput(GT_Utility.copy(aOutput1), 1.0F / aInput.stackSize);
-                                if (aOutput2 != null)
-                                    tRecipe.addOutput(GT_Utility.copy(aOutput2), (0.01F * (aChance2 <= 0 ? 10 : aChance2)) / aInput.stackSize);
-                                if (aOutput3 != null)
-                                    tRecipe.addOutput(GT_Utility.copy(aOutput3), (0.01F * (aChance3 <= 0 ? 10 : aChance3)) / aInput.stackSize);
-                            }
-                        } catch (Throwable e) {/*Do nothing*/}
-                    }
                     if (aEnableTEMachineRecipes && GregTech_API.sRecipeFile.get(ConfigCategories.Machines.pulverization, aInput, true)) {
                         if (aOutput2 == null)
                             ThermalExpansion.addPulverizerRecipe(32000, GT_Utility.copy(aInput), GT_Utility.copy(aOutput1));
@@ -809,20 +772,6 @@ public class GT_ModHandler {
             tNBT.setInteger("amplification", aValue);
             GT_Utility.callMethod(ic2.api.recipe.Recipes.matterAmplifier, "addRecipe", false, false, false, aAmplifier, tNBT);
         } catch (Throwable e) {/*Do nothing*/}
-        return true;
-    }
-
-    /**
-     * Rolling Machine Crafting Recipe
-     */
-    public static boolean addRollingMachineRecipe(ItemStack aResult, Object[] aRecipe) {
-        aResult = GT_OreDictUnificator.get(true, aResult);
-        if (aResult == null || aRecipe == null || aResult.stackSize <= 0) return false;
-        try {
-            mods.railcraft.api.crafting.RailcraftCraftingManager.rollingMachine.getRecipeList().add(new ShapedOreRecipe(GT_Utility.copy(aResult), aRecipe));
-        } catch (Throwable e) {
-            return addCraftingRecipe(GT_Utility.copy(aResult), aRecipe);
-        }
         return true;
     }
 
