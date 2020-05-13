@@ -27,7 +27,7 @@ public class Behaviour_Spray_Color
     private final ItemStack mFull;
     private final long mUses;
     private final byte mColor;
-    private final Collection<Block> mAllowedVanillaBlocks = Arrays.asList(new Block[]{Blocks.glass, Blocks.glass_pane, Blocks.stained_glass, Blocks.stained_glass_pane, Blocks.carpet, Blocks.hardened_clay, ItemList.TE_Rockwool.getBlock()});
+    private final Collection<Block> mAllowedVanillaBlocks = Arrays.asList(new Block[]{Blocks.glass, Blocks.glass_pane, Blocks.stained_glass, Blocks.stained_glass_pane, Blocks.carpet, Blocks.hardened_clay});
     private final String mTooltip;
     private final String mTooltipUses = GT_LanguageManager.addStringLocalization("gt.behaviour.paintspray.uses", "Remaining Uses:");
     private final String mTooltipUnstackable = GT_LanguageManager.addStringLocalization("gt.behaviour.unstackable", "Not usable when stacked!");
