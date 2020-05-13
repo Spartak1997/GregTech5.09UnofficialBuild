@@ -203,9 +203,7 @@ public class GT_CropLoader
             new GT_BaseCrop(148, "Liveroots", "Benimatic", null, 8, 4, 0, 1, 4, 2, 0, 5, 2, 6, new String[] {
                     "Wood",
                     "Tendrilly"
-            }, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.LiveRoot, 1L), new ItemStack[] {
-                    ItemList.TF_LiveRoot.get(1L)
-            });
+            }, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.LiveRoot, 1L),null);
             new GT_BaseCrop(149, "Trollplant", "unknown", null, 6, 5, 1000, 1, 4, 0, 0, 5, 2, 8, new String[] {
                     "Troll",
                     "Bad",

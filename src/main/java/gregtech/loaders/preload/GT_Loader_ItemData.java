@@ -17,7 +17,6 @@ public class GT_Loader_ItemData
         implements Runnable {
     public void run() {
         GT_Log.out.println("GT_Mod: Loading Item Data Tags");
-        GT_OreDictUnificator.addItemData(ItemList.TF_LiveRoot.get(1L, new Object[0]), new ItemData(Materials.LiveRoot, 3628800L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("appliedenergistics2", "item.ItemMultiMaterial", 1L, 10), new ItemData(Materials.CertusQuartz, 1814400L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("appliedenergistics2", "item.ItemMultiMaterial", 1L, 11), new ItemData(Materials.NetherQuartz, 1814400L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("appliedenergistics2", "item.ItemMultiMaterial", 1L, 12), new ItemData(Materials.Fluix, 1814400L, new MaterialStack[0]));
