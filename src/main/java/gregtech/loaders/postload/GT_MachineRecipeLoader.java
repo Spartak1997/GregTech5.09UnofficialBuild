@@ -401,18 +401,6 @@ public class GT_MachineRecipeLoader implements Runnable {
         GT_Values.RA.addChemicalBathRecipe(GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.Naquadah, 1L), Materials.Osmium.getMolten(144L), ItemList.Block_NaquadahPlate.get(1L, new Object[0]), GT_Values.NI, GT_Values.NI, null, 450, 256);
         GT_Values.RA.addChemicalBathRecipe(GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.Neutronium, 1L), Materials.Naquadria.getMolten(144L), ItemList.Block_NeutroniumPlate.get(1L, new Object[0]), GT_Values.NI, GT_Values.NI, null, 500, 480);
 
-        for (int j = 0; j < Dyes.dyeRed.getSizeOfFluidList(); j++) {
-            GT_Values.RA.addChemicalBathRecipe(GT_OreDictUnificator.get(OrePrefixes.wireGt01, Materials.RedAlloy, 1L), Dyes.dyeRed.getFluidDye(j, 72L), GT_ModHandler.getModItem("BuildCraft|Transport", "pipeWire", 4L, 0), GT_Values.NI, GT_Values.NI, null, 32, 16);
-        }
-        for (int j = 0; j < Dyes.dyeBlue.getSizeOfFluidList(); j++) {
-            GT_Values.RA.addChemicalBathRecipe(GT_OreDictUnificator.get(OrePrefixes.wireGt01, Materials.RedAlloy, 1L), Dyes.dyeBlue.getFluidDye(j, 72L), GT_ModHandler.getModItem("BuildCraft|Transport", "pipeWire", 4L, 1), GT_Values.NI, GT_Values.NI, null, 32, 16);
-        }
-        for (int j = 0; j < Dyes.dyeGreen.getSizeOfFluidList(); j++) {
-            GT_Values.RA.addChemicalBathRecipe(GT_OreDictUnificator.get(OrePrefixes.wireGt01, Materials.RedAlloy, 1L), Dyes.dyeGreen.getFluidDye(j, 72L), GT_ModHandler.getModItem("BuildCraft|Transport", "pipeWire", 4L, 2), GT_Values.NI, GT_Values.NI, null, 32, 16);
-        }
-        for (int j = 0; j < Dyes.dyeYellow.getSizeOfFluidList(); j++) {
-            GT_Values.RA.addChemicalBathRecipe(GT_OreDictUnificator.get(OrePrefixes.wireGt01, Materials.RedAlloy, 1L), Dyes.dyeYellow.getFluidDye(j, 72L), GT_ModHandler.getModItem("BuildCraft|Transport", "pipeWire", 4L, 3), GT_Values.NI, GT_Values.NI, null, 32, 16);
-        }
         for (byte i = 0; i < 16; i = (byte) (i + 1)) {
             for (int j = 0; j < Dyes.VALUES[i].getSizeOfFluidList(); j++) {
                 if (i != 15) {
@@ -609,13 +597,6 @@ public class GT_MachineRecipeLoader implements Runnable {
         }else {
         	GT_Values.RA.addWireAssemblerRecipe(new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt01, Materials.Longasssuperconductornameforuevwire, 28L), GT_OreDictUnificator.get(OrePrefixes.pipeTiny, Materials.Neutronium, 18L), ItemList.Electric_Pump_UEV.get(1L), GT_Utility.getIntegratedCircuit(9)}, Materials.Helium.getGas(26000L), GT_OreDictUnificator.get(OrePrefixes.wireGt01, Materials.SuperconductorUEV, 28L), 1200, 1966080,true);	
         }
-		GT_Values.RA.addFormingPressRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Iron, 1L), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 0), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 1), 100, 120);
-        GT_Values.RA.addFormingPressRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.WroughtIron, 1L), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 0), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 1), 100, 120);
-        GT_Values.RA.addFormingPressRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Gold, 1L), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 0), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 2), 200, 120);
-        GT_Values.RA.addFormingPressRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Diamond, 1L), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 0), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 3), 100, 480);
-        GT_Values.RA.addFormingPressRecipe(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.EnderPearl, 1L), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 0), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 2L, 4), 200, 120);
-        GT_Values.RA.addFormingPressRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.NetherQuartz, 1L), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 0), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 5), 300, 120);
-        GT_Values.RA.addFormingPressRecipe(new ItemStack(Items.comparator, 1, 32767), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 0), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 6), 300, 120);
         GT_Values.RA.addFormingPressRecipe(GT_ModHandler.getModItem(aTextAE, aTextAEMM, 1L, 10), GT_ModHandler.getModItem(aTextAE, aTextAEMM, 0L, 13), GT_ModHandler.getModItem(aTextAE, aTextAEMM, 1L, 16), 200, 16);
         GT_Values.RA.addFormingPressRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.CertusQuartz, 1L), GT_ModHandler.getModItem(aTextAE, aTextAEMM, 0L, 13), GT_ModHandler.getModItem(aTextAE, aTextAEMM, 1L, 16), 200, 16);
         GT_Values.RA.addFormingPressRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Diamond, 1L), GT_ModHandler.getModItem(aTextAE, aTextAEMM, 0L, 14), GT_ModHandler.getModItem(aTextAE, aTextAEMM, 1L, 17), 200, 16);
@@ -1320,7 +1301,6 @@ public class GT_MachineRecipeLoader implements Runnable {
         GT_Values.RA.addAlloySmelterRecipe(GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Lead, 1L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Obsidian, 2L), ItemList.TE_Hardened_Glass.get(2L, new Object[0]), 200, 16);
         GT_Values.RA.addAlloySmelterRecipe(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.RawRubber, 3L), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Sulfur, 1L), GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Rubber, 3L), 200, 8);
 
-        GT_Values.RA.addCutterRecipe(GT_ModHandler.getModItem("BuildCraft|Transport", "item.buildcraftPipe.pipestructurecobblestone", 1L, 0), GT_ModHandler.getModItem("BuildCraft|Transport", "pipePlug", 8L, 0), GT_Values.NI, 32, 16);
         for (int i = 0; i < 16; i++) {
             GT_Values.RA.addCutterRecipe(new ItemStack(Blocks.stained_glass, 3, i), new ItemStack(Blocks.stained_glass_pane, 8, i), GT_Values.NI, 50, 8);
         }
@@ -3965,13 +3945,13 @@ public class GT_MachineRecipeLoader implements Runnable {
            };
            ItemStack[] tanks = {
                    GT_OreDictUnificator.get(OrePrefixes.cell,Materials.Empty,1L),
-                   Loader.isModLoaded("BuildCraft|Factory") ? GT_ModHandler.getModItem("BuildCraft|Factory","tankBlock",1) : ItemList.Large_Fluid_Cell_Steel.get(1L),
-                   Loader.isModLoaded("irontank") ? GT_ModHandler.getModItem("irontank","copperTank",1) : ItemList.Large_Fluid_Cell_Aluminium.get(1L),
-                   Loader.isModLoaded("irontank") ? GT_ModHandler.getModItem("irontank","ironTank",1) : ItemList.Large_Fluid_Cell_StainlessSteel.get(1L),
-                   Loader.isModLoaded("irontank") ? GT_ModHandler.getModItem("irontank","silverTank",1) : ItemList.Large_Fluid_Cell_Titanium.get(1L),
-                   Loader.isModLoaded("irontank") ? GT_ModHandler.getModItem("irontank","goldTank",1) : ItemList.Large_Fluid_Cell_TungstenSteel.get(1L),
-                   Loader.isModLoaded("irontank") ? GT_ModHandler.getModItem("irontank","diamondTank",1) : ItemList.Large_Fluid_Cell_Chrome.get(1L),
-                   Loader.isModLoaded("irontank") ? GT_ModHandler.getModItem("irontank","obsidianTank",1) : ItemList.Large_Fluid_Cell_Iridium.get(1L),
+                   ItemList.Large_Fluid_Cell_Steel.get(1L),
+                   ItemList.Large_Fluid_Cell_Aluminium.get(1L),
+                   ItemList.Large_Fluid_Cell_StainlessSteel.get(1L),
+                   ItemList.Large_Fluid_Cell_Titanium.get(1L),
+                   ItemList.Large_Fluid_Cell_TungstenSteel.get(1L),
+                   ItemList.Large_Fluid_Cell_Chrome.get(1L),
+                   ItemList.Large_Fluid_Cell_Iridium.get(1L),
                    GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,140),
                    GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,141)
            };

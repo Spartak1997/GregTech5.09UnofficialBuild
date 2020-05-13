@@ -77,7 +77,6 @@ public class ProcessingCrafting implements gregtech.api.interfaces.IOreRecipeReg
                 GT_Values.RA.addLaserEngraverRecipe(ItemList.Circuit_Silicon_Wafer10.get(1L, new Object[0]), GT_Utility.copyAmount(0L, new Object[]{aStack}), ItemList.Circuit_Wafer_FPIC.get(1, new Object[0]), 200, 500000, true);
                 break;
             case "craftingLensRed":
-                GT_Values.RA.addLaserEngraverRecipe(GT_OreDictUnificator.get(OrePrefixes.plate, Materials.Redstone, 1L), GT_Utility.copyAmount(0L, new Object[]{aStack}), GT_ModHandler.getModItem("BuildCraft|Silicon", "redstoneChipset", 1L, 0), 50, 120);
                 GT_Values.RA.addLaserEngraverRecipe(ItemList.Circuit_Silicon_Wafer.get(1, new Object[0]), GT_Utility.copyAmount(0L, new Object[]{aStack}), ItemList.Circuit_Wafer_ILC.get(1, new Object[0]), 900, 120, false);
                 GT_Values.RA.addLaserEngraverRecipe(ItemList.Circuit_Silicon_Wafer2.get(1, new Object[0]), GT_Utility.copyAmount(0L, new Object[]{aStack}), ItemList.Circuit_Wafer_ILC.get(4, new Object[0]), 500, 480, true);
                 GT_Values.RA.addLaserEngraverRecipe(ItemList.Circuit_Silicon_Wafer3.get(1, new Object[0]), GT_Utility.copyAmount(0L, new Object[]{aStack}), ItemList.Circuit_Wafer_ILC.get(8, new Object[0]), 200, 1920, true);
