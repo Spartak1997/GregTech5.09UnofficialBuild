@@ -27,8 +27,6 @@ import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
-import squeek.applecore.api.food.FoodValues;
-import squeek.applecore.api.food.IEdible;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -50,8 +48,7 @@ import static gregtech.api.enums.GT_Values.*;
  *         <p/>
  *         These Items can also have special RightClick abilities, electric Charge or even be set to become a Food alike Item.
  */
-@Optional.Interface(iface = "squeek.applecore.api.food.IEdible", modid = MOD_ID_APC)
-public abstract class GT_MetaGenerated_Item extends GT_MetaBase_Item implements IEdible {
+public abstract class GT_MetaGenerated_Item extends GT_MetaBase_Item {
     /**
      * All instances of this Item Class are listed here.
      * This gets used to register the Renderer to all Items of this Type, if useStandardMetaItemRenderer() returns true.
@@ -95,11 +92,11 @@ public abstract class GT_MetaGenerated_Item extends GT_MetaBase_Item implements 
     /**
      * This adds a Custom Item to the ending Range.
      *
-     * @param aID           The Id of the assigned Item [0 - mItemAmount] (The MetaData gets auto-shifted by +mOffset)
-     * @param aEnglish      The Default Localized Name of the created Item
-     * @param aToolTip      The Default ToolTip of the created Item, you can also insert null for having no ToolTip
-     * @param aFoodBehavior The Food Value of this Item. Can be null aswell. Just a convenience thing.
-     * @param aRandomData   The OreDict Names you want to give the Item. Also used for TC Aspects and some other things.
+     * @param //aID           The Id of the assigned Item [0 - mItemAmount] (The MetaData gets auto-shifted by +mOffset)
+     * @param //aEnglish      The Default Localized Name of the created Item
+     * @param //aToolTip      The Default ToolTip of the created Item, you can also insert null for having no ToolTip
+     * @param //aFoodBehavior The Food Value of this Item. Can be null aswell. Just a convenience thing.
+     * @param //aRandomData   The OreDict Names you want to give the Item. Also used for TC Aspects and some other things.
      * @return An ItemStack containing the newly created Item.
      */
     public final ItemStack addItem(int aID, String aEnglish, String aToolTip, Object... aRandomData) {
@@ -220,11 +217,11 @@ public abstract class GT_MetaGenerated_Item extends GT_MetaBase_Item implements 
     }
 
     /**
-     * @param aMetaValue     the Meta Value of the Item you want to set it to. [0 - 32765]
-     * @param aMaxCharge     Maximum Charge. (if this is == 0 it will remove the Electric Behavior)
-     * @param aTransferLimit Transfer Limit.
-     * @param aTier          The electric Tier.
-     * @param aSpecialData   If this Item has a Fixed Charge, like a SingleUse Battery (if > 0).
+     * @param //aMetaValue     the Meta Value of the Item you want to set it to. [0 - 32765]
+     * @param //aMaxCharge     Maximum Charge. (if this is == 0 it will remove the Electric Behavior)
+     * @param //aTransferLimit Transfer Limit.
+     * @param //aTier          The electric Tier.
+     * @param //aSpecialData   If this Item has a Fixed Charge, like a SingleUse Battery (if > 0).
      *                       Use -1 if you want to make this Battery chargeable (the use and canUse Functions will still discharge if you just use this)
      *                       Use -2 if you want to make this Battery dischargeable.
      *                       Use -3 if you want to make this Battery charge/discharge-able.
@@ -283,21 +280,10 @@ public abstract class GT_MetaGenerated_Item extends GT_MetaBase_Item implements 
     public final ItemStack onEaten(ItemStack aStack, World aWorld, EntityPlayer aPlayer) {
         IFoodStat tStat = mFoodStats.get((short) getDamage(aStack));
         if (tStat != null) {
-            if (Loader.isModLoaded(MOD_ID_APC)) {
-                aPlayer.getFoodStats().func_151686_a((ItemFood) GT_Utility.callConstructor("squeek.applecore.api.food.ItemFoodProxy.ItemFoodProxy", 0, null, true, this), aStack);
-            } else {
-                aPlayer.getFoodStats().addStats(tStat.getFoodLevel(this, aStack, aPlayer), tStat.getSaturation(this, aStack, aPlayer));
-            }
+            aPlayer.getFoodStats().addStats(tStat.getFoodLevel(this, aStack, aPlayer), tStat.getSaturation(this, aStack, aPlayer));
             tStat.onEaten(this, aStack, aPlayer);
         }
         return aStack;
-    }
-
-    @Override
-    @Optional.Method(modid = MOD_ID_APC)
-    public FoodValues getFoodValues(ItemStack aStack) {
-        IFoodStat tStat = mFoodStats.get((short) getDamage(aStack));
-        return tStat == null ? null : new FoodValues(tStat.getFoodLevel(this, aStack, null), tStat.getSaturation(this, aStack, null));
     }
 
     @Override
