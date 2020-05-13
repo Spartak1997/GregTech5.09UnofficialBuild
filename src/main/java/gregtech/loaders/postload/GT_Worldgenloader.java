@@ -104,12 +104,6 @@ public class GT_Worldgenloader
         new GT_Worldgen_GT_Ore_SmallPieces("ore.small.sulfur_n", true, 10, 60, 32, false, true, false, false, false, false, Materials.Sulfur);
         new GT_Worldgen_GT_Ore_SmallPieces("ore.small.sulfur_o", true, 5, 15, 8, false, false, false, false, false, false, Materials.Sulfur);
 
-        
-        /*if (GregTech_API.mImmersiveEngineering && GT_Mod.gregtechproxy.mImmersiveEngineeringRecipes) {
-            blusunrize.immersiveengineering.api.tool.ExcavatorHandler.mineralList.clear();
-            blusunrize.immersiveengineering.api.tool.ExcavatorHandler.mineralCache.clear();
-        }*/
-
         new GT_Worldgen_GT_Ore_Layer("ore.mix.naquadah", true, 10, 90, 30, 4, 32, false, false, true, Materials.Naquadah, Materials.Naquadah, Materials.Naquadah, Materials.NaquadahEnriched);
         new GT_Worldgen_GT_Ore_Layer("ore.mix.lignite", true, 80, 210, 160, 7, 32, true, false, false, Materials.Lignite, Materials.Lignite, Materials.Lignite, Materials.Coal);
         new GT_Worldgen_GT_Ore_Layer("ore.mix.coal", true, 30, 80, 80, 5, 32, true, false, false, Materials.Coal, Materials.Coal, Materials.Coal, Materials.Lignite);
@@ -165,9 +159,5 @@ public class GT_Worldgenloader
             GT_Log.err.println("Unable to start Galactic Greg ore gen code");
             e.printStackTrace(GT_Log.err);
         }
-        
-        /*if (GregTech_API.mImmersiveEngineering && GT_Mod.gregtechproxy.mImmersiveEngineeringRecipes) {
-            blusunrize.immersiveengineering.api.tool.ExcavatorHandler.recalculateChances(true);
-        }*/
     }
 }
