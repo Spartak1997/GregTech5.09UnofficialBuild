@@ -17,14 +17,6 @@ public class GT_Loader_ItemData
         implements Runnable {
     public void run() {
         GT_Log.out.println("GT_Mod: Loading Item Data Tags");
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("TwilightForest", "item.giantPick", 1L, 0), new ItemData(Materials.Stone, 696729600L, new MaterialStack[]{new MaterialStack(Materials.Wood, 464486400L)}));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("TwilightForest", "item.giantSword", 1L, 0), new ItemData(Materials.Stone, 464486400L, new MaterialStack[]{new MaterialStack(Materials.Wood, 232243200L)}));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("TwilightForest", "tile.GiantLog", 1L, 32767), new ItemData(Materials.Wood, 232243200L, new MaterialStack[0]));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("TwilightForest", "tile.GiantCobble", 1L, 32767), new ItemData(Materials.Stone, 232243200L, new MaterialStack[0]));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("TwilightForest", "tile.GiantObsidian", 1L, 32767), new ItemData(Materials.Obsidian, 232243200L, new MaterialStack[0]));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("TwilightForest", "item.minotaurAxe", 1L, 0), new ItemData(Materials.Diamond, 14515200L, new MaterialStack[]{new MaterialStack(Materials.Wood, OrePrefixes.stick.mMaterialAmount * 2L)}));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("TwilightForest", "item.armorShards", 1L, 0), new ItemData(Materials.Knightmetal, 403200L, new MaterialStack[0]));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("TwilightForest", "item.shardCluster", 1L, 0), new ItemData(Materials.Knightmetal, 3628800L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(ItemList.TF_LiveRoot.get(1L, new Object[0]), new ItemData(Materials.LiveRoot, 3628800L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("appliedenergistics2", "item.ItemMultiMaterial", 1L, 10), new ItemData(Materials.CertusQuartz, 1814400L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("appliedenergistics2", "item.ItemMultiMaterial", 1L, 11), new ItemData(Materials.NetherQuartz, 1814400L, new MaterialStack[0]));
@@ -157,12 +149,12 @@ public class GT_Loader_ItemData
         GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("Thaumcraft", "ItemNuggetBeef", 1L, 32767), new ItemData(Materials.MeatCooked, 403200L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("Thaumcraft", "ItemNuggetPork", 1L, 32767), new ItemData(Materials.MeatCooked, 403200L, new MaterialStack[0]));
         GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("Thaumcraft", "ItemNuggetFish", 1L, 32767), new ItemData(Materials.MeatCooked, 403200L, new MaterialStack[0]));
-        for (ItemStack tItem : new ItemStack[]{GT_ModHandler.getModItem("TwilightForest", "item.meefRaw", 1L, 0), GT_ModHandler.getModItem("TwilightForest", "item.venisonRaw", 1L, 0), new ItemStack(Items.porkchop), new ItemStack(Items.beef), new ItemStack(Items.chicken), new ItemStack(Items.fish)}) {
+        for (ItemStack tItem : new ItemStack[]{new ItemStack(Items.porkchop), new ItemStack(Items.beef), new ItemStack(Items.chicken), new ItemStack(Items.fish)}) {
             if (tItem != null) {
                 GT_OreDictUnificator.addItemData(GT_Utility.copyMetaData(32767L, new Object[]{tItem}), new ItemData(Materials.MeatRaw, 3628800L, new MaterialStack[]{new MaterialStack(Materials.Bone, 403200L)}));
             }
         }
-        for (ItemStack tItem : new ItemStack[]{GT_ModHandler.getModItem("TwilightForest", "item.meefSteak", 1L, 0), GT_ModHandler.getModItem("TwilightForest", "item.venisonCooked", 1L, 0), new ItemStack(Items.cooked_porkchop), new ItemStack(Items.cooked_beef), new ItemStack(Items.cooked_chicken), new ItemStack(Items.cooked_fished)}) {
+        for (ItemStack tItem : new ItemStack[]{new ItemStack(Items.cooked_porkchop), new ItemStack(Items.cooked_beef), new ItemStack(Items.cooked_chicken), new ItemStack(Items.cooked_fished)}) {
             if (tItem != null) {
                 GT_OreDictUnificator.addItemData(GT_Utility.copyMetaData(32767L, new Object[]{tItem}), new ItemData(Materials.MeatCooked, 3628800L, new MaterialStack[]{new MaterialStack(Materials.Bone, 403200L)}));
             }

@@ -154,7 +154,6 @@ public class GT_ModHandler {
         sSpecialRecipeClasses.add("thaumcraft.common.items.armor.RecipesRobeArmorDyes");
         sSpecialRecipeClasses.add("thaumcraft.common.items.armor.RecipesVoidRobeArmorDyes");
         sSpecialRecipeClasses.add("thaumcraft.common.lib.crafting.ShapelessNBTOreRecipe");
-        sSpecialRecipeClasses.add("twilightforest.item.TFMapCloningRecipe");
         sSpecialRecipeClasses.add("forestry.lepidopterology.MatingRecipe");
         sSpecialRecipeClasses.add("micdoodle8.mods.galacticraft.planets.asteroids.recipe.CanisterRecipes");
         sSpecialRecipeClasses.add("shedar.mods.ic2.nuclearcontrol.StorageArrayRecipe");

@@ -13,7 +13,6 @@ public class ProcessingModSupport implements gregtech.api.interfaces.IMaterialHa
     public static boolean aEnableThermalFoundationMats = Loader.isModLoaded("ThermalFoundation") || aTGregSupport;
     public static boolean aEnableEnderIOMats = Loader.isModLoaded("EnderIO") || aTGregSupport;
     public static boolean aEnableGCMarsMats = Loader.isModLoaded("GalacticraftMars") || aTGregSupport;
-    public static boolean aEnableTwilightMats = Loader.isModLoaded(GT_Values.MOD_ID_TF) || aTGregSupport;
     public static boolean aEnableMetallurgyMats = Loader.isModLoaded("Metallurgy") || aTGregSupport;
     public static boolean aEnableProjectRedMats = Loader.isModLoaded("ProjRed|Core") || aTGregSupport;
 
@@ -107,13 +106,6 @@ public class ProcessingModSupport implements gregtech.api.interfaces.IMaterialHa
             Materials.Komatiite.mHasParentMod = false;
             Materials.Rhyolite.mHasParentMod = false;
             Materials.Siltstone.mHasParentMod = false;
-        }
-        if (!aEnableTwilightMats) {
-            Materials.FierySteel.mHasParentMod = false;
-            Materials.LiveRoot.mHasParentMod = false;
-            Materials.IronWood.mHasParentMod = false;
-            Materials.Steeleaf.mHasParentMod = false;
-            Materials.Knightmetal.mHasParentMod = false;
         }
         if (!aEnableGCMarsMats) {
             Materials.Desh.mHasParentMod = false;

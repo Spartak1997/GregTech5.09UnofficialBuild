@@ -76,7 +76,6 @@ dependencies =  " required-after:IC2;" +
         " after:Thaumcraft;" +
         " after:appliedenergistics2;" +
         " after:ThermalExpansion;" +
-        " after:TwilightForest;" +
         " after:harvestcraft;" +
         " after:magicalcrops;" +
         " after:BuildCraft|Transport;" +

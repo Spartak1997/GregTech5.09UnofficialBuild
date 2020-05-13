@@ -1491,20 +1491,6 @@ public class GT_Utility {
         return !GregTech_API.sDimensionalList.contains(aDimensionID) && DimensionManager.isDimensionRegistered(aDimensionID);
     }
 
-    //public static boolean isRealDimension(int aDimensionID) {
-    //    try {
-    //        if (DimensionManager.getProvider(aDimensionID).getClass().getName().contains("com.xcompwiz.mystcraft"))
-    //            return true;
-    //    } catch (Throwable e) {/*Do nothing*/}
-    //    try {
-    //        if (DimensionManager.getProvider(aDimensionID).getClass().getName().contains("TwilightForest")) return true;
-    //    } catch (Throwable e) {/*Do nothing*/}
-    //    try {
-    //        if (DimensionManager.getProvider(aDimensionID).getClass().getName().contains("galacticraft")) return true;
-    //    } catch (Throwable e) {/*Do nothing*/}
-    //    return GregTech_API.sDimensionalList.contains(aDimensionID);
-    //}
-
     public static boolean moveEntityToDimensionAtCoords(Entity entity, int aDimension, double aX, double aY, double aZ) {
         //Credit goes to BrandonCore Author :!:
 
