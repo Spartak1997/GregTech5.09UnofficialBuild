@@ -35,7 +35,6 @@ public interface IMetaTileEntityItemPipe extends IMetaTileEntity {
     public boolean insertItemStackIntoTileEntity(Object aSender, byte aSide);
 
     /**
-     * Can be used to make flow control Pipes, like Redpowers Restriction Tubes.
      * Every normal Pipe returns a Value of 32768, so you can easily insert lower Numbers to set Routing priorities.
      * Negative Numbers to "suck" Items into a certain direction are also possible.
      */

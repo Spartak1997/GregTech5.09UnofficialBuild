@@ -263,7 +263,6 @@ public class GregTech_API {
 
     /**
      * You want OreDict-Unification for YOUR Mod/Addon, when GregTech is installed? This Function is especially for YOU.
-     * Call this Function after the load-Phase, as I register the the most of the Unification at that Phase (Redpowers Storageblocks are registered at postload).
      * A recommended use of this Function is inside your Recipe-System itself (if you have one), as the unification then makes 100% sure, that every added non-unificated Output gets automatically unificated.
      * <p/>
      * I will personally make sure, that only common prefixes of Ores get registered at the Unificator, as of now there are:

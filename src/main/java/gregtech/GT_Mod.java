@@ -88,15 +88,6 @@ dependencies =  " required-after:IC2;" +
         " after:ThermalExpansion|Transport;" +
         " after:ThermalExpansion|Energy;" +
         " after:ThermalExpansion|Factory;" +
-        " after:RedPowerCore;" +
-        " after:RedPowerBase;" +
-        " after:RedPowerMachine;" +
-        " after:RedPowerCompat;" +
-        " after:RedPowerWiring;" +
-        " after:RedPowerLogic;" +
-        " after:RedPowerLighting;" +
-        " after:RedPowerWorld;" +
-        " after:RedPowerControl;" +
         " after:UndergroundBiomes;" +
         " after:TConstruct;" +
         " after:Translocator;")
