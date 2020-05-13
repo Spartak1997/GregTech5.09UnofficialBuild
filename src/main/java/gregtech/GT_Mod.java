@@ -76,7 +76,6 @@ dependencies =  " required-after:IC2;" +
         " after:appliedenergistics2;" +
         " after:ThermalExpansion;" +
         " after:harvestcraft;" +
-        " after:magicalcrops;" +
         " after:BuildCraft|Transport;" +
         " after:BuildCraft|Silicon;" +
         " after:BuildCraft|Factory;" +

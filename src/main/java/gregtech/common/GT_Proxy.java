@@ -473,9 +473,6 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
     public void onLoad() {
         GT_Log.out.println("GT_Mod: Beginning Load-Phase.");
         GT_Log.ore.println("GT_Mod: Beginning Load-Phase.");
-        GT_OreDictUnificator.registerOre("cropChilipepper", GT_ModHandler.getModItem("magicalcrops", "magicalcrops_CropProduce", 1L, 2));
-        GT_OreDictUnificator.registerOre("cropTomato", GT_ModHandler.getModItem("magicalcrops", "magicalcrops_CropProduce", 1L, 8));
-        GT_OreDictUnificator.registerOre("cropGrape", GT_ModHandler.getModItem("magicalcrops", "magicalcrops_CropProduce", 1L, 4));
         GT_OreDictUnificator.registerOre("cropTea", GT_ModHandler.getModItem("ganyssurface", "teaLeaves", 1L, 0));
 
         GregTech_API.sGasHazmatList.add(GT_ModHandler.getModItem("EMT", "NanoBootsTraveller", 1L, 32767));
