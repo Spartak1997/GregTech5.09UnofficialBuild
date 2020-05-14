@@ -150,6 +150,14 @@ public class GT_ModHandler {
         sSpecialRecipeClasses.add("dan200.qcraft.shared.QBlockRecipe");
         sSpecialRecipeClasses.add("appeng.recipes.game.FacadeRecipe");
         sSpecialRecipeClasses.add("appeng.recipes.game.DisassembleRecipe");
+        sSpecialRecipeClasses.add("mods.railcraft.common.carts.LocomotivePaintingRecipe");
+        sSpecialRecipeClasses.add("mods.railcraft.common.util.crafting.RotorRepairRecipe");
+        sSpecialRecipeClasses.add("mods.railcraft.common.util.crafting.RoutingTableCopyRecipe");
+        sSpecialRecipeClasses.add("mods.railcraft.common.util.crafting.RoutingTicketCopyRecipe");
+        sSpecialRecipeClasses.add("mods.railcraft.common.util.crafting.TankCartFilterRecipe");
+        sSpecialRecipeClasses.add("mods.railcraft.common.emblems.LocomotiveEmblemRecipe");
+        sSpecialRecipeClasses.add("mods.railcraft.common.emblems.EmblemPostColorRecipe");
+        sSpecialRecipeClasses.add("mods.railcraft.common.emblems.EmblemPostEmblemRecipe");
         sSpecialRecipeClasses.add("mods.immibis.redlogic.interaction.RecipeDyeLumarButton");
         sSpecialRecipeClasses.add("thaumcraft.common.items.armor.RecipesRobeArmorDyes");
         sSpecialRecipeClasses.add("thaumcraft.common.items.armor.RecipesVoidRobeArmorDyes");
@@ -477,6 +485,23 @@ public class GT_ModHandler {
         return true;
     }
 
+    /**
+     * RC-BlastFurnace Recipes
+     */
+    public static boolean addRCBlastFurnaceRecipe(ItemStack aInput, ItemStack aOutput, int aTime) {
+        aOutput = GT_OreDictUnificator.get(true, aOutput);
+        if (aInput == null || aOutput == null || aTime <= 0) return false;
+        if (!GregTech_API.sRecipeFile.get(ConfigCategories.Machines.rcblastfurnace, aInput, true)) return false;
+        aInput = GT_Utility.copy(aInput);
+        aOutput = GT_Utility.copy(aOutput);
+        try {
+            mods.railcraft.api.crafting.RailcraftCraftingManager.blastFurnace.addRecipe(aInput, true, false, aTime, aOutput);
+        } catch (Throwable e) {
+            return false;
+        }
+        return true;
+    }
+
     public static boolean addPulverisationRecipe(ItemStack aInput, ItemStack aOutput1) {
         return addPulverisationRecipe(aInput, aOutput1, null, 0, false);
     }
@@ -515,7 +540,6 @@ public class GT_ModHandler {
                 GT_Utility.addSimpleIC2MachineRecipe(aInput, getMaceratorRecipeList(), null, aOutput1);
             }
             RA.addPulveriserRecipe(aInput, new ItemStack[]{aOutput1, aOutput2, aOutput3}, new int[]{10000, aChance2 <= 0 ? 1000 : 100 * aChance2, aChance3 <= 0 ? 1000 : 100 * aChance3}, 400, 2);
-
         }
         return true;
     }
@@ -690,6 +714,20 @@ public class GT_ModHandler {
             tNBT.setInteger("amplification", aValue);
             GT_Utility.callMethod(ic2.api.recipe.Recipes.matterAmplifier, "addRecipe", false, false, false, aAmplifier, tNBT);
         } catch (Throwable e) {/*Do nothing*/}
+        return true;
+    }
+
+    /**
+     * Rolling Machine Crafting Recipe
+     */
+    public static boolean addRollingMachineRecipe(ItemStack aResult, Object[] aRecipe) {
+        aResult = GT_OreDictUnificator.get(true, aResult);
+        if (aResult == null || aRecipe == null || aResult.stackSize <= 0) return false;
+        try {
+            mods.railcraft.api.crafting.RailcraftCraftingManager.rollingMachine.getRecipeList().add(new ShapedOreRecipe(GT_Utility.copy(aResult), aRecipe));
+        } catch (Throwable e) {
+            return addCraftingRecipe(GT_Utility.copy(aResult), aRecipe);
+        }
         return true;
     }
 

@@ -1337,6 +1337,18 @@ public class GT_Recipe implements Comparable<GT_Recipe> {
             aRecipe = super.findRecipe(aTileEntity, aRecipe, aNotUnificated, aVoltage, aFluids, aSpecialSlot, aInputs);
             if (aRecipe != null) return aRecipe;
 
+            try {
+                List<ItemStack> tRecipeOutputs = mods.railcraft.api.crafting.RailcraftCraftingManager.rockCrusher.getRecipe(GT_Utility.copyAmount(1, aInputs[0])).getRandomizedOuputs();
+                if (tRecipeOutputs != null) {
+                    aRecipe = new GT_Recipe(false, new ItemStack[]{GT_Utility.copyAmount(1, aInputs[0])}, tRecipeOutputs.toArray(new ItemStack[tRecipeOutputs.size()]), null, null, null, null, 800, 2, 0);
+                    aRecipe.mCanBeBuffered = false;
+                    aRecipe.mNeedsEmptyOutput = true;
+                    return aRecipe;
+                }
+            } catch (NoClassDefFoundError e) {
+                if (D1) GT_Log.err.println("Railcraft Not loaded");
+            } catch (NullPointerException e) {/**/}
+
             ItemStack tComparedInput = GT_Utility.copy(aInputs[0]);
             ItemStack[] tOutputItems = GT_ModHandler.getMachineOutput(tComparedInput, ic2.api.recipe.Recipes.macerator.getRecipes(), true, new NBTTagCompound(), null, null, null);
             return GT_Utility.arrayContainsNonNull(tOutputItems) ? new GT_Recipe(false, new ItemStack[]{GT_Utility.copyAmount(aInputs[0].stackSize - tComparedInput.stackSize, aInputs[0])}, tOutputItems, null, null, null, null, 400, 2, 0) : null;
