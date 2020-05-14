@@ -494,39 +494,39 @@ public class GT_MetaTileEntity_Tesseract extends GT_MetaTileEntity_MultiBlockBas
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 2, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 2, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 2, zDir)!= 13) {
             return false;
         }
         mInputHatches.clear();
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 6, zDir+1), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 6, zDir+1), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir, 6, zDir+1)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 6, zDir+1)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 6, zDir+1)!= 13) {
                 return false;
             }
         }
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 6, zDir-1), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 6, zDir-1), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir, 6, zDir-1)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 6, zDir-1)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 6, zDir-1)!= 13) {
                 return false;
             }
         }
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir+1, 6, zDir), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir+1, 6, zDir), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir+1, 6, zDir)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 6, zDir)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 6, zDir)!= 13) {
                 return false;
             }
         }
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir-1, 6, zDir), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir-1, 6, zDir), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir-1, 6, zDir)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 6, zDir)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 6, zDir)!= 13) {
                 return false;
             }
         }
@@ -537,35 +537,35 @@ public class GT_MetaTileEntity_Tesseract extends GT_MetaTileEntity_MultiBlockBas
         //===
         
         mInputBusses.clear();
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 6, zDir+1), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 6, zDir+1), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir, 6, zDir+1)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 6, zDir+1)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 6, zDir+1)!= 13) {
                 return false;
             }
         }
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 6, zDir-1), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 6, zDir-1), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir, 6, zDir-1)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 6, zDir-1)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 6, zDir-1)!= 13) {
                 return false;
             }
         }
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir+1, 6, zDir), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir+1, 6, zDir), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir+1, 6, zDir)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 6, zDir)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 6, zDir)!= 13) {
                 return false;
             }
         }
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir-1, 6, zDir), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir-1, 6, zDir), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir-1, 6, zDir)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 6, zDir)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 6, zDir)!= 13) {
                 return false;
             }
         }
@@ -635,26 +635,26 @@ public class GT_MetaTileEntity_Tesseract extends GT_MetaTileEntity_MultiBlockBas
         if(aBaseMetaTileEntity.getBlockOffset(xDir-2, 5, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 5, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 5, zDir)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir+2, 5, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 5, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 5, zDir)!= 13) {
             return false;
         }
         
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 5, zDir-2)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 5, zDir-2)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 5, zDir-2)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 5, zDir+2)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 5, zDir+2)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 5, zDir+2)!= 13) {
             return false;
         }
         
@@ -720,78 +720,78 @@ public class GT_MetaTileEntity_Tesseract extends GT_MetaTileEntity_MultiBlockBas
         if(aBaseMetaTileEntity.getBlockOffset(xDir-2, 4, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 4, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 4, zDir)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir+2, 4, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 4, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 4, zDir)!= 13) {
             return false;
         }
         
         if(aBaseMetaTileEntity.getBlockOffset(xDir-2, 4, zDir+1)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 4, zDir+1)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 4, zDir+1)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir+2, 4, zDir+1)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 4, zDir+1)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 4, zDir+1)!= 13) {
             return false;
         }
         
         if(aBaseMetaTileEntity.getBlockOffset(xDir-2, 4, zDir-1)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 4, zDir-1)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 4, zDir-1)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir+2, 4, zDir-1)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 4, zDir-1)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 4, zDir-1)!= 13) {
             return false;
         }
         
         if(aBaseMetaTileEntity.getBlockOffset(xDir-1, 4, zDir-2)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 4, zDir-2)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 4, zDir-2)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir+1, 4, zDir-2)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 4, zDir-2)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 4, zDir-2)!= 13) {
             return false;
         }
         
         if(aBaseMetaTileEntity.getBlockOffset(xDir-1, 4, zDir+2)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 4, zDir+2)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 4, zDir+2)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir+1, 4, zDir+2)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 4, zDir+2)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 4, zDir+2)!= 13) {
             return false;
         }
         
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 4, zDir+2)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 4, zDir+2)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 4, zDir+2)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 4, zDir-2)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 4, zDir-2)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 4, zDir-2)!= 13) {
             return false;
         }
         
@@ -885,26 +885,26 @@ public class GT_MetaTileEntity_Tesseract extends GT_MetaTileEntity_MultiBlockBas
         if(aBaseMetaTileEntity.getBlockOffset(xDir-2, 3, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 3, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 3, zDir)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir+2, 3, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 3, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 3, zDir)!= 13) {
             return false;
         }
         
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 3, zDir-2)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir-2)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir-2)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 3, zDir+2)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir+2)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir+2)!= 13) {
             return false;
         }
         
@@ -998,35 +998,35 @@ public class GT_MetaTileEntity_Tesseract extends GT_MetaTileEntity_MultiBlockBas
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 2, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 2, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 2, zDir)!= 13) {
             return false;
         }
         
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 2, zDir+1)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 2, zDir+1)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 2, zDir+1)!= 13) {
                 return false;
             }
         
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 2, zDir-1)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 2, zDir-1)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 2, zDir-1)!= 13) {
                 return false;
             }
         
         if(aBaseMetaTileEntity.getBlockOffset(xDir+1, 2, zDir)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 2, zDir)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 2, zDir)!= 13) {
                 return false;
             }
         
         if(aBaseMetaTileEntity.getBlockOffset(xDir-1, 2, zDir)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 2, zDir)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 2, zDir)!= 13) {
                 return false;
             }
         

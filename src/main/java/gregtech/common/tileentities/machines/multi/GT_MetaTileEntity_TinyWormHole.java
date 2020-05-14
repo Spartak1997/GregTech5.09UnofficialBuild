@@ -323,7 +323,7 @@ public class GT_MetaTileEntity_TinyWormHole extends GT_MetaTileEntity_MultiBlock
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 4, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 4, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 4, zDir)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 4, zDir-1)!= GregTech_API.sBlockCasings5) {
@@ -460,7 +460,7 @@ public class GT_MetaTileEntity_TinyWormHole extends GT_MetaTileEntity_MultiBlock
         if(aBaseMetaTileEntity.getBlockOffset(xDir+1, 3, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 3, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir+1, 3, zDir)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir+1, 3, zDir-1)!= GregTech_API.sBlockCasings5) {
@@ -473,7 +473,7 @@ public class GT_MetaTileEntity_TinyWormHole extends GT_MetaTileEntity_MultiBlock
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 3, zDir+1)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir+1)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir+1)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 3, zDir)!= GregTech_API.sBlockCasings5) {
@@ -485,7 +485,7 @@ public class GT_MetaTileEntity_TinyWormHole extends GT_MetaTileEntity_MultiBlock
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 3, zDir-1)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir-1)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir-1)!= 13) {
             return false;
         }
         
@@ -498,7 +498,7 @@ public class GT_MetaTileEntity_TinyWormHole extends GT_MetaTileEntity_MultiBlock
         if(aBaseMetaTileEntity.getBlockOffset(xDir-1, 3, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 3, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir-1, 3, zDir)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir-1, 3, zDir-1)!= GregTech_API.sBlockCasings5) {
@@ -509,35 +509,35 @@ public class GT_MetaTileEntity_TinyWormHole extends GT_MetaTileEntity_MultiBlock
         }
         //===
         mInputHatches.clear();
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir+2, 3, zDir), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir+2, 3, zDir), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir+2, 3, zDir)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 3, zDir)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir+2, 3, zDir)!= 13) {
                 return false;
             }
         }
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 3, zDir+2), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 3, zDir+2), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir, 3, zDir+2)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir+2)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir+2)!= 13) {
                 return false;
             }
         }
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 3, zDir-2), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir, 3, zDir-2), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir, 3, zDir-2)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir-2)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 3, zDir-2)!= 13) {
                 return false;
             }
         }
-        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir-2, 3, zDir), 136)){
+        if(!addInputToMachineList(aBaseMetaTileEntity.getIGregTechTileEntityOffset(xDir-2, 3, zDir), 141)){
         	if(aBaseMetaTileEntity.getBlockOffset(xDir-2, 3, zDir)!= GregTech_API.sBlockCasings5) {
                 return false;
             }
-            if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 3, zDir)!= 8) {
+            if(aBaseMetaTileEntity.getMetaIDOffset(xDir-2, 3, zDir)!= 13) {
                 return false;
             }
         }
@@ -603,7 +603,7 @@ public class GT_MetaTileEntity_TinyWormHole extends GT_MetaTileEntity_MultiBlock
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 2, zDir)!= GregTech_API.sBlockCasings5) {
             return false;
         }
-        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 2, zDir)!= 8) {
+        if(aBaseMetaTileEntity.getMetaIDOffset(xDir, 2, zDir)!= 13) {
             return false;
         }
         if(aBaseMetaTileEntity.getBlockOffset(xDir, 2, zDir-1)!= GregTech_API.sBlockCasings5) {
