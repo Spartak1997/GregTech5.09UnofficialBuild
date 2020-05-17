@@ -1468,9 +1468,9 @@ public class GT_MachineRecipeLoader implements Runnable {
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.AnnealedCopper, 2L), ItemList.Casing_MV.get(1L, new Object[0]), Materials.Plastic.getMolten(288), ItemList.Hull_MV.get(1L, new Object[0]), 50, 120);
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Gold, 2L), ItemList.Casing_HV.get(1L, new Object[0]), Materials.Plastic.getMolten(288), ItemList.Hull_HV.get(1L, new Object[0]), 50, 480);
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Aluminium, 2L), ItemList.Casing_EV.get(1L, new Object[0]), Materials.Plastic.getMolten(288), ItemList.Hull_EV.get(1L, new Object[0]), 50, 1920);
-            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Tungsten, 2L), ItemList.Casing_IV.get(1L, new Object[0]), Materials.Polytetrafluoroethylene.getMolten(288), ItemList.Hull_IV.get(1L, new Object[0]), 50, 7680);
-            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.VanadiumGallium, 2L), ItemList.Casing_LuV.get(1L, new Object[0]), Materials.Polytetrafluoroethylene.getMolten(288), ItemList.Hull_LuV.get(1L, new Object[0]), 50, 30720);
-            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Naquadah, 2L), ItemList.Casing_ZPM.get(1L, new Object[0]), Materials.Polybenzimidazole.getMolten(288), ItemList.Hull_ZPM.get(1L, new Object[0]), 50, 122880);
+            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt02, Materials.Tungsten, 2L), ItemList.Casing_IV.get(1L, new Object[0]), Materials.Polytetrafluoroethylene.getMolten(288), ItemList.Hull_IV.get(1L, new Object[0]), 50, 7680);
+            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt02, Materials.VanadiumGallium, 2L), ItemList.Casing_LuV.get(1L, new Object[0]), Materials.Polytetrafluoroethylene.getMolten(288), ItemList.Hull_LuV.get(1L, new Object[0]), 50, 30720);
+            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt02, Materials.Naquadah, 2L), ItemList.Casing_ZPM.get(1L, new Object[0]), Materials.Polybenzimidazole.getMolten(288), ItemList.Hull_ZPM.get(1L, new Object[0]), 50, 122880);
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt04, Materials.NaquadahAlloy, 2L), ItemList.Casing_UV.get(1L, new Object[0]), Materials.Polybenzimidazole.getMolten(288), ItemList.Hull_UV.get(1L, new Object[0]), 50, 500000);
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.wireGt04, Materials.Europium, 2L), ItemList.Casing_MAX.get(1L, new Object[0]), Materials.Polybenzimidazole.getMolten(576), ItemList.Hull_MAX.get(1L, new Object[0]), 50, 2000000);
             if (Loader.isModLoaded("DraconicEvolution")){
@@ -1487,9 +1487,9 @@ public class GT_MachineRecipeLoader implements Runnable {
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.AnnealedCopper, 2L), ItemList.Casing_MV.get(1L, new Object[0]), ItemList.Hull_MV.get(1L, new Object[0]), 50, 120);
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Gold, 2L), ItemList.Casing_HV.get(1L, new Object[0]), ItemList.Hull_HV.get(1L, new Object[0]), 50, 480);
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Aluminium, 2L), ItemList.Casing_EV.get(1L, new Object[0]), ItemList.Hull_EV.get(1L, new Object[0]), 50, 1920);
-            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Tungsten, 2L), ItemList.Casing_IV.get(1L, new Object[0]), ItemList.Hull_IV.get(1L, new Object[0]), 50, 7680);
-            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.VanadiumGallium, 2L), ItemList.Casing_LuV.get(1L, new Object[0]), ItemList.Hull_LuV.get(1L, new Object[0]), 50, 30720);
-            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt01, Materials.Naquadah, 2L), ItemList.Casing_ZPM.get(1L, new Object[0]), ItemList.Hull_ZPM.get(1L, new Object[0]), 50, 122880);
+            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt02, Materials.Tungsten, 2L), ItemList.Casing_IV.get(1L, new Object[0]), ItemList.Hull_IV.get(1L, new Object[0]), 50, 7680);
+            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt02, Materials.VanadiumGallium, 2L), ItemList.Casing_LuV.get(1L, new Object[0]), ItemList.Hull_LuV.get(1L, new Object[0]), 50, 30720);
+            GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt02, Materials.Naquadah, 2L), ItemList.Casing_ZPM.get(1L, new Object[0]), ItemList.Hull_ZPM.get(1L, new Object[0]), 50, 122880);
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.cableGt04, Materials.NaquadahAlloy, 2L), ItemList.Casing_UV.get(1L, new Object[0]), ItemList.Hull_UV.get(1L, new Object[0]), 50, 500000);
             GT_Values.RA.addAssemblerRecipe(GT_OreDictUnificator.get(OrePrefixes.wireGt04, Materials.Europium, 2L), ItemList.Casing_MAX.get(1L, new Object[0]), ItemList.Hull_MAX.get(1L, new Object[0]), 50, 2000000);
             if (Loader.isModLoaded("DraconicEvolution")){
@@ -2432,8 +2432,13 @@ public class GT_MachineRecipeLoader implements Runnable {
     		GT_Values.RA.addCompressorRecipe(ItemList.EnergyCrystal_MV.get(4L), ItemList.EnergyCrystal_HV.get(1L), 1000, 480);
     		GT_Values.RA.addCompressorRecipe(ItemList.EnergyCrystal_HV.get(4L), ItemList.EnergyCrystal_EV.get(1L), 1000, 1920);
     		GT_ModHandler.addCraftingRecipe(ItemList.EnergyCrystal_IV.get(1L), GT_ModHandler.RecipeBits.NOT_REMOVABLE, new Object[]{"PBP", "BCB", "PBP", 'C', OrePrefixes.circuit.get(Materials.Elite), 'B', ItemList.EnergyCrystal_EV.get(1L), 'P', GT_ModHandler.getIC2Item("iridiumPlate", 1L)});
-            
-    		//Antimatter
+
+            GT_Values.RA.addExtractorRecipe(ItemList.EnergyCrystal_MV.get(1L), ItemList.EnergyCrystal_LV.get(4L), 100, 120);
+            GT_Values.RA.addExtractorRecipe(ItemList.EnergyCrystal_HV.get(1L), ItemList.EnergyCrystal_MV.get(4L), 200, 480);
+            GT_Values.RA.addExtractorRecipe(ItemList.EnergyCrystal_EV.get(1L), ItemList.EnergyCrystal_HV.get(4L), 400, 1920);
+
+
+        //Antimatter
     		GT_Values.RA.addAssemblerRecipe(ItemList.Hull_ZPM.get(1, new Object[0]), GT_OreDictUnificator.get(OrePrefixes.wireGt01, Materials.Osmium, 16), Materials.Gallium.getMolten(864L), ItemList.Casing_Dyson_Ring.get(1, new Object[0]), 350, 30800, true);
     		
     		GT_Values.RA.addCentrifugeRecipe(GT_OreDictUnificator.get(OrePrefixes.cell, Materials.UUMatter, 2L), ItemList.Magnetic_Confinement_Pod.get(1L, new Object[0]), Materials.Neutronium.getMolten(10L), Materials.Lutetium.getMolten(100L), ItemList.Magnetic_Confinement_Pod_AntiHydrogen.get(1L, new Object[0]), GT_OreDictUnificator.get(OrePrefixes.cell, Materials.Naquadria, 1L), ItemList.Cell_Empty.get(1L, new Object[0]), GT_Values.NI, GT_Values.NI, GT_Values.NI, new int[]{10000, 10000, 10000}, 2400, 100000);
@@ -3930,15 +3935,15 @@ public class GT_MachineRecipeLoader implements Runnable {
 
            ItemStack[] chests = {
                    new ItemStack(Blocks.chest),
-                   new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,3) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,4) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,1) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,2) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,5) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,6) : GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,145),
-                   GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,146)
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,0) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,1) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,2) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,3) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,4) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,5) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,6) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,7) : GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,145),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,8) : GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,146)
            };
            ItemStack[] tanks = {
                    GT_OreDictUnificator.get(OrePrefixes.cell,Materials.Empty,1L),

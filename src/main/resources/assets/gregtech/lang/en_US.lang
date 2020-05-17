@@ -660,17 +660,24 @@ achievement.gt.metaitem.01.32737.desc=Pickup this item to see the recipe in NEI
 achievement.gt.metaitem.01.32599=Lapotronic Energy Orb Cluster
 achievement.gt.metaitem.01.32599.desc=Pickup this item to see the recipe in NEI
 
-achievement.ic2.itemArmorQuantumHelmet=Quantum Helmet
-achievement.ic2.itemArmorQuantumHelmet.desc=Pickup this item to see the recipe in NEI
-achievement.ic2.itemArmorQuantumChestplate=Quantum Chestplate
-achievement.ic2.itemArmorQuantumChestplate.desc=Pickup this item to see the recipe in NEI
-achievement.ic2.itemArmorQuantumLegs=Quantum Leggings
-achievement.ic2.itemArmorQuantumLegs.desc=Pickup this item to see the recipe in NEI
-achievement.ic2.itemArmorQuantumBoots=Quantum Boots
-achievement.ic2.itemArmorQuantumBoots.desc=Pickup this item to see the recipe in NEI
+achievement.item.impact_item2.147=Stargate-Radiation-Containment-Plate
+achievement.item.impact_item2.147.desc=Pickup this item to see the recipe in NEI
+achievement.item.impact_item2.148=Stargate Frame Part
+achievement.item.impact_item2.148.desc=Pickup this item to see the recipe in NEI
+achievement.item.impact_item2.149=Stargate Chevron
+achievement.item.impact_item2.149.desc=Pickup this item to see the recipe in NEI
 
-achievement.item.graviChestPlate=Gravi Chestplate
-achievement.item.graviChestPlate.desc=Pickup this item to see the recipe in NEI
+achievement.item.Tier4Rocket.t4Rocket=Mercury, Venus and Jupiter
+achievement.item.Tier4Rocket.t4Rocket.desc=Pickup this item to see the recipe in NEI
+achievement.item.Tier5Rocket.t5Rocket=Saturn and Uranus
+achievement.item.Tier5Rocket.t5Rocket.desc=Pickup this item to see the recipe in NEI
+achievement.item.Tier6Rocket.t6Rocket=Neptune
+achievement.item.Tier6Rocket.t6Rocket.desc=Pickup this item to see the recipe in NEI
+achievement.item.Tier7Rocket.t7Rocket=Pluto and more
+achievement.item.Tier7Rocket.t7Rocket.desc=Pickup this item to see the recipe in NEI
+achievement.item.Tier8Rocket.t8Rocket=Deep Space
+achievement.item.Tier8Rocket.t8Rocket.desc=Pickup this item to see the recipe in NEI
+
 
 for.bees.species.clay=Clay
 for.bees.species.slimeball=Slimeball
