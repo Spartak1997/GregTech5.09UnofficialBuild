@@ -192,6 +192,7 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
     private final String aTextArsmagica2 = "arsmagica2";
     public boolean mEnableAllMaterials = false;
     public boolean mEnableAllComponents = false;
+    public boolean mEnableAllComponentsWithoutIntegration = true;
     public boolean mAddGTRecipesToIC2Machines = true;
 	public boolean mEnableCleanroom = true;
     public boolean mLowGravProcessing = false;

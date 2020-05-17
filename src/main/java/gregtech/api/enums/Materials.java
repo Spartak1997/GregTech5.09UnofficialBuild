@@ -1605,6 +1605,7 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
         initMaterialProperties(); //No more material addition or manipulation should be done past this point!
         MATERIALS_ARRAY = MATERIALS_MAP.values().toArray(new Materials[MATERIALS_MAP.size()]); //Generate standard object array. This is a lot faster to loop over.
         VALUES = Arrays.asList(MATERIALS_ARRAY);
+        if(!GT_Mod.gregtechproxy.mEnableAllComponentsWithoutIntegration)
         if (!GT_Mod.gregtechproxy.mEnableAllComponents) OrePrefixes.initMaterialComponents();
         for (Materials aMaterial : MATERIALS_ARRAY) {
             if (aMaterial.mMetaItemSubID >= 0) {
