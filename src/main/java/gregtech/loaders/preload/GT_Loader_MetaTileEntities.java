@@ -1401,7 +1401,8 @@ public class GT_Loader_MetaTileEntities implements Runnable {
 		ItemList.Machine_Multi_Cleanroom.set(new GT_MetaTileEntity_Cleanroom(1172, "multimachine.cleanroom", "Cleanroom Controller").getStackForm(1));
 		//If Cleanroom is enabled, add a recipe, else hide from NEI.
 		if (GT_Mod.gregtechproxy.mEnableCleanroom){
-			}
+			GT_ModHandler.addCraftingRecipe(ItemList.Machine_Multi_Cleanroom.get(1L, new Object[0]), bitsd, new Object[]{"FFF", "RHR", "MCM", 'H', ItemList.Hull_HV, 'F', ItemList.Component_Filter, 'R', OrePrefixes.rotor.get(Materials.StainlessSteel), 'M', ItemList.Electric_Motor_HV, 'C', OrePrefixes.circuit.get(Materials.Advanced)});
+        }
 		else {
 			if (isNEILoaded){
 				API.hideItem(ItemList.Machine_Multi_Cleanroom.get(1L, new Object[0]));
