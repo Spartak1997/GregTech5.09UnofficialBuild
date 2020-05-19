@@ -3915,15 +3915,15 @@ public class GT_MachineRecipeLoader implements Runnable {
 
            ItemStack[] chests = {
                    new ItemStack(Blocks.chest),
-                   new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,3) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,4) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,1) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,2) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,5) : new ItemStack(Blocks.chest),
-                   Loader.isModLoaded("IronChest") ? GT_ModHandler.getModItem("IronChest","BlockIronChest",1,6) : GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,145),
-                   GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,146)
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,0) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,1) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,2) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,3) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,4) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,5) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,6) : new ItemStack(Blocks.chest),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,7) : GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,145),
+                   Loader.isModLoaded("chestup") ? GT_ModHandler.getModItem("chestup","Blockchestup",1,8) : GT_ModHandler.getModItem("gregtech","gt.blockmachines",1,146)
            };
            ItemStack[] tanks = {
                    GT_OreDictUnificator.get(OrePrefixes.cell,Materials.Empty,1L),
