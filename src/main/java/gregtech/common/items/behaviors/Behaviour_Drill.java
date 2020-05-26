@@ -29,7 +29,7 @@ public class Behaviour_Drill
         if (aWorld.isRemote) {
             return false;
         } else {
-            if (!aPlayer.isSneaking()) {
+            if (aPlayer.isSneaking()) {
                 int toolMode = getDrillRangeMode(aStack);
                 ++toolMode;
                 if (toolMode > mTier) {
@@ -61,7 +61,7 @@ public class Behaviour_Drill
         if (aWorld.isRemote) {
             return false;
         } else {
-            if (!aPlayer.isSneaking()) {
+            if (aPlayer.isSneaking()) {
                 int toolMode = getDrillRangeMode(aStack);
                 ++toolMode;
                 if (toolMode > mTier) {
@@ -94,7 +94,7 @@ public class Behaviour_Drill
         int mode = getDrillRangeMode(aStack);
         aList.add(EnumChatFormatting.WHITE + GT_LanguageManager.addStringLocalization("gt.behaviour.drillmode", "Mode") + ": " +EnumChatFormatting.GREEN+ (mode == 1? "3x3x3": mode == 2? "5x5x5": mode == 3? "7x7x7": mode == 4? "9x9x9": GT_LanguageManager.addStringLocalization("gt.behaviour.drillnormal", "Normal")));
         aList.add(this.mTooltip + ": " + this.mRange);
-        aList.add(GT_LanguageManager.addStringLocalization("gt.behaviour.drill1", "Right click on the block to change the mode"));
+        aList.add(GT_LanguageManager.addStringLocalization("gt.behaviour.drill1", "Shift + Right click on the block to change the mode"));
         return aList;
     }
 }

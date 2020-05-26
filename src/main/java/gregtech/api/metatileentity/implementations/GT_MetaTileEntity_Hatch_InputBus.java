@@ -1,5 +1,7 @@
 package gregtech.api.metatileentity.implementations;
 
+import gregtech.api.enums.Materials;
+import gregtech.api.enums.OrePrefixes;
 import gregtech.api.enums.Textures;
 import gregtech.api.gui.*;
 import gregtech.api.interfaces.ITexture;
@@ -7,12 +9,15 @@ import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.objects.GT_RenderedTexture;
 import gregtech.api.util.GT_LanguageManager;
+import gregtech.api.util.GT_OreDictUnificator;
 import gregtech.api.util.GT_Recipe.GT_Recipe_Map;
 import gregtech.api.util.GT_Utility;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+
+import static gregtech.api.util.GT_OreDictUnificator.isItemStackInstanceOf;
 
 public class GT_MetaTileEntity_Hatch_InputBus extends GT_MetaTileEntity_Hatch {
     public GT_Recipe_Map mRecipeMap = null;
@@ -165,6 +170,24 @@ public class GT_MetaTileEntity_Hatch_InputBus extends GT_MetaTileEntity_Hatch {
 
     @Override
     public boolean allowPutStack(IGregTechTileEntity aBaseMetaTileEntity, int aIndex, byte aSide, ItemStack aStack) {
-        return aSide == getBaseMetaTileEntity().getFrontFacing() && (mRecipeMap == null || mRecipeMap.containsInput(aStack));
+//        boolean checkPut = false;
+//        /**
+//         * allow input all tier circuits
+//         */
+//        if (isItemStackInstanceOf(aStack, "circuitBasic")) checkPut = true;
+//        if (isItemStackInstanceOf(aStack, "circuitGood")) checkPut = true;
+//        if (isItemStackInstanceOf(aStack, "circuitAdvanced")) checkPut = true;
+//        if (isItemStackInstanceOf(aStack, "circuitData")) checkPut = true;
+//        if (isItemStackInstanceOf(aStack, "circuitElite")) checkPut = true;
+//        if (isItemStackInstanceOf(aStack, "circuitMaster")) checkPut = true;
+//        if (isItemStackInstanceOf(aStack, "circuitUltimate")) checkPut = true;
+//        if (isItemStackInstanceOf(aStack, "circuitSuperconductor")) checkPut = true;
+//        if (isItemStackInstanceOf(aStack, "circuitInfinite")) checkPut = true;
+//        if (isItemStackInstanceOf(aStack, "circuitBio")) checkPut = true;
+
+//        if (GT_Utility.areStacksEqual(GT_OreDictUnificator.get(OrePrefixes.bolt, Materials.BlueAlloy, 1L), aStack)) checkPut = true;
+//        if (aSide == getBaseMetaTileEntity().getFrontFacing() && (mRecipeMap == null || mRecipeMap.containsInput(aStack))) checkPut = true;
+//        return checkPut;
+        return aSide == aBaseMetaTileEntity.getFrontFacing();
     }
 }

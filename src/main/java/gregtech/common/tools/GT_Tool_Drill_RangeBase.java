@@ -24,9 +24,9 @@ import java.util.List;
 import static gregtech.api.util.GT_Utility.ItemNBT.getDrillRangeMode;
 
 abstract class GT_Tool_Drill_RangeBase
-        extends GT_Tool {
+        extends GT_Tool_Drill_LV {
 
-    private ThreadLocal<Object> sIsHarvestingRightNow = new ThreadLocal();
+    private ThreadLocal<Object> sIsHarvesting = new ThreadLocal();
 
     public static MovingObjectPosition raytraceFromEntity(World world, Entity player, boolean wut, double range) {
         float f = 1.0F;
@@ -179,8 +179,8 @@ abstract class GT_Tool_Drill_RangeBase
 
         MovingObjectPosition raycast = raytraceFromEntity(aPlayer.worldObj, aPlayer, true, 10);
         if (raycast != null) {
-            if ((this.sIsHarvestingRightNow.get() == null) && ((aPlayer instanceof EntityPlayerMP))) {
-                this.sIsHarvestingRightNow.set(this);
+            if ((this.sIsHarvesting.get() == null) && ((aPlayer instanceof EntityPlayerMP))) {
+                this.sIsHarvesting.set(this);
 
                 for (int i = -WD; i <= WD ; i++) {
                     for (int j = mode == 0? 0 : -1; j <= H; j++) {
@@ -198,7 +198,7 @@ abstract class GT_Tool_Drill_RangeBase
                         }
                     }
                 }
-                this.sIsHarvestingRightNow.set(null);
+                this.sIsHarvesting.set(null);
             }
         }
         return rConversions;

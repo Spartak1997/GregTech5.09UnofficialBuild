@@ -26,6 +26,7 @@ import java.util.Locale;
 import java.util.Random;
 
 import static gregtech.api.enums.GT_Values.*;
+import static gregtech.api.util.GT_OreDictUnificator.isItemStackInstanceOf;
 
 /**
  * NEVER INCLUDE THIS FILE IN YOUR MOD!!!
@@ -581,8 +582,16 @@ public class GT_MetaTileEntity_BasicMachine_GT_Recipe extends GT_MetaTileEntity_
             default:
                 int tID = getBaseMetaTileEntity().getMetaTileID();
                 if (tID >= 211 && tID <= 218 || tID >= 1180 && tID <= 1187 || tID >= 10783 && tID <= 10786 || tID >= 12080 && tID <= 12085 || tID >= 13010 && tID <= 13019){// assemblers IDs
-                    if (GT_OreDictUnificator.isItemStackInstanceOf(aStack, "circuitBasic")) return true; // allow input all LV-circuits for assemblers
-                    if (GT_OreDictUnificator.isItemStackInstanceOf(aStack, "circuitAdvanced")) return true; // allow input all HV-circuits for assemblers
+                    if (isItemStackInstanceOf(aStack, "circuitBasic")) return true; // allow input all LV-circuits for assemblers
+                    if (isItemStackInstanceOf(aStack, "circuitGood")) return true; // allow input all MV-circuits for assemblers
+                    if (isItemStackInstanceOf(aStack, "circuitAdvanced")) return true; // allow input all HV-circuits for assemblers
+                    if (isItemStackInstanceOf(aStack, "circuitData")) return true; // allow input all EV-circuits for assemblers
+                    if (isItemStackInstanceOf(aStack, "circuitElite")) return true; // allow input all IV-circuits for assemblers
+                    if (isItemStackInstanceOf(aStack, "circuitMaster")) return true; // allow input all LuV-circuits for assemblers
+                    if (isItemStackInstanceOf(aStack, "circuitUltimate")) return true; // allow input all ZPM-circuits for assemblers
+                    if (isItemStackInstanceOf(aStack, "circuitSuperconductor")) return true; // allow input all UV-circuits for assemblers
+                    if (isItemStackInstanceOf(aStack, "circuitInfinite")) return true; // allow input all UHV-circuits for assemblers
+                    if (isItemStackInstanceOf(aStack, "circuitBio")) return true; // allow input all UEV-circuits for assemblers
 					if (GT_Utility.areStacksEqual(GT_OreDictUnificator.get(OrePrefixes.bolt,Materials.BlueAlloy,1L),aStack)) return true;
                 }
                 return getRecipeList().containsInput(aStack);
