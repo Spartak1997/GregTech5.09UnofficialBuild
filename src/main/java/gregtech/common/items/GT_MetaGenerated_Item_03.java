@@ -6,7 +6,6 @@ import gregtech.api.enums.ItemList;
 import gregtech.api.enums.Materials;
 import gregtech.api.enums.OrePrefixes;
 import gregtech.api.enums.SubTag;
-import gregtech.api.enums.TC_Aspects;
 import gregtech.api.enums.Textures;
 import gregtech.api.interfaces.ITexture;
 import gregtech.api.items.GT_MetaGenerated_Item_X32;
@@ -259,28 +258,28 @@ public class GT_MetaGenerated_Item_03
         ItemList.Circuit_HighEnergyFlow.set(addItem(tLastID = 126, "High Energy Flow Circuit", "Energy Circuit",  new Object[]{OrePrefixes.circuit.get(Materials.Energy), SubTag.NO_UNIFICATION}));
         
         
-        ItemList.EnergyCrystal_LV.set(addItem(tLastID = 200, "Small Energium Crystall (T1)", "Reusable", new Object[]{new TC_Aspects.TC_AspectStack(TC_Aspects.ELECTRUM, 2L)}));
+        ItemList.EnergyCrystal_LV.set(addItem(tLastID = 200, "Small Energium Crystall (T1)", "Reusable"));
 	    setElectricStats(32000 + tLastID, 3200000L, GT_Values.V[1], 1L, -3L, true);	    
 		
-	    ItemList.EnergyCrystal_MV.set(addItem(tLastID = 201, "Medium Energium Crystall (T2)", "Reusable", new Object[]{new TC_Aspects.TC_AspectStack(TC_Aspects.ELECTRUM, 2L)}));
+	    ItemList.EnergyCrystal_MV.set(addItem(tLastID = 201, "Medium Energium Crystall (T2)", "Reusable"));
 	    setElectricStats(32000 + tLastID, 12800000L, GT_Values.V[2], 2L, -3L, true);	    
 		
-	    ItemList.EnergyCrystal_HV.set(addItem(tLastID = 202, "Large Energium Crystall (T3)", "Reusable", new Object[]{new TC_Aspects.TC_AspectStack(TC_Aspects.ELECTRUM, 2L)}));
+	    ItemList.EnergyCrystal_HV.set(addItem(tLastID = 202, "Large Energium Crystall (T3)", "Reusable"));
 	    setElectricStats(32000 + tLastID, 51200000L, GT_Values.V[3], 3L, -3L, true);	    
 		
-	    ItemList.EnergyCrystal_EV.set(addItem(tLastID = 203, "Huge Energium Crystall (T4)", "Reusable", new Object[]{new TC_Aspects.TC_AspectStack(TC_Aspects.ELECTRUM, 2L)}));
+	    ItemList.EnergyCrystal_EV.set(addItem(tLastID = 203, "Huge Energium Crystall (T4)", "Reusable"));
 	    setElectricStats(32000 + tLastID, 204800000L, GT_Values.V[4], 4L, -3L, true);	    
 		
-	    ItemList.EnergyCrystal_IV.set(addItem(tLastID = 204, "Energium Orb (T5)", "Reusable", new Object[]{new TC_Aspects.TC_AspectStack(TC_Aspects.ELECTRUM, 2L)}));
+	    ItemList.EnergyCrystal_IV.set(addItem(tLastID = 204, "Energium Orb (T5)", "Reusable"));
 	    setElectricStats(32000 + tLastID, 819200000L, GT_Values.V[5], 5L, -3L, true);
 	    
-	    ItemList.MysteriousCrystal.set(addItem(tLastID = 205, "Mysterious Energy Crystal", "Reusable", new Object[]{new TC_Aspects.TC_AspectStack(TC_Aspects.ELECTRUM, 8L)}));
+	    ItemList.MysteriousCrystal.set(addItem(tLastID = 205, "Mysterious Energy Crystal", "Reusable"));
 	    setElectricStats(32000 + tLastID, 5000000000L, GT_Values.V[8], 8L, -3L, true);
 	    
-	    ItemList.MysteriousCrystalOrb.set(addItem(tLastID = 206, "Mysterious Energy Crystal Orb", "Reusable", new Object[]{new TC_Aspects.TC_AspectStack(TC_Aspects.ELECTRUM, 10L)}));
+	    ItemList.MysteriousCrystalOrb.set(addItem(tLastID = 206, "Mysterious Energy Crystal Orb", "Reusable"));
 	    setElectricStats(32000 + tLastID, 50000000000L, GT_Values.V[9], 9L, -3L, true);
 	    
-	    ItemList.MysteriousCrystalModule.set(addItem(tLastID = 207, "Mysterious Energy Crystal Module", "Reusable", new Object[]{new TC_Aspects.TC_AspectStack(TC_Aspects.ELECTRUM, 12L)}));
+	    ItemList.MysteriousCrystalModule.set(addItem(tLastID = 207, "Mysterious Energy Crystal Module", "Reusable"));
 	    setElectricStats(32000 + tLastID, 500000000000L, GT_Values.V[10], 10L, -3L, true);
 	    
 	    

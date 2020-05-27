@@ -1,7 +1,6 @@
 package gregtech.common.items.armor;
 
 import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.Optional;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -32,17 +31,13 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.ISpecialArmor;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingFallEvent;
-import thaumcraft.api.IGoggles;
-import thaumcraft.api.nodes.IRevealer;
 
 import java.util.LinkedList;
 import java.util.List;
 
 import static gregtech.api.objects.XSTR.XSTR_INSTANCE;
 
-@Optional.InterfaceList(value = { @Optional.Interface(iface = "thaumcraft.api.IGoggles", modid = "Thaumcraft", striprefs = true),
-		@Optional.Interface(iface = "thaumcraft.api.nodes.IRevealer", modid = "Thaumcraft", striprefs = true) })
-public class ModularArmor_Item extends ItemArmor implements ISpecialArmor, IGoggles, IRevealer {
+public class ModularArmor_Item extends ItemArmor implements ISpecialArmor {
 
 	public String mName;
 	public int timer = 160;
@@ -421,22 +416,6 @@ public class ModularArmor_Item extends ItemArmor implements ISpecialArmor, IGogg
 			armor = GT_Values.RES_PATH_MODEL+"armor/"+tier+"_leggings_boots.png";
 		}}catch(Exception e){System.err.println(e);}
 		return armor;
-	}
-
-	@Override
-	public boolean showNodes(ItemStack aStack, EntityLivingBase aPlayer) {
-		if (data == null) {
-			data = fillArmorData((EntityPlayer) aPlayer, aStack);
-		}
-		return data.mBStat.get(StatType.THAUMICGOGGLES) && data.armorTier > 0 && data.charge > 0;
-	}
-
-	@Override
-	public boolean showIngamePopups(ItemStack aStack, EntityLivingBase aPlayer) {
-		if (data == null) {
-			data = fillArmorData((EntityPlayer) aPlayer, aStack);
-		}
-		return data.mBStat.get(StatType.THAUMICGOGGLES) && data.armorTier > 0 && data.charge > 0;
 	}
 
 	public ArmorData fillArmorData(EntityPlayer player, ItemStack stack) {

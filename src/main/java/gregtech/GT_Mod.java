@@ -72,7 +72,6 @@ import static gregtech.api.enums.GT_Values.MOD_ID_FR;
 @Mod(modid = "gregtech", name = "GregTech", version = "MC1710", useMetadata = false, 
 dependencies =  " required-after:IC2;" +
         " after:Forestry;" +
-        " after:Thaumcraft;" +
         " after:appliedenergistics2;" +
         " after:BuildCraft|Transport;" +
         " after:BuildCraft|Silicon;" +
@@ -1247,9 +1246,6 @@ public class GT_Mod implements IGT_Mod {
         		GT_OreDictUnificator.get(ItemList.Block_SSFUEL.get(1)),
         		GT_OreDictUnificator.get(ItemList.Block_MSSFUEL.get(1)),
         		GT_OreDictUnificator.get(OrePrefixes.rod, Materials.Blaze, 1));
-        if (Loader.isModLoaded("Thaumcraft")) {
-        	GT_Recipe.GT_Recipe_Map.sLargeBoilerFakeFuels.addSolidRecipe(GT_ModHandler.getModItem("Thaumcraft", "ItemResource", 1));
-        }
     }
     
     public static int calculateTotalGTVersion(int minorVersion){

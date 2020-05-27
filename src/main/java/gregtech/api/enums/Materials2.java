@@ -1,13 +1,5 @@
 package gregtech.api.enums;
 
-import gregtech.api.enums.TC_Aspects.TC_AspectStack;
-import gregtech.api.interfaces.IMaterialHandler;
-
-import java.util.Arrays;
-
-//import static gregtech.GT_Mod.GT_FML_LOGGER;
-
-
 public class Materials2 {
 
 	public static Materials Signalum = new Materials(-1, TextureSet.SET_NONE, 		1.0F, 0, 2, 1|2, 255, 255, 255, 0, "Signalum", "Signalum", 0, 0, -1, 0, false, false, 3, 1, 1, Dyes._NULL);
@@ -40,7 +32,7 @@ public class Materials2 {
     public static Materials Yellorite = new Materials(-1, TextureSet.SET_NONE, 		1.0F, 0, 2, 8 , 255, 255, 255, 0, "Yellorite", "Yellorite", 0, 0, -1, 0, false, false, 3, 1, 1, Dyes.dyeYellow);
     public static Materials Chrysocolla = new Materials(-1, TextureSet.SET_NONE, 	1.0F, 0, 2, 1, 255, 255, 255, 0, "Chrysocolla", "Chrysocolla", 0, 0, -1, 0, false, false, 3, 1, 1, Dyes._NULL);
     public static Materials Energized = new Materials(-1, TextureSet.SET_NONE, 		1.0F, 0, 2, 0, 255, 255, 255, 0, "Energized", "Energized", 0, 0, -1, 0, false, false, 1, 1, 1, Dyes._NULL);
-    public static Materials Voidstone = new Materials(-1, TextureSet.SET_NONE, 		1.0F, 0, 1, 0, 255, 255, 255, 200, "Voidstone", "Voidstone", 0, 0, -1, 0, false, true, 1, 1, 1, Dyes._NULL, Arrays.asList(new TC_Aspects.TC_AspectStack(TC_Aspects.VITREUS, 1), new TC_AspectStack(TC_Aspects.VACUOS, 1)));
+    public static Materials Voidstone = new Materials(-1, TextureSet.SET_NONE, 		1.0F, 0, 1, 0, 255, 255, 255, 200, "Voidstone", "Voidstone", 0, 0, -1, 0, false, true, 1, 1, 1, Dyes._NULL);
     public static Materials Turquoise = new Materials(-1, TextureSet.SET_NONE, 		1.0F, 0, 1, 1, 255, 255, 255, 0, "Turquoise", "Turquoise", 0, 0, -1, 0, false, false, 3, 1, 1, Dyes._NULL);
     public static Materials Sugilite = new Materials(-1, TextureSet.SET_NONE, 		1.0F, 0, 1, 1, 255, 255, 255, 0, "Sugilite", "Sugilite", 0, 0, -1, 0, false, false, 3, 1, 1, Dyes._NULL);
     public static Materials Spinel = new Materials(-1, TextureSet.SET_NONE, 		1.0F, 0, 1, 0, 255, 255, 255, 0, "Spinel", "Spinel", 0, 0, -1, 0, false, false, 3, 1, 1, Dyes._NULL);

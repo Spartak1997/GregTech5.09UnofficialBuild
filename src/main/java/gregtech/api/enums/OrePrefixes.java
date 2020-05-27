@@ -1,7 +1,6 @@
 package gregtech.api.enums;
 
 import gregtech.api.GregTech_API;
-import gregtech.api.enums.TC_Aspects.TC_AspectStack;
 import gregtech.api.interfaces.ICondition;
 import gregtech.api.interfaces.IMaterialHandler;
 import gregtech.api.interfaces.IOreRecipeRegistrator;
@@ -541,7 +540,6 @@ public enum OrePrefixes {
     public final short mTextureIndex;
     public final String mRegularLocalName, mLocalizedMaterialPre, mLocalizedMaterialPost;
     public final boolean mIsUsedForOreProcessing, mIsEnchantable, mIsUnificatable, mIsMaterialBased, mIsSelfReferencing, mIsContainer, mDontUnificateActively, mIsUsedForBlocks, mAllowNormalRecycling, mGenerateDefaultItem;
-    public final List<TC_AspectStack> mAspects = new ArrayList<TC_AspectStack>();
     public final Collection<OrePrefixes> mFamiliarPrefixes = new HashSet<OrePrefixes>();
     /**
      * Used to determine the amount of Material this Prefix contains.
@@ -581,41 +579,6 @@ public enum OrePrefixes {
         mLocalizedMaterialPost = aLocalizedMaterialPost;
         mDefaultStackSize = (byte) aDefaultStackSize;
         mTextureIndex = (short) aTextureindex;
-
-        if (name().startsWith("ore")) {
-            new TC_AspectStack(TC_Aspects.TERRA, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("wire") || name().startsWith("cable")) {
-            new TC_AspectStack(TC_Aspects.ELECTRUM, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("dust")) {
-            new TC_AspectStack(TC_Aspects.PERDITIO, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("crushed")) {
-            new TC_AspectStack(TC_Aspects.PERFODIO, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("ingot") || name().startsWith("nugget")) {
-            new TC_AspectStack(TC_Aspects.METALLUM, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("armor")) {
-            new TC_AspectStack(TC_Aspects.TUTAMEN, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("stone")) {
-            new TC_AspectStack(TC_Aspects.TERRA, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("pipe")) {
-            new TC_AspectStack(TC_Aspects.ITER, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("gear")) {
-            new TC_AspectStack(TC_Aspects.MOTUS, 1).addToAspectList(mAspects);
-            new TC_AspectStack(TC_Aspects.MACHINA, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("frame") || name().startsWith("plate")) {
-            new TC_AspectStack(TC_Aspects.FABRICO, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("tool")) {
-            new TC_AspectStack(TC_Aspects.INSTRUMENTUM, 2).addToAspectList(mAspects);
-        } else if (name().startsWith("gem") || name().startsWith("crystal") || name().startsWith("lens")) {
-            new TC_AspectStack(TC_Aspects.VITREUS, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("crate")) {
-            new TC_AspectStack(TC_Aspects.ITER, 2).addToAspectList(mAspects);
-        } else if (name().startsWith("circuit")) {
-            new TC_AspectStack(TC_Aspects.COGNITIO, 1).addToAspectList(mAspects);
-        } else if (name().startsWith("computer")) {
-            new TC_AspectStack(TC_Aspects.COGNITIO, 4).addToAspectList(mAspects);
-        } else if (name().startsWith("battery")) {
-            new TC_AspectStack(TC_Aspects.ELECTRUM, 1).addToAspectList(mAspects);
-        }
     }
 
     public static void initMaterialComponents() {
@@ -1074,31 +1037,6 @@ public enum OrePrefixes {
                         return "Ground " + "%material";
                 }
                 break;
-        }
-        if (ProcessingModSupport.aEnableThaumcraftMats) {
-            switch (aMaterial.mName) {
-                case "InfusedAir":
-                case "InfusedDull":
-                case "InfusedEarth":
-                case "InfusedEntropy":
-                case "InfusedFire":
-                case "InfusedOrder":
-                case "InfusedVis":
-                case "InfusedWater":
-                    if (name().startsWith("gem")) return mLocalizedMaterialPre + "Shard of " + "%material";
-                    if (name().startsWith("crystal")) return mLocalizedMaterialPre + "Shard of " + "%material";
-                    if (name().startsWith("plate"))
-                        return mLocalizedMaterialPre + "%material" + " Crystal Plate";
-                    if (name().startsWith("dust"))
-                        return mLocalizedMaterialPre + "%material" + " Crystal Powder";
-                    switch (this) {
-                        case crushedCentrifuged:
-                        case crushedPurified:
-                        case crushed:
-                            return mLocalizedMaterialPre + "%material" + " Crystals";
-                    }
-                    break;
-            }
         }
         // Use Standard Localization
         return mLocalizedMaterialPre + "%material" + mLocalizedMaterialPost;

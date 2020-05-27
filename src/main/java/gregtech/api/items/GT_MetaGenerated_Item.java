@@ -8,7 +8,6 @@ import gregtech.api.GregTech_API;
 import gregtech.api.enums.ItemList;
 import gregtech.api.enums.Materials;
 import gregtech.api.enums.SubTag;
-import gregtech.api.enums.TC_Aspects.TC_AspectStack;
 import gregtech.api.interfaces.IFoodStat;
 import gregtech.api.interfaces.IIconContainer;
 import gregtech.api.interfaces.IItemBehaviour;
@@ -107,7 +106,6 @@ public abstract class GT_MetaGenerated_Item extends GT_MetaBase_Item {
             mVisibleItems.set(aID);
             GT_LanguageManager.addStringLocalization(getUnlocalizedName(rStack) + ".name", aEnglish);
             GT_LanguageManager.addStringLocalization(getUnlocalizedName(rStack) + ".tooltip", aToolTip);
-            List<TC_AspectStack> tAspects = new ArrayList<TC_AspectStack>();
             // Important Stuff to do first
             for (Object tRandomData : aRandomData)
                 if (tRandomData instanceof SubTag) {
@@ -144,10 +142,6 @@ public abstract class GT_MetaGenerated_Item extends GT_MetaBase_Item {
                     if (tRandomData instanceof SubTag) {
                         continue;
                     }
-                    if (tRandomData instanceof TC_AspectStack) {
-                        ((TC_AspectStack) tRandomData).addToAspectList(tAspects);
-                        continue;
-                    }
                     if (tRandomData instanceof ItemData) {
                         if (GT_Utility.isStringValid(tRandomData))
                             GT_OreDictUnificator.registerOre(tRandomData, rStack);
@@ -159,8 +153,6 @@ public abstract class GT_MetaGenerated_Item extends GT_MetaBase_Item {
                         continue;
                     }
                 }
-            if (GregTech_API.sThaumcraftCompat != null)
-                GregTech_API.sThaumcraftCompat.registerThaumcraftAspectsToItem(rStack, tAspects, false);
             return rStack;
         }
         return null;

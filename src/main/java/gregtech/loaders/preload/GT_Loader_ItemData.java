@@ -144,10 +144,6 @@ public class GT_Loader_ItemData
         GT_OreDictUnificator.addItemData(new ItemStack(Blocks.sticky_piston, 1, 32767), new ItemData(Materials.Stone, 14515200L, new MaterialStack[]{new MaterialStack(Materials.Wood, 10886400L)}));
         GT_OreDictUnificator.addItemData(new ItemStack(Blocks.dispenser, 1, 32767), new ItemData(Materials.Stone, 25401600L, new MaterialStack[]{new MaterialStack(Materials.Redstone, 3628800L)}));
         GT_OreDictUnificator.addItemData(new ItemStack(Blocks.dropper, 1, 32767), new ItemData(Materials.Stone, 25401600L, new MaterialStack[]{new MaterialStack(Materials.Redstone, 3628800L)}));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("Thaumcraft", "ItemNuggetChicken", 1L, 32767), new ItemData(Materials.MeatCooked, 403200L, new MaterialStack[0]));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("Thaumcraft", "ItemNuggetBeef", 1L, 32767), new ItemData(Materials.MeatCooked, 403200L, new MaterialStack[0]));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("Thaumcraft", "ItemNuggetPork", 1L, 32767), new ItemData(Materials.MeatCooked, 403200L, new MaterialStack[0]));
-        GT_OreDictUnificator.addItemData(GT_ModHandler.getModItem("Thaumcraft", "ItemNuggetFish", 1L, 32767), new ItemData(Materials.MeatCooked, 403200L, new MaterialStack[0]));
         for (ItemStack tItem : new ItemStack[]{new ItemStack(Items.porkchop), new ItemStack(Items.beef), new ItemStack(Items.chicken), new ItemStack(Items.fish)}) {
             if (tItem != null) {
                 GT_OreDictUnificator.addItemData(GT_Utility.copyMetaData(32767L, new Object[]{tItem}), new ItemData(Materials.MeatRaw, 3628800L, new MaterialStack[]{new MaterialStack(Materials.Bone, 403200L)}));

@@ -25,10 +25,7 @@ import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.fluids.FluidStack;
-import thaumcraft.api.ThaumcraftApiHelper;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class GT_Achievements {
@@ -174,8 +171,6 @@ public class GT_Achievements {
 
         registerAchievement("upgrade", 10, 0, ItemList.Casing_Coil_Kanthal.get(1), "gtaluminium", false);
         registerAchievement("titan", 14, 0, GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Titanium, 1L), "upgrade", false);
-        registerAchievement("magic", 14, 3, ItemList.MagicEnergyConverter_LV.get(1), "titan", false);
-        registerAchievement("highmage", 10, 3, ItemList.MagicEnergyAbsorber_HV.get(1), "magic", false);
         registerAchievement("artificaldia", 12, 2, ItemList.IC2_Industrial_Diamond.get(1), "titan", false);
         registerAchievement("muchsteam", 13, 1, ItemList.LargeSteamTurbine.get(1), "titan", false);
         registerAchievement("efficientsteam", 11, 1, ItemList.LargeSteamTurbine.get(1), "muchsteam", false);
@@ -559,14 +554,9 @@ public class GT_Achievements {
             } else if (data.mMaterial.mMaterial == Materials.Steel) {
                 if (data.mPrefix == OrePrefixes.ingot && stack.stackSize == stack.getMaxStackSize()) {
                     issueAchievement(player, "steel");
-                } else if (data.mPrefix == OrePrefixes.nugget && Loader.isModLoaded("Thaumcraft") && ThaumcraftApiHelper.isResearchComplete(player.getDisplayName(), "GT_IRON_TO_STEEL")) {
-                    issueAchievement(player, "steel");
                 }
-//            } else if (data.mPrefix == OrePrefixes.circuit && data.mMaterial.mMaterial == Materials.Advanced) {
-//                issueAchievement(player, "stepforward");
             }
         }
-//        GT_FML_LOGGER.info(stack.getUnlocalizedName());
         if (stack.getUnlocalizedName().startsWith("gt.metaitem.")) {
             if (stack.getUnlocalizedName().equals("gt.metaitem.02.32500")) {
                 issueAchievement(player, "havestlead");

@@ -98,7 +98,6 @@ public class LoadArmorComponents {
 		new ArmorPlating("plateNeutronium", "plateNeutronium", 			600, 0.50f, 0.50f, 0.50f, 0.50f, 0.50f);
 		
 		new ArmorComponentFunction("componentnightvision", GT_ModHandler.getIC2Item("nightvisionGoggles", 1), true, 100, StatType.NIGHTVISION, 100);
-		if(GT_ModHandler.getModItem("Thaumcraft", "ItemGoggles", 1)!=null)new ArmorComponentFunction("componentthaumicgoggles", GT_ModHandler.getModItem("Thaumcraft", "ItemGoggles", 1), true, 100, StatType.THAUMICGOGGLES, 100);
 		new ArmorComponentBattery("batteryLVLI", ItemList.Battery_RE_LV_Lithium.get(1, new Object[]{}), true, 100, 100000);
 		new ArmorComponentBattery("batteryMVLI", ItemList.Battery_RE_MV_Lithium.get(1, new Object[]{}), true, 100, 400000);
 		new ArmorComponentBattery("batteryHVLI", ItemList.Battery_RE_HV_Lithium.get(1, new Object[]{}), true, 100, 1600000);

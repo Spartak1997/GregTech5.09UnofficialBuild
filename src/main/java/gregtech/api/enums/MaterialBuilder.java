@@ -30,7 +30,6 @@ public class MaterialBuilder {
 	private Dyes color = Dyes._NULL;
 	private int extraData = 0;
 	private List<MaterialStack> materialList = new ArrayList<MaterialStack>();
-	private List<TC_Aspects.TC_AspectStack> aspects = new ArrayList<TC_Aspects.TC_AspectStack>();
 	private boolean hasCorrespondingFluid = false;
 	private boolean hasCorrespondingMoltenHot = false;
 	private boolean hasCorrespondingGas = false;
@@ -49,7 +48,7 @@ public class MaterialBuilder {
 
 	public Materials constructMaterial() {
 		return new Materials(metaItemSubID, iconSet, toolSpeed, durability, toolQuality, types, r, g, b, a, name, defaultLocalName, fuelType, fuelPower, meltingPoint, blastFurnaceTemp,
-				blastFurnaceRequired, transparent, oreValue, densityMultiplier, densityDivider, color, extraData, materialList, aspects)
+				blastFurnaceRequired, transparent, oreValue, densityMultiplier, densityDivider, color, extraData, materialList)
 				.setHasCorrespondingFluid(hasCorrespondingFluid)
 				.setHasCorrespondingGas(hasCorrespondingGas)
 				.setHasCorrespondingSemi(hasCorrespondingSemi)
@@ -231,11 +230,6 @@ public class MaterialBuilder {
 
 	public MaterialBuilder setMaterialList(MaterialStack ... materials) {
 		this.materialList = Arrays.asList(materials);
-		return this;
-	}
-
-	public MaterialBuilder setAspects(List<TC_Aspects.TC_AspectStack> aspects) {
-		this.aspects = aspects;
 		return this;
 	}
 

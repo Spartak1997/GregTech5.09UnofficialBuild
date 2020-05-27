@@ -7,7 +7,6 @@ import gregtech.api.enums.Textures;
 import gregtech.api.interfaces.IDamagableItem;
 import gregtech.api.interfaces.ITexture;
 import gregtech.api.interfaces.internal.IGT_RecipeAdder;
-import gregtech.api.interfaces.internal.IThaumcraftCompat;
 import gregtech.api.interfaces.metatileentity.IMetaTileEntity;
 import gregtech.api.items.GT_CoolantCellIC_Item;
 import gregtech.api.items.GT_CoolantCell_Item;
@@ -162,10 +161,6 @@ public class GregTech_API {
     @Deprecated
     public static IGT_RecipeAdder sRecipeAdder;
     /**
-     * Used to register Aspects to ThaumCraft, this Object might be null if ThaumCraft isn't installed
-     */
-    public static IThaumcraftCompat sThaumcraftCompat;
-    /**
      * These Lists are getting executed at their respective timings. Useful if you have to do things right before/after I do them, without having to control the load order. Add your "Commands" in the Constructor or in a static Code Block of your Mods Main Class. These are not Threaded, I just use a native Java Interface for their execution. Implement just the Method run() and everything should work
      */
     public static List<Runnable> sBeforeGTPreload = new ArrayList<Runnable>(), sAfterGTPreload = new ArrayList<Runnable>(), sBeforeGTLoad = new ArrayList<Runnable>(), sAfterGTLoad = new ArrayList<Runnable>(), sBeforeGTPostload = new ArrayList<Runnable>(), sAfterGTPostload = new ArrayList<Runnable>(), sBeforeGTServerstart = new ArrayList<Runnable>(), sAfterGTServerstart = new ArrayList<Runnable>(), sBeforeGTServerstop = new ArrayList<Runnable>(), sAfterGTServerstop = new ArrayList<Runnable>(), sGTBlockIconload = new ArrayList<Runnable>(), sGTItemIconload = new ArrayList<Runnable>();
@@ -308,8 +303,6 @@ public class GregTech_API {
      */
     public static boolean registerMachineBlock(Block aBlock, int aMeta) {
         if (GT_Utility.isBlockInvalid(aBlock)) return false;
-        if (GregTech_API.sThaumcraftCompat != null)
-            GregTech_API.sThaumcraftCompat.registerPortholeBlacklistedBlock(aBlock);
         sMachineIDs.put(aBlock, aMeta);
         return true;
     }
@@ -319,8 +312,6 @@ public class GregTech_API {
      */
     public static boolean registerMachineBlock(Block aBlock, boolean... aMeta) {
         if (GT_Utility.isBlockInvalid(aBlock) || aMeta == null || aMeta.length == 0) return false;
-        if (GregTech_API.sThaumcraftCompat != null)
-            GregTech_API.sThaumcraftCompat.registerPortholeBlacklistedBlock(aBlock);
         int rMeta = 0;
         for (byte i = 0; i < aMeta.length && i < 16; i++) if (aMeta[i]) rMeta |= B[i];
         sMachineIDs.put(aBlock, rMeta);
