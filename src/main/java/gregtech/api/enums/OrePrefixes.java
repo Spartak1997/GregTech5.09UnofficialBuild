@@ -652,7 +652,7 @@ public enum OrePrefixes {
                 if (!enableUnusedTriplePlates && !(aMaterial == Materials.Paper)) plateTriple.mDisabledItems.add(aMaterial);
                 if (!enableUnusedQuadPlates && !(aMaterial == Materials.Paper)) plateQuadruple.mDisabledItems.add(aMaterial);
                 if (!enableUnusedQuinPlates && !(aMaterial == Materials.Paper)) plateQuintuple.mDisabledItems.add(aMaterial);
-                if (!(enableUnusedDensePlates || GregTech_API.mGTPlusPlus) && !(aMaterial == Materials.Iron || aMaterial == Materials.Copper || aMaterial == Materials.Lead || aMaterial == Materials.Paper))
+                if (!enableUnusedDensePlates && !(aMaterial == Materials.Iron || aMaterial == Materials.Copper || aMaterial == Materials.Lead || aMaterial == Materials.Paper))
                     plateDense.mDisabledItems.add(aMaterial);
 				
                 //Rotors

@@ -202,8 +202,6 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
     public boolean mPlanetTier5 = true;
     public boolean mPlanetTier6 = true;
     public boolean mPlanetTier7 = true;
-    public boolean mGTPlusPlusHard = false;
-    public boolean mBartHard = false;
     public boolean mAprilFool = false;
     public boolean mCropNeedBlock = true;
     public boolean mDisableOldChemicalRecipes = false;

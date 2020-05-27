@@ -678,6 +678,13 @@ achievement.item.Tier7Rocket.t7Rocket.desc=Pickup this item to see the recipe in
 achievement.item.Tier8Rocket.t8Rocket=Deep Space
 achievement.item.Tier8Rocket.t8Rocket.desc=Pickup this item to see the recipe in NEI
 
+achievement.gt.blockCase1.1=Upgrade Block T2
+achievement.gt.blockCase1.1.desc=Pickup this item to see the recipe in NEI
+achievement.gt.blockCase1.2=Upgrade Block T3
+achievement.gt.blockCase1.2.desc=Pickup this item to see the recipe in NEI
+achievement.gt.blockCase1.3=Upgrade Block T4
+achievement.gt.blockCase1.3.desc=Pickup this item to see the recipe in NEI
+
 
 for.bees.species.clay=Clay
 for.bees.species.slimeball=Slimeball
