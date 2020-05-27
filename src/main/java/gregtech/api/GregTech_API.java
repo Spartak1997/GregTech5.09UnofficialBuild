@@ -194,7 +194,6 @@ public class GregTech_API {
     public static boolean mRFExplosions = true;
     public static boolean mServerStarted = false;
     public static boolean mIC2Classic = false;
-    public static boolean mGTPlusPlus = false;
     public static boolean mTranslocator = false;
     public static boolean mTConstruct = false;
     public static boolean mGalacticraft = false;

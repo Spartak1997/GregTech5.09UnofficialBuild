@@ -320,7 +320,6 @@ public class GT_Mod implements IGT_Mod {
         gregtechproxy.mEnableCleanroom = tMainConfig.get("general", "EnableCleanroom", true).getBoolean(true);
         gregtechproxy.mLowGravProcessing = Loader.isModLoaded(GT_Values.MOD_ID_GC_CORE) && tMainConfig.get("general", "LowGravProcessing", true).getBoolean(true);
         gregtechproxy.mLowGravProcessingCircuits = Loader.isModLoaded(GT_Values.MOD_ID_GC_CORE) && tMainConfig.get("general", "LowGravProcessingCircuits", false).getBoolean(false);
-        gregtechproxy.mBartHard = Loader.isModLoaded("bartworks") && tMainConfig.get("general", "BartHard", false).getBoolean(false);
         gregtechproxy.mComponentAssembler = tMainConfig.get("general","ComponentAssembler",false).getBoolean(false);
         
         Calendar now = Calendar.getInstance();
