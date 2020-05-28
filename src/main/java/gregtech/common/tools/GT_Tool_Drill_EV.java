@@ -8,22 +8,22 @@ public class GT_Tool_Drill_EV
 
     @Override
     int setToolDamagePerBlockBreak() {
-        return 3200;
+        return 800;
     }
 
     @Override
     int setToolDamagePerDropConversion() {
-        return 6400;
+        return 1600;
     }
 
     @Override
     int setToolDamagePerContainerCraft() {
-        return 51200;
+        return 12800;
     }
 
     @Override
     int setToolDamagePerEntityAttack() {
-        return 12800;
+        return 3200;
     }
 
     @Override
