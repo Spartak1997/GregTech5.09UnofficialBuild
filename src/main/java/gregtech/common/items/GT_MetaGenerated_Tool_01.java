@@ -1,7 +1,10 @@
 package gregtech.common.items;
 
 import gregtech.api.GregTech_API;
-import gregtech.api.enums.*;
+import gregtech.api.enums.ConfigCategories;
+import gregtech.api.enums.Materials;
+import gregtech.api.enums.OrePrefixes;
+import gregtech.api.enums.ToolDictNames;
 import gregtech.api.items.GT_MetaGenerated_Tool;
 import gregtech.api.util.GT_ModHandler;
 import gregtech.api.util.GT_OreDictUnificator;
@@ -67,7 +70,7 @@ public class GT_MetaGenerated_Tool_01 extends GT_MetaGenerated_Tool {
     public static final short TURBINE_LARGE = 174;
     public static final short TURBINE_HUGE = 176;
     public static final short TURBINE_BLADE = 178;
-    
+
     public static GT_MetaGenerated_Tool_01 INSTANCE;
 
     public GT_MetaGenerated_Tool_01() {
@@ -104,28 +107,28 @@ public class GT_MetaGenerated_Tool_01 extends GT_MetaGenerated_Tool {
         addTool(106, "Drill (EV)", "", new GT_Tool_Drill_EV(), ToolDictNames.craftingToolMiningDrill);
         addTool(108, "Drill (IV)", "", new GT_Tool_Drill_IV(), ToolDictNames.craftingToolMiningDrill);
         addTool(110, "Chainsaw (LV)", "Can also harvest Ice", new GT_Tool_Chainsaw_LV(), ToolDictNames.craftingToolSaw);
-        addTool(112, "Chainsaw (MV)", "Can also harvest Ice", new GT_Tool_Chainsaw_MV(), ToolDictNames.craftingToolSaw);
-        addTool(114, "Chainsaw (HV)", "Can also harvest Ice", new GT_Tool_Chainsaw_HV(), ToolDictNames.craftingToolSaw);
-        addTool(116, "Chainsaw (EV)", "Can also harvest Ice", new GT_Tool_Chainsaw_EV(), ToolDictNames.craftingToolSaw);
-        addTool(118, "Chainsaw (IV)", "Can also harvest Ice", new GT_Tool_Chainsaw_IV(), ToolDictNames.craftingToolSaw);
+//        addTool(112, "Chainsaw (MV)", "Can also harvest Ice", new GT_Tool_Chainsaw_MV(), ToolDictNames.craftingToolSaw);
+//        addTool(114, "Chainsaw (HV)", "Can also harvest Ice", new GT_Tool_Chainsaw_HV(), ToolDictNames.craftingToolSaw);
+//        addTool(116, "Chainsaw (EV)", "Can also harvest Ice", new GT_Tool_Chainsaw_EV(), ToolDictNames.craftingToolSaw);
+//        addTool(118, "Chainsaw (IV)", "Can also harvest Ice", new GT_Tool_Chainsaw_IV(), ToolDictNames.craftingToolSaw);
         GregTech_API.registerTool(addTool(WRENCH_LV, "Wrench (LV)", "Hold Leftclick to dismantle Machines", new GT_Tool_Wrench_LV(), ToolDictNames.craftingToolWrench), GregTech_API.sWrenchList);
-        GregTech_API.registerTool(addTool(WRENCH_MV, "Wrench (MV)", "Hold Leftclick to dismantle Machines", new GT_Tool_Wrench_MV(), ToolDictNames.craftingToolWrench), GregTech_API.sWrenchList);
-        GregTech_API.registerTool(addTool(WRENCH_HV, "Wrench (HV)", "Hold Leftclick to dismantle Machines", new GT_Tool_Wrench_HV(), ToolDictNames.craftingToolWrench), GregTech_API.sWrenchList);
-        GregTech_API.registerTool(addTool(WRENCH_EV, "Wrench (EV)", "Hold Leftclick to dismantle Machines", new GT_Tool_Wrench_EV(), ToolDictNames.craftingToolWrench), GregTech_API.sWrenchList);
-        GregTech_API.registerTool(addTool(WRENCH_IV, "Wrench (IV)", "Hold Leftclick to dismantle Machines", new GT_Tool_Wrench_IV(), ToolDictNames.craftingToolWrench), GregTech_API.sWrenchList);
+//        GregTech_API.registerTool(addTool(WRENCH_MV, "Wrench (MV)", "Hold Leftclick to dismantle Machines", new GT_Tool_Wrench_MV(), ToolDictNames.craftingToolWrench), GregTech_API.sWrenchList);
+//        GregTech_API.registerTool(addTool(WRENCH_HV, "Wrench (HV)", "Hold Leftclick to dismantle Machines", new GT_Tool_Wrench_HV(), ToolDictNames.craftingToolWrench), GregTech_API.sWrenchList);
+//        GregTech_API.registerTool(addTool(WRENCH_EV, "Wrench (EV)", "Hold Leftclick to dismantle Machines", new GT_Tool_Wrench_EV(), ToolDictNames.craftingToolWrench), GregTech_API.sWrenchList);
+//        GregTech_API.registerTool(addTool(WRENCH_IV, "Wrench (IV)", "Hold Leftclick to dismantle Machines", new GT_Tool_Wrench_IV(), ToolDictNames.craftingToolWrench), GregTech_API.sWrenchList);
         addTool(130, "JackHammer (HV)", "Breaks Rocks into pieces", new GT_Tool_JackHammer(), ToolDictNames.craftingToolJackHammer);
         addTool(140, "Buzzsaw (LV)", "Not suitable for harvesting Blocks", new GT_Tool_BuzzSaw(), ToolDictNames.craftingToolSaw);
         GregTech_API.registerTool(addTool(150, "Screwdriver (LV)", "Adjusts Covers and Machines", new GT_Tool_Screwdriver_LV(), ToolDictNames.craftingToolScrewdriver), GregTech_API.sScrewdriverList);
-        GregTech_API.registerTool(addTool(152, "Screwdriver (MV)", "Adjusts Covers and Machines", new GT_Tool_Screwdriver_MV(), ToolDictNames.craftingToolScrewdriver), GregTech_API.sScrewdriverList);
-        GregTech_API.registerTool(addTool(154, "Screwdriver (HV)", "Adjusts Covers and Machines", new GT_Tool_Screwdriver_HV(), ToolDictNames.craftingToolScrewdriver), GregTech_API.sScrewdriverList);
-        GregTech_API.registerTool(addTool(156, "Screwdriver (EV)", "Adjusts Covers and Machines", new GT_Tool_Screwdriver_EV(), ToolDictNames.craftingToolScrewdriver), GregTech_API.sScrewdriverList);
-        GregTech_API.registerTool(addTool(158, "Screwdriver (IV)", "Adjusts Covers and Machines", new GT_Tool_Screwdriver_IV(), ToolDictNames.craftingToolScrewdriver), GregTech_API.sScrewdriverList);
+//        GregTech_API.registerTool(addTool(152, "Screwdriver (MV)", "Adjusts Covers and Machines", new GT_Tool_Screwdriver_MV(), ToolDictNames.craftingToolScrewdriver), GregTech_API.sScrewdriverList);
+//        GregTech_API.registerTool(addTool(154, "Screwdriver (HV)", "Adjusts Covers and Machines", new GT_Tool_Screwdriver_HV(), ToolDictNames.craftingToolScrewdriver), GregTech_API.sScrewdriverList);
+//        GregTech_API.registerTool(addTool(156, "Screwdriver (EV)", "Adjusts Covers and Machines", new GT_Tool_Screwdriver_EV(), ToolDictNames.craftingToolScrewdriver), GregTech_API.sScrewdriverList);
+//        GregTech_API.registerTool(addTool(158, "Screwdriver (IV)", "Adjusts Covers and Machines", new GT_Tool_Screwdriver_IV(), ToolDictNames.craftingToolScrewdriver), GregTech_API.sScrewdriverList);
         GregTech_API.registerTool(addTool(SOLDERING_IRON_LV, "Soldering Iron (LV)", "Fixes burned out Circuits. Needs soldering materials in inventory and 10kEU", new GT_Tool_Soldering_Iron(), ToolDictNames.craftingToolSolderingIron), GregTech_API.sSolderingToolList);
-        GregTech_API.registerTool(addTool(SOLDERING_IRON_MV, "Soldering Iron (MV)", "Fixes burned out Circuits. Needs soldering materials in inventory and 10kEU", new GT_Tool_Soldering_Iron(), ToolDictNames.craftingToolSolderingIron), GregTech_API.sSolderingToolList);
-        GregTech_API.registerTool(addTool(SOLDERING_IRON_HV, "Soldering Iron (HV)", "Fixes burned out Circuits. Needs soldering materials in inventory and 10kEU", new GT_Tool_Soldering_Iron(), ToolDictNames.craftingToolSolderingIron), GregTech_API.sSolderingToolList);
-        GregTech_API.registerTool(addTool(SOLDERING_IRON_EV, "Soldering Iron (EV)", "Fixes burned out Circuits. Needs soldering materials in inventory and 10kEU", new GT_Tool_Soldering_Iron(), ToolDictNames.craftingToolSolderingIron), GregTech_API.sSolderingToolList);
-        GregTech_API.registerTool(addTool(SOLDERING_IRON_IV, "Soldering Iron (IV)", "Fixes burned out Circuits. Needs soldering materials in inventory and 10kEU", new GT_Tool_Soldering_Iron(), ToolDictNames.craftingToolSolderingIron), GregTech_API.sSolderingToolList);
-        
+//        GregTech_API.registerTool(addTool(SOLDERING_IRON_MV, "Soldering Iron (MV)", "Fixes burned out Circuits. Needs soldering materials in inventory and 10kEU", new GT_Tool_Soldering_Iron(), ToolDictNames.craftingToolSolderingIron), GregTech_API.sSolderingToolList);
+//        GregTech_API.registerTool(addTool(SOLDERING_IRON_HV, "Soldering Iron (HV)", "Fixes burned out Circuits. Needs soldering materials in inventory and 10kEU", new GT_Tool_Soldering_Iron(), ToolDictNames.craftingToolSolderingIron), GregTech_API.sSolderingToolList);
+//        GregTech_API.registerTool(addTool(SOLDERING_IRON_EV, "Soldering Iron (EV)", "Fixes burned out Circuits. Needs soldering materials in inventory and 10kEU", new GT_Tool_Soldering_Iron(), ToolDictNames.craftingToolSolderingIron), GregTech_API.sSolderingToolList);
+//        GregTech_API.registerTool(addTool(SOLDERING_IRON_IV, "Soldering Iron (IV)", "Fixes burned out Circuits. Needs soldering materials in inventory and 10kEU", new GT_Tool_Soldering_Iron(), ToolDictNames.craftingToolSolderingIron), GregTech_API.sSolderingToolList);
+
         addTool(TURBINE_SMALL, "Small Turbine", "Turbine Rotors for your power station", new GT_Tool_Turbine_Small());
         addTool(TURBINE, "Turbine", "Turbine Rotors for your power station", new GT_Tool_Turbine_Normal());
         addTool(TURBINE_LARGE, "Large Turbine", "Turbine Rotors for your power station", new GT_Tool_Turbine_Large());
