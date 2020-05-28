@@ -115,7 +115,7 @@ public class GT_MetaTileEntity_Scanner
                     return 2;
                 }
                 ItemData tData = GT_OreDictUnificator.getAssociation(aStack);
-                if ((tData != null) && ((tData.mPrefix == OrePrefixes.dust) || (tData.mPrefix == OrePrefixes.cell)) && (tData.mMaterial.mMaterial.mElement != null) && (!tData.mMaterial.mMaterial.mElement.mIsIsotope) && (tData.mMaterial.mMaterial != Materials.Magic) && (tData.mMaterial.mMaterial.getMass() > 0L)) {
+                if ((tData != null) && ((tData.mPrefix == OrePrefixes.dust) || (tData.mPrefix == OrePrefixes.cell)) && (tData.mMaterial.mMaterial.mElement != null) && (!tData.mMaterial.mMaterial.mElement.mIsIsotope) && (tData.mMaterial.mMaterial.getMass() > 0L)) {
                     getSpecialSlot().stackSize -= 1;
                     aStack.stackSize -= 1;
 

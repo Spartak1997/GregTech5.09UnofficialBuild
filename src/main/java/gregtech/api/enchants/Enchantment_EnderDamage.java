@@ -21,8 +21,6 @@ public class Enchantment_EnderDamage extends EnchantmentDamage {
         Materials.Silver.setEnchantmentForTools(this, 2);
         Materials.Mercury.setEnchantmentForTools(this, 3);
         Materials.Electrum.setEnchantmentForTools(this, 3);
-        Materials.SterlingSilver.setEnchantmentForTools(this, 4);
-        Materials.AstralSilver.setEnchantmentForTools(this, 5);
         INSTANCE = this;
     }
 

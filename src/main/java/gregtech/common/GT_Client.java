@@ -87,46 +87,41 @@ public class GT_Client extends GT_Proxy
         isFirstClientPlayerTick = true;
         mMessage = "";
         mPosR = Arrays.asList(new Materials[]{
-                /**Materials.ChargedCertusQuartz, **/Materials.Enderium, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.Force,
-                Materials.Pyrotheum, Materials.Sunnarium, Materials.Glowstone, Materials.Thaumium, Materials.InfusedVis, Materials.InfusedAir, Materials.InfusedFire, Materials.FierySteel, Materials.Firestone
+                /**Materials.ChargedCertusQuartz, **/Materials.Enderium, Materials.Uranium235, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria,
+                Materials.Sunnarium, Materials.Glowstone,  Materials.FierySteel, Materials.Firestone
         });
         mPosG = Arrays.asList(new Materials[]{
-                /**Materials.ChargedCertusQuartz, **/Materials.Enderium, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.Force,
-                Materials.Pyrotheum, Materials.Sunnarium, Materials.Glowstone, Materials.InfusedAir, Materials.InfusedEarth
+                /**Materials.ChargedCertusQuartz, **/Materials.Enderium, Materials.Uranium235, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria,
+                Materials.Sunnarium, Materials.Glowstone,
         });
         mPosB = Arrays.asList(new Materials[]{
-                /**Materials.ChargedCertusQuartz, **/Materials.Enderium, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.InfusedVis,
-                Materials.InfusedWater, Materials.Thaumium
+                /**Materials.ChargedCertusQuartz, **/Materials.Enderium, Materials.Uranium235, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria,
         });
         mNegR = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy, Materials.NetherStar
+                Materials.NetherStar
         });
         mNegG = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy, Materials.NetherStar
+                Materials.NetherStar
         });
         mNegB = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy, Materials.NetherStar
+                Materials.NetherStar
         });
         mMoltenPosR = Arrays.asList(new Materials[]{
-                Materials.Enderium, Materials.NetherStar, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.Force,
-                Materials.Pyrotheum, Materials.Sunnarium, Materials.Glowstone, Materials.Thaumium, Materials.InfusedVis, Materials.InfusedAir, Materials.InfusedFire, Materials.FierySteel, Materials.Firestone
+                Materials.Enderium, Materials.NetherStar, Materials.Uranium235, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria,
+                Materials.Sunnarium, Materials.Glowstone, Materials.FierySteel, Materials.Firestone
         });
         mMoltenPosG = Arrays.asList(new Materials[]{
-                Materials.Enderium, Materials.NetherStar, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.Force,
-                Materials.Pyrotheum, Materials.Sunnarium, Materials.Glowstone, Materials.InfusedAir, Materials.InfusedEarth
+                Materials.Enderium, Materials.NetherStar, Materials.Uranium235, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria,
+                Materials.Sunnarium, Materials.Glowstone
         });
         mMoltenPosB = Arrays.asList(new Materials[]{
-                Materials.Enderium, Materials.NetherStar, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.InfusedVis,
-                Materials.InfusedWater, Materials.Thaumium
+                Materials.Enderium, Materials.NetherStar, Materials.Uranium235, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria,
         });
         mMoltenNegR = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy
         });
         mMoltenNegG = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy
         });
         mMoltenNegB = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy
         });
     }
 

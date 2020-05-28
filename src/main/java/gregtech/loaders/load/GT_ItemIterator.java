@@ -109,12 +109,6 @@ public class GT_ItemIterator
                             if ((tName.equals("item.ItemTimeCard")) || (tName.equals("item.itemCounterSensorLocationCard")) || (tName.equals("item.ItemLiquidSensorLocationCard")) || (tName.equals("item.ItemGeneratorSensorLocationCard")) || (tName.equals("item.ItemLiquidArrayLocationCard")) || (tName.equals("item.ItemInventoryScannerCard")) || (tName.equals("item.AppengCard")) || (tName.equals("item.RFenergyCard")) || (tName.equals("item.ItemVanillaMachineCard"))) {
                             GT_Values.RA.addAssemblerRecipe(new ItemStack(tItem, 1, 32767), null, GT_ModHandler.getIC2Item("electronicCircuit", 1L), 100, 30);
                         }
-                        if (tName.equals("tile.ArsMagica:ore_vinteum")) {
-                            GT_OreDictUnificator.set(OrePrefixes.ore, Materials.Vinteum, new ItemStack(tItem, 1, 0));
-                        }
-                        if (tName.equals("item.ArsMagica:purified_vinteum")) {
-                            GT_Values.RA.addFuel(new ItemStack(tItem, 1, 0), null, 256, 5);
-                        }
                         if ((tName.equals("item.fieryBlood")) || (tName.equals("item.fieryTears"))) {
                             GT_Values.RA.addFuel(new ItemStack(tItem, 1, 0), null, 2048, 5);
                         }
@@ -173,11 +167,6 @@ public class GT_ItemIterator
                         if (tName.equals("item.ligniteCoal")) {
                             GT_OreDictUnificator.set(OrePrefixes.gem, Materials.Lignite, new ItemStack(tItem, 1, 0));
                         }
-                        if ((tName.equals("tile.extrabiomes.redrock")) || (tName.equals("tile.bop.redRocks"))) {
-                            GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Redrock, new ItemStack(tItem, 1, 0));
-                            GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Redrock, new ItemStack(tItem, 1, 1));
-                            GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Redrock, new ItemStack(tItem, 1, 2));
-                        }
                         if (tName.equals("tile.rpstone")) {
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Marble, new ItemStack(tItem, 1, 0));
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Basalt, new ItemStack(tItem, 1, 1));
@@ -214,7 +203,6 @@ public class GT_ItemIterator
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Blueschist, new ItemStack(tItem, 1, 4));
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Greenschist, new ItemStack(tItem, 1, 5));
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Soapstone, new ItemStack(tItem, 1, 6));
-                            GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Migmatite, new ItemStack(tItem, 1, 7));
 
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Gneiss, new ItemStack(tItem, 1, 8));
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Eclogite, new ItemStack(tItem, 1, 9));
@@ -223,12 +211,10 @@ public class GT_ItemIterator
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Blueschist, new ItemStack(tItem, 1, 12));
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Greenschist, new ItemStack(tItem, 1, 13));
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Soapstone, new ItemStack(tItem, 1, 14));
-                            GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Migmatite, new ItemStack(tItem, 1, 15));
                         }
                         if (tName.equals("tile.blockCosmeticSolid")) {
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Obsidian, new ItemStack(tItem, 1, 0));
                             GT_OreDictUnificator.registerOre(OrePrefixes.stone, Materials.Obsidian, new ItemStack(tItem, 1, 1));
-                            GT_OreDictUnificator.registerOre(OrePrefixes.block, Materials.Thaumium, new ItemStack(tItem, 1, 4));
                         }
                         if (tName.equals("tile.enderchest")) {
                             GT_OreDictUnificator.registerOre(OreDictNames.enderChest, new ItemStack(tItem, 1, 32767));

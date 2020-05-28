@@ -852,7 +852,7 @@ public class GT_Mod implements IGT_Mod {
             }
         }   
         for (Materials tMaterial : Materials.values()) {
-            if ((tMaterial.mElement != null) && (!tMaterial.mElement.mIsIsotope) && (tMaterial != Materials.Magic) && (tMaterial.getMass() > 0L)) {
+            if ((tMaterial.mElement != null) && (!tMaterial.mElement.mIsIsotope) && (tMaterial.getMass() > 0L)) {
             	ItemStack tOutput = ItemList.Tool_DataOrb.get(1L);
             	Behaviour_DataOrb.setDataTitle(tOutput, "Elemental-Scan");
                 Behaviour_DataOrb.setDataName(tOutput, tMaterial.mElement.name());
