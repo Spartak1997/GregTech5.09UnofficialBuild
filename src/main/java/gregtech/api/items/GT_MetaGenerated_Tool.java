@@ -142,10 +142,10 @@ public abstract class GT_MetaGenerated_Tool extends GT_MetaBase_Item implements 
      * @param aEnglish                The Default Localized Name of the created Item
      * @param aToolTip                The Default ToolTip of the created Item, you can also insert null for having no ToolTip
      * @param aToolStats              The Food Value of this Item. Can be null as well.
-     * @deprecated aOreDictNamesAndAspects
+     * @param aOreDictNames           Registration OreDictNames
      * @return An ItemStack containing the newly created Item, but without specific Stats.
      */
-    public final ItemStack addTool(int aID, String aEnglish, String aToolTip, IToolStats aToolStats, Object... aOreDictNamesAndAspects) {
+    public final ItemStack addTool(int aID, String aEnglish, String aToolTip, IToolStats aToolStats, Object... aOreDictNames) {
         if (aToolTip == null) aToolTip = "";
         if (aID >= 0 && aID < 32766 && aID % 2 == 0) {
             GT_LanguageManager.addStringLocalization(getUnlocalizedName() + "." + aID + ".name", aEnglish);
@@ -156,6 +156,9 @@ public abstract class GT_MetaGenerated_Tool extends GT_MetaBase_Item implements 
             mToolStats.put((short) (aID + 1), aToolStats);
             aToolStats.onStatsAddedToTool(this, aID);
             ItemStack rStack = new ItemStack(this, 1, aID);
+            for (Object tOreDictName : aOreDictNames) {
+                    GT_OreDictUnificator.registerOre(tOreDictName, rStack);
+            }
             return rStack;
         }
         return null;
