@@ -24,6 +24,7 @@ public class ProcessingIngot implements gregtech.api.interfaces.IOreRecipeRegist
     public void registerOre(OrePrefixes aPrefix, Materials aMaterial, String aOreDictName, String aModName, ItemStack aStack) {
         boolean aNoSmashing = aMaterial.contains(SubTag.NO_SMASHING);
         boolean aNoSmelting = aMaterial.contains(SubTag.NO_SMELTING);
+        boolean aNoFreezing = aMaterial.contains(SubTag.NO_FREEZING);
         long aMaterialMass = aMaterial.getMass();
         boolean aSpecialRecipeReq = aMaterial.mUnificatable && (aMaterial.mMaterialInto == aMaterial) && !aMaterial.contains(SubTag.NO_SMASHING);
 
@@ -102,6 +103,7 @@ public class ProcessingIngot implements gregtech.api.interfaces.IOreRecipeRegist
                 }
                 break;
             case ingotHot:
+                if (!aNoFreezing)
                 GT_Values.RA.addVacuumFreezerRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), GT_OreDictUnificator.get(OrePrefixes.ingot, aMaterial, 1L), (int) Math.max(aMaterialMass * 3L, 1L));
                 break;
         }

@@ -90,6 +90,7 @@ public final class SubTag implements ICondition<ISubTagContainer> {
      * Paper, Wood, Gunpowder, Stone
      */
     public static final SubTag NO_SMELTING = getNewSubTag("NO_SMELTING");
+    public static final SubTag NO_FREEZING = getNewSubTag("NO_FREEZING");
     /**
      * This Material can be molten into a Fluid
      */
