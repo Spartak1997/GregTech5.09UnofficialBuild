@@ -88,7 +88,7 @@ public class GT_Client extends GT_Proxy
         mMessage = "";
         mPosR = Arrays.asList(new Materials[]{
                 /**Materials.ChargedCertusQuartz, **/Materials.Enderium, Materials.Uranium235, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria,
-                Materials.Sunnarium, Materials.Glowstone,  Materials.FierySteel, Materials.Firestone
+                Materials.Sunnarium, Materials.Glowstone,
         });
         mPosG = Arrays.asList(new Materials[]{
                 /**Materials.ChargedCertusQuartz, **/Materials.Enderium, Materials.Uranium235, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria,
@@ -108,7 +108,7 @@ public class GT_Client extends GT_Proxy
         });
         mMoltenPosR = Arrays.asList(new Materials[]{
                 Materials.Enderium, Materials.NetherStar, Materials.Uranium235, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria,
-                Materials.Sunnarium, Materials.Glowstone, Materials.FierySteel, Materials.Firestone
+                Materials.Sunnarium, Materials.Glowstone
         });
         mMoltenPosG = Arrays.asList(new Materials[]{
                 Materials.Enderium, Materials.NetherStar, Materials.Uranium235, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria,

@@ -839,10 +839,6 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
             else if (aEvent.Name.equals("sheetPlastic")) {
                 GT_OreDictUnificator.registerOre(OrePrefixes.plate, Materials.Plastic, aEvent.Ore);
             }
-            else if (aEvent.Name.equals("fieryIngot")) {
-                GT_OreDictUnificator.registerOre(OrePrefixes.ingot, Materials.FierySteel, aEvent.Ore);
-                return;
-            }
             else if (aEvent.Name.equals("steeleaf")) {
                 GT_OreDictUnificator.registerOre(OrePrefixes.ingot, Materials.Steeleaf, aEvent.Ore);
                 return;
@@ -1003,8 +999,6 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
                                     case ingot:
                                         if (aMaterial == Materials.Rubber) {
                                             GT_OreDictUnificator.registerOre("itemRubber", aEvent.Ore);
-                                        } else if (aMaterial == Materials.FierySteel) {
-                                            GT_OreDictUnificator.registerOre("fieryIngot", aEvent.Ore);
                                         } else if (aMaterial == Materials.Steeleaf) {
                                             GT_OreDictUnificator.registerOre("steeleaf", aEvent.Ore);
                                         } else if ((aMaterial == Materials.Brass) && (aEvent.Ore.getItemDamage() == 2)

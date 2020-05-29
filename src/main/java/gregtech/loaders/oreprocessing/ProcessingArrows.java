@@ -23,11 +23,6 @@ public class ProcessingArrows implements gregtech.api.interfaces.IOreRecipeRegis
 
         tOutput = GT_Utility.copyAmount(1L, new Object[]{aStack});
         GT_Utility.updateItemStack(tOutput);
-        GT_Utility.ItemNBT.addEnchantment(tOutput, Enchantment.fireAspect, EnchantmentHelper.getEnchantmentLevel(Enchantment.fireAspect.effectId, tOutput) + 3);
-        GT_Values.RA.addChemicalBathRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), Materials.FierySteel.getFluid(25L), tOutput, null, null, null, 100, 2);
-
-        tOutput = GT_Utility.copyAmount(1L, new Object[]{aStack});
-        GT_Utility.updateItemStack(tOutput);
         GT_Utility.ItemNBT.addEnchantment(tOutput, Enchantment.fireAspect, EnchantmentHelper.getEnchantmentLevel(Enchantment.fireAspect.effectId, tOutput) + 1);
         GT_Values.RA.addChemicalBathRecipe(GT_Utility.copyAmount(1L, new Object[]{aStack}), Materials.Blaze.getMolten(18L), tOutput, null, null, null, 100, 2);
 

@@ -149,6 +149,7 @@ abstract class GT_Tool_Drill_RangeBase
     }
 
     abstract String setRange();
+
     abstract int setTier();
 
     public void onToolCrafted(ItemStack aStack, EntityPlayer aPlayer) {
@@ -171,8 +172,8 @@ abstract class GT_Tool_Drill_RangeBase
 
         int mode = getDrillRangeMode(aStack);
 
-        int WD = mode == 1? 1: mode == 2? 2: mode == 3? 3: mode == 4? 4: 0;
-        int H = mode == 1? 1: mode == 2? 3: mode == 3? 5: mode == 4? 7: 0;
+        int WD = mode == 1 ? 1 : mode == 2 ? 2 : mode == 3 ? 3 : mode == 4 ? 4 : 0;
+        int H = mode == 1 ? 1 : mode == 2 ? 3 : mode == 3 ? 5 : mode == 4 ? 7 : 0;
 
         //int debugWD = RangeWidthandDepth();
         //int debugH = RangeHeight();
@@ -181,9 +182,8 @@ abstract class GT_Tool_Drill_RangeBase
         if (raycast != null) {
             if ((this.sIsHarvesting.get() == null) && ((aPlayer instanceof EntityPlayerMP))) {
                 this.sIsHarvesting.set(this);
-
-                for (int i = -WD; i <= WD ; i++) {
-                    for (int j = mode == 0? 0 : -1; j <= H; j++) {
+                for (int i = -WD; i <= WD; i++) {
+                    for (int j = mode == 0 ? 0 : -1; j <= H; j++) {
                         for (int k = -WD; k <= WD; k++) {
 
                             if (aEvent.world.getBlock(aX + i, aY + j, aZ + k) == Blocks.bedrock) {

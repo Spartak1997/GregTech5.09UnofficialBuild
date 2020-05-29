@@ -152,7 +152,7 @@ public class GT_Assemblyline_Server {
 			                Materials.Enderium,
 			                Materials._NULL,
 			                Materials.Europium,
-			                Materials.FierySteel,
+			                Materials._NULL,
 			                Materials.Gadolinium,
 			                Materials.Gallium,
 			                Materials._NULL,
