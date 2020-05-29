@@ -10,6 +10,7 @@ import forestry.api.arboriculture.IToolGrafter;
 import gregtech.GT_Mod;
 import gregtech.api.GregTech_API;
 import gregtech.api.enchants.Enchantment_Radioactivity;
+import gregtech.api.enums.GT_Values;
 import gregtech.api.enums.Materials;
 import gregtech.api.interfaces.IDamagableItem;
 import gregtech.api.interfaces.IToolCrowbar;
@@ -309,6 +310,7 @@ public abstract class GT_MetaGenerated_Tool extends GT_MetaBase_Item implements 
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     @SideOnly(Side.CLIENT)
     public final void getSubItems(Item var1, CreativeTabs aCreativeTab, List aList) {
         for (int i = 0; i < 32766; i += 2) {
@@ -316,7 +318,11 @@ public abstract class GT_MetaGenerated_Tool extends GT_MetaBase_Item implements 
                 ItemStack tStack = new ItemStack(this, 1, i);
                 isItemStackUsable(tStack);
                 //aList.add(tStack);
-                aList.add(getToolWithStats(i,1,Materials.Neutronium,Materials.Neutronium,null));
+                if (i >= 100 && i <=169) {
+                    aList.add(getToolWithStats(i,1,Materials.Neutronium,Materials.Neutronium, new long[]{81920000L, GT_Values.V[5], 5L, 81920000L}));
+                } else {
+                    aList.add(getToolWithStats(i, 1, Materials.Neutronium, Materials.Neutronium, null));
+                }
             }
 
         }
