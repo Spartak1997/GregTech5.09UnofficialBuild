@@ -59,7 +59,7 @@ public class GuiElectricArmor1 extends GuiContainer {
 		int yStart = (height - ySize) / 2;
 		//Draw background
 		drawTexturedModalRect(xStart, yStart, 0, 0, xSize, ySize);
-		//Draw active arrows
+		//Draw active
 		drawTexturedModalRect(xStart + 10, yStart + 70, 219, 11, 14, 5);
 		//Draw active armor symbol
 		switch (cont.mInvArmor.data.type) {

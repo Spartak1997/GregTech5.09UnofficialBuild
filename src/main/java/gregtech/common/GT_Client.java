@@ -22,8 +22,6 @@ import gregtech.api.util.GT_Log;
 import gregtech.api.util.GT_PlayedSound;
 import gregtech.api.util.GT_Recipe;
 import gregtech.api.util.GT_Utility;
-import gregtech.common.entities.GT_Entity_Arrow;
-import gregtech.common.entities.GT_Entity_Arrow_Potion;
 import gregtech.common.render.*;
 import ic2.api.tile.IWrenchable;
 import net.minecraft.block.Block;
@@ -301,8 +299,6 @@ public class GT_Client extends GT_Proxy
         new GT_Renderer_Block();
         new GT_MetaGenerated_Item_Renderer();
         new GT_MetaGenerated_Tool_Renderer();
-        new GT_Renderer_Entity_Arrow(GT_Entity_Arrow.class, "arrow");
-        new GT_Renderer_Entity_Arrow(GT_Entity_Arrow_Potion.class, "arrow_potions");
         new GT_FlaskRenderer();
     }
 

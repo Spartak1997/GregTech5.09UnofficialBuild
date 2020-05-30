@@ -21,7 +21,6 @@ import gregtech.api.items.GT_MetaGenerated_Tool;
 import gregtech.api.net.GT_Packet_Pollution;
 import gregtech.api.objects.*;
 import gregtech.api.util.*;
-import gregtech.common.entities.GT_Entity_Arrow;
 import gregtech.common.gui.GT_ContainerVolumetricFlask;
 import gregtech.common.gui.GT_GUIContainerVolumetricFlask;
 import gregtech.common.items.GT_MetaGenerated_Tool_01;
@@ -35,10 +34,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.monster.EntityEnderman;
-import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemBlock;
@@ -60,8 +57,6 @@ import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
-import net.minecraftforge.event.entity.player.ArrowLooseEvent;
-import net.minecraftforge.event.entity.player.ArrowNockEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.terraingen.OreGenEvent;
@@ -170,7 +165,6 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
     public boolean mHideRecyclingRecipes = true;
     public boolean mPollution = true;
     public boolean mExplosionItemDrop = false;
-    public int mSkeletonsShootGTArrows = 16;
     public int mMaxEqualEntitiesAtOneSpot = 3;
     public int mFlintChance = 30;
     public int mItemDespawnTime = 6000;
@@ -614,63 +608,6 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
     }
 
     @SubscribeEvent
-    public void onArrowNockEvent(ArrowNockEvent aEvent) {
-        if ((!aEvent.isCanceled()) && (GT_Utility.isStackValid(aEvent.result))
-                && (GT_Utility.getProjectile(SubTag.PROJECTILE_ARROW, aEvent.entityPlayer.inventory) != null)) {
-            aEvent.entityPlayer.setItemInUse(aEvent.result, aEvent.result.getItem().getMaxItemUseDuration(aEvent.result));
-            aEvent.setCanceled(true);
-        }
-    }
-
-    @SubscribeEvent
-    public void onArrowLooseEvent(ArrowLooseEvent aEvent) {
-        ItemStack aArrow = GT_Utility.getProjectile(SubTag.PROJECTILE_ARROW, aEvent.entityPlayer.inventory);
-        if ((!aEvent.isCanceled()) && (GT_Utility.isStackValid(aEvent.bow)) && (aArrow != null) && ((aEvent.bow.getItem() instanceof ItemBow))) {
-            float tSpeed = aEvent.charge / 20.0F;
-            tSpeed = (tSpeed * tSpeed + tSpeed * 2.0F) / 3.0F;
-            if (tSpeed < 0.1D) {
-                return;
-            }
-            if (tSpeed > 1.0D) {
-                tSpeed = 1.0F;
-            }
-            EntityArrow tArrowEntity = ((IProjectileItem) aArrow.getItem()).getProjectile(SubTag.PROJECTILE_ARROW, aArrow, aEvent.entityPlayer.worldObj,
-                    aEvent.entityPlayer, tSpeed * 2.0F);
-            if (tSpeed >= 1.0F) {
-                tArrowEntity.setIsCritical(true);
-            }
-            int tLevel = EnchantmentHelper.getEnchantmentLevel(Enchantment.power.effectId, aEvent.bow);
-            if (tLevel > 0) {
-                tArrowEntity.setDamage(tArrowEntity.getDamage() + tLevel * 0.5D + 0.5D);
-            }
-            tLevel = EnchantmentHelper.getEnchantmentLevel(Enchantment.punch.effectId, aEvent.bow);
-            if (tLevel > 0) {
-                tArrowEntity.setKnockbackStrength(tLevel);
-            }
-            tLevel = EnchantmentHelper.getEnchantmentLevel(Enchantment.flame.effectId, aEvent.bow);
-            if (tLevel > 0) {
-                tArrowEntity.setFire(tLevel * 100);
-            }
-            aEvent.bow.damageItem(1, aEvent.entityPlayer);
-            aEvent.bow.getItem();
-            aEvent.entityPlayer.worldObj.playSoundAtEntity(aEvent.entityPlayer, "random.bow", 1.0F, 0.64893958288F + tSpeed
-                    * 0.5F);
-
-            tArrowEntity.canBePickedUp = 1;
-            if (!aEvent.entityPlayer.capabilities.isCreativeMode) {
-                aArrow.stackSize -= 1;
-            }
-            if (aArrow.stackSize == 0) {
-                GT_Utility.removeNullStacksFromInventory(aEvent.entityPlayer.inventory);
-            }
-            if (!aEvent.entityPlayer.worldObj.isRemote) {
-                aEvent.entityPlayer.worldObj.spawnEntityInWorld(tArrowEntity);
-            }
-            aEvent.setCanceled(true);
-        }
-    }
-
-    @SubscribeEvent
     public void onEndermanTeleportEvent(EnderTeleportEvent aEvent) {
         if (((aEvent.entityLiving instanceof EntityEnderman)) && (aEvent.entityLiving.getActivePotionEffect(Potion.weakness) != null)) {
             aEvent.setCanceled(true);
@@ -682,13 +619,6 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
         if ((aEvent.entity != null) && (!aEvent.entity.worldObj.isRemote)) {
             if ((aEvent.entity instanceof EntityItem)) {
                 ((EntityItem) aEvent.entity).setEntityItemStack(GT_OreDictUnificator.get(((EntityItem) aEvent.entity).getEntityItem()));
-            }
-            if ((this.mSkeletonsShootGTArrows > 0) && (aEvent.entity.getClass() == EntityArrow.class)
-                    && (aEvent.entity.worldObj.rand.nextInt(this.mSkeletonsShootGTArrows) == 0)
-                    && ((((EntityArrow) aEvent.entity).shootingEntity instanceof EntitySkeleton))) {
-                aEvent.entity.worldObj.spawnEntityInWorld(new GT_Entity_Arrow((EntityArrow) aEvent.entity, (ItemStack) OrePrefixes.arrowGtWood.mPrefixedItems
-                        .get(aEvent.entity.worldObj.rand.nextInt(OrePrefixes.arrowGtWood.mPrefixedItems.size()))));
-                aEvent.entity.setDead();
             }
         }
     }

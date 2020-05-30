@@ -21,7 +21,6 @@ import net.minecraft.entity.effect.EntityWeatherEffect;
 import net.minecraft.entity.item.*;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.entity.projectile.EntityFireball;
 import net.minecraft.entity.projectile.EntityFishHook;
 import net.minecraft.entity.projectile.EntityThrowable;
@@ -99,9 +98,6 @@ public class GT_MetaTileEntity_Teleporter extends GT_MetaTileEntity_BasicTank {
         }
         if (GT_Utility.getClassName(aEntity).equals("EntityNuke")) {
             return 50.0F;
-        }
-        if ((aEntity instanceof EntityArrow)) {
-            return 0.001F;
         }
         if ((aEntity instanceof EntityBoat)) {
             return 0.1F;

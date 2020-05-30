@@ -10,7 +10,6 @@ import net.minecraft.item.ItemStack;
 
 public class ProcessingToolHead implements gregtech.api.interfaces.IOreRecipeRegistrator {
     public ProcessingToolHead() {
-        OrePrefixes.toolHeadArrow.add(this);
         OrePrefixes.toolHeadAxe.add(this);
         OrePrefixes.toolHeadBuzzSaw.add(this);
         OrePrefixes.toolHeadChainsaw.add(this);
@@ -35,14 +34,6 @@ public class ProcessingToolHead implements gregtech.api.interfaces.IOreRecipeReg
         boolean aSpecialRecipeReq2 = aMaterial.mUnificatable && (aMaterial.mMaterialInto == aMaterial) && !aMaterial.contains(SubTag.NO_WORKING);
         boolean aNoWorking = aMaterial.contains(SubTag.NO_WORKING);
         switch (aPrefix) {
-            case toolHeadArrow:
-                if (aMaterial.mStandardMoltenFluid != null)
-                    GT_Values.RA.addFluidSolidifierRecipe(ItemList.Shape_Mold_Arrow.get(0L, new Object[0]), aMaterial.getMolten(36L), GT_Utility.copyAmount(1L, new Object[]{aStack}), 16, 4);
-                if (aSpecialRecipeReq2) {
-                    GT_ModHandler.addCraftingRecipe(GT_OreDictUnificator.get(OrePrefixes.toolHeadArrow, aMaterial, 1L), GT_Proxy.tBits, new Object[]{"Xf", 'X', OrePrefixes.gemChipped.get(aMaterial)});
-                    GT_ModHandler.addCraftingRecipe(GT_OreDictUnificator.get(OrePrefixes.toolHeadArrow, aMaterial, 3L), GT_Proxy.tBits, new Object[]{(aMaterial.contains(SubTag.WOOD) ? 115 : 'x') + "Pf", 'P', OrePrefixes.plate.get(aMaterial)});
-                }
-                break;
             case toolHeadAxe:
                 GT_ModHandler.addShapelessCraftingRecipe(GT_MetaGenerated_Tool_01.INSTANCE.getToolWithStats(GT_MetaGenerated_Tool_01.AXE, 1, aMaterial, aMaterial.mHandleMaterial, null), new Object[]{aOreDictName, OrePrefixes.stick.get(aMaterial.mHandleMaterial)});
                 if (aSpecialRecipeReq1) GT_ModHandler.addCraftingRecipe(GT_OreDictUnificator.get(OrePrefixes.toolHeadAxe, aMaterial, 1L), GT_Proxy.tBits, new Object[]{"PIh", "P  ", "f  ", 'P', OrePrefixes.plate.get(aMaterial), 'I', OrePrefixes.ingot.get(aMaterial)});

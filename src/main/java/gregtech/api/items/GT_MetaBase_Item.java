@@ -14,7 +14,6 @@ import net.minecraft.dispenser.IBlockSource;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.inventory.Container;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -76,26 +75,6 @@ public abstract class GT_MetaBase_Item extends GT_Generic_Item implements ISpeci
         if (tList != null) for (IItemBehaviour<GT_MetaBase_Item> tBehavior : tList)
             if (tBehavior.hasProjectile(this, aProjectileType, aStack)) return true;
         return super.hasProjectile(aProjectileType, aStack);
-    }
-
-    @Override
-    public EntityArrow getProjectile(SubTag aProjectileType, ItemStack aStack, World aWorld, double aX, double aY, double aZ) {
-        ArrayList<IItemBehaviour<GT_MetaBase_Item>> tList = mItemBehaviors.get((short) getDamage(aStack));
-        if (tList != null) for (IItemBehaviour<GT_MetaBase_Item> tBehavior : tList) {
-            EntityArrow rArrow = tBehavior.getProjectile(this, aProjectileType, aStack, aWorld, aX, aY, aZ);
-            if (rArrow != null) return rArrow;
-        }
-        return super.getProjectile(aProjectileType, aStack, aWorld, aX, aY, aZ);
-    }
-
-    @Override
-    public EntityArrow getProjectile(SubTag aProjectileType, ItemStack aStack, World aWorld, EntityLivingBase aEntity, float aSpeed) {
-        ArrayList<IItemBehaviour<GT_MetaBase_Item>> tList = mItemBehaviors.get((short) getDamage(aStack));
-        if (tList != null) for (IItemBehaviour<GT_MetaBase_Item> tBehavior : tList) {
-            EntityArrow rArrow = tBehavior.getProjectile(this, aProjectileType, aStack, aWorld, aEntity, aSpeed);
-            if (rArrow != null) return rArrow;
-        }
-        return super.getProjectile(aProjectileType, aStack, aWorld, aEntity, aSpeed);
     }
 
     @Override

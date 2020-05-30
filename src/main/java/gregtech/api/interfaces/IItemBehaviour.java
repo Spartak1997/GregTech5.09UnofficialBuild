@@ -4,9 +4,7 @@ import gregtech.api.enums.SubTag;
 import gregtech.api.items.GT_MetaBase_Item;
 import net.minecraft.dispenser.IBlockSource;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -33,8 +31,4 @@ public interface IItemBehaviour<E extends Item> {
     public ItemStack onDispense(E aItem, IBlockSource aSource, ItemStack aStack);
 
     public boolean hasProjectile(GT_MetaBase_Item aItem, SubTag aProjectileType, ItemStack aStack);
-
-    public EntityArrow getProjectile(E aItem, SubTag aProjectileType, ItemStack aStack, World aWorld, double aX, double aY, double aZ);
-
-    public EntityArrow getProjectile(E aItem, SubTag aProjectileType, ItemStack aStack, World aWorld, EntityLivingBase aEntity, float aSpeed);
 }

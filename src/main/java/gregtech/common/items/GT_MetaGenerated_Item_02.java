@@ -9,29 +9,24 @@ import gregtech.api.objects.ItemData;
 import gregtech.api.objects.MaterialStack;
 import gregtech.api.util.*;
 import gregtech.common.covers.GT_Cover_SolarPanel;
-import gregtech.common.items.behaviors.Behaviour_Arrow;
 import net.minecraft.dispenser.IBlockSource;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
-import net.minecraft.world.World;
-import net.minecraftforge.fluids.FluidStack;
 
 public class GT_MetaGenerated_Item_02 extends GT_MetaGenerated_Item_X32 {
     public static GT_MetaGenerated_Item_02 INSTANCE;
     private final static String aTextCover = "Usable as Cover"; private final static String aTextForestry = "Forestry";
 
     public GT_MetaGenerated_Item_02() {
-        super("metaitem.02", new OrePrefixes[]{OrePrefixes.toolHeadSword, OrePrefixes.toolHeadPickaxe, OrePrefixes.toolHeadShovel, OrePrefixes.toolHeadAxe, OrePrefixes.toolHeadHoe, OrePrefixes.toolHeadHammer, OrePrefixes.toolHeadFile, OrePrefixes.toolHeadSaw, OrePrefixes.toolHeadDrill, OrePrefixes.toolHeadChainsaw, OrePrefixes.toolHeadWrench, OrePrefixes.toolHeadUniversalSpade, OrePrefixes.toolHeadSense, OrePrefixes.toolHeadPlow, OrePrefixes.toolHeadArrow, OrePrefixes.toolHeadBuzzSaw, OrePrefixes.turbineBlade, null, OrePrefixes.itemCasing, OrePrefixes.wireFine, OrePrefixes.gearGtSmall, OrePrefixes.rotor, OrePrefixes.stickLong, OrePrefixes.springSmall, OrePrefixes.spring, OrePrefixes.arrowGtWood, OrePrefixes.arrowGtPlastic, OrePrefixes.gemChipped, OrePrefixes.gemFlawed, OrePrefixes.gemFlawless, OrePrefixes.gemExquisite, OrePrefixes.gearGt});
+        super("metaitem.02", new OrePrefixes[]{OrePrefixes.toolHeadSword, OrePrefixes.toolHeadPickaxe, OrePrefixes.toolHeadShovel, OrePrefixes.toolHeadAxe, OrePrefixes.toolHeadHoe, OrePrefixes.toolHeadHammer, OrePrefixes.toolHeadFile, OrePrefixes.toolHeadSaw, OrePrefixes.toolHeadDrill, OrePrefixes.toolHeadChainsaw, OrePrefixes.toolHeadWrench, OrePrefixes.toolHeadUniversalSpade, OrePrefixes.toolHeadSense, OrePrefixes.toolHeadPlow, OrePrefixes.toolHeadArrow, OrePrefixes.toolHeadBuzzSaw, OrePrefixes.turbineBlade, null, OrePrefixes.itemCasing, OrePrefixes.wireFine, OrePrefixes.gearGtSmall, OrePrefixes.rotor, OrePrefixes.stickLong, OrePrefixes.springSmall, OrePrefixes.spring, null, null, OrePrefixes.gemChipped, OrePrefixes.gemFlawed, OrePrefixes.gemFlawless, OrePrefixes.gemExquisite, OrePrefixes.gearGt});
         INSTANCE = this;
 
         int tLastID = 0;
@@ -421,41 +416,12 @@ public class GT_MetaGenerated_Item_02 extends GT_MetaGenerated_Item_X32 {
 
     public boolean onLeftClickEntity(ItemStack aStack, EntityPlayer aPlayer, Entity aEntity) {
         super.onLeftClickEntity(aStack, aPlayer, aEntity);
-        int aDamage = aStack.getItemDamage();
-        if ((aDamage >= 25000) && (aDamage < 27000)) {
-            if (aDamage >= 26000) {
-                return Behaviour_Arrow.DEFAULT_PLASTIC.onLeftClickEntity(this, aStack, aPlayer, aEntity);
-            }
-            return Behaviour_Arrow.DEFAULT_WOODEN.onLeftClickEntity(this, aStack, aPlayer, aEntity);
-        }
         return false;
     }
 
     public boolean hasProjectile(SubTag aProjectileType, ItemStack aStack) {
         int aDamage = aStack.getItemDamage();
         return ((aDamage >= 25000) && (aDamage < 27000)) || (super.hasProjectile(aProjectileType, aStack));
-    }
-
-    public EntityArrow getProjectile(SubTag aProjectileType, ItemStack aStack, World aWorld, double aX, double aY, double aZ) {
-        int aDamage = aStack.getItemDamage();
-        if ((aDamage >= 25000) && (aDamage < 27000)) {
-            if (aDamage >= 26000) {
-                return Behaviour_Arrow.DEFAULT_PLASTIC.getProjectile(this, aProjectileType, aStack, aWorld, aX, aY, aZ);
-            }
-            return Behaviour_Arrow.DEFAULT_WOODEN.getProjectile(this, aProjectileType, aStack, aWorld, aX, aY, aZ);
-        }
-        return super.getProjectile(aProjectileType, aStack, aWorld, aX, aY, aZ);
-    }
-
-    public EntityArrow getProjectile(SubTag aProjectileType, ItemStack aStack, World aWorld, EntityLivingBase aEntity, float aSpeed) {
-        int aDamage = aStack.getItemDamage();
-        if ((aDamage >= 25000) && (aDamage < 27000)) {
-            if (aDamage >= 26000) {
-                return Behaviour_Arrow.DEFAULT_PLASTIC.getProjectile(this, aProjectileType, aStack, aWorld, aEntity, aSpeed);
-            }
-            return Behaviour_Arrow.DEFAULT_WOODEN.getProjectile(this, aProjectileType, aStack, aWorld, aEntity, aSpeed);
-        }
-        return super.getProjectile(aProjectileType, aStack, aWorld, aEntity, aSpeed);
     }
 
     public boolean isItemStackUsable(ItemStack aStack) {
@@ -480,13 +446,6 @@ public class GT_MetaGenerated_Item_02 extends GT_MetaGenerated_Item_X32 {
     }
 
     public ItemStack onDispense(IBlockSource aSource, ItemStack aStack) {
-        int aDamage = aStack.getItemDamage();
-        if ((aDamage >= 25000) && (aDamage < 27000)) {
-            if (aDamage >= 26000) {
-                return Behaviour_Arrow.DEFAULT_PLASTIC.onDispense(this, aSource, aStack);
-            }
-            return Behaviour_Arrow.DEFAULT_WOODEN.onDispense(this, aSource, aStack);
-        }
         return super.onDispense(aSource, aStack);
     }
 

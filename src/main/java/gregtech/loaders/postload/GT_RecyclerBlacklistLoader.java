@@ -14,7 +14,6 @@ public class GT_RecyclerBlacklistLoader
     public void run() {
         GT_Log.out.println("GT_Mod: Adding Stuff to the Recycler Blacklist.");
         if (GregTech_API.sRecipeFile.get(ConfigCategories.Recipes.disabledrecipes, "easymobgrinderrecycling", true)) {
-            GT_ModHandler.addToRecyclerBlackList(new ItemStack(Items.arrow, 1, 0));
             GT_ModHandler.addToRecyclerBlackList(new ItemStack(Items.bone, 1, 0));
             GT_ModHandler.addToRecyclerBlackList(ItemList.Dye_Bonemeal.get(1L, new Object[0]));
 

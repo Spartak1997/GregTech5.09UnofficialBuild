@@ -91,7 +91,6 @@ public class GT_SonictronLoader
         GT_Mod.gregtechproxy.mSoundItems.add(new ItemStack(Items.bow, 1));
         GT_Mod.gregtechproxy.mSoundNames.add("random.bow");
         GT_Mod.gregtechproxy.mSoundCounts.add(Integer.valueOf(1));
-        GT_Mod.gregtechproxy.mSoundItems.add(new ItemStack(Items.arrow, 1));
         GT_Mod.gregtechproxy.mSoundNames.add("random.drr");
         GT_Mod.gregtechproxy.mSoundCounts.add(Integer.valueOf(1));
         GT_Mod.gregtechproxy.mSoundItems.add(new ItemStack(Items.fishing_rod, 1));
