@@ -43,92 +43,11 @@ public class GT_MetaTileEntity_PotionBrewer
         if (tCheck != DID_NOT_FIND_RECIPE) {
             return tCheck;
         }
-
         calculateOverclockedNess(4,128);
         //In case recipe is too OP for that machine
         if (mMaxProgresstime == Integer.MAX_VALUE - 1 && mEUt == Integer.MAX_VALUE - 1)
             return FOUND_RECIPE_BUT_DID_NOT_MEET_REQUIREMENTS;
-
-        FluidStack aFluid = getFillableStack();
-        if ((getDrainableStack() == null) && (aFluid != null) && (getInputAt(0) != null)) {
-            String tInputName = aFluid.getFluid().getName();
-            if (tInputName.startsWith("potion.")) {
-                tInputName = tInputName.replaceFirst("potion.", "");
-                int tFirstDot = tInputName.indexOf('.') + 1;
-                String tModifier = tFirstDot <= 0 ? "" : tInputName.substring(tFirstDot);
-                if (!tModifier.isEmpty()) {
-                    tInputName = tInputName.replaceFirst("." + tModifier, "");
-                }
-                if (GT_Utility.areStacksEqual(new ItemStack(Items.fermented_spider_eye, 1, 0), getInputAt(0))) {
-                    if (tInputName.equals("poison")) {
-                        return setOutput("potion.damage" + tModifier);
-                    }
-                    if (tInputName.equals("health")) {
-                        return setOutput("potion.damage" + tModifier);
-                    }
-                    if (tInputName.equals("waterbreathing")) {
-                        return setOutput("potion.damage" + tModifier);
-                    }
-                    if (tInputName.equals("nightvision")) {
-                        return setOutput("potion.invisibility" + tModifier);
-                    }
-                    if (tInputName.equals("fireresistance")) {
-                        return setOutput("potion.slowness" + tModifier);
-                    }
-                    if (tInputName.equals("speed")) {
-                        return setOutput("potion.slowness" + tModifier);
-                    }
-                    if (tInputName.equals("strength")) {
-                        return setOutput("potion.weakness" + tModifier);
-                    }
-                    if (tInputName.equals("regen")) {
-                        return setOutput("potion.poison" + tModifier);
-                    }
-                    return setOutput("potion.weakness");
-                }
-                if (GT_Utility.areStacksEqual(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Glowstone, 1L), getInputAt(0))) {
-                    if (!tModifier.startsWith("strong")) {
-                        return setOutput("potion." + tInputName + ".strong" + (tModifier.isEmpty() ? "" : new StringBuilder().append(".").append(tModifier).toString()));
-                    }
-                    if (tModifier.startsWith("long")) {
-                        return setOutput("potion." + tInputName + tModifier.replaceFirst("long", ""));
-                    }
-                    return setOutput("potion.thick");
-                }
-                if (GT_Utility.areStacksEqual(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Redstone, 1L), getInputAt(0))) {
-                    if (!tModifier.startsWith("long")) {
-                        return setOutput("potion." + tInputName + ".long" + (tModifier.isEmpty() ? "" : new StringBuilder().append(".").append(tModifier).toString()));
-                    }
-                    if (tModifier.startsWith("strong")) {
-                        return setOutput("potion." + tInputName + tModifier.replaceFirst("strong", ""));
-                    }
-                    return setOutput("potion.mundane");
-                }
-                if (GT_Utility.areStacksEqual(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Gunpowder, 1L), getInputAt(0))) {
-                    if (!tInputName.endsWith(".splash")) {
-                        return setOutput("potion." + tInputName + ".splash");
-                    }
-                    return setOutput("potion.mundane");
-                }
-            }
-        }
         return 0;
-    }
-
-    private final int setOutput(String aFluidName) {
-        this.mOutputFluid = FluidRegistry.getFluidStack(aFluidName, 750);
-        if (this.mOutputFluid == null) {
-            this.mOutputFluid = FluidRegistry.getFluidStack("potion.mundane", getFillableStack().amount);
-            getInputAt(0).stackSize -= 1;
-            getFillableStack().amount = 0;
-            return 2;
-        }
-        if (getFillableStack().amount < 750) {
-            return 0;
-        }
-        getInputAt(0).stackSize -= 1;
-        getFillableStack().amount -= 750;
-        return 2;
     }
 
     public boolean allowPutStack(IGregTechTileEntity aBaseMetaTileEntity, int aIndex, byte aSide, ItemStack aStack) {
@@ -136,7 +55,7 @@ public class GT_MetaTileEntity_PotionBrewer
     }
 
     public boolean isFluidInputAllowed(FluidStack aFluid) {
-        return (aFluid.getFluid().getName().startsWith("potion.")) || (super.isFluidInputAllowed(aFluid));
+        return super.isFluidInputAllowed(aFluid);
     }
 
     public int getCapacity() {
