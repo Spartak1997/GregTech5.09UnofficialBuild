@@ -1504,6 +1504,30 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
             rFuelValue =   Math.max(rFuelValue, 3200);
         } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "blockCokeCoal")) {
             rFuelValue =   Math.max(rFuelValue, 32000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "CompressedCoalCoke")) {
+            rFuelValue =   Math.max(rFuelValue, 320000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "DoubleCompressedCoalCoke")) {
+            rFuelValue =   Math.max(rFuelValue, 3200000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "TripleCompressedCoalCoke")) {
+            rFuelValue =   Math.max(rFuelValue, 32000000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "QuadrupleCompressedCoalCoke")) {
+            rFuelValue =   Math.max(rFuelValue, 320000000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "CompressedCoal")) {
+            rFuelValue =   Math.max(rFuelValue, 160000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "DoubleCompressedCoal")) {
+            rFuelValue =   Math.max(rFuelValue, 1600000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "TripleCompressedCoal")) {
+            rFuelValue =   Math.max(rFuelValue, 16000000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "QuadrupleCompressedCoal")) {
+            rFuelValue =   Math.max(rFuelValue, 160000000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "CompressedCharcoal")) {
+            rFuelValue =   Math.max(rFuelValue, 160000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "DoubleCompressedCharcoal")) {
+            rFuelValue =   Math.max(rFuelValue, 1600000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "TripleCompressedCharcoal")) {
+            rFuelValue =   Math.max(rFuelValue, 16000000);
+        } else if (GT_OreDictUnificator.isItemStackInstanceOf(aFuel, "QuadrupleCompressedCharcoal")) {
+            rFuelValue =   Math.max(rFuelValue, 160000000);
         } else if (GT_Utility.areStacksEqual(aFuel, new ItemStack(Blocks.wooden_button, 1))) {
             rFuelValue =   Math.max(rFuelValue, 150);
         } else if (GT_Utility.areStacksEqual(aFuel, new ItemStack(Blocks.ladder, 1))) {
@@ -1512,9 +1536,9 @@ public abstract class GT_Proxy implements IGT_Mod, IGuiHandler, IFuelHandler {
             rFuelValue =   Math.max(rFuelValue, 600);
         } else if (GT_Utility.areStacksEqual(aFuel, new ItemStack(Items.wooden_door, 1))) {
             rFuelValue =   Math.max(rFuelValue, 600);
-        } else if (GT_Utility.areStacksEqual(aFuel, ItemList.Block_MSSFUEL.get(1, new Object[0]))) {
+        } else if (GT_Utility.areStacksEqual(aFuel, ItemList.Block_MSSFUEL.get(1))) {
             rFuelValue = Math.max(rFuelValue, 150000);
-        }if (GT_Utility.areStacksEqual(aFuel, ItemList.Block_SSFUEL.get(1, new Object[0]))) {
+        }if (GT_Utility.areStacksEqual(aFuel, ItemList.Block_SSFUEL.get(1))) {
             rFuelValue = Math.max(rFuelValue, 100000);
         }
 
