@@ -750,7 +750,7 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
         Asteroid = new MaterialBuilder(425, TextureSet.SET_DULL, "Asteroid").setName("Asteroid").addDustItems().setRGB(35, 29, 27).setColor(Dyes.dyeBlack).constructMaterial();
 
 
-        Zirconium = new Materials           ( 27, TextureSet.SET_SHINY,128.0F,51200,8,1,     200,200,210,0,"Zirconium",         "Zirconium",           0,0,1000,0, true, false,4,1,1, Dyes.dyeLightGray, Element.Zr);
+        Zirconium = new Materials           ( 27, TextureSet.SET_SHINY,128.0F,51200,8,1|8,  200,200,210,0,"Zirconium",         "Zirconium",           0,0,1000,0, true, false,4,1,1, Dyes.dyeLightGray, Element.Zr);
         Samarium = new Materials            ( 73, TextureSet.SET_SHINY,128.0F,51200,8,1,     255,255,255,0,"Samarium",          "Samarium",            0,0,1000,0, true, false,4,1,1, Dyes.dyeLightGray, Element.Sm);
         Gadolinium = new Materials          ( 74, TextureSet.SET_SHINY,128.0F,51200,8,1,     255,203,64 ,0,"Gadolinium",        "Gadolinium",          0,0,1000,0, true, false,4,1,1, Dyes.dyeLightGray, Element.Gd);
 
