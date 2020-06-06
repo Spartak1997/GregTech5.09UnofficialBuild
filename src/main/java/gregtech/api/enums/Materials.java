@@ -160,7 +160,7 @@ public class Materials implements IColorModulationContainer, ISubTagContainer {
         Silicon = new Materials(20, TextureSet.SET_METALLIC, 1.0F, 0, 2, 1 | 2 | 8 | 32, 60, 60, 80, 0, "Silicon", "Silicon", 0, 0, 1687, 1687, false, false, 1, 1, 1, Dyes.dyeBlack, Element.Si);
         Silver = new Materials(54, TextureSet.SET_SHINY, 10.0F, 64, 2, 1 | 2 | 8 | 32 | 128, 220, 220, 255, 0, "Silver", "Silver", 0, 0, 1234, 0, false, false, 3, 1, 1, Dyes.dyeLightGray, Element.Ag);
         Sodium = new Materials(17, TextureSet.SET_METALLIC, 1.0F, 0, 2, 1 | 32, 0, 0, 150, 0, "Sodium", "Sodium", 0, 0, 370, 0, false, false, 1, 1, 1, Dyes.dyeBlue, Element.Na);
-        Strontium = new Materials(-1/*44*/, TextureSet.SET_METALLIC, 1.0F, 0, 2, 1 | 32, 200, 200, 200, 0, "Strontium", "Strontium", 0, 0, 1050, 0, false, false, 1, 1, 1, Dyes.dyeLightGray, Element.Sr);
+        Strontium = new Materials(94, TextureSet.SET_METALLIC, 1.0F, 0, 2, 1, 200, 200, 200, 0, "Strontium", "Strontium", 0, 0, 1050, 0, false, false, 1, 1, 1, Dyes.dyeLightGray, Element.Sr);
         Sulfur = new Materials(22, TextureSet.SET_DULL, 1.0F, 0, 2, 1 | 8 | 32, 200, 200, 0, 0, "Sulfur", "Sulfur", 0, 0, 388, 0, false, false, 2, 1, 1, Dyes.dyeYellow, Element.S);
         Tantalum = new Materials(80, TextureSet.SET_METALLIC, 1.0F, 0, 2, 1 | 2 | 32, 255, 255, 255, 0, "Tantalum", "Tantalum", 0, 0, 3290, 0, false, false, 4, 1, 1, Dyes._NULL, Element.Ta);
         Tellurium = new Materials(-1/*59*/, TextureSet.SET_METALLIC, 1.0F, 0, 2, 1 | 2 | 32, 255, 255, 255, 0, "Tellurium", "Tellurium", 0, 0, 722, 0, false, false, 4, 1, 1, Dyes.dyeGray, Element.Te);
